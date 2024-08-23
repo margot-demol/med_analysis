@@ -8,8 +8,13 @@
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-swot_dir = '/home/datawork-lops-osi/aponte/swot/cswot/swot/l3_v1.0.1'
-drifters_dir = '/home/datawork-lops-osi/aponte/swot/cswot/drifters_harmonized'
+#DATARMOR
+#swot_dir = '/home/datawork-lops-osi/aponte/swot/cswot/swot/l3_v1.0.1'
+#drifters_dir = '/home/datawork-lops-osi/aponte/swot/cswot/drifters_harmonized'
+
+#LOCAL MARGOT
+swot_dir = '/Users/mdemol/DATA_KARIN'
+drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized/L2'
 #path_wind = 
 
 color = {
