@@ -26,6 +26,19 @@ def browse_swot():
     df = pd.DataFrame(D)
     df["day"] = df["time"].dt.floor("1d")
     
+    df['dt_before'] = df.groupby('pass_number').time.diff()/2
+    mask = df.dt_before.isnull()
+    df.loc[mask, 'dt_before'] = df.dt_before.median()
+
+    df['dt_after'] = -df.groupby('pass_number').time.diff(periods = -1)/2
+    mask = df.dt_after.isnull()
+    df.loc[mask, 'dt_after'] = df.dt_after.median()
+
+    df['start_time_cut'] = df.time-df.dt_before
+
+    df['end_time_cut'] = df.time+df.dt_after
+    df.drop(columns=['dt_before', 'dt_after'], inplace=True)
+    
     return df.set_index(["day", "pass_number"])
 
 
@@ -47,14 +60,14 @@ def build_swath_polygon(da, x="x", y="y", dix = 50, diy = 50, side=None):
 
     # right swath
     if side=="left":
-        da = da.isel(num_pixels=slice(0, da.num_pixels.size//2))
+        da = da.isel(num_pixels=slice(0, 237))
     elif side=="right":
-        da = da.isel(num_pixels=slice(da.num_pixels.size//2, -1))
+        da = da.isel(num_pixels=slice(282, -1))
             
     nx = da.num_pixels.size
     ny = da.num_lines.size
         
-    rg = lambda size, di: list(range(0, size, dix))+[size-1]
+    rg = lambda size, di: list(range(0, size, di))+[size-1]
     
     X, Y = [], []
     
