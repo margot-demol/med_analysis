@@ -11,13 +11,13 @@ from shapely.geometry import Polygon
 
 
 from medlib.cstes import swot_dir
-def browse_swot():
+def browse_swot_250():
     """ browse SWOT files """
     passes = [3, 16]
     
     D = []
     for p in passes:
-        files = sorted(glob(os.path.join(swot_dir, f"{p}_*.zarr")))
+        files = sorted(glob(os.path.join(swot_dir, f'L3_250', f"{p}_*.zarr")))
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
