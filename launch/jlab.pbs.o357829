@@ -1,0 +1,425 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Thu Aug 29 14:18:01 GMT 2024
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2024-08-29 14:18:03.757 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2024-08-29 14:18:03.780 ServerApp] Package jupyter_lsp took 0.0223s to import
+[W 2024-08-29 14:18:03.780 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-08-29 14:18:03.789 ServerApp] Package jupyter_server_terminals took 0.0091s to import
+[I 2024-08-29 14:18:03.790 ServerApp] Package notebook took 0.0000s to import
+[I 2024-08-29 14:18:03.792 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2024-08-29 14:18:03.792 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-08-29 14:18:09.055 ServerApp] Package panel.io.jupyter_server_extension took 5.2617s to import
+[I 2024-08-29 14:18:09.055 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-08-29 14:18:09.061 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-08-29 14:18:09.067 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-08-29 14:18:09.088 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-08-29 14:18:09.091 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-08-29 14:18:09.092 ServerApp] notebook | extension was successfully linked.
+[I 2024-08-29 14:18:09.513 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-08-29 14:18:09.514 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2024-08-29 14:18:09.549 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-08-29 14:18:09.551 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-08-29 14:18:09.553 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-08-29 14:18:09.557 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2024-08-29 14:18:09.557 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2024-08-29 14:18:09.558 LabApp] Extension Manager is 'pypi'.
+[I 2024-08-29 14:18:09.561 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-08-29 14:18:09.565 ServerApp] notebook | extension was successfully loaded.
+[I 2024-08-29 14:18:09.566 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2024-08-29 14:18:09.566 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2024-08-29 14:18:09.566 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2024-08-29 14:18:09.566 ServerApp] http://r1i1n33:8877/lab
+[I 2024-08-29 14:18:09.566 ServerApp]     http://127.0.0.1:8877/lab
+[I 2024-08-29 14:18:09.566 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-08-29 14:18:09.631 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-08-29 14:18:48.205 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941128141 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:48.206 ServerApp] wrote error: 'Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9)
+[W 2024-08-29 14:18:48.208 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941128141 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 3.50ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:48.900 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:49.002 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 102.64ms referer=None
+[W 2024-08-29 14:18:49.071 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941129008 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:49.071 ServerApp] wrote error: 'Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9)
+[W 2024-08-29 14:18:49.072 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941129008 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 1.07ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:51.212 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941131149 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:51.212 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:18:51.213 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941131149 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.93ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:51.556 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:51.557 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.97ms referer=None
+[W 2024-08-29 14:18:51.614 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941131551 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:51.614 ServerApp] wrote error: 'Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9)
+[W 2024-08-29 14:18:51.614 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941131551 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:51.898 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:51.899 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.96ms referer=None
+[W 2024-08-29 14:18:51.925 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941131862 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:51.925 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:18:51.925 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941131862 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.88ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:53.232 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941133169 (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:18:53.232 ServerApp] wrote error: 'Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129)
+[W 2024-08-29 14:18:53.232 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941133169 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.88ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:53.640 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:53.640 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.96ms referer=None
+[W 2024-08-29 14:18:53.735 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941133672 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:53.735 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:18:53.735 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941133672 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:53.951 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:18:53.952 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.94ms referer=None
+[W 2024-08-29 14:18:54.011 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941133949 (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:18:54.011 ServerApp] wrote error: 'Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129)
+[W 2024-08-29 14:18:54.012 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941133949 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:54.507 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:54.508 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 1.52ms referer=None
+[W 2024-08-29 14:18:54.575 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941134512 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:54.575 ServerApp] wrote error: 'Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9)
+[W 2024-08-29 14:18:54.575 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941134512 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.95ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:54.725 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:18:54.726 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (f21263e51447400cbd921f42b836c27b@10.148.1.145) 1.00ms referer=None
+[W 2024-08-29 14:18:54.814 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941134752 (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:18:54.814 ServerApp] wrote error: 'Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129)
+[W 2024-08-29 14:18:54.815 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941134752 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:55.116 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:55.117 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.95ms referer=None
+[W 2024-08-29 14:18:55.208 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941135145 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:55.208 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:18:55.209 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941135145 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:56.363 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:56.363 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9/channels?session_id=ecc94ce3-ccb8-4d04-a0d1-99a603670b06 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.95ms referer=None
+[W 2024-08-29 14:18:56.386 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941136323 (10.148.1.145): Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9
+[W 2024-08-29 14:18:56.386 ServerApp] wrote error: 'Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 92b23272-fb00-4781-8d47-ef12f40a68a9)
+[W 2024-08-29 14:18:56.387 ServerApp] 404 GET /api/kernels/92b23272-fb00-4781-8d47-ef12f40a68a9?1724941136323 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:18:59.334 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:59.335 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.96ms referer=None
+[W 2024-08-29 14:18:59.374 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941139312 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:18:59.374 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:18:59.375 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941139312 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:19:01.336 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:19:01.337 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (f21263e51447400cbd921f42b836c27b@10.148.1.145) 1.18ms referer=None
+[W 2024-08-29 14:19:01.455 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941141392 (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:19:01.455 ServerApp] wrote error: 'Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129)
+[W 2024-08-29 14:19:01.455 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941141392 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:19:03.748 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:19:03.748 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129/channels?session_id=04735855-cfd6-444e-9623-540f6f86ecec (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.98ms referer=None
+[W 2024-08-29 14:19:03.860 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941143798 (10.148.1.145): Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129
+[W 2024-08-29 14:19:03.860 ServerApp] wrote error: 'Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7f633245-549a-4dea-b84e-6e424eae9129)
+[W 2024-08-29 14:19:03.860 ServerApp] 404 GET /api/kernels/7f633245-549a-4dea-b84e-6e424eae9129?1724941143798 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.87ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:19:13.372 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:19:13.373 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7/channels?session_id=bc7a3136-8517-4bcf-8627-70a0ce960b70 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 1.41ms referer=None
+[W 2024-08-29 14:19:13.477 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941153415 (10.148.1.145): Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7
+[W 2024-08-29 14:19:13.477 ServerApp] wrote error: 'Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 065fdccb-d6e5-471d-accb-006842fec7b7)
+[W 2024-08-29 14:19:13.478 ServerApp] 404 GET /api/kernels/065fdccb-d6e5-471d-accb-006842fec7b7?1724941153415 (f21263e51447400cbd921f42b836c27b@10.148.1.145) 0.94ms referer=http://localhost:8877/lab/tree/med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:19:15.095 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-08-29 14:19:23.305 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[W 2024-08-29 14:19:23.681 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-08-29 14:19:24.694 ServerApp] Kernel started: 9d65fe9e-d887-431d-a3bb-ce46e2599ebb
+[I 2024-08-29 14:19:24.739 ServerApp] Kernel started: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:19:25.871 ServerApp] Kernel started: d30ddd04-1137-4153-9750-349715f285af
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2024-08-29 14:19:52.797 ServerApp] Connecting to kernel b7133abe-26c3-4379-b40f-942980c8759c.
+[I 2024-08-29 14:19:52.799 ServerApp] Connecting to kernel b7133abe-26c3-4379-b40f-942980c8759c.
+[I 2024-08-29 14:19:52.801 ServerApp] Connecting to kernel b7133abe-26c3-4379-b40f-942980c8759c.
+[I 2024-08-29 14:19:52.803 ServerApp] Connecting to kernel 9d65fe9e-d887-431d-a3bb-ce46e2599ebb.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-08-29 14:19:52.857 ServerApp] Connecting to kernel d30ddd04-1137-4153-9750-349715f285af.
+[I 2024-08-29 14:19:52.859 ServerApp] Connecting to kernel d30ddd04-1137-4153-9750-349715f285af.
+[I 2024-08-29 14:19:52.860 ServerApp] Connecting to kernel d30ddd04-1137-4153-9750-349715f285af.
+[I 2024-08-29 14:21:24.191 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:21:24.192 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:22:26.482 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:22:26.644 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:22:26.844 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:23:24.323 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:23:24.325 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:23:48.411 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:23:48.643 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:23:58.562 ServerApp] Kernel restarted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:23:58.689 ServerApp] Starting buffering for b7133abe-26c3-4379-b40f-942980c8759c:6bfeeac7-02e3-4d5d-b6d8-a2dd5d687a5e
+[I 2024-08-29 14:23:58.743 ServerApp] Connecting to kernel b7133abe-26c3-4379-b40f-942980c8759c.
+[I 2024-08-29 14:23:58.743 ServerApp] Restoring connection for b7133abe-26c3-4379-b40f-942980c8759c:6bfeeac7-02e3-4d5d-b6d8-a2dd5d687a5e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-08-29 14:25:24.444 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:25:24.446 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:27:24.564 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:27:24.565 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:29:24.684 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:29:24.686 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:31:24.805 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:31:24.807 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:35:24.944 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:35:24.945 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:39:25.077 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:39:25.078 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:41:25.197 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:41:25.198 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:43:25.314 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:43:25.315 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:45:25.434 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:45:25.531 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:47:25.697 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:47:25.698 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:49:25.813 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:49:25.815 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:50:33.361 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:50:33.521 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:51:02.112 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:51:02.294 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:51:02.495 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 14:51:25.983 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:51:25.985 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:53:26.150 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:53:26.151 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:55:26.309 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:55:26.311 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:57:26.464 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:57:26.465 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 14:59:26.598 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 14:59:26.599 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:01:26.725 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:01:26.726 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:03:26.852 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:03:26.853 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:05:26.968 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:05:26.969 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:07:27.086 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:07:27.087 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:08:12.093 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:08:12.269 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:08:12.436 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:09:27.212 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:09:27.213 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:10:09.365 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:10:09.563 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:10:09.732 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:11:27.334 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:11:27.335 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:13:27.475 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:13:27.477 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:15:27.643 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:15:27.644 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:17:27.840 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:17:27.842 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:19:28.019 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:19:28.021 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:21:28.180 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:21:28.181 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:23:28.387 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:23:28.389 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:24:59.966 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:24:59.967 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:27:00.127 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:27:00.129 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:29:00.247 ServerApp] Saving file at /med_analysis/0_colocalization.ipynb
+[W 2024-08-29 15:29:00.248 ServerApp] Notebook med_analysis/0_colocalization.ipynb is not trusted
+[I 2024-08-29 15:35:00.411 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-29 15:35:00.413 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-08-29 15:36:10.010 ServerApp] Uploading file to /med_analysis/1_zarr_coloc.pbs
+[I 2024-08-29 15:36:10.013 ServerApp] Uploading file to /med_analysis/1_zarr_coloc.py
+[I 2024-08-29 15:38:15.615 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:40:15.651 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:41:28.333 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-08-29 15:42:15.674 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:44:15.689 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:46:15.706 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:48:15.736 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:48:44.562 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:49:03.812 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:49:19.976 ServerApp] Saving file at /med_analysis/1_zarr_coloc.pbs
+[I 2024-08-29 15:49:28.084 ServerApp] Saving file at /med_analysis/1_zarr_coloc.pbs
+[I 2024-08-29 15:50:32.020 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:50:33.012 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:50:33.188 ServerApp] Kernel interrupted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:51:00.548 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-29 15:51:00.549 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-08-29 15:52:34.083 ServerApp] Saving file at /med_analysis/1_parquet_coloc.pbs
+[I 2024-08-29 15:53:00.717 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-29 15:53:00.718 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-08-29 15:53:05.299 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o359471
+[I 2024-08-29 15:53:11.928 ServerApp] Saving file at /med_analysis/1_parquet_coloc.pbs
+[I 2024-08-29 15:55:08.953 ServerApp] Kernel restarted: b7133abe-26c3-4379-b40f-942980c8759c
+[I 2024-08-29 15:55:08.958 ServerApp] Starting buffering for b7133abe-26c3-4379-b40f-942980c8759c:6bfeeac7-02e3-4d5d-b6d8-a2dd5d687a5e
+[I 2024-08-29 15:55:08.964 ServerApp] Connecting to kernel b7133abe-26c3-4379-b40f-942980c8759c.
+[I 2024-08-29 15:55:08.964 ServerApp] Restoring connection for b7133abe-26c3-4379-b40f-942980c8759c:6bfeeac7-02e3-4d5d-b6d8-a2dd5d687a5e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[W 2024-08-29 15:55:09.699 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabbac30d0>
+[I 2024-08-29 15:56:25.820 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:57:00.939 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-29 15:57:00.940 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-08-29 15:57:23.850 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-29 15:59:05.841 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-08-29 15:59:25.355 ServerApp] Saving file at /med_analysis/swot.py
+[W 2024-08-29 16:01:08.964 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2024-08-29 16:01:13.965 ServerApp] Starting buffering for b7133abe-26c3-4379-b40f-942980c8759c:6bfeeac7-02e3-4d5d-b6d8-a2dd5d687a5e
+[W 2024-08-29 16:01:22.805 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2024-08-29 16:01:22.859 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2024-08-29 16:01:27.806 ServerApp] Starting buffering for 9d65fe9e-d887-431d-a3bb-ce46e2599ebb:d9788649-8831-4b08-8aa7-e4e8e7b15a50
+[I 2024-08-29 16:01:27.860 ServerApp] Starting buffering for d30ddd04-1137-4153-9750-349715f285af:0105f04a-4a32-41a5-99c5-6d1ce9dec26b
+Terminated
+[C 2024-08-30 12:23:55.888 ServerApp] received signal 15, stopping
+[I 2024-08-30 12:23:55.997 ServerApp] Shutting down 6 extensions
+[I 2024-08-30 12:23:55.997 ServerApp] Shutting down 3 kernels
+[I 2024-08-30 12:23:55.998 ServerApp] Kernel shutdown: d30ddd04-1137-4153-9750-349715f285af
+[I 2024-08-30 12:23:55.998 ServerApp] Kernel shutdown: 9d65fe9e-d887-431d-a3bb-ce46e2599ebb
+[I 2024-08-30 12:23:55.998 ServerApp] Kernel shutdown: b7133abe-26c3-4379-b40f-942980c8759c

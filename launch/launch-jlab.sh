@@ -37,7 +37,7 @@ done
 set -- "${POSITIONAL[@]}" # restore positional parameters
 
 if [ "${#CONDAENV}" -eq 0 ]; then
-    CONDAENV="histenv2"
+    CONDAENV="histenv"
 fi
 
 if [ "${#PORTDIGIT}" -eq 0 ]; then

@@ -1,0 +1,420 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Mon Sep  2 08:15:53 GMT 2024
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2024-09-02 08:16:20.585 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2024-09-02 08:16:21.418 ServerApp] Package jupyter_lsp took 0.8320s to import
+[W 2024-09-02 08:16:21.418 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-09-02 08:16:21.744 ServerApp] Package jupyter_server_terminals took 0.3259s to import
+[I 2024-09-02 08:16:21.745 ServerApp] Package notebook took 0.0000s to import
+[I 2024-09-02 08:16:21.762 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2024-09-02 08:16:21.762 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-09-02 08:16:50.714 ServerApp] Package panel.io.jupyter_server_extension took 28.9311s to import
+[I 2024-09-02 08:16:50.714 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-09-02 08:16:50.721 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-09-02 08:16:50.726 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-09-02 08:16:50.754 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-09-02 08:16:50.757 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-09-02 08:16:50.757 ServerApp] notebook | extension was successfully linked.
+[I 2024-09-02 08:16:59.197 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-09-02 08:16:59.198 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2024-09-02 08:16:59.679 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-09-02 08:16:59.681 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-09-02 08:16:59.683 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-09-02 08:16:59.849 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2024-09-02 08:16:59.849 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2024-09-02 08:16:59.874 LabApp] Extension Manager is 'pypi'.
+[I 2024-09-02 08:16:59.877 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-09-02 08:16:59.880 ServerApp] notebook | extension was successfully loaded.
+[I 2024-09-02 08:16:59.881 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2024-09-02 08:16:59.882 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2024-09-02 08:16:59.882 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2024-09-02 08:16:59.882 ServerApp] http://r1i7n35:8877/lab
+[I 2024-09-02 08:16:59.882 ServerApp]     http://127.0.0.1:8877/lab
+[I 2024-09-02 08:16:59.882 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-09-02 08:17:00.032 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-09-02 08:22:25.079 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-09-02 08:22:38.155 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 08:22:38.473 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-09-02 08:22:40.263 ServerApp] Kernel started: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 08:22:41.112 ServerApp] Kernel started: 96598769-8984-4502-bee8-5e965cb6c64f
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 08:23:07.385 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:23:07.387 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:23:07.389 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:23:07.425 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 08:23:07.427 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 08:23:07.428 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[W 2024-09-02 08:34:37.388 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2024-09-02 08:34:37.428 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2024-09-02 08:34:42.390 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:b5064226-d97b-4f4d-b1a5-c3aea6c95ae4
+[I 2024-09-02 08:34:42.429 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:b0d6a0eb-a63b-4056-9f2b-5f960d7e8ec0
+[I 2024-09-02 08:40:37.349 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:40:37.349 ServerApp] Restoring connection for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:b5064226-d97b-4f4d-b1a5-c3aea6c95ae4
+[I 2024-09-02 08:40:37.353 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 08:40:37.353 ServerApp] Restoring connection for 96598769-8984-4502-bee8-5e965cb6c64f:b0d6a0eb-a63b-4056-9f2b-5f960d7e8ec0
+[I 2024-09-02 08:43:45.792 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:b5064226-d97b-4f4d-b1a5-c3aea6c95ae4
+[I 2024-09-02 08:43:45.793 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:b0d6a0eb-a63b-4056-9f2b-5f960d7e8ec0
+[W 2024-09-02 08:55:57.514 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-09-02 08:55:57.584 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:55:57.591 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 08:55:57.681 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:ead274cd-a3d7-436b-9805-a5a6dcf23c1e
+[I 2024-09-02 08:55:57.682 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:eb8fd7e5-1e1a-4ebc-8e74-ccfa5388be83
+[W 2024-09-02 08:55:58.121 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 08:55:58.633 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-09-02 08:55:59.092 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 08:56:00.102 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 09:01:58.294 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:01:58.295 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 09:03:58.646 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:03:58.647 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 09:05:58.777 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:05:58.778 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 09:07:58.962 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:07:58.963 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 09:08:44.720 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 09:08:44.986 ServerApp] Kernel started: 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 09:08:45.798 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[W 2024-09-02 09:09:02.924 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 09:09:03.216 ServerApp] Kernel started: f75dd2a3-20b6-456e-94e4-a5d9bda128b0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 09:09:03.872 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 09:09:59.146 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:09:59.147 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 09:10:44.790 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 09:10:44.791 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 09:11:02.972 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 09:11:02.973 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 09:23:53.386 ServerApp] Copying med_analysis/0_test_colocalization.ipynb to /med_analysis
+[W 2024-09-02 09:23:53.474 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 09:23:53.490 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 09:23:53.492 ServerApp] Notebook med_analysis/0_test_colocalization-Copy1.ipynb is not trusted
+[I 2024-09-02 09:23:59.285 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:23:59.286 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 09:24:15.282 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:24:15.814 ServerApp] Kernel started: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 09:24:16.658 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 09:25:42.067 ServerApp] Kernel interrupted: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 09:25:42.267 ServerApp] Kernel interrupted: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 09:25:59.458 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:25:59.459 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 09:25:59.648 ServerApp] /home1/datahome/mdemol/med_analysis/.~0_test_colocalization.ipynb doesn't exist
+[I 2024-09-02 09:26:15.426 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:26:15.428 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:26:28.131 ServerApp] Kernel interrupted: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 09:26:28.348 ServerApp] Kernel interrupted: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 09:27:59.694 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 09:27:59.696 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 09:28:00.751 ServerApp] Saving file at /med_analysis/0_image_gif.ipynb
+[W 2024-09-02 09:28:00.754 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-09-02 09:28:15.609 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:28:15.610 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:30:15.797 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:30:15.798 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:32:15.964 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:32:15.965 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:34:16.088 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:34:16.089 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:36:16.246 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:36:16.248 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:38:16.593 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:38:16.594 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:40:16.719 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:40:16.721 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:44:16.844 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:44:16.845 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:45:04.241 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:45:04.243 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:47:04.358 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:47:04.359 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:49:04.452 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:49:04.453 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:55:04.616 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:55:04.617 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:57:04.823 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:57:04.824 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 09:59:05.024 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 09:59:05.026 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 10:01:05.238 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 10:01:05.239 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 10:03:05.451 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 10:03:05.453 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 10:05:05.713 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 10:05:05.714 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[W 2024-09-02 10:13:03.873 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2024-09-02 10:13:08.876 ServerApp] Starting buffering for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:d7a24fb2-9a31-4e35-9e44-e3582b3365c5
+[W 2024-09-02 10:13:15.799 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2024-09-02 10:13:16.659 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2024-09-02 10:13:20.801 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:63089eea-632e-4429-8f82-a8bdfdb73840
+[I 2024-09-02 10:13:21.661 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:b990fce7-95c8-45ac-8ed6-7c200dbe77d9
+[W 2024-09-02 10:13:29.093 ServerApp] WebSocket ping timeout after 119999 ms.
+[W 2024-09-02 10:13:30.103 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2024-09-02 10:13:34.095 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:c30966d7-c979-4fd8-af98-bf1067f1a182
+[I 2024-09-02 10:13:35.104 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:262af4ea-cfaf-4d73-a80a-36eacf628df0
+[W 2024-09-02 11:24:57.772 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-09-02 11:24:57.837 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:24:57.844 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 11:24:57.846 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[I 2024-09-02 11:24:57.848 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 11:24:57.850 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:24:57.955 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:cbbb2a4a-0bda-471b-86d6-ddd7748b7330
+[I 2024-09-02 11:24:57.962 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:6f8eaced-ce7e-421c-ae44-1c135373a310
+[I 2024-09-02 11:24:57.962 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:782a4e7c-4fc2-4778-8e0f-19415c290ddc
+[I 2024-09-02 11:24:57.963 ServerApp] Starting buffering for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:381b25d2-a2ae-4afb-afc4-da59b27152c7
+[W 2024-09-02 11:24:59.147 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 11:24:59.659 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[W 2024-09-02 11:24:59.923 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[W 2024-09-02 11:25:00.180 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[W 2024-09-02 11:25:00.622 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:25:01.531 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[I 2024-09-02 11:25:01.533 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 11:25:01.536 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:25:01.538 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:25:06.083 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 11:25:19.097 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:5af2a887-ccdc-4eae-8958-dbae501871a6
+[I 2024-09-02 11:25:19.099 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:2499dba4-8587-4e75-93e1-3a8a95aa1b9c
+[I 2024-09-02 11:25:19.099 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:35e84f19-1f51-40b0-84f7-f88f4be41839
+[I 2024-09-02 11:25:19.100 ServerApp] Starting buffering for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:40c0aba4-f5ac-4794-b832-a7aa34a4f777
+[I 2024-09-02 11:25:19.100 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:dd6a725c-2743-4eb8-b02a-ba391cb1abee
+[W 2024-09-02 11:25:20.711 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-09-02 11:25:20.772 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:25:20.774 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 11:25:20.780 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[I 2024-09-02 11:25:20.783 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 11:25:20.785 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:25:20.910 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:f6de8369-6d71-45a8-b8bb-c83cb7174889
+[I 2024-09-02 11:25:20.911 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:014c07f3-53cb-4858-842d-a0678fbfe740
+[I 2024-09-02 11:25:20.912 ServerApp] Starting buffering for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:1ba95d1d-b354-4e57-9ddc-dcc466212dfc
+[I 2024-09-02 11:25:20.912 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:da6fee5f-5324-4d4a-bee2-f6c9dde30a4b
+[W 2024-09-02 11:25:21.355 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[W 2024-09-02 11:25:21.374 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 11:25:21.558 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[W 2024-09-02 11:25:21.762 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[W 2024-09-02 11:25:22.156 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:25:22.810 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[I 2024-09-02 11:25:22.812 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:25:22.815 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 11:25:22.818 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:25:27.063 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 11:26:23.672 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:ebbe60b9-d7bf-453b-8787-88822f02e1b2
+[I 2024-09-02 11:26:23.673 ServerApp] Starting buffering for cc47ea58-e69e-4d6e-92a2-38db783a6bc0:76d513e7-3dea-4000-81bb-c6180cb87c6b
+[I 2024-09-02 11:26:23.673 ServerApp] Starting buffering for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:7c58548c-91ff-4156-8b2a-dc766137a438
+[I 2024-09-02 11:26:23.674 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:f1907e3b-ec84-4e00-8440-ccf692ac405b
+[I 2024-09-02 11:26:23.674 ServerApp] Starting buffering for 96598769-8984-4502-bee8-5e965cb6c64f:11b50e24-2dce-414b-993e-39dd6cbb71e8
+[I 2024-09-02 11:26:25.674 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:26:25.674 ServerApp] Restoring connection for f52acc7c-e22f-455a-a1f1-2c4086bd937a:f1907e3b-ec84-4e00-8440-ccf692ac405b
+[I 2024-09-02 11:26:25.679 ServerApp] Connecting to kernel 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c.
+[I 2024-09-02 11:26:25.679 ServerApp] Restoring connection for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:ebbe60b9-d7bf-453b-8787-88822f02e1b2
+[I 2024-09-02 11:26:25.681 ServerApp] Connecting to kernel 96598769-8984-4502-bee8-5e965cb6c64f.
+[I 2024-09-02 11:26:25.681 ServerApp] Restoring connection for 96598769-8984-4502-bee8-5e965cb6c64f:11b50e24-2dce-414b-993e-39dd6cbb71e8
+[I 2024-09-02 11:26:25.682 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:26:25.684 ServerApp] Connecting to kernel f75dd2a3-20b6-456e-94e4-a5d9bda128b0.
+[I 2024-09-02 11:26:25.684 ServerApp] Restoring connection for f75dd2a3-20b6-456e-94e4-a5d9bda128b0:7c58548c-91ff-4156-8b2a-dc766137a438
+[I 2024-09-02 11:26:25.685 ServerApp] Connecting to kernel cc47ea58-e69e-4d6e-92a2-38db783a6bc0.
+[I 2024-09-02 11:26:37.316 ServerApp] Starting buffering for 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c:ebbe60b9-d7bf-453b-8787-88822f02e1b2
+[I 2024-09-02 11:27:24.185 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:27:24.186 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:31:24.326 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:31:24.328 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:35:24.485 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:35:24.486 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2024-09-02 11:37:24.729 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:37:24.730 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:37:33.642 ServerApp] Kernel restarted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:37:33.648 ServerApp] Starting buffering for f52acc7c-e22f-455a-a1f1-2c4086bd937a:f1907e3b-ec84-4e00-8440-ccf692ac405b
+[I 2024-09-02 11:37:33.662 ServerApp] Connecting to kernel f52acc7c-e22f-455a-a1f1-2c4086bd937a.
+[I 2024-09-02 11:37:33.662 ServerApp] Restoring connection for f52acc7c-e22f-455a-a1f1-2c4086bd937a:f1907e3b-ec84-4e00-8440-ccf692ac405b
+readline: /etc/inputrc: line 19: term: unknown variable name
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2024-09-02 11:39:24.913 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:39:24.914 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:41:25.089 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:41:25.090 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:43:25.277 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:43:25.278 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:43:26.262 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:43:26.455 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+Process Dask Worker process (from Nanny):
+distributed.nanny - ERROR - Worker process died unexpectedly
+Process Dask Worker process (from Nanny):
+[I 2024-09-02 11:43:26.655 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:43:36.310 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:43:36.509 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:43:36.711 ServerApp] Kernel interrupted: f52acc7c-e22f-455a-a1f1-2c4086bd937a
+[I 2024-09-02 11:43:38.224 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:43:38.225 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[C 2024-09-02 11:43:45.838 ServerApp] received signal 15, stopping
+Terminated
+[I 2024-09-02 11:43:45.921 ServerApp] Shutting down 6 extensions
+[I 2024-09-02 11:43:45.921 ServerApp] Shutting down 5 kernels
+[I 2024-09-02 11:43:45.921 ServerApp] Kernel shutdown: 96598769-8984-4502-bee8-5e965cb6c64f
+[I 2024-09-02 11:43:45.922 ServerApp] Kernel shutdown: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[I 2024-09-02 11:43:45.922 ServerApp] Kernel shutdown: f75dd2a3-20b6-456e-94e4-a5d9bda128b0
+[I 2024-09-02 11:43:45.922 ServerApp] Kernel shutdown: 6ffe68cc-dfcc-43a5-8430-37dd4860fb3c
+[I 2024-09-02 11:43:45.922 ServerApp] Kernel shutdown: f52acc7c-e22f-455a-a1f1-2c4086bd937a

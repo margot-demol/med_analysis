@@ -1,4 +1,4 @@
-name: histenv2
+name: histenv
 channels:
   - conda-forge
   - nodefaults

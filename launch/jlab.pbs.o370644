@@ -1,0 +1,123 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Fri Aug 30 12:25:13 GMT 2024
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2024-08-30 12:25:36.181 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2024-08-30 12:25:36.818 ServerApp] Package jupyter_lsp took 0.6364s to import
+[W 2024-08-30 12:25:36.818 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-08-30 12:25:37.024 ServerApp] Package jupyter_server_terminals took 0.2054s to import
+[I 2024-08-30 12:25:37.024 ServerApp] Package notebook took 0.0000s to import
+[I 2024-08-30 12:25:37.042 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2024-08-30 12:25:37.042 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-08-30 12:26:00.906 ServerApp] Package panel.io.jupyter_server_extension took 23.8521s to import
+[I 2024-08-30 12:26:00.906 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-08-30 12:26:00.912 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-08-30 12:26:00.918 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-08-30 12:26:00.924 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-08-30 12:26:00.928 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-08-30 12:26:00.928 ServerApp] notebook | extension was successfully linked.
+[I 2024-08-30 12:26:07.747 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-08-30 12:26:07.748 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2024-08-30 12:26:08.083 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-08-30 12:26:08.085 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-08-30 12:26:08.087 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-08-30 12:26:08.224 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2024-08-30 12:26:08.224 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2024-08-30 12:26:08.238 LabApp] Extension Manager is 'pypi'.
+[I 2024-08-30 12:26:08.241 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-08-30 12:26:08.245 ServerApp] notebook | extension was successfully loaded.
+[I 2024-08-30 12:26:08.246 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2024-08-30 12:26:08.246 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2024-08-30 12:26:08.246 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2024-08-30 12:26:08.246 ServerApp] http://r1i5n32:8877/lab
+[I 2024-08-30 12:26:08.246 ServerApp]     http://127.0.0.1:8877/lab
+[I 2024-08-30 12:26:08.246 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-08-30 12:26:08.347 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-08-30 12:27:07.844 LabApp] 302 GET /lab? (@10.148.1.145) 0.73ms
+[W 2024-08-30 12:27:08.433 ServerApp] 404 GET /apple-touch-icon-precomposed.png (@10.148.1.145) 13.53ms referer=None
+[W 2024-08-30 12:27:08.496 ServerApp] 404 GET /apple-touch-icon.png (@10.148.1.145) 0.81ms referer=None
+[I 2024-08-30 12:27:11.547 ServerApp] User 6dae6bbbc09947cc9ed1d74ca9020e7e logged in.
+[I 2024-08-30 12:27:11.547 ServerApp] 302 POST /login?next=%2Flab%3F (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 315.86ms
+[W 2024-08-30 12:27:19.061 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-08-30 12:27:30.886 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-08-30 12:27:31.180 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-08-30 12:27:37.537 ServerApp] Kernel started: 7d5caad9-6169-4cb4-af3f-639ddd768d1a
+[I 2024-08-30 12:27:37.539 ServerApp] Kernel started: a3e9487c-f146-46e8-b621-317e29e0dd89
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2024-08-30 12:27:50.926 ServerApp] Connecting to kernel 7d5caad9-6169-4cb4-af3f-639ddd768d1a.
+[I 2024-08-30 12:27:50.965 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:27:50.967 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:27:50.969 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:27:56.257 ServerApp] Kernel started: c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-08-30 12:27:56.896 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 12:29:49.687 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:a0ba257a-c7ee-4d6d-933f-f2f22a426303
+[I 2024-08-30 12:29:57.548 ServerApp] Starting buffering for 7d5caad9-6169-4cb4-af3f-639ddd768d1a:3405ba2e-18ce-4e8d-87a9-fe831e3b2a45
+[I 2024-08-30 12:31:30.180 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-08-30 12:31:32.838 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-30 12:41:24.330 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:b2eebb13-a76f-4d4c-b410-6a4713f7262f
+[W 2024-08-30 12:42:05.219 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-08-30 12:42:05.342 ServerApp] Connecting to kernel 7d5caad9-6169-4cb4-af3f-639ddd768d1a.
+[I 2024-08-30 12:42:05.350 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:42:05.352 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 12:42:05.465 ServerApp] Starting buffering for 7d5caad9-6169-4cb4-af3f-639ddd768d1a:85f11836-321b-406f-8225-da70164d9980
+[I 2024-08-30 12:42:05.473 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:b262e821-38fb-4c37-ac51-d1d2ed030d94
+[I 2024-08-30 12:42:05.499 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:2a2f396d-dc65-4f0c-8414-c4b39219fd1e
+[W 2024-08-30 12:42:06.449 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-08-30 12:42:30.861 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[W 2024-08-30 12:42:35.048 ServerApp] delete /med_analysis/dask-worker.o357920
+[W 2024-08-30 12:42:35.106 ServerApp] delete /med_analysis/dask-worker.o358022
+[W 2024-08-30 12:42:35.109 ServerApp] delete /med_analysis/dask-worker.o357860
+[W 2024-08-30 12:42:35.112 ServerApp] delete /med_analysis/dask-worker.o358023
+[W 2024-08-30 12:42:35.115 ServerApp] delete /med_analysis/dask-worker.o358722
+[W 2024-08-30 12:42:35.118 ServerApp] delete /med_analysis/dask-worker.o358725
+[W 2024-08-30 12:42:35.138 ServerApp] delete /med_analysis/dask-worker.o358733
+[W 2024-08-30 12:42:35.163 ServerApp] delete /med_analysis/dask-worker.o358753
+[W 2024-08-30 12:42:35.167 ServerApp] delete /med_analysis/dask-worker.o358734
+[W 2024-08-30 12:42:35.170 ServerApp] delete /med_analysis/dask-worker.o359475
+[W 2024-08-30 12:42:35.174 ServerApp] delete /med_analysis/dask-worker.o359489
+[I 2024-08-30 12:44:21.630 ServerApp] Saving file at /med_analysis/1_parquet_coloc.py
+[I 2024-08-30 12:47:17.356 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:420b402a-0b6b-42ff-96f2-181a481aef0a
+[W 2024-08-30 12:48:29.947 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-08-30 12:48:30.066 ServerApp] Connecting to kernel 7d5caad9-6169-4cb4-af3f-639ddd768d1a.
+[I 2024-08-30 12:48:30.071 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:48:30.073 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 12:48:30.192 ServerApp] Starting buffering for 7d5caad9-6169-4cb4-af3f-639ddd768d1a:091b22e3-60e0-44d6-ad1b-dde2b274de54
+[I 2024-08-30 12:48:30.196 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:4870ce42-7c16-4885-87bb-908ebcbb3360
+[I 2024-08-30 12:48:30.222 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:4701013f-807f-4797-9adf-299ceaf9ca4d
+[W 2024-08-30 12:48:31.011 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-08-30 12:49:00.182 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[W 2024-08-30 12:50:23.231 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-08-30 12:50:24.668 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 12:52:24.896 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-30 12:52:24.897 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-08-30 12:54:25.954 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-08-30 12:54:25.955 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-08-30 13:02:00.184 ServerApp] WebSocket ping timeout after 119840 ms.
+[I 2024-08-30 13:02:05.186 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:1d1c3f57-1677-4177-ac1e-1bb945715541
+[W 2024-08-30 13:02:24.670 ServerApp] WebSocket ping timeout after 117178 ms.
+[I 2024-08-30 13:02:29.671 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:14ecb33c-cdc2-4342-a22e-becc288c9db0
+[I 2024-08-30 13:02:35.177 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 13:02:35.177 ServerApp] Restoring connection for a3e9487c-f146-46e8-b621-317e29e0dd89:14ecb33c-cdc2-4342-a22e-becc288c9db0
+[I 2024-08-30 13:02:35.179 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 13:02:35.179 ServerApp] Restoring connection for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:1d1c3f57-1677-4177-ac1e-1bb945715541
+[I 2024-08-30 13:09:08.348 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:14ecb33c-cdc2-4342-a22e-becc288c9db0
+[I 2024-08-30 13:09:08.349 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:1d1c3f57-1677-4177-ac1e-1bb945715541
+[W 2024-08-30 13:10:15.573 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-08-30 13:10:15.700 ServerApp] Connecting to kernel 7d5caad9-6169-4cb4-af3f-639ddd768d1a.
+[I 2024-08-30 13:10:15.706 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 13:10:15.707 ServerApp] Discarding 1 buffered messages for a3e9487c-f146-46e8-b621-317e29e0dd89:14ecb33c-cdc2-4342-a22e-becc288c9db0
+[I 2024-08-30 13:10:15.708 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 13:10:15.826 ServerApp] Starting buffering for 7d5caad9-6169-4cb4-af3f-639ddd768d1a:dfc5e61b-ddc6-4551-b595-6dc598652fde
+[I 2024-08-30 13:10:15.860 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:a579cc84-c6eb-43ce-a527-c135d0a46479
+[W 2024-08-30 13:10:16.602 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-08-30 13:10:16.823 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[I 2024-08-30 13:10:19.508 ServerApp] Connecting to kernel a3e9487c-f146-46e8-b621-317e29e0dd89.
+[I 2024-08-30 13:10:38.868 ServerApp] Connecting to kernel c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01.
+[I 2024-08-30 13:21:32.760 ServerApp] Starting buffering for c4bd107c-aae8-4914-a4c6-a0bc6ffb1f01:55067bb4-549b-440b-b44a-850a15d265bd
+[I 2024-08-30 13:21:32.761 ServerApp] Starting buffering for a3e9487c-f146-46e8-b621-317e29e0dd89:ada17496-91e4-450a-8803-f605b2298d9a
+Sat Aug 31 12:25:17 GMT 2024

@@ -1,0 +1,366 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Mon Sep  2 11:50:27 GMT 2024
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2024-09-02 11:50:43.395 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2024-09-02 11:50:43.849 ServerApp] Package jupyter_lsp took 0.4536s to import
+[W 2024-09-02 11:50:43.850 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-09-02 11:50:44.029 ServerApp] Package jupyter_server_terminals took 0.1792s to import
+[I 2024-09-02 11:50:44.030 ServerApp] Package notebook took 0.0000s to import
+[I 2024-09-02 11:50:44.047 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2024-09-02 11:50:44.047 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-09-02 11:51:04.612 ServerApp] Package panel.io.jupyter_server_extension took 20.5546s to import
+[I 2024-09-02 11:51:04.613 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-09-02 11:51:04.619 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-09-02 11:51:04.625 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-09-02 11:51:04.627 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-09-02 11:51:04.630 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-09-02 11:51:04.630 ServerApp] notebook | extension was successfully linked.
+[I 2024-09-02 11:51:09.792 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-09-02 11:51:09.792 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2024-09-02 11:51:10.180 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-09-02 11:51:10.183 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-09-02 11:51:10.185 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-09-02 11:51:10.189 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2024-09-02 11:51:10.189 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2024-09-02 11:51:10.190 LabApp] Extension Manager is 'pypi'.
+[I 2024-09-02 11:51:10.193 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-09-02 11:51:10.197 ServerApp] notebook | extension was successfully loaded.
+[I 2024-09-02 11:51:10.198 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2024-09-02 11:51:10.198 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2024-09-02 11:51:10.198 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2024-09-02 11:51:10.198 ServerApp] http://r1i6n29:8877/lab
+[I 2024-09-02 11:51:10.198 ServerApp]     http://127.0.0.1:8877/lab
+[I 2024-09-02 11:51:10.198 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-09-02 11:51:10.300 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-09-02 11:51:36.435 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277896394 (10.148.1.145): Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[W 2024-09-02 11:51:36.436 ServerApp] wrote error: 'Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0)
+[W 2024-09-02 11:51:36.448 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277896394 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 13.59ms referer=http://localhost:8877/lab/tree/med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:51:36.735 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0/channels?session_id=76d513e7-3dea-4000-81bb-c6180cb87c6b (10.148.1.145): Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[W 2024-09-02 11:51:36.948 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0/channels?session_id=76d513e7-3dea-4000-81bb-c6180cb87c6b (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 213.14ms referer=None
+[W 2024-09-02 11:51:37.015 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277896980 (10.148.1.145): Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[W 2024-09-02 11:51:37.015 ServerApp] wrote error: 'Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0)
+[W 2024-09-02 11:51:37.015 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277896980 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 1.04ms referer=http://localhost:8877/lab/tree/med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:51:37.158 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0/channels?session_id=76d513e7-3dea-4000-81bb-c6180cb87c6b (10.148.1.145): Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[W 2024-09-02 11:51:37.158 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0/channels?session_id=76d513e7-3dea-4000-81bb-c6180cb87c6b (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.94ms referer=None
+[W 2024-09-02 11:51:37.222 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277897189 (10.148.1.145): Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0
+[W 2024-09-02 11:51:37.223 ServerApp] wrote error: 'Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: cc47ea58-e69e-4d6e-92a2-38db783a6bc0)
+[W 2024-09-02 11:51:37.223 ServerApp] 404 GET /api/kernels/cc47ea58-e69e-4d6e-92a2-38db783a6bc0?1725277897189 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.85ms referer=http://localhost:8877/lab/tree/med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:51:37.413 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f?1725277897380 (10.148.1.145): Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f
+[W 2024-09-02 11:51:37.413 ServerApp] wrote error: 'Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f)
+[W 2024-09-02 11:51:37.414 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f?1725277897380 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.85ms referer=http://localhost:8877/lab/tree/med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:51:37.448 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f/channels?session_id=11b50e24-2dce-414b-993e-39dd6cbb71e8 (10.148.1.145): Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f
+[W 2024-09-02 11:51:37.449 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f/channels?session_id=11b50e24-2dce-414b-993e-39dd6cbb71e8 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.92ms referer=None
+[W 2024-09-02 11:51:37.530 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f?1725277897497 (10.148.1.145): Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f
+[W 2024-09-02 11:51:37.530 ServerApp] wrote error: 'Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f)
+[W 2024-09-02 11:51:37.531 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f?1725277897497 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.84ms referer=http://localhost:8877/lab/tree/med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:51:38.493 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f/channels?session_id=11b50e24-2dce-414b-993e-39dd6cbb71e8 (10.148.1.145): Kernel does not exist: 96598769-8984-4502-bee8-5e965cb6c64f
+[W 2024-09-02 11:51:38.494 ServerApp] 404 GET /api/kernels/96598769-8984-4502-bee8-5e965cb6c64f/channels?session_id=11b50e24-2dce-414b-993e-39dd6cbb71e8 (6dae6bbbc09947cc9ed1d74ca9020e7e@10.148.1.145) 0.97ms referer=None
+[W 2024-09-02 11:51:42.085 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-09-02 11:51:52.306 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[W 2024-09-02 11:51:52.574 ServerApp] Notebook med_analysis/0_image_gif.ipynb is not trusted
+[W 2024-09-02 11:51:52.931 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[W 2024-09-02 11:51:53.151 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:51:54.336 ServerApp] Kernel started: 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa
+[I 2024-09-02 11:51:54.338 ServerApp] Kernel started: 2e31d77d-6323-4256-8501-576f93b36781
+[I 2024-09-02 11:51:54.851 ServerApp] Kernel started: a784d3f6-7595-46b6-a2aa-74a7d761e74f
+[I 2024-09-02 11:51:55.741 ServerApp] Kernel started: 95d7076b-d4b6-48d2-ba08-1827b926553c
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 11:52:08.573 ServerApp] Connecting to kernel 2e31d77d-6323-4256-8501-576f93b36781.
+[I 2024-09-02 11:52:08.575 ServerApp] Connecting to kernel 2e31d77d-6323-4256-8501-576f93b36781.
+[I 2024-09-02 11:52:08.590 ServerApp] Connecting to kernel 95d7076b-d4b6-48d2-ba08-1827b926553c.
+[I 2024-09-02 11:52:08.592 ServerApp] Connecting to kernel 95d7076b-d4b6-48d2-ba08-1827b926553c.
+[I 2024-09-02 11:52:08.604 ServerApp] Connecting to kernel 95d7076b-d4b6-48d2-ba08-1827b926553c.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 11:52:08.709 ServerApp] Connecting to kernel a784d3f6-7595-46b6-a2aa-74a7d761e74f.
+[I 2024-09-02 11:52:08.710 ServerApp] Connecting to kernel a784d3f6-7595-46b6-a2aa-74a7d761e74f.
+[I 2024-09-02 11:52:08.712 ServerApp] Connecting to kernel a784d3f6-7595-46b6-a2aa-74a7d761e74f.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 11:52:08.813 ServerApp] Connecting to kernel 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa.
+[I 2024-09-02 11:53:52.994 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 11:53:52.994 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 11:53:53.355 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 11:53:53.356 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 11:55:53.043 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 11:55:53.043 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 11:57:53.109 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 11:57:53.109 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 11:59:53.161 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 11:59:53.162 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 12:01:53.244 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 12:01:53.245 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[W 2024-09-02 12:02:17.679 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:02:18.093 ServerApp] Kernel started: 93f320d4-d564-4932-8128-627d37d03e13
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 12:02:18.966 ServerApp] Connecting to kernel 93f320d4-d564-4932-8128-627d37d03e13.
+[I 2024-09-02 12:04:17.800 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:04:17.801 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:08:17.928 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:08:17.929 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:10:18.031 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:10:18.031 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:12:18.113 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:12:18.114 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:16:18.203 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:16:18.203 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:18:18.365 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:18:18.366 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:20:50.570 ServerApp] Kernel interrupted: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 12:20:50.791 ServerApp] Kernel interrupted: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 12:22:18.495 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:22:18.496 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:24:18.574 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:24:18.575 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:25:13.183 ServerApp] Creating new notebook in /med_analysis
+[I 2024-09-02 12:25:14.001 ServerApp] Kernel started: 0449c471-fd54-48dd-ad77-a8e4bc1b3477
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 12:25:14.938 ServerApp] Connecting to kernel 0449c471-fd54-48dd-ad77-a8e4bc1b3477.
+[I 2024-09-02 12:26:18.660 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:26:18.661 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:27:13.924 ServerApp] Saving file at /med_analysis/Untitled.ipynb
+[I 2024-09-02 12:28:18.780 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:28:18.781 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:32:19.106 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:32:19.106 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:34:19.188 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:34:19.188 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:34:57.432 ServerApp] Kernel interrupted: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 12:34:57.648 ServerApp] Kernel interrupted: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 12:34:57.811 ServerApp] Kernel interrupted: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 12:36:19.347 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:36:19.348 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:38:19.431 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:38:19.432 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:40:19.601 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:40:19.601 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:42:19.761 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[W 2024-09-02 12:42:19.762 ServerApp] Notebook med_analysis/0_pb_swath_selection.ipynb is not trusted
+[I 2024-09-02 12:44:19.925 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[I 2024-09-02 12:58:20.171 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[I 2024-09-02 12:59:32.811 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[I 2024-09-02 13:01:33.058 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[I 2024-09-02 13:05:33.270 ServerApp] Saving file at /med_analysis/0_pb_swath_selection.ipynb
+[I 2024-09-02 13:09:03.875 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-09-02 13:09:05.898 ServerApp] Starting buffering for 93f320d4-d564-4932-8128-627d37d03e13:b56ccfee-872c-4348-9fa0-f5fd335be641
+[I 2024-09-02 13:09:06.776 ServerApp] Starting buffering for 0449c471-fd54-48dd-ad77-a8e4bc1b3477:d15f38e2-6194-4289-baf6-d64ef7f31f35
+[I 2024-09-02 13:09:14.744 ServerApp] Kernel restarted: 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa
+[I 2024-09-02 13:09:14.751 ServerApp] Starting buffering for 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa:a88721a6-1c05-4598-a5e9-778931d87ad1
+[I 2024-09-02 13:09:14.758 ServerApp] Connecting to kernel 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa.
+[I 2024-09-02 13:09:14.759 ServerApp] Restoring connection for 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa:a88721a6-1c05-4598-a5e9-778931d87ad1
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 13:09:44.130 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:09:44.131 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:11:44.167 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:11:44.167 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:13:44.170 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:13:44.172 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:13:44.297 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:13:44.297 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:15:44.349 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:15:44.350 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:17:44.345 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:17:44.443 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:19:44.667 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:19:44.668 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:21:44.804 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:21:44.805 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:27:45.029 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:27:45.030 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:29:45.313 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:29:45.314 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:31:45.555 ServerApp] Saving file at /med_analysis/0_visualize_coloc.ipynb
+[W 2024-09-02 13:31:45.557 ServerApp] Notebook med_analysis/0_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 13:33:45.845 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:33:45.846 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:41:45.884 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:41:45.884 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:43:45.991 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:43:45.992 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:45:46.174 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:45:46.175 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:49:46.330 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:49:46.331 ServerApp] Notebook med_analysis/0_count_coloc.ipynb is not trusted
+[I 2024-09-02 13:51:46.491 ServerApp] Saving file at /med_analysis/0_count_coloc.ipynb
+[W 2024-09-02 13:52:56.911 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o359484
+[W 2024-09-02 13:52:56.977 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o359522
+[W 2024-09-02 13:52:56.981 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o359536
+[W 2024-09-02 13:52:56.997 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o359548
+[W 2024-09-02 13:52:57.001 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o370732
+[W 2024-09-02 13:52:57.025 ServerApp] delete /med_analysis/1_parquet_coloc.pbs.o370998
+[W 2024-09-02 13:53:04.915 ServerApp] delete /med_analysis/dask-worker.o359527
+[W 2024-09-02 13:53:04.920 ServerApp] delete /med_analysis/dask-worker.o371015
+[W 2024-09-02 13:53:04.926 ServerApp] delete /med_analysis/dask-worker.o371065
+[W 2024-09-02 13:53:04.932 ServerApp] delete /med_analysis/dask-worker.o399007
+[I 2024-09-02 13:53:17.445 ServerApp] Kernel started: f14fde8a-1a1e-4c05-a80e-1b000aabb0c4
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 13:53:18.270 ServerApp] Connecting to kernel f14fde8a-1a1e-4c05-a80e-1b000aabb0c4.
+[I 2024-09-02 13:53:59.533 ServerApp] Starting buffering for 2e31d77d-6323-4256-8501-576f93b36781:55234fbc-1288-4648-9feb-6b8813485d19
+[I 2024-09-02 13:54:01.381 ServerApp] Starting buffering for 95d7076b-d4b6-48d2-ba08-1827b926553c:3396717c-1b96-4135-bd6f-453d14d94dc5
+[I 2024-09-02 13:54:02.830 ServerApp] Starting buffering for f14fde8a-1a1e-4c05-a80e-1b000aabb0c4:a8d2634b-29fb-4302-82aa-863601071c7a
+[I 2024-09-02 13:55:45.715 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 13:55:45.717 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 14:08:27.823 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 14:08:27.825 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 14:10:28.010 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 14:10:28.011 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 14:12:28.160 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 14:12:28.161 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2024-09-02 14:14:28.343 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 14:14:28.343 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+[W 2024-09-02 14:14:30.317 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 14:14:30.879 ServerApp] Connecting to kernel 2e31d77d-6323-4256-8501-576f93b36781.
+[I 2024-09-02 14:14:37.306 ServerApp] Starting buffering for 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa:a88721a6-1c05-4598-a5e9-778931d87ad1
+[I 2024-09-02 14:15:35.754 ServerApp] Kernel restarted: a784d3f6-7595-46b6-a2aa-74a7d761e74f
+[I 2024-09-02 14:15:35.760 ServerApp] Starting buffering for a784d3f6-7595-46b6-a2aa-74a7d761e74f:8dbd4508-3c33-454c-9c7b-1644effb0ae4
+[I 2024-09-02 14:15:35.774 ServerApp] Connecting to kernel a784d3f6-7595-46b6-a2aa-74a7d761e74f.
+[I 2024-09-02 14:15:35.775 ServerApp] Restoring connection for a784d3f6-7595-46b6-a2aa-74a7d761e74f:8dbd4508-3c33-454c-9c7b-1644effb0ae4
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 14:16:28.533 ServerApp] Saving file at /med_analysis/02_visualize_coloc.ipynb
+[W 2024-09-02 14:16:28.534 ServerApp] Notebook med_analysis/02_visualize_coloc.ipynb is not trusted
+[I 2024-09-02 14:16:57.773 ServerApp] Saving file at /med_analysis/0_test_colocalization.ipynb
+[W 2024-09-02 14:16:57.774 ServerApp] Notebook med_analysis/0_test_colocalization.ipynb is not trusted
+[I 2024-09-02 14:17:10.315 ServerApp] Kernel restarted: 2e31d77d-6323-4256-8501-576f93b36781
+[I 2024-09-02 14:17:10.318 ServerApp] Starting buffering for 2e31d77d-6323-4256-8501-576f93b36781:41c1734d-1e01-465c-a149-7d362dc6d5ae
+[I 2024-09-02 14:17:10.323 ServerApp] Connecting to kernel 2e31d77d-6323-4256-8501-576f93b36781.
+[I 2024-09-02 14:17:10.323 ServerApp] Restoring connection for 2e31d77d-6323-4256-8501-576f93b36781:41c1734d-1e01-465c-a149-7d362dc6d5ae
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-09-02 14:18:04.285 ServerApp] Saving file at /med_analysis/02_test_colocalization.ipynb
+[W 2024-09-02 14:18:04.286 ServerApp] Notebook med_analysis/02_test_colocalization.ipynb is not trusted
+[I 2024-09-02 14:19:28.370 ServerApp] Saving file at /med_analysis/02_test_colocalization.ipynb
+[W 2024-09-02 14:19:28.372 ServerApp] Notebook med_analysis/02_test_colocalization.ipynb is not trusted
+[I 2024-09-02 14:19:41.073 ServerApp] Kernel interrupted: 2e31d77d-6323-4256-8501-576f93b36781
+[I 2024-09-02 14:19:41.076 ServerApp] Kernel interrupted: 2e31d77d-6323-4256-8501-576f93b36781
+[I 2024-09-02 14:19:41.541 ServerApp] Kernel interrupted: 2e31d77d-6323-4256-8501-576f93b36781
+[C 2024-09-02 14:20:03.175 ServerApp] received signal 15, stopping
+Terminated
+[I 2024-09-02 14:20:03.177 ServerApp] Shutting down 6 extensions
+[I 2024-09-02 14:20:03.177 ServerApp] Shutting down 7 kernels
+[I 2024-09-02 14:20:03.177 ServerApp] Kernel shutdown: 2e31d77d-6323-4256-8501-576f93b36781
+[I 2024-09-02 14:20:03.178 ServerApp] Kernel shutdown: 30f20c31-3ea5-4c6e-9541-7eaea49ddbfa
+[I 2024-09-02 14:20:03.178 ServerApp] Kernel shutdown: 95d7076b-d4b6-48d2-ba08-1827b926553c
+[I 2024-09-02 14:20:03.178 ServerApp] Kernel shutdown: a784d3f6-7595-46b6-a2aa-74a7d761e74f
+[I 2024-09-02 14:20:03.179 ServerApp] Kernel shutdown: 93f320d4-d564-4932-8128-627d37d03e13
+[I 2024-09-02 14:20:03.179 ServerApp] Kernel shutdown: f14fde8a-1a1e-4c05-a80e-1b000aabb0c4
+[I 2024-09-02 14:20:03.180 ServerApp] Kernel shutdown: 0449c471-fd54-48dd-ad77-a8e4bc1b3477

@@ -1,0 +1,8 @@
+INFO:root:start spinning up dask cluster, jobs=1
+INFO:root:start spinning up dask cluster, jobs=1
+INFO:root:dashboard via ssh: ssh -N -L 8787:r1i3n1:8787 mdemol@datarmor1-10g
+INFO:root:open browser at address of the type: http://localhost:8787
+INFO:root:start spinning up dask cluster, jobs=1
+INFO:root:start spinning up dask cluster, jobs=1
+INFO:root:dashboard via ssh: ssh -N -L 8787:r1i5n29:8787 mdemol@datarmor1-10g
+INFO:root:open browser at address of the type: http://localhost:8787
