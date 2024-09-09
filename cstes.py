@@ -9,13 +9,14 @@ PATHS
 ---------------------------------------------------------------------------------------------------------
 """
 #DATARMOR
-swot_dir = '/home/datawork-lops-osi/aponte/swot/cswot/swot/l3_v1.0.1'
-drifters_dir = '/home/datawork-lops-osi/aponte/swot/cswot/drifters_harmonized'
-zarr_dir = "/home/datawork-lops-osi/aponte/margot/med_coloc"
+#swot_dir = '/home/datawork-lops-osi/aponte/swot/cswot/swot/l3_v1.0.1'
+#drifters_dir = '/home/datawork-lops-osi/aponte/swot/cswot/drifters_harmonized'
+#zarr_dir = "/home/datawork-lops-osi/aponte/margot/med_coloc"
 
 #LOCAL MARGOT
-#swot_dir = '/Users/mdemol/DATA_KARIN/L3_250'
-#drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized/L2'
+swot_dir = '/Users/mdemol/DATA_KARIN/L3_250'
+drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
+zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
 #path_wind = 
 
 color = {

@@ -117,7 +117,99 @@ def add_mask_inside_swot(ds_swot, ds_drifters):
     return ds_drifters
 
 
-dfs = browse_swot_250().reset_index()
+def gradient_naive(dss, ggrad_variables=None):
+    if ggrad_variables : dss_ggrad = dss[ggrad_variables]
+    dx = dss_ggrad.dx.mean() # meters
+    dy = dss_ggrad.dy.mean()
+    
+    dss_ggradx = (g*dss_ggrad.differentiate("num_pixels")/dx).rename({v:'ggradx_'+v for v in dss_ggrad})
+    dss_ggrady = (g*dss_ggrad.differentiate("num_lines")/dy).rename({v:'ggrady_'+v for v in dss_ggrad})
+    return xr.merge([dss_ggradx, dss_ggrady])
+
+# gaussian derivative
+from scipy.ndimage import gaussian_filter
+
+def gradient_gauss(dss, ggrad_variables=None, cutoff = 1e3, **kwargs):
+    
+    if ggrad_variables : dss_ggrad = dss[ggrad_variables]
+    
+    dx = float(dss_ggrad.dx.mean())
+    dy = float(dss_ggrad.dy.mean())
+
+    dss_ggradx = xr.Dataset()
+    dss_ggrady = xr.Dataset()
+    
+    for v in dss_ggrad : 
+        da = dss_ggrad[v].interpolate_na(dim='num_pixels').interpolate_na(dim='num_lines')# prevent nan to spread
+        
+        # cross-track
+        i = da.get_axis_num("num_pixels")
+        order = [0,0]
+        order[i] = 1
+        dss_ggradx['ggradx_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dx, order=order, **kwargs), dims=da.dims)/dx).where(~dss[v].isnull())
+        #da_dx = da_dx.where(da)
+        
+        # along-track
+        i = da.get_axis_num("num_lines")
+        order = [0,0]
+        order[i] = 1
+        dss_ggrady['ggrady_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy).where(~dss[v].isnull())
+        
+    return xr.merge([dss_ggradx, dss_ggrady])
+
+
+import pyinterp
+mesh = pyinterp.RTree()
+
+def interp_one_dataarray(da, new_lon, new_lat):
+    lons = da.longitude.compute().data.flatten()
+    lats = da.latitude.compute().data.flatten()
+    data = da.compute().data.flatten()
+
+    mesh.packing(np.vstack((lons, lats)).T, data)
+    mx = new_lon
+    my = new_lat
+
+    idw, neighbors = mesh.inverse_distance_weighting(
+        np.vstack((mx.ravel(), my.ravel())).T,
+        within=False,  # Extrapolation is forbidden
+        k=5,  # We are looking for at most 11 neighbors
+        num_threads=0,
+    )
+    idw = idw.reshape(mx.shape)
+    return idw
+
+def interp_dss(dss, new_lon, new_lat):
+    df_interp = pd.DataFrame()
+    df_interp['longitude'] = new_lon
+    df_interp['latitude'] = new_lat
+    for v in dss : 
+        da = dss[v]
+        df_interp[v]=interp_one_dataarray(da, new_lon, new_lat)
+    return df_interp
+
+def coloc_swot_cycle_swath(dfr, dfs, cycle, swath, method_gradient='gauss', cutoff=1e3):
+    # select drifter point
+    dfr_ = dfr.where((dfr.pass_number==swath)&(dfr.cycle_number==cycle)).dropna()
+    dss = xr.open_dataset(dfs.where((dfs.pass_number==swath)&(dfs.cycle_number==cycle)).dropna().file.values[0])
+    dss = add_grid_metrics(dss)
+    if method_gradient =='naive' :
+        dss_ggrad= gradient_naive(dss, ggrad_variables)
+    if method_gradient == 'gauss' :
+        dss_ggrad = gradient_gauss(dss, ggrad_variables, cutoff = cutoff)
+    dss = xr.merge([dss[variables], dss_ggrad])
+    df_interp = interp_dss(dss, dfr_.longitude.values, dfr_.latitude.values)
+    df_out = pd.concat([dfr_.reset_index()[['row_number', 'longitude']].set_index('longitude'), df_interp.set_index('longitude')], axis=1).reset_index().set_index('row_number')
+    return df_out
+
+def coloc_swot(dfr, dfs, method_gradient='gauss', cutoff=1e3):
+    DF = []
+    for swath in dfr.pass_number.unique() : 
+        for cycle in dfr.where(dfr.pass_number==swath).dropna().cycle_number.unique():
+            DF.append(coloc_swot_cycle_swath(dfr, dfs, cycle, swath, method_gradient, cutoff=1e3))
+    return pd.concat(DF)
+
+"""
 def swot_interp_grad_one(swath, cycle, lond, latd, row_number, variables, ggrad_variables) :
     g=9.81
     from scipy.interpolate import interp2d
@@ -228,3 +320,4 @@ def df_swot_interp_grad_one(dfr, variables, ggrad_variables):
 
 def partition_swot_interp_grad(df) : 
     return df.apply(df_swot_interp_grad_one, variables=variables, ggrad_variables=ggrad_variables, axis=1, result_type='expand')
+"""
