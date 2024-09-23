@@ -17,6 +17,7 @@ PATHS
 swot_dir = '/Users/mdemol/DATA_KARIN/L3_250'
 drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
 zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
+images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
 #path_wind = 
 
 color = {
@@ -32,6 +33,14 @@ color = {
     'FAST-SWOT: HEREON':'peru',
     'FAST-SWOT: OSMC':'violet',
 }
+
+c0 ={'acc':'#941717', 'coriolis':'#388E3C','ggrad':'#42A5F5', 'wind':'#FFA000'}
+
+surface_drifters = ['CARTHE', 'CODE', 'HEREON', 'MELODI', 'SPOTTER']
+depth_drifters = ['OSMC','SVP', 'SVPOGS', 'SVPSIO']
+
+depth_50 = ['300534062472380','300534060112360','300534060113380']
+depth_100 = ['300534060116350','300534060017750']
 
 
 """
