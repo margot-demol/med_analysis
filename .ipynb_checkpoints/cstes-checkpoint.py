@@ -14,7 +14,7 @@ PATHS
 #zarr_dir = "/home/datawork-lops-osi/aponte/margot/med_coloc"
 
 #LOCAL MARGOT
-swot_dir = '/Users/mdemol/DATA_KARIN/L3_250'
+swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
 drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
 zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
 images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
