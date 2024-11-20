@@ -9,7 +9,7 @@ import geopandas as gpd
 import shapely as shp
 from shapely.geometry import Polygon
 
-from cstes import swot_dir, drifters_dir, get_proj, lonlat2xy, zarr_dir
+from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir
 
 def browse_swot_250():
     """ browse SWOT files """
@@ -21,6 +21,37 @@ def browse_swot_250():
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
+            D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
+
+    df = pd.DataFrame(D)
+    df["day"] = df["time"].dt.floor("1d")
+    
+    df['dt_before'] = df.groupby('pass_number').time.diff()/2
+    mask = df.dt_before.isnull()
+    df.loc[mask, 'dt_before'] = df.dt_before.median()
+
+    df['dt_after'] = -df.groupby('pass_number').time.diff(periods = -1)/2
+    mask = df.dt_after.isnull()
+    df.loc[mask, 'dt_after'] = df.dt_after.median()
+
+    df['start_time_cut'] = df.time-df.dt_before
+
+    df['end_time_cut'] = df.time+df.dt_after
+    df.drop(columns=['dt_before', 'dt_after'], inplace=True)
+    
+    return df.set_index(["day", "pass_number"])
+
+def browse_swot_2km():
+    """ browse SWOT files """
+    passes = [3, 16]
+    
+    D = []
+    for p in passes:
+        files = sorted(glob(os.path.join(swot_dir_2km, f"{p}_*.zarr")))
+        for f in files:
+            c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
+            t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
+            print(f)
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
     df = pd.DataFrame(D)

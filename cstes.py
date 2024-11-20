@@ -1,20 +1,23 @@
 """ MAIN CSTES/PATHS ETC
 ---------------------------
 """
+U = 9.81*1e-6
+U2 = U**2
 
-
+c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 
 """
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
 #DATARMOR
-#swot_dir = '/home/datawork-lops-osi/aponte/swot/cswot/swot/l3_v1.0.1'
+#swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/l3_v1.0.1'
 #drifters_dir = '/home/datawork-lops-osi/aponte/swot/cswot/drifters_harmonized'
 #zarr_dir = "/home/datawork-lops-osi/aponte/margot/med_coloc"
 
 #LOCAL MARGOT
 swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
+swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
 drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
 zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
 images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
@@ -33,8 +36,6 @@ color = {
     'FAST-SWOT: HEREON':'peru',
     'FAST-SWOT: OSMC':'violet',
 }
-
-c0 ={'acc':'#941717', 'coriolis':'#388E3C','ggrad':'#42A5F5', 'wind':'#FFA000'}
 
 surface_drifters = ['CARTHE', 'CODE', 'HEREON', 'MELODI', 'SPOTTER']
 depth_drifters = ['OSMC','SVP', 'SVPOGS', 'SVPSIO']
