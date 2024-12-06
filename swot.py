@@ -51,7 +51,7 @@ def browse_swot_2km():
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
-            print(f)
+            #print(f)
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
     df = pd.DataFrame(D)

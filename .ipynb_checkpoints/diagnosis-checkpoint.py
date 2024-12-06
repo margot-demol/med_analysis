@@ -13,6 +13,7 @@ from cstes import c0, U2, zarr_dir, surface_drifters, depth_drifters, depth_100,
 """ CREATE DATASET """
 
 drifters_sources = 'all_med_variational_10min_v0.nc'
+#drifters_sources = 'all_med_lowess_10min_v0.nc'
 
 drifter_file = os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv'))
 DRIFTER = {'nofilter' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv')),
@@ -69,19 +70,19 @@ def prepared_wd(wd_key):
     dfw = dfw[[v for v in dfw if ('wde' in v or 'wdn' in v)]]
     return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
     
-def create_id_comb(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0'):
-    return drifter_key + '__' + alti_key +'_' + ggd_var + '__' + wd_depth + wd_key
+def create_id_comb(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio'):
+    return drifter_key + '__' + alti_key +'_' + ggd_var + '__' + wd_model+'_'+ wd_depth + wd_key
 
 def select_nearest_swot_coloc(df):
     idx = df.groupby(['pass_number','cycle_number','drifter_id']).time_to_swot.idxmin()
     return df.loc[idx]
 
-def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0'):
+def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
     df = pd.concat([prepared_drifters(drifter_key),
                     prepared_alti(alti_key)[['ggde_'+ggd_var,'ggdn_'+ggd_var]].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
-                    prepared_wd(wd_key)[['wde'+wd_depth,'wdn'+wd_depth]].rename(columns = {'wde'+wd_depth : 'wde','wdn'+wd_depth:'wdn'}),
+                    prepared_wd(wd_key)[['wde'+wd_depth+'_'+wd_model,'wdn'+wd_depth+'_'+wd_model]].rename(columns = {'wde'+wd_depth+'_'+wd_model : 'wde','wdn'+wd_depth+'_'+wd_model:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
-    id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth)
+    id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
     
     #depth
     depth = df['pass_number'].copy()
@@ -203,280 +204,199 @@ def synthetic_figure(df, ax, xlim=None, aviso=False, dir = 'e'):
     ## CAPTURED PHYSICAL + ERRORS PARTS ##
     plt.rcParams["hatch.linewidth"] = 8
     plt.rcParams["hatch.color"] = "lightgrey"
-    ax.barh(1 * a, df["B"+dir +"_acc"], color=c0["acc"])
-    ax.barh(1 * a, df["E"+dir +"_acc"], left=df["B"+dir +"_acc"], color=c0["acc"], hatch="/")
-    ax.barh(1 * a, df["B"+dir +"_cor"], left=df["B"+dir +"_acc"] + df["E"+dir +"_acc"] + b, color=c0["cor"])
-    ax.barh(
-        1 * a,
-        df["E"+dir +"_cor"],
-        left=df["B"+dir +"_acc"] + df["E"+dir +"_acc"] + df["B"+dir +"_cor"],
-        color=c0["cor"],
-        hatch="/",
-    )
-    ax.barh(
-        1 * a,
-        df["B"+dir +"_ggd"],
-        left=df["B"+dir +"_acc"] + df["E"+dir +"_acc"] + df["B"+dir +"_cor"] + df["E"+dir +"_cor"] + b,
-        color=c0["ggd"],
-    )
-    if df["E"+dir +"_ggd"] > 0:
-        ax.barh(
-            1 * a,
-            df["E"+dir +"_ggd"],
-            left=df["B"+dir +"_acc"] + df["E"+dir +"_acc"] + df["B"+dir +"_cor"] + df["E"+dir +"_cor"] + df["B"+dir +"_ggd"],
-            color=c0["ggd"],
-            hatch="/",
-        )
-        ax.barh(
-            1 * a,
-            df["B"+dir +"_wd"],
-            left=df["B"+dir +"_acc"]
-            + df["E"+dir +"_acc"]
-            + df["B"+dir +"_cor"]
-            + df["E"+dir +"_cor"]
-            + df["B"+dir +"_ggd"]
-            + df["E"+dir +"_ggd"]
-            + b,
-            color=c0["wd"],
-        )
-        ax.barh(
-            1 * a,
-            df["E"+dir +"_wd"],
-            left=df["B"+dir +"_acc"]
-            + df["E"+dir +"_acc"]
-            + df["B"+dir +"_cor"]
-            + df["E"+dir +"_cor"]
-            + df["B"+dir +"_ggd"]
-            + df["E"+dir +"_ggd"]
-            + df["B"+dir +"_wd"],
-            color=c0["wd"],
-            hatch="/",
-        )
-    else:
-        ax.barh(
-            1 * a,
-            df["B"+dir +"_wd"],
-            left=df["B"+dir +"_acc"]
-            + df["E"+dir +"_acc"]
-            + df["B"+dir +"_cor"]
-            + df["E"+dir +"_cor"]
-            + df["B"+dir +"_ggd"]
-            + 2 * b,
-            color=c0["wd"],
-        )
-        ax.barh(
-            1 * a,
-            df["E"+dir +"_wd"],
-            left=df["B"+dir +"_acc"]
-            + df["E"+dir +"_acc"]
-            + df["B"+dir +"_cor"]
-            + df["E"+dir +"_cor"]
-            + df["B"+dir +"_ggd"]
-            + df["B"+dir +"_wd"]
-            + 2 * b,
-            hatch="/",
-            color=c0["wd"],
-        )
-        ax.barh(
-            1 * a,
-            -df["E"+dir +"_ggd"],
-            left=-b + df["E"+dir +"_ggd"],
-            color=c0["ggd"],
-            hatch="/",
-        )
-
-    ax.text(
-        ts / 2,
-        1 * a + 0.5,
-        r"Balanced and errors parts MS $\beta_i$ and $\epsilon_i$",
-        ha="center",
-    )
-
-    # percentage + MS
-    key = ["B"+dir +"_acc", "E"+dir +"_acc", "B"+dir +"_cor", "E"+dir +"_cor", "B"+dir +"_ggd", "E"+dir +"_ggd", "B"+dir +"_wd", "E"+dir +"_wd"]
-    for i in range(len(key)):
-        d = 0  # vertical +
-        dx = 0  # horizontal + on MS
-        dxx = 0  # horizontal + on percentage
-        if i == len(key) - 1:
-            d = -0.1 * a
-            dx = 3e-11 / U2
-            dxx = 1.5e-11 / U2
-        if i == len(key) - 2:
-            d = 0.1 * a
-        if (
-            abs(int(np.rint((df[key[i]] / ts) * 100))) > 0
-        ):  # does not plot percentage below 1%
-            if df[key[i]] > 0:
-                ax.text(
-                    sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b / 2 + dxx,
-                    a + d,
-                    f"{int(np.rint((df[key[i]]/ts)*100))} %",
+    var = ['acc', 'cor', 'ggd', 'wd']
+    eneg = [ v for v in var if df["E"+dir +"_"+v]<0]
+    epos = [ v for v in var if df["E"+dir +"_"+v]>=0]
+    spos, sneg = 0, 0
+    ipos, ineg = 0, 1
+    
+    #text parameters
+    d=0# vertical +
+    db = 0.15  # vertical + 
+    de = -0.2  # vertical +
+    dx = 0  # horizontal + on MS
+    dxx = 0  # horizontal + on percentage
+    for v in var :
+        ax.barh(1 * a, df["B"+dir +"_"+v], left=spos+ipos*b, color=c0[v])
+        if (abs(int(np.rint((df["B"+dir +"_"+v] / ts) * 100))) > 0):# does not plot percentage below 1%
+            ax.text(
+                spos + df["B"+dir +"_"+v]/ 2 + ipos * b / 2 + dxx,
+                    a + db,
+                    f'{int(np.rint((df["B"+dir +"_"+v]/ts)*100))} %',
                     ha="center",
                     bbox=bbox,
                 )
-            else:
+            ax.text(
+                spos + df["B"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                a + d - 0.55,
+                f'{np.round(df["B"+dir +"_"+v],2)}',
+                ha="center",
+                )
+        spos += df["B"+dir +"_"+v]
+            
+        if v in epos : 
+            ax.barh(1 * a, df["E"+dir +"_"+v], left=spos + ipos*b, color=c0[v], hatch="/")
+            ax.text(
+                spos + df["E"+dir +"_"+v]/ 2 + ipos * b / 2 + dxx,
+                a + de,
+                f'{int(np.rint((df["E"+dir +"_"+v]/ts)*100))} %',
+                ha="center",
+                bbox=bbox,
+                )
+            ax.text(
+                spos + df["E"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                a + d - 0.7,
+                f'{np.round(df["E"+dir +"_"+v],2)}',
+                ha="center",
+                )
+            spos += df["E"+dir +"_"+v]
+            ipos += 1
+            
+        
+        if v in eneg : 
+            ax.barh(1 * a,-df["E"+dir +"_"+v], left=-b -b*ineg + df["E"+dir +"_"+v]+sneg,color=c0[v],hatch="/",)
+            if (abs(int(np.rint((df["B"+dir +"_"+v] / ts) * 100))) > 0):
                 ax.text(
-                    df[key[i]] / 2 - dxx,
+                    sneg + df["E"+dir +"_"+v]/ 2 + ineg * b / 2 + dxx,
                     a + d,
-                    f"{int(np.rint((df[key[i]]/ts)*100))} %",
+                    f'{int(np.rint((df["E"+dir +"_"+v]/ts)*100))} %',
                     ha="center",
                     bbox=bbox,
+                    )
+                ax.text(
+                    sneg + df["E"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                    a + d - 0.55,
+                    f'{np.round(df["E"+dir +"_"+v],2)}',
+                    ha="center",
                 )
-        d = 0
-        if i % 2 == 1:
-            d = -0.1 * a
-        ax.text(
-            sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b / 2 + dx,
-            a + d - 0.55,
-            f"{np.round(df[key[i]],2)}",
-            ha="center",
-        )
+            sneg += df["E"+dir +"_"+v]
+            ineg +=1
+
+    ax.text(ts / 2,1 * a + 0.5, r"Balanced signal and residual contributions $\beta_i$ and $\mathcal{E}_i$", ha="center",)
+
 
     ## PAIRS + RESIDUAL ##
+    comb = [("cor", "ggd"), ("acc", "cor"), ("acc", "ggd"), ("cor", "wd"), ("ggd", "wd"), ("acc", "wd")]
     plt.rcParams["hatch.linewidth"] = 8
-    plt.rcParams["hatch.color"] = c0["ggd"]
-    ax.barh(0, df["X"+dir +"_cor_ggd"], color=c0["cor"], hatch="/")
-    plt.rcParams["hatch.color"] = c0["cor"]
-    ax.barh(0, df["X"+dir +"_acc_cor"], color=c0["acc"], hatch="/", left=df["X"+dir +"_cor_ggd"] + b)
-    plt.rcParams["hatch.color"] = c0["acc"]
-    ax.barh(
-        0,
-        df["X"+dir +"_acc_ggd"],
-        color=c0["ggd"],
-        hatch="/",
-        left=df["X"+dir +"_cor_ggd"] + df["X"+dir +"_acc_cor"] + 2 * b,
-    )
-    plt.rcParams["hatch.color"] = c0["wd"]
-    ax.barh(
-        0,
-        df["X"+dir +"_cor_wd"],
-        color=c0["cor"],
-        hatch="/",
-        left=df["X"+dir +"_cor_ggd"] + df["X"+dir +"_acc_cor"] + df["X"+dir +"_acc_ggd"] + 3 * b,
-    )
-    ax.barh(
-        0,
-        df["S"+dir],
-        label="Errors",
-        color="lightgrey",
-        left=df["X"+dir +"_cor_ggd"]
-        + df["X"+dir +"_acc_cor"]
-        + df["X"+dir +"_acc_ggd"]
-        + df["X"+dir +"_cor_wd"]
-        + 4 * b,
-    )
-    # negative contribution
-    plt.rcParams["hatch.color"] = c0["acc"]
-    ax.barh(0, -df["X"+dir +"_acc_wd"], color=c0["wd"], hatch="/", left=df["X"+dir +"_acc_wd"] - b)
-    plt.rcParams["hatch.color"] = c0["ggd"]
-    ax.barh(
-        0,
-        -df["X"+dir +"_ggd_wd"],
-        color=c0["wd"],
-        hatch="/",
-        left=df["X"+dir +"_acc_wd"] + df["X"+dir +"_ggd_wd"] - 2 * b,
-    )
+    xpos = [c for c in comb if df["X"+dir +"_"+c[0]+"_"+c[1]]>=0]
+    spos, sneg = 0, 0
+    ipos, ineg = 0, 1
 
-    tts = (
-        df["X"+dir +"_cor_ggd"]
-        + df["X"+dir +"_acc_cor"]
-        + df["X"+dir +"_acc_ggd"]
-        + df["X"+dir +"_cor_wd"]
-        + 4 * b
-        + df["S"+dir]
-    )
-    print(tts)
-    sum_pairs = (
-        df["X"+dir +"_cor_ggd"] + df["X"+dir +"_acc_cor"] + df["X"+dir +"_acc_ggd"] + df["X"+dir +"_cor_wd"] + 3 * b
-    )
-    ax.text(sum_pairs / 2, 0.6, r"Pairs' contributions $X_{ij}$", ha="center")
+    for c in comb :
+        plt.rcParams["hatch.color"] = c0[c[1]]
+        #positive pairs contributions
+        if c in xpos :
+            ax.barh(0, df["X"+dir +"_"+c[0]+"_"+c[1]], color=c0[c[0]], hatch="/", left=spos + b*ipos)
+            if (abs(int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]] / ts) * 100))) > 0):  # does not plot percentage below 1%
+                ax.text(
+                    spos + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    0 + d * 2,
+                    f'{int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]]/ts)*100))} %',
+                    ha="center",
+                    bbox=bbox,
+                )
+    
+                ax.text(
+                    spos + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    0 - 0.55 + d,
+                    f'{np.round(df["X"+dir +"_"+c[0]+"_"+c[1]],2)}',
+                    ha="center",
+                )
+            spos += df["X"+dir +"_"+c[0]+"_"+c[1]]
+            ipos += 1
 
-    # accolade
-    c = 1e-12
-    id1 = 0
-    id2 = sum_pairs
-    bx = [id1, id1, id2, id2]
-    by = [0.45, 0.5, 0.5, 0.45]
-    # ax.plot(bx, by, 'k-', lw=2)
-    ax.text(sum_pairs + df["S"+dir] / 2, 0.5, r"$S$", ha="center")
+        
+        # negative contributions
+        else : 
+            dp, dj = 0.19, 0
+            if ineg%2 ==0 : 
+                dp = -dp
+                dj = -0.17
 
-    # percentage + MS
-    from itertools import combinations
-
-    correlation = list(combinations(["acc", "cor", "GGD", "wd"], 2))
-    key = ["X"+dir +"_cor_ggd", "X"+dir +"_acc_cor", "X"+dir +"_acc_ggd", "X"+dir +"_cor_wd"]
-    for i in range(len(key)):
-        d = 0
-        if aviso and key[i] == "X"+dir +"_acc_ggd":
-            d = -0.1 * a
-
-        if (
-            abs(int(np.rint((df[key[i]] / ts) * 100))) > 0
-        ):  # does not plot percentage below 1%
-            ax.text(
-                sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b,
-                0 + d * 2,
-                f"{int(np.rint((df[key[i]]/ts)*100))} %",
-                ha="center",
-                bbox=bbox,
-            )
-
-        ax.text(
-            sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b,
-            0 - 0.55 + d,
-            f"{np.round(df[key[i]],2)}",
-            ha="center",
-        )
-
-    # negative contribution
-    key = ["X"+dir +"_acc_wd", "X"+dir +"_ggd_wd"]
-    for i in range(len(key)):
-        if abs(int(np.rint((df[key[i]] / ts) * 100))) > 0:
-            ax.text(
-                sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b,
-                0,
-                f"{int(np.rint((df[key[i]]/ts)*100))} %",
-                ha="center",
-                bbox=bbox,
-            )
-        d = 0
-        if i % 2 == 1:
-            d = -0.1 * a
-        ax.text(
-            sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b,
-            0 - 0.55 + d,
-            f"{np.round(df[key[i]],2)}",
-            ha="center",
-        )
-
-    key = ["X"+dir +"_cor_ggd", "X"+dir +"_acc_cor", "X"+dir +"_acc_ggd", "X"+dir +"_cor_wd"]
+            ax.barh(0, -df["X"+dir +"_"+c[0]+"_"+c[1]], color=c0[c[0]], hatch="/", left=df["X"+dir +"_"+c[0]+"_"+c[1]]+sneg - b*ineg)
+            if (abs(int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]] / ts) * 100))) > 0):  # does not plot percentage below 1%
+                ax.text(
+                    sneg + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    0 + d * 2+dp,
+                    f'{int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]]/ts)*100))} %',
+                    ha="center",
+                    bbox=bbox,
+                )
+    
+                ax.text(
+                    sneg + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    0 - 0.55 + dj,
+                    f'{np.round(df["X"+dir +"_"+c[0]+"_"+c[1]],2)}',
+                    ha="center",
+                )
+            sneg += df["X"+dir +"_"+c[0]+"_"+c[1]]
+            ineg += 1
+    
+    # Residual         
+    ax.barh(0,df["S"+dir],label="Errors",color="lightgrey",left=spos+ ipos * b,)
     ax.text(
-        sum([df[v] for v in key]) + df["S"+dir] / 2 + i * b,
-        0,
+            spos + df["S"+dir] / 2 + i * b,
+            0 - 0.55 + d,
+            f'{np.round(df["S"+dir],2)}',
+            ha="center",
+        )
+    ax.text(
+        spos + df["S"+dir] / 2 + i * b,
+        0 + d * 2,
         f'{int(np.rint((df["S"+dir]/ts)*100))} %',
         ha="center",
         bbox=bbox,
     )
-    ax.text(
-        sum([df[v] for v in key]) + df["S"+dir] / 2 + i * b,
-        0 - 0.55,
-        f'{np.round(df["S"+dir],2)}',
-        ha="center",
+    
+
+    tts = (spos
+        + 4 * b
+        + df["S"+dir]
     )
+    print(tts)
+    ax.text(spos / 2, 0.6, r"Pairs' contributions $X_{ij}$", ha="center")
+
+    # accolade
+    c = 1e-12
+    id1 = 0
+    id2 = ts
+    bx = [id1, id1, id2, id2]
+    by = [0.45, 0.5, 0.5, 0.45]
+    # ax.plot(bx, by, 'k-', lw=2)
+    ax.text(spos + df["S"+dir] / 2, 0.5, r"$\mathcal{E}$", ha="center")
+
 
     # FIGURE SET
     ax.set_yticks([])
     if not xlim:
-        xlim = tts
+        xlim = (sneg, spos + df["S"+dir]+0.3)
     ax.axvline(0, ls=":", c="grey")
-    ax.set_xlim(-0.5, xlim + 0.5)
+    ax.set_xlim(xlim[0], xlim[1] + 0.5)
     ax.set_ylim(-1, 4.1)
     ax.get_yaxis().set_visible(False)
     ax.annotate(
         "",
-        xy=(xlim, -1),
+        xy=(xlim[1], -1),
         xytext=(-0.5, -1),
         arrowprops={"arrowstyle": "->", "facecolor": "k"},
     )
     ax.set_xlabel(r"$[\gamma^2]$")
+
+
+
+def compute_mean_square(ds):
+    var = ['acc', 'cor', 'ggd', 'wd','sum']
+    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+    dss = (ds[[v+'n' for v in var] + [v+'e' for v in var]]**2).mean(dim='row_number').rename({var[i]+'n' : VAR[i]+'n' for i in range(5)}).rename({var[i]+'e' : VAR[i]+'e' for i in range(5)})
+    dss['sigmae'] = dss.ACCe + dss.CORe + dss.GGDe + dss.WDe
+    dss['sigman'] = dss.ACCn + dss.CORn + dss.GGDn + dss.WDn
+    dss['nb_coloc'] = len(ds.row_number)
+    #Balanced and error
+    for direction in ['e', 'n']:
+        for v in ['acc', 'cor', 'ggd', 'wd'] : 
+                dss['B'+direction+'_'+v] = -((ds[v+direction]*ds['exc'+direction+'_'+v])).mean(dim='row_number')
+                dss['E'+direction+'_'+v] = ((ds[v+direction]*ds['sum'+direction])).mean(dim='row_number')
+    #pairs contributions
+    for v in [v for v in ds if 'prod' in v]:
+        dss[v.replace('prod', 'X')]=-2*ds[v].mean(dim='row_number')
+    return dss
