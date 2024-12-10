@@ -189,8 +189,8 @@ def gradient_gauss(dss, ggrad_variables=None, cutoff = 1e3, **kwargs):
     return xr.merge([dss_ggradx, dss_ggrady])
 
 
-import pyinterp
-mesh = pyinterp.RTree()
+#import pyinterp
+#mesh = pyinterp.RTree()
 
 def interp_one_dataarray(da, new_lon, new_lat):
     lons = da.longitude.compute().data.flatten()
