@@ -10,20 +10,23 @@ c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-#DATARMOR
-#swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
-swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
-swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_1.0.2'
-drifters_dir = '/home/datawork-lops-oc/aponte/swot/cswot/drifters_harmonized'
-zarr_dir = "/home/datawork-lops-oc/aponte/margot/med_coloc"
+space = 'local'
+if space == 'datarmor' :
+    #DATARMOR
+    swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
+    swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
+    swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_1.0.2'
+    drifters_dir = '/home/datawork-lops-oc/aponte/swot/cswot/drifters_harmonized'
+    zarr_dir = "/home/datawork-lops-oc/aponte/margot/med_coloc"
 
-#LOCAL MARGOT
-#swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
-#swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
-#drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
-#zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
-#images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
-#path_wind = 
+if space == 'local':
+    #LOCAL MARGOT
+    swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
+    swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
+    drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
+    zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
+    images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
+    #path_wind = 
 
 color = {
     'BIOSWOT: CARTHE': "firebrick",
@@ -106,3 +109,27 @@ def lonlat2xy(lonc, latc, phi, lon, lat, lon1=None, lat1=None):
 
     return x, y
 
+
+"""
+depth_50 = ['300534062472380','300534060112360','300534060113380']
+depth_100 = ['300534060116350','300534060017750']
+
+depth = df['pass_number'].copy()
+depth.loc[df['drifter_type'].isin(surface_drifters)]=0
+depth.loc[df['drifter_type'].isin(depth_drifters)]=15
+depth.loc[df['drifter_id'].isin(depth_50)]=50
+depth.loc[df['drifter_id'].isin(depth_100)]=100
+
+df['depth'] = depth
+"""
+err_acc = [281205, 281206, 281207, 281208, 281209, 281210, 281211, 281212, 281213,
+       281214, 281215, 281216, 281217, 281218, 281219, 281220, 281221, 281222,
+       281223, 281224, 281225, 281226, 281227, 281228, 281229] + [171545, 171546, 171547, 171548, 171549, 171550, 171551, 171552, 171553,
+       171554, 171555, 171556, 171557, 171558, 171559, 171560, 171561, 171562,
+       171563, 171564, 171565, 171566, 171567, 171568, 171569, 171570, 171571,
+       171572, 171573, 171574, 171575, 171576, 171577, 171578, 171579, 171580,
+       171581, 171582, 171583, 171584, 171585, 171586, 171587, 171588, 171589,
+       171590, 171591, 171592, 171593, 171594, 171595, 171596, 171597, 171598,
+       171599, 171600, 171601, 171602, 171603, 171604] + [15907, 15908, 15909, 15910, 15911, 15912, 15913, 15914, 15915, 15916,
+       15917, 15918, 15919, 15920, 15921, 15922, 15923, 15924, 15925, 15926,
+       15927, 15928, 15929, 15930, 15931]

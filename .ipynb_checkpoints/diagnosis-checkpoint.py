@@ -7,10 +7,27 @@ import matplotlib.pyplot as plt
 import os
 from glob import glob
 
-from cstes import c0, U2, zarr_dir, surface_drifters, depth_drifters, depth_100, depth_50
+from cstes import c0, U2, zarr_dir, surface_drifters, depth_drifters, depth_100, depth_50, images_dir
+from swot import browse_swot_250, browse_swot_2km
+
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+import cartopy.geodesic as cgeo
+crs = ccrs.PlateCarree()
+
+import cartopy.geodesic as geod
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+
+import pyproj
+from pyproj import Geod
 
 
-""" CREATE DATASET """
+""" 
+_________________________________________
+---- CREATE DATASET ----
+_________________________________________
+"""
 
 drifters_sources = 'all_med_variational_10min_v0.nc'
 #drifters_sources = 'all_med_lowess_10min_v0.nc'
@@ -131,9 +148,13 @@ def dataset_coloc_combs(comb_list, nearest =True):
         D.append(ds.set_coords('id_comb'))
     return xr.concat(D, dim='id_comb').set_coords(coords_list)
 
-""" PLOTS """
+""" 
+_________________________________________
+---- PLOTS ----
+_________________________________________
+"""
 
-def synthetic_figure(df, ax, xlim=None, aviso=False, dir = 'e'):
+def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     from cstes import U2, c0
 
     plt.rcParams["axes.edgecolor"] = "w"
@@ -143,10 +164,10 @@ def synthetic_figure(df, ax, xlim=None, aviso=False, dir = 'e'):
     ts = df["sigma"+dir]
     print(ts)
     # gap between bars for readability
-    if xlim:
-        b = xlim / 400
-    else:
+    if len(xlim)!=2:
         b = ts / 400
+    else:
+        b = xlim[0] / 400
 
     # b = 1e-10
 
@@ -368,7 +389,7 @@ def synthetic_figure(df, ax, xlim=None, aviso=False, dir = 'e'):
 
     # FIGURE SET
     ax.set_yticks([])
-    if not xlim:
+    if len(xlim)!=2:
         xlim = (sneg, spos + df["S"+dir]+0.3)
     ax.axvline(0, ls=":", c="grey")
     ax.set_xlim(xlim[0], xlim[1] + 0.5)
@@ -400,3 +421,194 @@ def compute_mean_square(ds):
     for v in [v for v in ds if 'prod' in v]:
         dss[v.replace('prod', 'X')]=-2*ds[v].mean(dim='row_number')
     return dss
+
+def select_row(df, pass_number, cycle_number, drifter_id):
+    return df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()
+
+""" 
+_________________________________________
+---- ONE COLOC PLOTS ----
+_________________________________________
+"""
+
+def plot_exemple(row_number, df, directory, swot_product = '250m'):
+    """
+    Parameters :
+    ------------
+        row_number : index of the coloc to find in df
+        df : dataframe, should contains : pass_number, cycle_number, longitude, latitude, drifter_id, drifter_type, acce, accn, core, corn, ggde, ggdn, wde, wdn,sume, sumn
+    
+    """
+    # Collect info from row_number
+    cycle_number = df.loc[row_number].cycle_number
+    pass_number = df.loc[row_number].pass_number
+    drifter_id = df.loc[row_number].drifter_id
+
+    # select good rows in df
+    df_ = df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()#all
+    dfc_ = select_nearest_swot_coloc(df_)#nearest
+
+    #
+    dl = 0.2
+    bbox = [dfc_.longitude.values[0]-dl, dfc_.longitude.values[0]+dl, dfc_.latitude.values[0]-dl, dfc_.latitude.values[0]+dl]
+    #print(bbox)
+
+    #SWOT data
+    if swot_product=='250m': dfs = browse_swot_250().reset_index()
+    if swot_product=='2km': dfs = browse_swot_2km().reset_index()  
+    dss = xr.open_dataset(dfs.where((dfs.pass_number==pass_number)&(dfs.cycle_number==cycle_number)).dropna().file.values[0])
+    dss = dss.where((dss.latitude>bbox[2]) & (dss.latitude<bbox[3])&(dss.longitude>bbox[0]) & (dss.longitude<bbox[1]))
+    
+    #ERA data
+    era = xr.open_dataset('/Users/mdemol/DATA_WIND/era5/adaptor.mars.internal-1726002205.1540956-13738-7-c8d88fd1-3ec7-4113-8790-c92c59938aa6.nc')
+    
+    #PLOT
+    fig = plt.figure( frameon=False, figsize=(20,12))
+
+    ax = fig.add_subplot(241)
+    df_['sume'] = df_.acce + df_.core + df_.ggde + df_.wde
+    df_ = df_.set_index('datetime')
+    df_.acce.plot(ax=ax, label = 'acc', c=c0['acc'], ls='', marker='.')
+    df_.core.plot(ax=ax, c=c0['cor'], label = 'cor', ls='', marker='.')
+    df_.ggde.plot(ax=ax,c=c0['ggd'],  label = 'ggd', ls='', marker='.')
+    df_.wde.plot(ax=ax,c=c0['wd'],  label = 'wd', ls='', marker='.')
+    (-(df_.acce + df_.core + df_.wde)).plot(ax=ax,c=c0['ggd'],  label = 'gge for balance', ls='--')
+    df_.sume.plot(ax=ax, c='k', label = 's', ls='--')
+    ax.axvline(dfc_.datetime.values[0], color = 'r',ls=':')
+    ax.axvline(pd.to_datetime(dss.time.mean().values), color = 'b',ls=':')
+    ax.legend()
+    ax.grid()
+    ax.set_title('East-West terms')
+    #ax.set_ylim(-7e-5, 7e-5)
+
+
+    ax = fig.add_subplot(245)
+    df_['sumn'] = df_.accn + df_.corn + df_.ggdn + df_.wdn
+    df_.accn.plot(ax=ax, label = 'acc', c=c0['acc'], ls='', marker='.')
+    df_.corn.plot(ax=ax, c=c0['cor'], label = 'cor', ls='', marker='.')
+    df_.ggdn.plot(ax=ax,c=c0['ggd'],  label = 'ggd', ls='', marker='.')
+    df_.wdn.plot(ax=ax,c=c0['wd'],  label = 'wd', ls='', marker='.')
+    (-(df_.accn + df_.corn + df_.wdn)).plot(ax=ax,c=c0['ggd'],  label = 'ggn for balance', ls='--')
+    df_.sumn.plot(ax=ax, c='k', label = 's', ls='--')
+    ax.axvline(dfc_.datetime.values[0], color = 'r',ls=':')
+    ax.axvline(pd.to_datetime(dss.time.mean().values), color = 'b',ls=':')
+    ax.legend()
+    ax.grid()
+    ax.set_title('North-south terms')
+    ax.set_title('Global view')
+    #ax.set_ylim(-7e-5, 7e-5)
+
+    # SWOT ETA global view
+    ax = fig.add_subplot(242, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    bbox_all = [1, 6, 37, 43.5]
+    ax.set_extent(bbox_all)
+    dss['eta'] = dss.cvl_mean_dynamic_topography_cnes_cls_22 + dss.cvl_ocean_tide_fes_2022 + dss.duacs_ssha_karin_2_filtered
+    dss.where(dss.duacs_editing_flag==0).eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    
+    # SWOT ETA + ERA wind
+    ax = fig.add_subplot(244, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    ax.set_extent(bbox)
+    dss['eta'] = dss.cvl_mean_dynamic_topography_cnes_cls_22 + dss.cvl_ocean_tide_fes_2022 + dss.duacs_ssha_karin_2_filtered
+    #dss.where(dss.duacs_editing_flag==0).eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    dss.eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    ax.set_title('SWOT MDT + SLA + tides correction')
+
+    t = dss.time.mean()
+    era_ = era.sel(time=dss.time.mean(), method='nearest').sortby('latitude')
+    era_ = era_.sel(longitude=slice(bbox[0], bbox[1]), latitude=slice(bbox[2], bbox[3]))
+    Q = era_.plot.quiver('longitude', 'latitude', 'u10', 'v10', ax=ax, transform =crs, scale=250, color='magenta', clip_on = False, add_guide = False)
+
+
+    # SWOT MDT
+    ax = fig.add_subplot(243, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    ax.set_extent(bbox)
+    dss.cvl_mean_dynamic_topography_cnes_cls_22.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    ax.set_title('SWOT MDT')
+
+    # SWOT sigma0
+    ax = fig.add_subplot(246, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    ax.set_extent(bbox)
+    dss.sig0_karin_2.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    ax.set_title('SWOT sigma0')
+
+    # SWOT velocities
+    ax = fig.add_subplot(247, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    ax.set_extent(bbox)
+    dss['U'] = np.sqrt(dss.duacs_speed_zonal**2 + dss.duacs_speed_meridional**2)
+    dss.U.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis', vmax=5, vmin=0)
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    ax.set_title('SWOT geostrophic velocity')
+
+    # SWOT duacs editing flags
+    ax = fig.add_subplot(248, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
+    ax.add_feature(cfeature.LAND,)
+    gl = ax.gridlines(draw_labels=True,)
+    def get_indice(flag): 
+        if np.isnan(flag):
+            return np.nan
+        else :
+            return flag_indices[flag]
+    editing_flags = xr.apply_ufunc(get_indice, dss.duacs_editing_flag, vectorize=True)
+    cm, fmt, tickz, norm = create_flag_cmap()
+    im = dss.duacs_editing_flag.plot(x='longitude', y='latitude', transform =crs, ax=ax, cmap=cm, norm=norm,)
+    plot_flag_colorbar(fig, im, fmt, tickz)
+    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
+    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    ax.set_extent(bbox)
+    ax.set_title('SWOT editing flags')
+
+    #ax.set_ylim(-7e-5, 7e-5)
+
+    fig.suptitle(f'row number = {row_number}, pass_number = {pass_number}, cycle = {cycle_number}, drifter = {dfc_.drifter_type.values}, {drifter_id} \n')#+ f'wd ={np.sqrt(dfwc_.u10**2 + dfwc_.v10**2)}')
+    fig.tight_layout()
+    fig.savefig(os.path.join(images_dir, directory, f'{row_number}.png'), dpi=200, bbox_inches='tight')
+
+
+"""
+EDITING_FLAGS PLOT
+________________
+"""
+
+flag_values = [0, 5, 10, 20, 30, 50, 70, 100, 101, 102, 200]
+flag_legend = ['good','local_outliers', 'bad_quality_coast','ice','soft_outliers',  'extremes', 'mission_events', 'bad_swath_extremities', 'not_on_sea', 'no_data', 'gradient_nan', ]
+flag_color = ['pink', 'coral', 'orange', 'lightblue', 'magenta', 'red', 'blue','green', 'yellow', 'grey', 'darkgrey']
+len_lab = len(flag_values)
+flag_indices = {flag_values[i] : i for i in range(len(flag_values))}
+
+def create_flag_cmap():
+    from matplotlib.colors import ListedColormap
+    import matplotlib
+    cm = ListedColormap(flag_color)
+    norm_bins = np.arange(len_lab)+1
+    norm_bins = np.insert(norm_bins, 0, np.min(norm_bins) - 1.0)
+    # Make normalizer and formatter
+    norm = matplotlib.colors.BoundaryNorm(norm_bins, len_lab, clip=True)
+    fmt = matplotlib.ticker.FuncFormatter(lambda x, pos: flag_legend[norm(x)])
+    diff = norm_bins[1:] - norm_bins[:-1]
+    tickz = norm_bins[:-1] + diff / 2
+    return cm, fmt, tickz, norm
+    
+def plot_flag_colorbar(fig, im, fmt, tickz):
+    cb = im.colorbar   
+    cb.remove()
+    cb = fig.colorbar(im, format=fmt, ticks=tickz)
+
