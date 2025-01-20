@@ -29,8 +29,8 @@ _________________________________________
 _________________________________________
 """
 
-drifters_sources = 'all_med_variational_10min_v0.nc'
-#drifters_sources = 'all_med_lowess_10min_v0.nc'
+#drifters_sources = '10days_all_med_variational_10min_v0.nc'
+drifters_sources = 'all_med_lowess_10min_v0.nc'
 
 drifter_file = os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv'))
 DRIFTER = {'nofilter' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv')),
@@ -53,13 +53,23 @@ ALTI = {
     'swot2kmgauss4e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
     'swot2kmgauss5e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
     'swot2kmgauss1e4' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e4.csv'), 
+#    'swot2kmnaive_1' : os.path.join(zarr_dir, 'swot_2km_cycleplus1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_-1' : os.path.join(zarr_dir, 'swot_2km_cycleplus-1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_2' : os.path.join(zarr_dir, 'swot_2km_cycleplus2_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_-2' : os.path.join(zarr_dir, 'swot_2km_cycleplus-2_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_3' : os.path.join(zarr_dir, 'swot_2km_cycleplus3_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_-3' : os.path.join(zarr_dir, 'swot_2km_cycleplus-3_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_4' : os.path.join(zarr_dir, 'swot_2km_cycleplus4_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmnaive_-4' : os.path.join(zarr_dir, 'swot_2km_cycleplus-4_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
 }
+
 WD = {'era5' : os.path.join(zarr_dir, 'era5_'+drifters_sources.replace('.nc', '')+'.csv')}
 
 dtypes = {'drifter_id':str}
 
 def prepared_drifters(drifter_key) : 
     dfr = pd.read_csv(DRIFTER[drifter_key], parse_dates=['datetime'], dtype=dtypes).set_index('row_number')
+    dfr['time_to_swot'] = dfr.time_to_swot.astype("timedelta64[ns]")
     dfr['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfr.latitude * np.pi / 180)
     dfr['core']= -dfr.f * dfr.velocity_north
     dfr['corn']= dfr.f * dfr.velocity_east
@@ -71,7 +81,12 @@ def prepared_alti(alti_key, ggd_var=['duacs_ssha_karin_2_filtered','duacs_ssha_k
     dfs['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfs.latitude * np.pi / 180)
     dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
     dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
-    dfs = dfs[['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv']]
+    if 'naive_' in alti_key : 
+        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv', 'time_to_swot_update', 'phi']
+    else: 
+        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv','phi']
+        
+    dfs = dfs[l]
     dfs['ggde_etaf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
     dfs['ggdn_etaf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
     dfs['ggde_adtf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
@@ -95,8 +110,12 @@ def select_nearest_swot_coloc(df):
     return df.loc[idx]
 
 def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
+    if 'naive_' in alti_key : 
+        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'time_to_swot_update', 'phi']
+    else: 
+        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var,'phi']
     df = pd.concat([prepared_drifters(drifter_key),
-                    prepared_alti(alti_key)[['ggde_'+ggd_var,'ggdn_'+ggd_var]].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
+                    prepared_alti(alti_key)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
                     prepared_wd(wd_key)[['wde'+wd_depth+'_'+wd_model,'wdn'+wd_depth+'_'+wd_model]].rename(columns = {'wde'+wd_depth+'_'+wd_model : 'wde','wdn'+wd_depth+'_'+wd_model:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
     id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
@@ -113,6 +132,37 @@ def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='
     
     return df, id_comb
 
+def assign_attrs(ds) :
+    for dir_ in ['e', 'n'] :
+        if dir_ == 'e': Dir = 'Zonal'
+        if dir_ == 'n': Dir = 'Meridional'
+        ds['ACC'+dir_] = ds['ACC'+dir_].assign_attrs({'long_name':Dir + ' Lagrangian acceleration MS'})
+        ds['COR'+dir_] = ds['COR'+dir_].assign_attrs({'long_name':Dir + ' Coriolis acceleration MS'})
+        ds['GGD'+dir_] = ds['GGD'+dir_].assign_attrs({'long_name':Dir + ' Pressure gradient term MS'})
+        ds['WD'+dir_] = ds['WD'+dir_].assign_attrs({'long_name':Dir + ' Wind term MS'})
+        
+        
+        ds['sigma'+dir_] = ds['sigma'+dir_].assign_attrs({'long_name':Dir+r' $\Sigma$'})
+        ds['S'+dir_] = ds['S'+dir_].assign_attrs({'long_name':Dir+r' Residual'})
+        
+        ds['B'+dir_+'_acc'] = ds['B'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration balanced signal contribution'})
+        ds['B'+dir_+'_cor'] = ds['B'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration balanced signal contribution'})
+        ds['B'+dir_+'_ggd'] = ds['B'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term balanced signal contribution'})
+        ds['B'+dir_+'_wd'] = ds['B'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term balanced signal contribution'})
+        
+        ds['E'+dir_+'_acc'] = ds['E'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration residual contribution'})
+        ds['E'+dir_+'_cor'] = ds['E'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration residual contribution'})
+        ds['E'+dir_+'_ggd'] = ds['E'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term residual contribution'})
+        ds['E'+dir_+'_wd'] = ds['E'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term residual contribution'})
+        
+        
+        ds['X'+dir_+'_acc_cor'] = ds['X'+dir_+'_acc_cor'].assign_attrs({'long_name':Dir+r' Inertial balance contribution'})
+        ds['X'+dir_+'_acc_ggd'] = ds['X'+dir_+'_acc_ggd'].assign_attrs({'long_name':Dir+r' Cyclostrophique contribution'})
+        ds['X'+dir_+'_acc_wd'] = ds['X'+dir_+'_acc_wd'].assign_attrs({'long_name':Dir+r' Lagrangian - wind contribution'})
+        ds['X'+dir_+'_cor_ggd'] = ds['X'+dir_+'_cor_ggd'].assign_attrs({'long_name':Dir+r' Geostrophic contribution'})
+        ds['X'+dir_+'_cor_wd'] = ds['X'+dir_+'_cor_wd'].assign_attrs({'long_name':Dir+r' Coriolis - wind contribution'})
+        ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
+    return ds
         
 def dataset_coloc_combs(comb_list, nearest =True):
     D = []
@@ -123,7 +173,11 @@ def dataset_coloc_combs(comb_list, nearest =True):
             # select only nearest in time colocalisation
             df = select_nearest_swot_coloc(df)#.dropna()
             
-        coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth']
+        if 'naive_' in comb['alti_key'] : 
+            coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'time_to_swot_update', 'phi']
+        else: 
+            coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi']
+                
         ds = df[coords_list].to_xarray()
         ds['id_comb'] = id_comb
         
@@ -146,7 +200,8 @@ def dataset_coloc_combs(comb_list, nearest =True):
                 ds['prod'+direction+'_'+'_'.join(c)] = ds[c[0]+direction] * ds[c[1]+direction]
                 
         D.append(ds.set_coords('id_comb'))
-    return xr.concat(D, dim='id_comb').set_coords(coords_list)
+        ds = xr.concat(D, dim='id_comb').set_coords(coords_list)
+    return ds
 
 """ 
 _________________________________________
@@ -405,21 +460,24 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
 
 
 
-def compute_mean_square(ds):
+def compute_mean_square(ds, dirname = ('e', 'n')):
+    d0, d1 = dirname[0], dirname[1]
     var = ['acc', 'cor', 'ggd', 'wd','sum']
     VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
-    dss = (ds[[v+'n' for v in var] + [v+'e' for v in var]]**2).mean(dim='row_number').rename({var[i]+'n' : VAR[i]+'n' for i in range(5)}).rename({var[i]+'e' : VAR[i]+'e' for i in range(5)})
-    dss['sigmae'] = dss.ACCe + dss.CORe + dss.GGDe + dss.WDe
-    dss['sigman'] = dss.ACCn + dss.CORn + dss.GGDn + dss.WDn
+    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).mean(dim='row_number').rename({var[i]+d1 : VAR[i]+d1 for i in range(5)}).rename({var[i]+d0 : VAR[i]+d0 for i in range(5)})
+    dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
+    dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
     dss['nb_coloc'] = len(ds.row_number)
     #Balanced and error
-    for direction in ['e', 'n']:
+    for direction in [d0, d1]:
         for v in ['acc', 'cor', 'ggd', 'wd'] : 
                 dss['B'+direction+'_'+v] = -((ds[v+direction]*ds['exc'+direction+'_'+v])).mean(dim='row_number')
                 dss['E'+direction+'_'+v] = ((ds[v+direction]*ds['sum'+direction])).mean(dim='row_number')
     #pairs contributions
     for v in [v for v in ds if 'prod' in v]:
         dss[v.replace('prod', 'X')]=-2*ds[v].mean(dim='row_number')
+    if dirname == ('e', 'n'):
+        dss = assign_attrs(dss)
     return dss
 
 def select_row(df, pass_number, cycle_number, drifter_id):
