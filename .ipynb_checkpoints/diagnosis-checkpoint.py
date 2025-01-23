@@ -65,7 +65,7 @@ ALTI = {
 
 WD = {'era5' : os.path.join(zarr_dir, 'era5_'+drifters_sources.replace('.nc', '')+'.csv')}
 
-dtypes = {'drifter_id':str}
+dtypes = {'drifter_id':str, 'drifter_type':str}
 
 def prepared_drifters(drifter_key) : 
     dfr = pd.read_csv(DRIFTER[drifter_key], parse_dates=['datetime'], dtype=dtypes).set_index('row_number')
@@ -164,11 +164,16 @@ def assign_attrs(ds) :
         ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
     return ds
         
-def dataset_coloc_combs(comb_list, nearest =True):
+def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
     D = []
     for comb in comb_list :
         df, id_comb = one_coloc(**comb)
 
+        # remove identified swot outliers
+        if remove_id_outliers :
+            from cstes import remove_pb_swot
+            df = remove_pb_swot(df)
+            
         if nearest :
             # select only nearest in time colocalisation
             df = select_nearest_swot_coloc(df)#.dropna()
@@ -200,7 +205,15 @@ def dataset_coloc_combs(comb_list, nearest =True):
                 ds['prod'+direction+'_'+'_'.join(c)] = ds[c[0]+direction] * ds[c[1]+direction]
                 
         D.append(ds.set_coords('id_comb'))
-        ds = xr.concat(D, dim='id_comb').set_coords(coords_list)
+    ds = xr.concat(D, dim='id_comb').set_coords(coords_list)
+        
+    # remove identified swot outliers
+    if remove_id_outliers :
+        from cstes import err_acc
+        err_acc_update = np.array(err_acc)[np.isin(err_acc, ds.row_number)]
+        ds = ds.drop_sel(row_number = err_acc_update)  
+        print('Identified SWOT and drifter outliers have been removed')
+        
     return ds
 
 """ 
@@ -458,7 +471,56 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     )
     ax.set_xlabel(r"$[\gamma^2]$")
 
+def plot_join_pdfs(ds, x, y, binx=100, biny=100):
+    nsamples, xx, yy = np.histogram2d(ds[x], ds[y], bins=(binx, biny))
+    da = xr.DataArray(data=nsamples, dims=[x, y],coords={x:([x], (xx[:-1] + xx[1:])/2), y:([y], (yy[:-1] + yy[1:])/2)})
+    
+    fig = plt.figure(figsize=(9, 4))
+    
+    # Add a gridspec with two rows and two columns and a ratio of 2 to 7 between
+    # the size of the marginal axes and the main axes in both directions.
+    # Also adjust the subplot parameters for a square plot.
+    gs = fig.add_gridspec(
+        2,
+        2,
+        width_ratios=(7, 2),
+        height_ratios=(2, 7),
+        left=0.1,
+        right=0.9,
+        bottom=0.1,
+        top=0.9,
+        wspace=0.05,
+        hspace=0.05,
+    )
+    
+    ax = fig.add_subplot(gs[1, 0])
+    ax_histx = fig.add_subplot(gs[0, 0], sharex=ax)
+    ax_histy = fig.add_subplot(gs[1, 1], sharey=ax)
+    
 
+    
+    da.plot(ax=ax, add_colorbar=False)
+    ax.plot(xx, -xx, color='r')
+    ds[x].plot.hist(bins=binx, density=True, ax=ax_histx, zorder=1)
+    ds[y].plot.hist(
+        bins=biny,
+        density=True,
+        ax=ax_histy,
+        orientation="horizontal",
+        zorder=1,
+    )
+
+
+    # no labels
+    ax.grid(zorder=0)
+    ax_histx.grid()
+    ax_histy.grid()
+    ax_histx.tick_params(axis="x", labelbottom=False)
+    ax_histy.tick_params(axis="y", labelleft=False)
+    ax_histy.set_title('')
+    ax_histx.set_title('')
+    fig.tight_layout(rect=[0, 0, 1, 1])  # left, bottom, right, top (default is 0,0,1,1)
+    
 
 def compute_mean_square(ds, dirname = ('e', 'n')):
     d0, d1 = dirname[0], dirname[1]
