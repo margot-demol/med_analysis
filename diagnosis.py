@@ -30,7 +30,8 @@ _________________________________________
 """
 
 #drifters_sources = '10days_all_med_variational_10min_v0.nc'
-drifters_sources = 'all_med_lowess_10min_v0.nc'
+drifters_sources = 'all_med_variational_10min_v0.nc'
+#drifters_sources = 'all_med_lowess_10min_v0.nc'
 
 drifter_file = os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv'))
 DRIFTER = {'nofilter' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv')),
@@ -215,6 +216,26 @@ def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
         print('Identified SWOT and drifter outliers have been removed')
         
     return ds
+
+def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h'):
+    var = ['acc', 'cor', 'ggd', 'wd','sum']
+    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+    df = df.set_index(groupby)
+    dff = (df[[v+'n' for v in var] + [v+'e' for v in var]]**2).groupby(groupby, observed=False).mean().rename(columns = {var[i]+'n' : VAR[i]+'n' for i in range(5)}).rename(columns = {var[i]+'e' : VAR[i]+'e' for i in range(5)})/U2
+    dff['sigmae'] = dff.ACCe + dff.CORe + dff.GGDe + dff.WDe
+    dff['sigman'] = dff.ACCn + dff.CORn + dff.GGDn + dff.WDn
+    dff['nb_coloc'] = df.groupby(groupby, observed=False).id_comb.count()
+    #Balanced and error
+    for direction in ['e', 'n']:
+        for v in ['acc', 'cor', 'ggd', 'wd'] : 
+                dff['B'+direction+'_'+v] = -((df[v+direction]*df['exc'+direction+'_'+v])).groupby(groupby, observed=False).mean()/U2
+                dff['E'+direction+'_'+v] = ((df[v+direction]*df['sum'+direction])).groupby(groupby, observed=False).mean()/U2
+    #pairs contributions
+    for v in [v for v in df if 'prod' in v]:
+        dff[v.replace('prod', 'X')]=-2*df[v].groupby(groupby, observed=False).mean()/U2
+    dff = dff.to_xarray()
+    dff = assign_attrs(dff)
+    return dff
 
 """ 
 _________________________________________
