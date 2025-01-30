@@ -133,10 +133,12 @@ def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='
     
     return df, id_comb
 
-def assign_attrs(ds) :
-    for dir_ in ['e', 'n'] :
+def assign_attrs(ds, dirname=('e', 'n')) :
+    for dir_ in dirname :
         if dir_ == 'e': Dir = 'Zonal'
         if dir_ == 'n': Dir = 'Meridional'
+        if dir_ == 'x': Dir = 'Cross-track'
+        if dir_ == 'n': Dir = 'Along-track'
         ds['ACC'+dir_] = ds['ACC'+dir_].assign_attrs({'long_name':Dir + ' Lagrangian acceleration MS'})
         ds['COR'+dir_] = ds['COR'+dir_].assign_attrs({'long_name':Dir + ' Coriolis acceleration MS'})
         ds['GGD'+dir_] = ds['GGD'+dir_].assign_attrs({'long_name':Dir + ' Pressure gradient term MS'})
@@ -217,16 +219,15 @@ def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
         
     return ds
 
-def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h'):
+def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dir_ = ('e', 'n')):
     var = ['acc', 'cor', 'ggd', 'wd','sum']
     VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
     df = df.set_index(groupby)
-    dff = (df[[v+'n' for v in var] + [v+'e' for v in var]]**2).groupby(groupby, observed=False).mean().rename(columns = {var[i]+'n' : VAR[i]+'n' for i in range(5)}).rename(columns = {var[i]+'e' : VAR[i]+'e' for i in range(5)})/U2
-    dff['sigmae'] = dff.ACCe + dff.CORe + dff.GGDe + dff.WDe
-    dff['sigman'] = dff.ACCn + dff.CORn + dff.GGDn + dff.WDn
-    dff['nb_coloc'] = df.groupby(groupby, observed=False).id_comb.count()
+    dff = (df[[v+dir_[1] for v in var] + [v+dir_[0] for v in var]]**2).groupby(groupby, observed=False).mean().rename(columns = {var[i]+dir_[1] : VAR[i]+dir_[1] for i in range(5)}).rename(columns = {var[i]+dir_[0] : VAR[i]+dir_[0] for i in range(5)})/U2
+    dff['nb_coloc'] = df.groupby(groupby, observed=False)['acc'+dir_[0]].count()
     #Balanced and error
-    for direction in ['e', 'n']:
+    for direction in [dir_[0], dir_[1]]:
+        dff['sigma'+direction] = dff['ACC'+direction] + dff['COR'+direction] + dff['GGD'+direction] + dff['WD'+direction]
         for v in ['acc', 'cor', 'ggd', 'wd'] : 
                 dff['B'+direction+'_'+v] = -((df[v+direction]*df['exc'+direction+'_'+v])).groupby(groupby, observed=False).mean()/U2
                 dff['E'+direction+'_'+v] = ((df[v+direction]*df['sum'+direction])).groupby(groupby, observed=False).mean()/U2
@@ -234,7 +235,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h'):
     for v in [v for v in df if 'prod' in v]:
         dff[v.replace('prod', 'X')]=-2*df[v].groupby(groupby, observed=False).mean()/U2
     dff = dff.to_xarray()
-    dff = assign_attrs(dff)
+    dff = assign_attrs(dff, dir_)
     return dff
 
 """ 
@@ -551,6 +552,7 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
     dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
     dss['nb_coloc'] = len(ds.row_number)
+    
     #Balanced and error
     for direction in [d0, d1]:
         for v in ['acc', 'cor', 'ggd', 'wd'] : 
