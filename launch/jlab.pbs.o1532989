@@ -1,0 +1,460 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Tue Dec 10 09:21:25 GMT 2024
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2024-12-10 09:21:53.363 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2024-12-10 09:21:54.055 ServerApp] Package jupyter_lsp took 0.6910s to import
+[W 2024-12-10 09:21:54.055 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-12-10 09:21:54.377 ServerApp] Package jupyter_server_terminals took 0.3213s to import
+[I 2024-12-10 09:21:54.377 ServerApp] Package notebook took 0.0000s to import
+[I 2024-12-10 09:21:54.394 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2024-12-10 09:21:54.394 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-12-10 09:22:24.148 ServerApp] Package panel.io.jupyter_server_extension took 29.7369s to import
+[I 2024-12-10 09:22:24.149 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-12-10 09:22:24.155 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-12-10 09:22:24.161 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-10 09:22:24.176 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-12-10 09:22:24.179 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-12-10 09:22:24.179 ServerApp] notebook | extension was successfully linked.
+[I 2024-12-10 09:22:33.284 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-10 09:22:33.284 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2024-12-10 09:22:33.784 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-10 09:22:33.786 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-12-10 09:22:33.788 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-12-10 09:22:33.956 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2024-12-10 09:22:33.956 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2024-12-10 09:22:33.973 LabApp] Extension Manager is 'pypi'.
+[I 2024-12-10 09:22:33.976 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-10 09:22:33.980 ServerApp] notebook | extension was successfully loaded.
+[I 2024-12-10 09:22:33.981 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2024-12-10 09:22:33.981 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2024-12-10 09:22:33.981 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2024-12-10 09:22:33.981 ServerApp] http://r2i0n31:8877/lab
+[I 2024-12-10 09:22:33.981 ServerApp]     http://127.0.0.1:8877/lab
+[I 2024-12-10 09:22:33.982 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-10 09:22:34.105 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-12-10 09:25:22.687 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-10 09:25:34.345 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/31_diag_lonlat_map.ipynb is not trusted
+[W 2024-12-10 09:25:34.574 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/20_diag_gpsargos_droguedundrogued_cutoff.ipynb is not trusted
+[W 2024-12-10 09:25:34.767 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/32_diag_lonlat_synth_areas.ipynb is not trusted
+[W 2024-12-10 09:25:35.506 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/41_diag_dist.ipynb is not trusted
+[I 2024-12-10 09:25:37.572 ServerApp] Kernel started: b1364321-2c28-4944-9042-3285928cdcc7
+[I 2024-12-10 09:25:37.573 ServerApp] Kernel started: 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c
+[I 2024-12-10 09:25:37.576 ServerApp] Kernel started: d1de5187-4289-41d8-a555-92b956414ef8
+[I 2024-12-10 09:25:38.500 ServerApp] Kernel started: c1154f4f-eef8-4149-9fa3-b2e992f5ab91
+[I 2024-12-10 09:25:38.513 ServerApp] Kernel started: 4f0d3c95-9488-4270-8d50-f28a88ad43bd
+[I 2024-12-10 09:25:38.515 ServerApp] Kernel started: 77748931-d48e-4767-950d-e9e5fc330b4a
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:26:12.176 ServerApp] Connecting to kernel c1154f4f-eef8-4149-9fa3-b2e992f5ab91.
+[I 2024-12-10 09:26:12.190 ServerApp] Connecting to kernel 77748931-d48e-4767-950d-e9e5fc330b4a.
+[I 2024-12-10 09:26:12.196 ServerApp] Connecting to kernel 77748931-d48e-4767-950d-e9e5fc330b4a.
+[I 2024-12-10 09:26:12.203 ServerApp] Connecting to kernel 77748931-d48e-4767-950d-e9e5fc330b4a.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:26:12.241 ServerApp] Connecting to kernel 4f0d3c95-9488-4270-8d50-f28a88ad43bd.
+[I 2024-12-10 09:26:12.243 ServerApp] Connecting to kernel 4f0d3c95-9488-4270-8d50-f28a88ad43bd.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:26:12.540 ServerApp] Connecting to kernel 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:26:12.685 ServerApp] Connecting to kernel b1364321-2c28-4944-9042-3285928cdcc7.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:26:12.748 ServerApp] Connecting to kernel d1de5187-4289-41d8-a555-92b956414ef8.
+[W 2024-12-10 09:31:52.597 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:31:52.893 ServerApp] Kernel started: 570569cd-176e-4797-8d24-4d47d5e3aa65
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:31:53.781 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 09:32:25.661 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2024-12-10 09:32:29.709 ServerApp] Starting buffering for 77748931-d48e-4767-950d-e9e5fc330b4a:bc2353a5-3570-4794-9d1f-ee3757b88088
+[I 2024-12-10 09:32:30.987 ServerApp] Starting buffering for c1154f4f-eef8-4149-9fa3-b2e992f5ab91:6a3fbdba-bc0a-463b-b527-2d0f6c993277
+[I 2024-12-10 09:32:31.705 ServerApp] Starting buffering for 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c:7a2f044b-3043-4052-ad06-52eefb9bb4f1
+[I 2024-12-10 09:32:32.406 ServerApp] Starting buffering for d1de5187-4289-41d8-a555-92b956414ef8:217c6b1b-31e0-475a-9004-9827421c21ed
+[I 2024-12-10 09:32:33.240 ServerApp] Starting buffering for b1364321-2c28-4944-9042-3285928cdcc7:10ef3cdd-6aa0-4173-886b-49459f32a033
+[I 2024-12-10 09:32:35.724 ServerApp] Starting buffering for 4f0d3c95-9488-4270-8d50-f28a88ad43bd:a1c19084-1a45-44eb-9a16-1bfe48b9ec4e
+[I 2024-12-10 09:33:52.663 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:33:52.664 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:35:08.632 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2024-12-10 09:35:20.764 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:35:20.770 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 09:35:20.778 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 09:35:20.778 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:35:52.694 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:35:52.695 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:36:39.478 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-12-10 09:37:52.745 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:37:52.745 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:38:17.483 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2024-12-10 09:38:39.519 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-12-10 09:38:49.695 ServerApp] Saving file at /med_analysis/swot.py
+[I 2024-12-10 09:39:52.774 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:39:52.774 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:41:52.802 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:41:52.802 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:42:35.856 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:42:35.864 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 09:42:35.871 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 09:42:35.871 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:43:52.833 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:43:52.834 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:45:52.866 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:45:52.866 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[W 2024-12-10 09:46:29.279 ServerApp] Notebook historical_analysis/0_creating_datasets/23_zarr_joinfiles.ipynb is not trusted
+[I 2024-12-10 09:46:29.701 ServerApp] Kernel started: ee6721c0-da00-41c3-b25b-c3b2d3cb97db
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:46:30.686 ServerApp] Connecting to kernel ee6721c0-da00-41c3-b25b-c3b2d3cb97db.
+[I 2024-12-10 09:47:52.893 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:47:52.894 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:49:52.955 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:49:52.955 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:53:52.995 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:53:52.996 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:54:20.573 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:54:20.758 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:54:20.956 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:54:21.188 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:55:06.275 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:55:06.442 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:55:17.899 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:55:17.921 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 09:55:17.926 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 09:55:17.926 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 09:55:53.024 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:55:53.025 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:56:04.475 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:56:04.660 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 09:57:53.100 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:57:53.101 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 09:59:53.132 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 09:59:53.133 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 10:02:52.591 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:02:52.791 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:02:52.989 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:03:53.178 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 10:03:53.179 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 10:05:53.208 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 10:05:53.209 ServerApp] Notebook med_analysis/07_swot_editing_flag.ipynb is not trusted
+[I 2024-12-10 10:07:53.271 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:09:55.060 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:10:17.418 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:10:17.625 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:10:17.784 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:10:42.085 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:10:42.092 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 10:10:42.099 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 10:10:42.099 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 10:11:55.206 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:13:55.423 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:15:55.706 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:17:55.861 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:19:33.958 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:19:34.144 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:19:34.366 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:19:55.979 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:21:56.093 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:23:56.281 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:25:56.472 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:27:56.675 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:28:37.136 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:28:37.338 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:28:37.567 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:29:56.799 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:30:15.198 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:30:15.430 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:30:15.665 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:30:51.212 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:30:51.375 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:31:56.908 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:31:57.163 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:31:57.379 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:33:57.088 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:34:42.198 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:34:42.380 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:34:42.568 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:34:42.770 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:34:43.001 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:34:55.977 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:35:00.099 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:35:00.104 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 10:35:00.112 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 10:35:00.112 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 10:35:57.216 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:37:57.368 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:39:57.505 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:40:13.770 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:40:13.939 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:41:12.002 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:41:12.235 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:41:57.629 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:43:50.613 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:43:50.780 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:43:51.030 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:43:57.744 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:45:57.939 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:47:58.054 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:49:58.331 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:50:35.167 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:50:35.175 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 10:50:35.181 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 10:50:35.181 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 10:51:58.534 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:53:58.698 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:57:58.822 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 10:59:33.018 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:33.221 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:33.669 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:33.936 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:36.289 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:36.472 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:36.703 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 10:59:59.502 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:01:59.621 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:05:59.869 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:08:00.010 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:10:00.156 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:12:00.273 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:14:00.486 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:16:00.613 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:18:00.983 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:20:01.153 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:22:01.279 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 11:26:01.427 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 11:28:00.688 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2024-12-10 11:28:05.181 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2024-12-10 11:28:05.690 ServerApp] Starting buffering for ee6721c0-da00-41c3-b25b-c3b2d3cb97db:4e162e2d-0c90-4b14-83bf-9b161e49f53b
+[I 2024-12-10 11:28:10.183 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[W 2024-12-10 12:44:33.604 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-10 12:44:33.613 ServerApp] Connecting to kernel b1364321-2c28-4944-9042-3285928cdcc7.
+[I 2024-12-10 12:44:33.621 ServerApp] Connecting to kernel 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c.
+[I 2024-12-10 12:44:33.623 ServerApp] Connecting to kernel d1de5187-4289-41d8-a555-92b956414ef8.
+[I 2024-12-10 12:44:33.625 ServerApp] Connecting to kernel c1154f4f-eef8-4149-9fa3-b2e992f5ab91.
+[I 2024-12-10 12:44:33.627 ServerApp] Connecting to kernel 4f0d3c95-9488-4270-8d50-f28a88ad43bd.
+[I 2024-12-10 12:44:33.629 ServerApp] Connecting to kernel 77748931-d48e-4767-950d-e9e5fc330b4a.
+[I 2024-12-10 12:44:33.639 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 12:44:33.640 ServerApp] Discarding 15 buffered messages for 570569cd-176e-4797-8d24-4d47d5e3aa65:14907cae-c84b-4d1e-b1f2-9451c5c24161
+[I 2024-12-10 12:44:33.660 ServerApp] Connecting to kernel ee6721c0-da00-41c3-b25b-c3b2d3cb97db.
+[I 2024-12-10 12:44:33.742 ServerApp] Starting buffering for ee6721c0-da00-41c3-b25b-c3b2d3cb97db:3c254cc3-d077-4d6a-89a8-b11ff14fa5c8
+[I 2024-12-10 12:44:33.743 ServerApp] Starting buffering for b1364321-2c28-4944-9042-3285928cdcc7:22d84d8a-73d0-4f6b-ab33-5fc05546bcd6
+[I 2024-12-10 12:44:33.743 ServerApp] Starting buffering for 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c:cf05bb36-b967-49ae-8e67-8a15f8dc0ec1
+[I 2024-12-10 12:44:33.743 ServerApp] Starting buffering for d1de5187-4289-41d8-a555-92b956414ef8:6b473a91-f8fa-4ac2-9aa7-50e26c6eda00
+[I 2024-12-10 12:44:33.744 ServerApp] Starting buffering for c1154f4f-eef8-4149-9fa3-b2e992f5ab91:180b24b9-8d99-4ec4-867b-1942bcb098cc
+[I 2024-12-10 12:44:33.744 ServerApp] Starting buffering for 4f0d3c95-9488-4270-8d50-f28a88ad43bd:bcf71100-e455-4be6-b694-b3eb793e349d
+[I 2024-12-10 12:44:33.744 ServerApp] Starting buffering for 77748931-d48e-4767-950d-e9e5fc330b4a:40889943-9f37-4569-883d-c1db5af6e84f
+[W 2024-12-10 12:44:34.278 ServerApp] Notebook historical_analysis/0_creating_datasets/23_zarr_joinfiles.ipynb is not trusted
+[I 2024-12-10 12:44:34.798 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 12:44:34.800 ServerApp] Connecting to kernel ee6721c0-da00-41c3-b25b-c3b2d3cb97db.
+[I 2024-12-10 12:45:12.068 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:12.251 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:12.450 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:12.731 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:15.104 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:30.664 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:45:30.670 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 12:45:30.677 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 12:45:30.677 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 12:46:34.517 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:48:34.648 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:49:09.695 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:49:09.894 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:49:10.196 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 12:50:34.806 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:52:34.927 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:54:35.047 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:56:35.235 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 12:58:35.349 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:00:35.486 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:02:35.622 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:03:47.345 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:03:47.526 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:03:47.709 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:04:29.828 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:04:29.995 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:04:30.280 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:04:30.446 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:04:35.744 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:05:13.097 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:13.597 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:13.796 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:29.195 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:29.376 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:40.737 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:40.956 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:05:41.842 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:06:35.867 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:07:27.941 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:07:28.133 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:07:28.323 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:08:35.998 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:08:57.069 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:08:57.173 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 13:08:57.178 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 13:08:57.178 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 13:10:36.159 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:14:36.308 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:18:36.465 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 13:21:57.179 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2024-12-10 13:22:02.180 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[W 2024-12-10 13:22:04.801 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2024-12-10 13:22:09.803 ServerApp] Starting buffering for ee6721c0-da00-41c3-b25b-c3b2d3cb97db:d5693100-dfb6-4a01-834d-bd102cf4af71
+[I 2024-12-10 13:25:54.071 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:25:54.073 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:25:54.078 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:25:54.098 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 13:25:54.098 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 13:25:54.099 ServerApp] Replaying 1 buffered messages
+[I 2024-12-10 13:25:54.108 ServerApp] Connecting to kernel ee6721c0-da00-41c3-b25b-c3b2d3cb97db.
+[I 2024-12-10 13:25:54.108 ServerApp] Restoring connection for ee6721c0-da00-41c3-b25b-c3b2d3cb97db:d5693100-dfb6-4a01-834d-bd102cf4af71
+[I 2024-12-10 13:25:54.420 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:25:54.423 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:26:48.216 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:27:01.728 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:27:01.933 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:27:02.109 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:28:02.847 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:28:03.137 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:28:03.322 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:28:41.243 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:28:41.249 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 13:28:41.256 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 13:28:41.256 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 13:28:48.369 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:30:48.708 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:36:48.818 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:48:48.933 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:50:33.899 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:50:34.249 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:50:34.438 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:50:49.042 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:52:49.160 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:54:49.267 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:55:45.517 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:45.725 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:45.922 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:46.120 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:46.322 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:55.666 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 13:55:55.678 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 13:55:55.683 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 13:55:55.683 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 13:56:49.383 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 13:58:49.503 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:00:49.569 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:02:49.699 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:04:49.813 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:06:49.964 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:08:50.079 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:10:50.193 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:12:50.422 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:14:35.221 ServerApp] Kernel started: f33e2a70-3c02-4f20-861c-4f421723dbc2
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 14:14:36.028 ServerApp] Connecting to kernel f33e2a70-3c02-4f20-861c-4f421723dbc2.
+[I 2024-12-10 14:14:50.488 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:16:33.254 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:16:50.592 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:18:30.510 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:30.726 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:30.920 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:31.104 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:31.286 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:33.361 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:18:50.714 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:18:54.594 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:54.812 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:54.927 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:18:55.121 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:20:50.828 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:22:50.902 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:23:23.132 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:23:23.363 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:24:33.458 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:24:51.009 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:26:51.120 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:28:51.234 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:29:13.953 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:29:14.114 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:29:14.315 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:29:14.515 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:29:25.919 ServerApp] Kernel restarted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:29:25.923 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 14:29:25.928 ServerApp] Connecting to kernel 570569cd-176e-4797-8d24-4d47d5e3aa65.
+[I 2024-12-10 14:29:25.928 ServerApp] Restoring connection for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 14:29:31.505 ServerApp] Starting buffering for f33e2a70-3c02-4f20-861c-4f421723dbc2:d275843c-31c2-4804-9cc3-0dbd28ecf606
+[I 2024-12-10 14:30:51.354 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:32:51.987 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:34:52.136 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:36:52.251 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:37:01.855 ServerApp] Connecting to kernel f33e2a70-3c02-4f20-861c-4f421723dbc2.
+[I 2024-12-10 14:37:55.260 ServerApp] Kernel restarted: f33e2a70-3c02-4f20-861c-4f421723dbc2
+[I 2024-12-10 14:37:55.265 ServerApp] Starting buffering for f33e2a70-3c02-4f20-861c-4f421723dbc2:13221260-6c0f-4df7-8019-c650f14ae63a
+[I 2024-12-10 14:37:55.270 ServerApp] Connecting to kernel f33e2a70-3c02-4f20-861c-4f421723dbc2.
+[I 2024-12-10 14:37:55.270 ServerApp] Restoring connection for f33e2a70-3c02-4f20-861c-4f421723dbc2:13221260-6c0f-4df7-8019-c650f14ae63a
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 14:38:31.173 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:38:31.409 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:38:31.619 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:38:31.824 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:38:52.372 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:39:01.729 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:40:52.482 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:41:24.817 ServerApp] Kernel restarted: f33e2a70-3c02-4f20-861c-4f421723dbc2
+[I 2024-12-10 14:41:24.820 ServerApp] Starting buffering for f33e2a70-3c02-4f20-861c-4f421723dbc2:13221260-6c0f-4df7-8019-c650f14ae63a
+[I 2024-12-10 14:41:24.826 ServerApp] Connecting to kernel f33e2a70-3c02-4f20-861c-4f421723dbc2.
+[I 2024-12-10 14:41:24.826 ServerApp] Restoring connection for f33e2a70-3c02-4f20-861c-4f421723dbc2:13221260-6c0f-4df7-8019-c650f14ae63a
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2024-12-10 14:41:39.606 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:41:39.849 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:41:40.155 ServerApp] Kernel interrupted: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 14:42:52.595 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:43:01.830 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:44:52.701 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:45:02.010 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 14:46:52.809 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:48:52.953 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:52:53.068 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:54:53.183 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:56:53.292 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 14:58:53.482 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:00:53.593 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:02:53.760 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:04:53.932 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:07:02.046 ServerApp] Saving file at /med_analysis/Untitled1.ipynb
+[I 2024-12-10 15:08:54.057 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:10:54.198 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:12:54.330 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:14:54.458 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:16:54.591 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:18:54.769 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:20:54.898 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[I 2024-12-10 15:24:55.015 ServerApp] Saving file at /med_analysis/07_swot_editing_flag.ipynb
+[W 2024-12-10 15:27:24.109 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2024-12-10 15:27:24.827 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2024-12-10 15:27:25.929 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2024-12-10 15:27:29.110 ServerApp] Starting buffering for ee6721c0-da00-41c3-b25b-c3b2d3cb97db:d5693100-dfb6-4a01-834d-bd102cf4af71
+[I 2024-12-10 15:27:29.828 ServerApp] Starting buffering for f33e2a70-3c02-4f20-861c-4f421723dbc2:13221260-6c0f-4df7-8019-c650f14ae63a
+[I 2024-12-10 15:27:30.930 ServerApp] Starting buffering for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[C 2024-12-10 20:24:45.325 ServerApp] received signal 15, stopping
+Terminated
+[I 2024-12-10 20:24:46.673 ServerApp] Shutting down 6 extensions
+[I 2024-12-10 20:24:46.674 ServerApp] Shutting down 9 kernels
+[I 2024-12-10 20:24:46.675 ServerApp] Kernel shutdown: c1154f4f-eef8-4149-9fa3-b2e992f5ab91
+[I 2024-12-10 20:24:46.675 ServerApp] Kernel shutdown: 58a7aa03-6d1f-473b-87f3-c2f6b6d8a42c
+[I 2024-12-10 20:24:46.675 ServerApp] Discarding 140 buffered messages for 570569cd-176e-4797-8d24-4d47d5e3aa65:f04fa325-95f1-45a1-9586-42f87bc5b009
+[I 2024-12-10 20:24:46.676 ServerApp] Kernel shutdown: 570569cd-176e-4797-8d24-4d47d5e3aa65
+[I 2024-12-10 20:24:46.676 ServerApp] Kernel shutdown: ee6721c0-da00-41c3-b25b-c3b2d3cb97db
+[I 2024-12-10 20:24:46.676 ServerApp] Kernel shutdown: 77748931-d48e-4767-950d-e9e5fc330b4a
+[I 2024-12-10 20:24:46.677 ServerApp] Kernel shutdown: 4f0d3c95-9488-4270-8d50-f28a88ad43bd
+[I 2024-12-10 20:24:46.677 ServerApp] Kernel shutdown: d1de5187-4289-41d8-a555-92b956414ef8
+[I 2024-12-10 20:24:46.678 ServerApp] Kernel shutdown: f33e2a70-3c02-4f20-861c-4f421723dbc2
+[I 2024-12-10 20:24:46.678 ServerApp] Kernel shutdown: b1364321-2c28-4944-9042-3285928cdcc7
