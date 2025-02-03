@@ -25,7 +25,7 @@ from pyproj import Geod
 
 """ 
 _________________________________________
----- CREATE DATASET ----
+---- CREATE DATASETS ----
 _________________________________________
 """
 
@@ -133,40 +133,7 @@ def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='
     
     return df, id_comb
 
-def assign_attrs(ds, dirname=('e', 'n')) :
-    for dir_ in dirname :
-        if dir_ == 'e': Dir = 'Zonal'
-        if dir_ == 'n': Dir = 'Meridional'
-        if dir_ == 'x': Dir = 'Cross-track'
-        if dir_ == 'n': Dir = 'Along-track'
-        ds['ACC'+dir_] = ds['ACC'+dir_].assign_attrs({'long_name':Dir + ' Lagrangian acceleration MS'})
-        ds['COR'+dir_] = ds['COR'+dir_].assign_attrs({'long_name':Dir + ' Coriolis acceleration MS'})
-        ds['GGD'+dir_] = ds['GGD'+dir_].assign_attrs({'long_name':Dir + ' Pressure gradient term MS'})
-        ds['WD'+dir_] = ds['WD'+dir_].assign_attrs({'long_name':Dir + ' Wind term MS'})
-        
-        
-        ds['sigma'+dir_] = ds['sigma'+dir_].assign_attrs({'long_name':Dir+r' $\Sigma$'})
-        ds['S'+dir_] = ds['S'+dir_].assign_attrs({'long_name':Dir+r' Residual'})
-        
-        ds['B'+dir_+'_acc'] = ds['B'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration balanced signal contribution'})
-        ds['B'+dir_+'_cor'] = ds['B'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration balanced signal contribution'})
-        ds['B'+dir_+'_ggd'] = ds['B'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term balanced signal contribution'})
-        ds['B'+dir_+'_wd'] = ds['B'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term balanced signal contribution'})
-        
-        ds['E'+dir_+'_acc'] = ds['E'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration residual contribution'})
-        ds['E'+dir_+'_cor'] = ds['E'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration residual contribution'})
-        ds['E'+dir_+'_ggd'] = ds['E'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term residual contribution'})
-        ds['E'+dir_+'_wd'] = ds['E'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term residual contribution'})
-        
-        
-        ds['X'+dir_+'_acc_cor'] = ds['X'+dir_+'_acc_cor'].assign_attrs({'long_name':Dir+r' Inertial balance contribution'})
-        ds['X'+dir_+'_acc_ggd'] = ds['X'+dir_+'_acc_ggd'].assign_attrs({'long_name':Dir+r' Cyclostrophique contribution'})
-        ds['X'+dir_+'_acc_wd'] = ds['X'+dir_+'_acc_wd'].assign_attrs({'long_name':Dir+r' Lagrangian - wind contribution'})
-        ds['X'+dir_+'_cor_ggd'] = ds['X'+dir_+'_cor_ggd'].assign_attrs({'long_name':Dir+r' Geostrophic contribution'})
-        ds['X'+dir_+'_cor_wd'] = ds['X'+dir_+'_cor_wd'].assign_attrs({'long_name':Dir+r' Coriolis - wind contribution'})
-        ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
-    return ds
-        
+
 def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
     D = []
     for comb in comb_list :
@@ -219,24 +186,163 @@ def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
         
     return ds
 
-def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dir_ = ('e', 'n')):
+
+""" 
+_________________________________________
+---- CLOSURE ANALYSIS FUNCTIONS ----
+_________________________________________
+"""
+
+
+closure_vars = ['ACC*', 'COR*', 'GGD*', 'WD*', 'S*', 'sigma*'] + ['B*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['E*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['X*_acc_cor', 'X*_acc_ggd', 'X*_acc_wd', 'X*_cor_ggd', 'X*_cor_wd', 'X*_ggd_wd']
+
+def compute_mean_square(ds, dirname = ('e', 'n')):
+    """ Compute closure stats
+    ds : dataset containing terms values for all row_numbers
+    dirname : directions of the reconstruction
+    """
+    d0, d1 = dirname[0], dirname[1]
+    
     var = ['acc', 'cor', 'ggd', 'wd','sum']
     VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
-    df = df.set_index(groupby)
-    dff = (df[[v+dir_[1] for v in var] + [v+dir_[0] for v in var]]**2).groupby(groupby, observed=False).mean().rename(columns = {var[i]+dir_[1] : VAR[i]+dir_[1] for i in range(5)}).rename(columns = {var[i]+dir_[0] : VAR[i]+dir_[0] for i in range(5)})/U2
-    dff['nb_coloc'] = df.groupby(groupby, observed=False)['acc'+dir_[0]].count()
+    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).rename({var[i]+d1 : VAR[i]+d1 for i in range(5)}).rename({var[i]+d0 : VAR[i]+d0 for i in range(5)})
+    dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
+    dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
+    
+    nb_coloc = len(ds.row_number)
+    
     #Balanced and error
-    for direction in [dir_[0], dir_[1]]:
+    for direction in [d0, d1]:
+        for v in ['acc', 'cor', 'ggd', 'wd'] : 
+            dss['B'+direction+'_'+v] = -((ds[v+direction]*ds['exc'+direction+'_'+v]))
+            dss['E'+direction+'_'+v] = ((ds[v+direction]*ds['sum'+direction]))
+            
+    #pairs contributions
+    for v in [v for v in ds if 'prod' in v]:
+        dss[v.replace('prod', 'X')]=-2*ds[v]
+
+    #Sum of both direction
+    for v in closure_vars :
+        dss[v.replace('*', '')] = dss[v.replace('*', dirname[0])] + dss[v.replace('*', dirname[1])]
+
+    # Mean
+    dsm = dss.mean('row_number')
+    
+    # Add errors cnetral limit
+    dsse = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'ser__'+v for v in list(dss.keys())})
+
+    dss = xr.merge([dsm, dsse])
+    dss = assign_attrs(dss, list(dirname) + [''])
+    return dss
+
+
+def assign_attrs(ds, dirname=('e', 'n', '')) :
+    """ Assign attributes to compute_mean_square() functions dataset output """
+    for dir_ in dirname :
+        if dir_ == 'e': Dir = 'Zonal'
+        if dir_ == 'n': Dir = 'Meridional'
+        if dir_ == 'x': Dir = 'Cross-track'
+        if dir_ == 'y': Dir = 'Along-track'
+        if dir_ == '': Dir = 'Total'
+
+        
+        ds['ACC'+dir_] = ds['ACC'+dir_].assign_attrs({'long_name':Dir + ' Lagrangian acceleration MS'})
+        ds['COR'+dir_] = ds['COR'+dir_].assign_attrs({'long_name':Dir + ' Coriolis acceleration MS'})
+        ds['GGD'+dir_] = ds['GGD'+dir_].assign_attrs({'long_name':Dir + ' Pressure gradient term MS'})
+        ds['WD'+dir_] = ds['WD'+dir_].assign_attrs({'long_name':Dir + ' Wind term MS'})
+        
+        ds['sigma'+dir_] = ds['sigma'+dir_].assign_attrs({'long_name':Dir+r' $\Sigma$'})
+        ds['S'+dir_] = ds['S'+dir_].assign_attrs({'long_name':Dir+r' Residual'})
+        
+        ds['B'+dir_+'_acc'] = ds['B'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration balanced signal contribution'})
+        ds['B'+dir_+'_cor'] = ds['B'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration balanced signal contribution'})
+        ds['B'+dir_+'_ggd'] = ds['B'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term balanced signal contribution'})
+        ds['B'+dir_+'_wd'] = ds['B'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term balanced signal contribution'})
+        
+        ds['E'+dir_+'_acc'] = ds['E'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration residual contribution'})
+        ds['E'+dir_+'_cor'] = ds['E'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration residual contribution'})
+        ds['E'+dir_+'_ggd'] = ds['E'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term residual contribution'})
+        ds['E'+dir_+'_wd'] = ds['E'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term residual contribution'})
+        
+        
+        ds['X'+dir_+'_acc_cor'] = ds['X'+dir_+'_acc_cor'].assign_attrs({'long_name':Dir+r' Inertial balance contribution'})
+        ds['X'+dir_+'_acc_ggd'] = ds['X'+dir_+'_acc_ggd'].assign_attrs({'long_name':Dir+r' Cyclostrophique contribution'})
+        ds['X'+dir_+'_acc_wd'] = ds['X'+dir_+'_acc_wd'].assign_attrs({'long_name':Dir+r' Lagrangian - wind contribution'})
+        ds['X'+dir_+'_cor_ggd'] = ds['X'+dir_+'_cor_ggd'].assign_attrs({'long_name':Dir+r' Geostrophic contribution'})
+        ds['X'+dir_+'_cor_wd'] = ds['X'+dir_+'_cor_wd'].assign_attrs({'long_name':Dir+r' Coriolis - wind contribution'})
+        ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
+    return ds
+
+def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), bootstrap = True):
+    """ Compute closure stats on bins
+    ds : dataset containing terms values for all row_numbers
+    groupby : str, name of the binning variable
+    dirname : directions of the reconstruction
+    bootstrap :  bool, rather to compute bootstrap errors or not (longer with)
+    """
+    var = ['acc', 'cor', 'ggd', 'wd','sum']
+    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+
+
+    dff = (df[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]]**2).rename(columns = {var[i]+dirname[1] : VAR[i]+dirname[1] for i in range(5)}).rename(columns = {var[i]+dirname[0] : VAR[i]+dirname[0] for i in range(5)})/U2
+    dff = pd.concat([dff, df[groupby]], axis=1)
+    
+    nb_coloc = df.groupby(groupby, observed=False)['acc'+dirname[0]].count()
+
+    #Balanced and error
+    for direction in [dirname[0], dirname[1]]:
         dff['sigma'+direction] = dff['ACC'+direction] + dff['COR'+direction] + dff['GGD'+direction] + dff['WD'+direction]
         for v in ['acc', 'cor', 'ggd', 'wd'] : 
-                dff['B'+direction+'_'+v] = -((df[v+direction]*df['exc'+direction+'_'+v])).groupby(groupby, observed=False).mean()/U2
-                dff['E'+direction+'_'+v] = ((df[v+direction]*df['sum'+direction])).groupby(groupby, observed=False).mean()/U2
+                dff['B'+direction+'_'+v] = -((df[v+direction]*df['exc'+direction+'_'+v]))/U2
+                dff['E'+direction+'_'+v] = ((df[v+direction]*df['sum'+direction]))/U2
     #pairs contributions
     for v in [v for v in df if 'prod' in v]:
-        dff[v.replace('prod', 'X')]=-2*df[v].groupby(groupby, observed=False).mean()/U2
-    dff = dff.to_xarray()
-    dff = assign_attrs(dff, dir_)
-    return dff
+        dff[v.replace('prod', 'X')]=-2*df[v]/U2
+
+    # bootstrap errors
+    def mean_df(df):
+        return df.mean()
+    from scipy.stats import bootstrap
+    def compute_bootstrap_error(dff):
+        # print(len(dff))
+        if len(dff) < 3:
+            return np.nan
+        else:
+            data = (dff,)  # samples must be in a sequence
+            return bootstrap(data, statistic=mean_df).standard_error
+    
+    vars_errors = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars]
+
+    if bootstrap :
+        import dask.dataframe as dd
+        dfd = dd.from_pandas(dff)
+        DF = []
+        for v in vars_errors:
+            DF.append(
+                dfd.reset_index()[vars_errors + [groupby]]
+                .groupby(groupby, observed=False)[v]
+                .apply(compute_bootstrap_error)
+                .compute()
+            )
+            print(v)
+        booterrors = pd.concat(DF, axis=1)
+        booterrors = booterrors.rename(columns={v: "ber__" + v for v in booterrors.columns})
+        # sum of both dim
+        for v in closure_vars : 
+            booterrors['ber__'+v.replace('*', '')] = booterrors['ber__'+v.replace('*', dirname[0])] + booterrors['ber__'+v.replace('*', dirname[1])]
+    
+    #Final steps
+    dff = dff.set_index(groupby)[vars_errors].groupby(groupby, observed=False).mean()
+    dff['nb_coloc']= nb_coloc
+    
+    if bootstrap:
+        dff = pd.concat([dff, booterrors], axis=1)
+        
+    dss = dff.to_xarray()
+    dss = assign_attrs(dss, dirname)
+    dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', groupby + '.png'))
+
+    return dss
 
 """ 
 _________________________________________
@@ -543,27 +649,6 @@ def plot_join_pdfs(ds, x, y, binx=100, biny=100):
     ax_histx.set_title('')
     fig.tight_layout(rect=[0, 0, 1, 1])  # left, bottom, right, top (default is 0,0,1,1)
     
-
-def compute_mean_square(ds, dirname = ('e', 'n')):
-    d0, d1 = dirname[0], dirname[1]
-    var = ['acc', 'cor', 'ggd', 'wd','sum']
-    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
-    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).mean(dim='row_number').rename({var[i]+d1 : VAR[i]+d1 for i in range(5)}).rename({var[i]+d0 : VAR[i]+d0 for i in range(5)})
-    dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
-    dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
-    dss['nb_coloc'] = len(ds.row_number)
-    
-    #Balanced and error
-    for direction in [d0, d1]:
-        for v in ['acc', 'cor', 'ggd', 'wd'] : 
-                dss['B'+direction+'_'+v] = -((ds[v+direction]*ds['exc'+direction+'_'+v])).mean(dim='row_number')
-                dss['E'+direction+'_'+v] = ((ds[v+direction]*ds['sum'+direction])).mean(dim='row_number')
-    #pairs contributions
-    for v in [v for v in ds if 'prod' in v]:
-        dss[v.replace('prod', 'X')]=-2*ds[v].mean(dim='row_number')
-    if dirname == ('e', 'n'):
-        dss = assign_attrs(dss)
-    return dss
 
 def select_row(df, pass_number, cycle_number, drifter_id):
     return df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()
