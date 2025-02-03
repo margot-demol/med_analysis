@@ -100,7 +100,7 @@ def prepared_alti(alti_key, ggd_var=['duacs_ssha_karin_2_filtered','duacs_ssha_k
     
 def prepared_wd(wd_key): 
     dfw = pd.read_csv(WD[wd_key]).set_index('row_number')
-    dfw = dfw[[v for v in dfw if ('wde' in v or 'wdn' in v)]]
+    dfw = dfw[[v for v in dfw if ('vsde' in v or 'vsdn' in v)]]
     return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
     
 def create_id_comb(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio'):
@@ -117,7 +117,7 @@ def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='
         l = ['ggde_'+ggd_var,'ggdn_'+ggd_var,'phi']
     df = pd.concat([prepared_drifters(drifter_key),
                     prepared_alti(alti_key)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
-                    prepared_wd(wd_key)[['wde'+wd_depth+'_'+wd_model,'wdn'+wd_depth+'_'+wd_model]].rename(columns = {'wde'+wd_depth+'_'+wd_model : 'wde','wdn'+wd_depth+'_'+wd_model:'wdn'}),
+                    prepared_wd(wd_key)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
     id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
     
@@ -273,7 +273,7 @@ def assign_attrs(ds, dirname=('e', 'n', '')) :
         ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
     return ds
 
-def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), bootstrap = True):
+def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), bootstrap = False, vars_errors=None):
     """ Compute closure stats on bins
     ds : dataset containing terms values for all row_numbers
     groupby : str, name of the binning variable
@@ -300,26 +300,33 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         dff[v.replace('prod', 'X')]=-2*df[v]/U2
 
     # bootstrap errors
-    def mean_df(df):
-        return df.mean()
-    from scipy.stats import bootstrap
-    def compute_bootstrap_error(dff):
-        # print(len(dff))
-        if len(dff) < 3:
-            return np.nan
-        else:
-            data = (dff,)  # samples must be in a sequence
-            return bootstrap(data, statistic=mean_df).standard_error
-    
-    vars_errors = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars]
+    if bootstrap : 
+        def mean_df(df):
+            return df.mean()
+        from scipy.stats import bootstrap
+        def compute_bootstrap_error(dff):
+            # print(len(dff))
+            if len(dff) < 3:
+                return np.nan
+            else:
+                data = (dff,)  # samples must be in a sequence
+                return bootstrap(data, statistic=mean_df).standard_error
+        
+    closure_vars_2D = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars]
 
+    if isinstance(groupby, str) : grp = [groupby]
+    else : grp = groupby
+        
     if bootstrap :
+        #print(vars_errors)
+        if vars_errors is None : vars_errors = closure_vars_2D
         import dask.dataframe as dd
         dfd = dd.from_pandas(dff)
         DF = []
+        #print(vars_errors)
         for v in vars_errors:
             DF.append(
-                dfd.reset_index()[vars_errors + [groupby]]
+                dfd.reset_index()[vars_errors + grp]
                 .groupby(groupby, observed=False)[v]
                 .apply(compute_bootstrap_error)
                 .compute()
@@ -328,11 +335,11 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         booterrors = pd.concat(DF, axis=1)
         booterrors = booterrors.rename(columns={v: "ber__" + v for v in booterrors.columns})
         # sum of both dim
-        for v in closure_vars : 
+        for v in vars_errors : 
             booterrors['ber__'+v.replace('*', '')] = booterrors['ber__'+v.replace('*', dirname[0])] + booterrors['ber__'+v.replace('*', dirname[1])]
     
     #Final steps
-    dff = dff.set_index(groupby)[vars_errors].groupby(groupby, observed=False).mean()
+    dff = dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
     dff['nb_coloc']= nb_coloc
     
     if bootstrap:
@@ -340,7 +347,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         
     dss = dff.to_xarray()
     dss = assign_attrs(dss, dirname)
-    dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', groupby + '.png'))
+    dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
 
     return dss
 
@@ -598,6 +605,11 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
         arrowprops={"arrowstyle": "->", "facecolor": "k"},
     )
     ax.set_xlabel(r"$[\gamma^2]$")
+
+def plot_error(df, x, v, ax):
+    ax.fill_between(
+        df[x], df[v] - df["ber__" + v], df[v] + df["ber__" + v], color="silver"
+    )
 
 def plot_join_pdfs(ds, x, y, binx=100, biny=100):
     nsamples, xx, yy = np.histogram2d(ds[x], ds[y], bins=(binx, biny))
