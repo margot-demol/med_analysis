@@ -8,6 +8,8 @@ from glob import glob
 import geopandas as gpd
 import shapely as shp
 from shapely.geometry import Polygon
+import pyproj
+from pyproj import Geod
 
 from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir
 
@@ -148,49 +150,126 @@ def add_mask_inside_swot(ds_swot, ds_drifters):
     return ds_drifters
 
 
-def gradient_naive(dss, ggrad_variables=None):
-    if ggrad_variables : dss_ggrad = dss[ggrad_variables]
-    dx = dss_ggrad.dx.mean() # meters
-    dy = dss_ggrad.dy.mean()
+
+# get grid orientation and metrics
+def add_grid_metrics(ds):
+    """ add grid spatial metrics """
+
+    geod = Geod(ellps="WGS84")
+
+    lon, lat = ds.longitude, ds.latitude
+    dims = lon.dims
     
-    dss_ggradx = (g*dss_ggrad.differentiate("num_pixels")/dx).rename({v:'ggradx_'+v for v in dss_ggrad})
-    dss_ggrady = (g*dss_ggrad.differentiate("num_lines")/dy).rename({v:'ggrady_'+v for v in dss_ggrad})
-    return xr.merge([dss_ggradx, dss_ggrady])
+    # d/dx where x is cross-track
+    az12, az21, dx = geod.inv(
+        lon, lat, lon.shift(num_pixels=-1), lat.shift(num_pixels=-1),
+    )
+    
+    ds = ds.assign_coords(dx=(dims, dx), phi=(dims, az12*np.pi/180))
+    
+    ds["dx"] = (
+        ds["dx"]
+        .ffill("num_pixels")
+        .where(ds["duacs_editing_flag"]<5)
+    )
+
+    # phi_lon is cross-track direction from north
+    ds["phix"] = (
+        ds["phi"]
+        .ffill("num_pixels")
+        .where(ds["duacs_editing_flag"]<5)
+    )
+
+    # d/dy where y is along-track
+    az12, az21, dy = geod.inv(
+        lon, lat, lon.shift(num_lines=-1), lat.shift(num_lines=-1),
+    )
+    
+    # phiy is along-track direction from north
+    ds = ds.assign_coords(phi=(dims, az12*np.pi/180))
+    ds["phiy"] = (
+        ds["phi"]
+        .ffill("num_pixels")
+        .where(ds["duacs_editing_flag"]<5)
+    )
+    
+    ds = ds.assign_coords(dy=(dims, dy))
+    
+    ds["dy"] = (
+        ds["dy"]
+        .ffill("num_lines")
+        .where(ds["duacs_editing_flag"]<5)
+    )
+    ds['phi'] = ds['phi'].where(ds["duacs_editing_flag"]<5)
+    return ds
+
+
+"""
+______________
+COMPUTE GRADIENT 
+______________
+"""
+# Compute ggd with "naive" approach, noise will have an impact
+g = 9.80665
+
+def gradient_naive(dss, ggd_variables=None):
+    if ggd_variables : dss_ggd = dss[ggd_variables]
+    dx = dss_ggd.dx.mean() # meters
+    dy = dss_ggd.dy.mean()
+    
+    dss_ggdx = (g*dss_ggd.differentiate("num_pixels")/dx).rename({v:'ggdx_'+v for v in dss_ggd}).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
+    dss_ggdy = (g*dss_ggd.differentiate("num_lines")/dy).rename({v:'ggdy_'+v for v in dss_ggd}).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
+    return xr.merge([dss_ggdx, dss_ggdy])
 
 # gaussian derivative
 from scipy.ndimage import gaussian_filter
 
-def gradient_gauss(dss, ggrad_variables=None, cutoff = 1e3, **kwargs):
-    
-    if ggrad_variables : dss_ggrad = dss[ggrad_variables]
-    
-    dx = float(dss_ggrad.dx.mean())
-    dy = float(dss_ggrad.dy.mean())
+# gaussian derivative
+from scipy.ndimage import gaussian_filter
 
-    dss_ggradx = xr.Dataset()
-    dss_ggrady = xr.Dataset()
+def gradient_gauss(dss, cutoff, ggd_variables=None, **kwargs):
     
-    for v in dss_ggrad : 
-        da = dss_ggrad[v].interpolate_na(dim='num_pixels').interpolate_na(dim='num_lines')# prevent nan to spread
+    if ggd_variables : dss_ggd = dss[ggd_variables]
+    
+    dx = float(dss_ggd.dx.mean())
+    dy = float(dss_ggd.dy.mean())
+
+    dss_ggdx = xr.Dataset()
+    dss_ggdy = xr.Dataset()
+    
+    for v in dss_ggd : 
+        da = dss_ggd[v].interpolate_na(dim='num_pixels').interpolate_na(dim='num_lines')# prevent nan to spread
         
         # cross-track
         i = da.get_axis_num("num_pixels")
         order = [0,0]
         order[i] = 1
-        dss_ggradx['ggradx_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dx, order=order, **kwargs), dims=da.dims)/dx).where(~dss[v].isnull())
+        dss_ggdx['ggdx_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dx, order=order, **kwargs), dims=da.dims)/dx).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
         #da_dx = da_dx.where(da)
         
         # along-track
         i = da.get_axis_num("num_lines")
         order = [0,0]
         order[i] = 1
-        dss_ggrady['ggrady_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy).where(~dss[v].isnull())
+        dss_ggdy['ggdy_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
         
-    return xr.merge([dss_ggradx, dss_ggrady])
+    return xr.merge([dss_ggdx, dss_ggdy])
 
 
-#import pyinterp
-#mesh = pyinterp.RTree()
+# Variance estimation
+def etaf(dfs):
+    dfs['ggdx_etaf'] = dfs.ggdx_duacs_ssha_karin_2_filtered +dfs.ggdx_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdx_cvl_ocean_tide_fes_2022
+    dfs['ggdy_etaf'] = dfs.ggdy_duacs_ssha_karin_2_filtered + dfs.ggdy_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdy_cvl_ocean_tide_fes_2022
+
+
+
+"""
+______________
+INTERP 
+______________
+"""
+import pyinterp
+mesh = pyinterp.RTree()
 
 def interp_one_dataarray(da, new_lon, new_lat):
     lons = da.longitude.compute().data.flatten()
@@ -219,136 +298,43 @@ def interp_dss(dss, new_lon, new_lat):
         df_interp[v]=interp_one_dataarray(da, new_lon, new_lat)
     return df_interp
 
-def coloc_swot_cycle_swath(dfr, dfs, cycle, swath, method_gradient='gauss', cutoff=1e3):
+"""
+______________
+COLOC 
+______________
+"""
+
+def coloc_swot_cycle_swath(dfr, dfs, cycle, swath, cutoff, ggd_variables, variables, method_gradient='gauss'):
     # select drifter point
     dfr_ = dfr.where((dfr.pass_number==swath)&(dfr.cycle_number==cycle)).dropna()
     dss = xr.open_dataset(dfs.where((dfs.pass_number==swath)&(dfs.cycle_number==cycle)).dropna().file.values[0])
-    dss = add_grid_metrics(dss)
+    dss = add_grid_metrics(dss).reset_coords(['phi'])
+    dss = dss.where(dss.duacs_editing_flag==0) # ATTENTION SELECT pseudo good quality
     if method_gradient =='naive' :
-        dss_ggrad= gradient_naive(dss, ggrad_variables)
+        dss_ggd= gradient_naive(dss, ggd_variables=ggd_variables)
     if method_gradient == 'gauss' :
-        dss_ggrad = gradient_gauss(dss, ggrad_variables, cutoff = cutoff)
-    dss = xr.merge([dss[variables], dss_ggrad])
+        dss_ggd = gradient_gauss(dss, cutoff, ggd_variables)
+    dss = xr.merge([dss[variables], dss_ggd])
     df_interp = interp_dss(dss, dfr_.longitude.values, dfr_.latitude.values)
     df_out = pd.concat([dfr_.reset_index()[['row_number', 'longitude']].set_index('longitude'), df_interp.set_index('longitude')], axis=1).reset_index().set_index('row_number')
+    rotate_ggd(df_out, ggd_variables)
     return df_out
 
-def coloc_swot(dfr, dfs, method_gradient='gauss', cutoff=1e3):
+def coloc_swot(dfr, dfs, cutoff, ggd_variables, variables, method_gradient='gauss'):
     DF = []
     for swath in dfr.pass_number.unique() : 
         for cycle in dfr.where(dfr.pass_number==swath).dropna().cycle_number.unique():
-            DF.append(coloc_swot_cycle_swath(dfr, dfs, cycle, swath, method_gradient, cutoff=1e3))
+            DF.append(coloc_swot_cycle_swath(dfr, dfs, cycle,  swath, cutoff,  ggd_variables, variables, method_gradient))
     return pd.concat(DF)
-
+    
 """
-def swot_interp_grad_one(swath, cycle, lond, latd, row_number, variables, ggrad_variables) :
-    g=9.81
-    from scipy.interpolate import interp2d
-    from scipy.interpolate import LinearNDInterpolator
-    total_variables = variables + ggrad_variables
-    # SWOT
-    dss = xr.open_dataset(dfs.where((dfs.pass_number==swath)&(dfs.cycle_number==cycle)).dropna().file.values[0])[['longitude', 'latitude', 'time',]+ total_variables]
-    
-    # Create coordinates for num_lines and num_pixels
-    dss['num_lines']=np.arange(len(dss.num_lines))
-    dss['num_pixels']=np.arange(len(dss.num_pixels))
-    
-    # Create the interesting adt + corrections added back
-    #dss['eta'] = dss.cvl_mean_dynamic_topography_cnes_cls_22 + dss.cvl_ocean_tide_fes_2022 + dss.duacs_ssha_karin_2_filtered
-    #dss.eta.attrs={'long_name':'ADT+ocean tide correction', 'unit':'m'}
-    
-    # Projection in local swath ref (y in the num_pixels direction and x in the num_lines
-    xd, yd = lonlat2xy(dss.attrs['lonc'],dss.attrs['latc'], dss.attrs['phi'], lond, latd, lon1=None, lat1=None)
-    x, y = lonlat2xy(dss.attrs['lonc'],dss.attrs['latc'],  dss.attrs['phi'], dss.longitude, dss.latitude, lon1=None, lat1=None)
-    dss['x']= xr.DataArray(x, dims=['num_lines', 'num_pixels'])
-    dss['y']= xr.DataArray(y, dims=['num_lines', 'num_pixels'])
-    dss = dss.set_coords(['x', 'y'])
-    
-    #GET A PERFECTLY REGULAR GRID FROM THE PREVIOUS LOCAL SWATH GRID
-    # small sub-grid for scipy interp
-    try :
-        dl = 5*1000
-        test_x = (dss.x > xd-dl) & (dss.x<xd+dl)
-        ds_ = dss.where(test_x, drop=True)
-        test_y = (ds_.y > yd-dl) & (ds_.y<yd+dl)
-        ds_ = ds_.where(test_y, drop=True)
-        
-    except :# correct if the drifter point is two far outside the swath (must be corrected by a better selection of drifters under the swath)
-        return pd.Series(np.zeros(len(variables)+2*len(ggrad_variables)), index = variables + ['ggradx_'+var for var in ggrad_variables]+['ggrady_'+var for var in ggrad_variables])
-        
-    try : 
-        # coordinates of the regular grid
-        dll =50
-        box_x = np.arange(ds_.x.min()-dll, ds_.x.max()+dll, dll)
-        box_y = np.arange(ds_.y.min()-dll, ds_.y.max()+dll, dll)
-        # interpolate the interesting variable on this regular grid
-
-        try:
-            D = {}
-            for var in total_variables : 
-                Z = ds_[var].values.ravel()
-                X = ds_.x.values.ravel()
-                Y = ds_.y.values.ravel()
-                _ds = xr.Dataset(data_vars=dict(x=(["a"], X), y=(["a"], Y), z=(["a"], Z)))
-                _ds = _ds.dropna('a')
-                #f = LinearNDInterpolator(list(zip(x, y)), z)
-                #box_x, box_y = np.meshgrid(box_x, box_y) # for LinearNDInterpolator
-                f = interp2d(_ds.x, _ds.y, _ds.z)
-                Znew = f(box_x, box_y)
-                da = xr.DataArray(Znew, coords={'x':box_x, 'y':box_y}, dims=[ 'y', 'x'], name=var)
-                D[var]=da
-        except :
-            D = {}
-            for var in total_variables : 
-                lx = len(box_x)
-                ly = len(box_y)
-                da = xr.DataArray(np.zeros((ly, lx)), coords={'x':box_x, 'y':box_y}, dims=[ 'y', 'x'], name=var)
-                D[var]=da
-            print('pb with interp', cycle, swath, row_number)
-
-     
-    except : 
-        D = {}
-        for var in total_variables : 
-            box_x = np.arange(43)
-            box_y = np.arange(41)
-            lx = 43
-            ly = 41
-            da = xr.DataArray(np.zeros((ly, lx)), coords={'x':box_x, 'y':box_y}, dims=[ 'y', 'x'], name=var)
-            D[var]=da
-        print('pb with ds_.min()', cycle, swath, row_number)
-    
-    
-    # Compute g * gradient
-    Dx = {'ggradx_'+var : g*D[var].differentiate('x') for var in ggrad_variables}
-    Dy = {'ggrady_'+var : g*D[var].differentiate('y') for var in ggrad_variables}
-
-    # Interpolate at the drifter position
-    Dxd ={var : float(Dx[var].interp(x=xd, y=yd).values) for var in Dx}
-    Dyd ={var : float(Dy[var].interp(x=xd, y=yd).values) for var in Dy}
-    D ={var : float(D[var].interp(x=xd, y=yd).values) for var in variables}
-    print(row_number)
-
-    return pd.concat([pd.Series(D),pd.Series(Dxd),pd.Series(Dyd)])
-
-ggrad_variables = ['cvl_mean_dynamic_topography_cnes_cls_22',
-                 'cvl_mean_sea_surface_cnes_22_hybrid',
-                 'cvl_ocean_tide_fes_2022',
-                 'cvl_ssha_reference',
-                 'duacs_ssha_karin_2_calibrated',
-                 'duacs_ssha_karin_2_filtered',]
-
-variables = ['duacs_relative_vorticity',
-                    'duacs_speed_meridional',
-                    'duacs_speed_meridional_abs',
-                    'duacs_speed_zonal',
-                    'duacs_speed_zonal_abs',
-                   'cvl_swh_model', 
-                   ]
-
-def df_swot_interp_grad_one(dfr, variables, ggrad_variables):
-    return swot_interp_grad_one(dfr.pass_number, dfr.cycle_number, dfr.longitude, dfr.latitude, dfr.row_number, variables, ggrad_variables)
-
-def partition_swot_interp_grad(df) : 
-    return df.apply(df_swot_interp_grad_one, variables=variables, ggrad_variables=ggrad_variables, axis=1, result_type='expand')
+______________
+ROTATE 
+______________
 """
+def rotate(x, y, phi):
+    return np.cos(phi)*x - np.sin(phi)*y, np.sin(phi)*x + np.cos(phi)*y
+def rotate_ggd(df, ggd_variables):
+    for v in ggd_variables : 
+        df['ggde_'+v], df['ggdn_'+v] = rotate(df['ggdx_'+v], df['ggdy_'+v], df['phi'])
+
