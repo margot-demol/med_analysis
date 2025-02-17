@@ -212,6 +212,13 @@ ______________
 # Compute ggd with "naive" approach, noise will have an impact
 g = 9.80665
 
+ggd_variables = ['cvl_mean_dynamic_topography_cnes_cls_22',
+                 'cvl_mean_sea_surface_cnes_22_hybrid',
+                 'cvl_ocean_tide_fes_2022',
+                 'cvl_ssha_reference',
+                 'duacs_ssha_karin_2_calibrated',
+                 'duacs_ssha_karin_2_filtered',]
+
 def gradient_naive(dss, ggd_variables=None):
     if ggd_variables : dss_ggd = dss[ggd_variables]
     dx = dss_ggd.dx.mean() # meters
@@ -224,12 +231,10 @@ def gradient_naive(dss, ggd_variables=None):
 # gaussian derivative
 from scipy.ndimage import gaussian_filter
 
-# gaussian derivative
-from scipy.ndimage import gaussian_filter
-
 def gradient_gauss(dss, cutoff, ggd_variables=None, **kwargs):
     
     if ggd_variables : dss_ggd = dss[ggd_variables]
+    else : dss_ggd = dss
     
     dx = float(dss_ggd.dx.mean())
     dy = float(dss_ggd.dy.mean())

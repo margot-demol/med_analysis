@@ -211,7 +211,7 @@ _________________________________________
 """
 
 
-closure_vars = ['ACC*', 'COR*', 'GGD*', 'WD*', 'S*', 'sigma*'] + ['B*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['E*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['X*_acc_cor', 'X*_acc_ggd', 'X*_acc_wd', 'X*_cor_ggd', 'X*_cor_wd', 'X*_ggd_wd']
+closure_vars = ['ACC*', 'COR*', 'GGD*', 'WD*', 'S*', 'sigma*'] + ['B*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['E*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['X*_acc_cor', 'X*_acc_ggd', 'X*_acc_wd', 'X*_cor_ggd', 'X*_cor_wd', 'X*_ggd_wd'] + ['D*_cyclo', 'D*_anticyclo']
 
 def compute_mean_square(ds, dirname = ('e', 'n')):
     """ Compute closure stats
@@ -238,6 +238,11 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     for v in [v for v in ds if 'prod' in v]:
         dss[v.replace('prod', 'X')]=-2*ds[v]
 
+    # Cyclo/anticyclo contribution
+    for direction in [d0, d1]:
+        dss['D'+direction+'_cyclo'] = -2 *(ds['acc'+direction]+ds['cor'+direction])*ds['ggd'+direction]
+        dss['D'+direction+'_anticyclo'] = -2 *(ds['acc'+direction]+ds['ggd'+direction])*ds['cor'+direction]
+
     #Sum of both direction
     for v in closure_vars :
         dss[v.replace('*', '')] = dss[v.replace('*', dirname[0])] + dss[v.replace('*', dirname[1])]
@@ -245,7 +250,7 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     # Mean
     dsm = dss.mean('row_number')
     
-    # Add errors cnetral limit
+    # Add errors central limit
     dsse = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'ser__'+v for v in list(dss.keys())})
 
     dss = xr.merge([dsm, dsse])
@@ -288,6 +293,9 @@ def assign_attrs(ds, dirname=('e', 'n', '')) :
         ds['X'+dir_+'_cor_ggd'] = ds['X'+dir_+'_cor_ggd'].assign_attrs({'long_name':Dir+r' Geostrophic contribution'})
         ds['X'+dir_+'_cor_wd'] = ds['X'+dir_+'_cor_wd'].assign_attrs({'long_name':Dir+r' Coriolis - wind contribution'})
         ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
+        
+        ds['D'+dir_+'_cyclo'] = ds['D'+dir_+'_cyclo'].assign_attrs({'long_name':Dir+r' cyclonic contribution'})
+        ds['D'+dir_+'_anticyclo'] = ds['D'+dir_+'_anticyclo'].assign_attrs({'long_name':Dir+r' anticyclonic contribution'})
     return ds
 
 def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), bootstrap = False, vars_errors=None):
@@ -315,6 +323,12 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     #pairs contributions
     for v in [v for v in df if 'prod' in v]:
         dff[v.replace('prod', 'X')]=-2*df[v]/U2
+
+    # Cyclo/anticyclo contribution
+    for direction in [dirname[0], dirname[1]]:
+        dff['D'+direction+'_cyclo'] = (-2 *(df['acc'+direction]+df['cor'+direction])*df['ggd'+direction])/U2
+        dff['D'+direction+'_anticyclo'] = (-2 *(df['acc'+direction]+df['ggd'+direction])*df['cor'+direction])/U2
+
 
     # bootstrap errors
     if bootstrap : 
