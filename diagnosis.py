@@ -29,31 +29,38 @@ _________________________________________
 _________________________________________
 """
 
-#drifters_sources = '10days_all_med_variational_10min_v0.nc'
 drifters_sources = 'all_med_variational_10min_v0.nc'
-#drifters_sources = 'all_med_lowess_10min_v0.nc'
+spectral_decomp = True
+dt = '12h' #'nearestswath'
+if spectral_decomp == True : drifters_sources = 'spectral_decomp_'+ drifters_sources
+colocs_sources = f'{dt}_'+drifters_sources
+
 
 drifter_file = os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv'))
-DRIFTER = {'nofilter' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv')),
-           '0.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered05.csv')),
-           '1.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered15.csv')),
-           '2.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered25.csv')),
-           '3cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered3.csv')),
+
+DRIFTER = {'nofilter' : os.path.join(zarr_dir,'drifters', f'drifterscoloc_'+colocs_sources.replace('.nc', '.csv')),
+#           '0.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered05.csv')),
+#           '1.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered15.csv')),
+#           '2.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered25.csv')),
+#           '3cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered3.csv')),
           }
 ALTI = {
-    'swot250naive' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-    'swot250gauss1e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
-    'swot250gauss2e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
-    'swot250gauss3e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
-    'swot250gauss4e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
-    'swot250gauss5e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
-    'swot2kmnaive' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-    'swot2kmgauss1e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
-    'swot2kmgauss2e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
-    'swot2kmgauss3e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
-    'swot2kmgauss4e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
-    'swot2kmgauss5e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
-    'swot2kmgauss1e4' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e4.csv'), 
+    'swot250naive' : os.path.join(zarr_dir,'alti', 'swot_250_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot250gauss1e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
+#    'swot250gauss2e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
+#    'swot250gauss3e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
+#    'swot250gauss4e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
+#    'swot250gauss5e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
+    'swot2kmnaive' : os.path.join(zarr_dir,'alti','swot_2km_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
+#    'swot2kmgauss1e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
+#    'swot2kmgauss2e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
+#    'swot2kmgauss3e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
+#    'swot2kmgauss4e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
+#    'swot2kmgauss5e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
+#    'swot2kmgauss1e4' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e4.csv'), 
+    'L4noswotregional' : os.path.join(zarr_dir, 'alti',f'L4_regional_europenoswot_'+colocs_sources.replace('.nc', '.csv')), 
+    'L4noswotglobal' : os.path.join(zarr_dir, 'alti',f'L4_globalnoswot_'+colocs_sources.replace('.nc', '.csv')), 
+    'L4withswot' : os.path.join(zarr_dir, 'alti',f'L4_withswot_'+colocs_sources.replace('.nc', '.csv')), 
 #    'swot2kmnaive_1' : os.path.join(zarr_dir, 'swot_2km_cycleplus1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
 #    'swot2kmnaive_-1' : os.path.join(zarr_dir, 'swot_2km_cycleplus-1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
 #    'swot2kmnaive_2' : os.path.join(zarr_dir, 'swot_2km_cycleplus2_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
@@ -64,7 +71,7 @@ ALTI = {
 #    'swot2kmnaive_-4' : os.path.join(zarr_dir, 'swot_2km_cycleplus-4_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
 }
 
-WD = {'era5' : os.path.join(zarr_dir, 'era5_'+drifters_sources.replace('.nc', '')+'.csv')}
+WD = {'era5' : os.path.join(zarr_dir, 'wind', 'era5_'+colocs_sources.replace('.nc', '')+'.csv')}
 
 dtypes = {'drifter_id':str, 'drifter_type':str}
 
@@ -77,25 +84,34 @@ def prepared_drifters(drifter_key) :
     dfr = dfr.rename(columns = {'acceleration_north':'accn', 'acceleration_east':'acce'})
     return dfr[['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','cycle_date','drifter_id','drifter_type','accn', 'acce', 'core', 'corn']]
 
-def prepared_alti(alti_key, ggd_var=['duacs_ssha_karin_2_filtered','duacs_ssha_karin_2_calibrated','cvl_mean_dynamic_topography_cnes_cls_22','cvl_ocean_tide_fes_2022']) :
+def prepared_alti(alti_key, ggd_var=None) :
     dfs = pd.read_csv(ALTI[alti_key]).set_index('row_number')
     dfs['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfs.latitude * np.pi / 180)
-    dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
-    dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
-    if 'naive_' in alti_key : 
-        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv', 'time_to_swot_update', 'phi']
-    else: 
-        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv','phi']
-        
-    dfs = dfs[l]
-    dfs['ggde_etaf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
-    dfs['ggdn_etaf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
-    dfs['ggde_adtf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
-    dfs['ggdn_adtf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
-    dfs['ggde_etac'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
-    dfs['ggdn_etac'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
-    dfs['ggde_adtc'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
-    dfs['ggdn_adtc'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
+    
+    # L3 products
+    if 'L4' not in alti_key :
+        if ggd_var == None : ggd_var = ['duacs_ssha_karin_2_filtered','duacs_ssha_karin_2_calibrated','cvl_mean_dynamic_topography_cnes_cls_22','cvl_ocean_tide_fes_2022']
+        dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
+        dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
+        if 'naive_' in alti_key : 
+            l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv', 'time_to_swot_update', 'phi']
+        else: 
+            l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv','phi']
+            
+        dfs = dfs[l]
+        dfs['ggde_etaf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
+        dfs['ggdn_etaf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
+        dfs['ggde_adtf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
+        dfs['ggdn_adtf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
+        dfs['ggde_etac'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
+        dfs['ggdn_etac'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
+        dfs['ggde_adtc'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
+        dfs['ggdn_adtc'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
+    
+    elif 'L4' in alti_key : 
+        if ggd_var == None : ggd_var = ['adt', 'sla', 'err_sla']
+        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]
+        dfs = dfs[l]
     return dfs#.rename(columns ={v : v+'_' +alti_key for v in dfs})
     
 def prepared_wd(wd_key): 
@@ -111,14 +127,15 @@ def select_nearest_swot_coloc(df):
     return df.loc[idx]
 
 def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
-    if 'naive_' in alti_key : 
-        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'time_to_swot_update', 'phi']
-    else: 
-        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var,'phi']
+    if 'naive_' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'time_to_swot_update', 'phi']
+    elif 'L4' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
+    else: l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
     df = pd.concat([prepared_drifters(drifter_key),
                     prepared_alti(alti_key)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
                     prepared_wd(wd_key)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
+    if 'phi' not in df.columns :
+        df['phi'] = np.zeros(len(df))
     id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
     
     #depth
