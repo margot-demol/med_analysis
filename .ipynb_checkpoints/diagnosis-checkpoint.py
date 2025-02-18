@@ -75,13 +75,15 @@ WD = {'era5' : os.path.join(zarr_dir, 'wind', 'era5_'+colocs_sources.replace('.n
 
 dtypes = {'drifter_id':str, 'drifter_type':str}
 
-def prepared_drifters(drifter_key) : 
+def prepared_drifters(drifter_key, spectral_key = '') :
+    if spectral_key not in ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF']: assert False, "spectral_key should be in  ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF']"
+    if spectral_key != '': spectral_key += '_'
     dfr = pd.read_csv(DRIFTER[drifter_key], parse_dates=['datetime'], dtype=dtypes).set_index('row_number')
     dfr['time_to_swot'] = dfr.time_to_swot.astype("timedelta64[ns]")
     dfr['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfr.latitude * np.pi / 180)
-    dfr['core']= -dfr.f * dfr.velocity_north
-    dfr['corn']= dfr.f * dfr.velocity_east
-    dfr = dfr.rename(columns = {'acceleration_north':'accn', 'acceleration_east':'acce'})
+    dfr['core']= -dfr.f * dfr[spectral_key + 'velocity_north']
+    dfr['corn']= dfr.f * dfr[spectral_key + 'velocity_east']
+    dfr = dfr.rename(columns = {spectral_key + 'acceleration_north':'accn', spectral_key + 'acceleration_east':'acce'})
     return dfr[['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','cycle_date','drifter_id','drifter_type','accn', 'acce', 'core', 'corn']]
 
 def prepared_alti(alti_key, ggd_var=None) :
@@ -119,24 +121,24 @@ def prepared_wd(wd_key):
     dfw = dfw[[v for v in dfw if ('vsde' in v or 'vsdn' in v)]]
     return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
     
-def create_id_comb(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio'):
-    return drifter_key + '__' + alti_key +'_' + ggd_var + '__' + wd_model+'_'+ wd_depth + wd_key
+def create_id_comb(drifter_key, spectral_key,  alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio'):
+    return drifter_key+'_'+spectral_key + '__' + alti_key +'_' + ggd_var + '__' + wd_model+'_'+ wd_depth + wd_key
 
 def select_nearest_swot_coloc(df):
     idx = df.groupby(['pass_number','cycle_number','drifter_id']).time_to_swot.idxmin()
     return df.loc[idx]
 
-def one_coloc(drifter_key, alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
+def one_coloc(drifter_key, alti_key, spectral_key='', wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
     if 'naive_' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'time_to_swot_update', 'phi']
     elif 'L4' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
     else: l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
-    df = pd.concat([prepared_drifters(drifter_key),
+    df = pd.concat([prepared_drifters(drifter_key, spectral_key),
                     prepared_alti(alti_key)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
                     prepared_wd(wd_key)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
     if 'phi' not in df.columns :
         df['phi'] = np.zeros(len(df))
-    id_comb = create_id_comb(drifter_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
+    id_comb = create_id_comb(drifter_key, spectral_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
     
     #depth
     depth = df['pass_number'].copy()
