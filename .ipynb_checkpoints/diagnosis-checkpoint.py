@@ -372,7 +372,9 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     #Final steps
     dff = dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
     dff['nb_coloc']= nb_coloc
-    
+    for v in closure_vars : 
+        dff[v.replace('*', '')] = dff[v.replace('*', 'e')] + dff[v.replace('*', 'n')]
+        
     if bootstrap:
         dff = pd.concat([dff, booterrors], axis=1)
         

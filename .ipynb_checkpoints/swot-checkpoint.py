@@ -220,13 +220,47 @@ ggd_variables = ['cvl_mean_dynamic_topography_cnes_cls_22',
                  'duacs_ssha_karin_2_filtered',]
 
 def gradient_naive(dss, ggd_variables=None):
+    g=9.81
     if ggd_variables : dss_ggd = dss[ggd_variables]
+    
+    dx = float(dss_ggd.dx.mean())
+    dy = float(dss_ggd.dy.mean())
+
+    dss_ggdx = xr.Dataset()
+    dss_ggdy = xr.Dataset()
+    
     dx = dss_ggd.dx.mean() # meters
     dy = dss_ggd.dy.mean()
     
-    dss_ggdx = (g*dss_ggd.differentiate("num_pixels")/dx).rename({v:'ggdx_'+v for v in dss_ggd}).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
-    dss_ggdy = (g*dss_ggd.differentiate("num_lines")/dy).rename({v:'ggdy_'+v for v in dss_ggd}).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
-    return xr.merge([dss_ggdx, dss_ggdy])
+    dss_ggdx = (g*dss_ggd.differentiate("num_pixels")/dx).rename({v:'ggdx_'+v for v in ggd_variables})
+    dss_ggdy = (g*dss_ggd.differentiate("num_lines")/dy).rename({v:'ggdy_'+v for v in ggd_variables})
+
+    dss_ggdxx = (dss_ggdx.differentiate("num_pixels")/dx).rename({'ggdx_'+v:'ggdxx_'+v for v in ggd_variables})
+    dss_ggdyy = (dss_ggdy.differentiate("num_lines")/dy).rename({'ggdy_'+v:'ggdyy_'+v for v in ggd_variables})
+    dss_ggdxy = (dss_ggdx.differentiate("num_lines")/dy).rename({'ggdx_'+v:'ggdxy_'+v for v in ggd_variables})
+    
+    return xr.merge([dss_ggdx, dss_ggdy, dss_ggdxx, dss_ggdyy, dss_ggdxy]).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
+
+def strain_vorticity(dsg) : 
+    dsg['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dsg.latitude * np.pi / 180)
+    dsg['vorticity'] = (dsg['ggdxx_duacs_ssha_karin_2_filtered'] 
+                        + dsg['ggdxx_cvl_mean_dynamic_topography_cnes_cls_22']
+                        + dsg['ggdxx_cvl_ocean_tide_fes_2022']
+                        + dsg['ggdyy_duacs_ssha_karin_2_filtered']
+                        + dsg['ggdyy_cvl_mean_dynamic_topography_cnes_cls_22']
+                        + dsg['ggdyy_cvl_ocean_tide_fes_2022'])/dsg['f']
+    
+    dsg['sigma_s'] = (dsg['ggdxx_duacs_ssha_karin_2_filtered'] 
+                        + dsg['ggdxx_cvl_mean_dynamic_topography_cnes_cls_22']
+                        + dsg['ggdxx_cvl_mean_dynamic_topography_cnes_cls_22']
+                        - dsg['ggdyy_duacs_ssha_karin_2_filtered']
+                        - dsg['ggdyy_cvl_mean_dynamic_topography_cnes_cls_22']
+                        - dsg['ggdyy_cvl_ocean_tide_fes_2022'])/dsg['f']
+    
+    dsg['sigma_n'] = -2*(dsg['ggdxy_duacs_ssha_karin_2_filtered'] 
+                        + dsg['ggdxy_cvl_mean_dynamic_topography_cnes_cls_22']
+                        + dsg['ggdxy_cvl_ocean_tide_fes_2022'])/dsg['f']
+
 
 # gaussian derivative
 from scipy.ndimage import gaussian_filter
@@ -259,6 +293,45 @@ def gradient_gauss(dss, cutoff, ggd_variables=None, **kwargs):
         dss_ggdy['ggdy_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
         
     return xr.merge([dss_ggdx, dss_ggdy])
+
+def secondderivative_gauss(dss, cutoff, ggd_variables=None, **kwargs):
+    g=9.81
+    # gaussian derivative
+    from scipy.ndimage import gaussian_filter
+
+    if ggd_variables : dss_ggd = dss[ggd_variables]
+    else : dss_ggd = dss
+    
+    dx = float(dss_ggd.dx.mean())
+    dy = float(dss_ggd.dy.mean())
+
+    dss_ggdx = xr.Dataset()
+    dss_ggdy = xr.Dataset()
+    dss_ggdxx = xr.Dataset()
+    dss_ggdyy = xr.Dataset()
+    dss_ggdxy = xr.Dataset()
+    
+    
+    for v in dss_ggd : 
+        da = dss_ggd[v].interpolate_na(dim='num_pixels').interpolate_na(dim='num_lines')# prevent nan to spread
+        
+        # cross-track
+        i = da.get_axis_num("num_pixels")
+        order = [0,0]
+        order[i] = 1
+        dss_ggdx['ggdx_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dx, order=order, **kwargs), dims=da.dims)/dx)
+        dss_ggdx['ggdxx_'+v] = (xr.DataArray(gaussian_filter(dss_ggdx['ggdx_'+v], sigma=cutoff/dx, order=order, **kwargs), dims=da.dims)/dx)
+
+        
+        # along-track
+        i = da.get_axis_num("num_lines")
+        order = [0,0]
+        order[i] = 1
+        dss_ggdy['ggdy_'+v] = g*(xr.DataArray(gaussian_filter(da, sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy)
+        dss_ggdyy['ggdyy_'+v] = (xr.DataArray(gaussian_filter(dss_ggdy['ggdy_'+v], sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy)
+        dss_ggdxy['ggdxy_'+v] = (xr.DataArray(gaussian_filter(dss_ggdx['ggdx_'+v], sigma=cutoff/dy, order=order, **kwargs), dims=da.dims)/dy)
+              
+    return xr.merge([dss_ggdx, dss_ggdy, dss_ggdxx, dss_ggdyy, dss_ggdxy]).where(~dss['duacs_ssha_karin_2_filtered'].isnull())
 
 
 # Variance estimation
@@ -317,6 +390,7 @@ def coloc_swot_cycle_swath(dfr, dfs, cycle, swath, cutoff, ggd_variables, variab
     dss = dss.where(dss.duacs_editing_flag==0) # ATTENTION SELECT pseudo good quality
     if method_gradient =='naive' :
         dss_ggd= gradient_naive(dss, ggd_variables=ggd_variables)
+        strain_vorticity(dss_ggd)
     if method_gradient == 'gauss' :
         dss_ggd = gradient_gauss(dss, cutoff, ggd_variables)
     dss = xr.merge([dss[variables], dss_ggd])
