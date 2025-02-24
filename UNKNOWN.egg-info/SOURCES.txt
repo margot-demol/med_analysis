@@ -1,13 +1,9 @@
 .gitattributes
-0_image_gif.ipynb
 CONDA.md
 README.md
-_snippet_swot.ipynb
 gitignore.txt
 histenv.yml
 setup.py
-.ipynb_checkpoints/0_image_gif-checkpoint.ipynb
-.ipynb_checkpoints/_snippet_swot-checkpoint.ipynb
 .ipynb_checkpoints/setup-checkpoint.py
 UNKNOWN.egg-info/PKG-INFO
 UNKNOWN.egg-info/SOURCES.txt

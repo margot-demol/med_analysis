@@ -31,7 +31,8 @@ _________________________________________
 
 drifters_sources = 'all_med_variational_10min_v0.nc'
 spectral_decomp = True
-dt = '12h' #'nearestswath'
+#dt = '12h' #'nearestswath'
+dt = '10d' #'nearestswath'
 if spectral_decomp == True : drifters_sources = 'spectral_decomp_'+ drifters_sources
 colocs_sources = f'{dt}_'+drifters_sources
 
@@ -93,6 +94,7 @@ def prepared_alti(alti_key, ggd_var=None) :
     # L3 products
     if 'L4' not in alti_key :
         if ggd_var == None : ggd_var = ['duacs_ssha_karin_2_filtered','duacs_ssha_karin_2_calibrated','cvl_mean_dynamic_topography_cnes_cls_22','cvl_ocean_tide_fes_2022']
+        dfs = dfs.copy()#defragmented
         dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
         dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
         if 'naive_' in alti_key : 
