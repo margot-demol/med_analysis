@@ -300,7 +300,7 @@ def assign_attrs(ds, dirname=('e', 'n', '')) :
         ds['D'+dir_+'_anticyclo'] = ds['D'+dir_+'_anticyclo'].assign_attrs({'long_name':Dir+r' anticyclonic contribution'})
     return ds
 
-def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), bootstrap = False, vars_errors=None):
+def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), compute_error = 'no', vars_errors=None):
     """ Compute closure stats on bins
     ds : dataset containing terms values for all row_numbers
     groupby : str, name of the binning variable
@@ -314,7 +314,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     dff = (df[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]]**2).rename(columns = {var[i]+dirname[1] : VAR[i]+dirname[1] for i in range(5)}).rename(columns = {var[i]+dirname[0] : VAR[i]+dirname[0] for i in range(5)})/U2
     dff = pd.concat([dff, df[groupby]], axis=1)
     
-    nb_coloc = df.groupby(groupby, observed=False)['acc'+dirname[0]].count()
+    nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
 
     #Balanced and error
     for direction in [dirname[0], dirname[1]]:
@@ -331,9 +331,13 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         dff['D'+direction+'_cyclo'] = (-2 *(df['acc'+direction]+df['cor'+direction])*df['ggd'+direction])/U2
         dff['D'+direction+'_anticyclo'] = (-2 *(df['acc'+direction]+df['ggd'+direction])*df['cor'+direction])/U2
 
+    #Sum of both direction
+    for v in closure_vars :
+        dff[v.replace('*', '')] = dff[v.replace('*', dirname[0])] + dff[v.replace('*', dirname[1])]
+
 
     # bootstrap errors
-    if bootstrap : 
+    if compute_error == 'bootstrap' : 
         def mean_df(df):
             return df.mean()
         from scipy.stats import bootstrap
@@ -345,12 +349,30 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
                 data = (dff,)  # samples must be in a sequence
                 return bootstrap(data, statistic=mean_df).standard_error
         
-    closure_vars_2D = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars]
+    closure_vars_2D = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars] + [v.replace('*', '')for v in closure_vars]
 
     if isinstance(groupby, str) : grp = [groupby]
     else : grp = groupby
-        
-    if bootstrap :
+    
+    # centrallimit errors
+    if compute_error == 'centrallimit' : 
+        # Add errors central limit
+        centrallimit = 2*dff.set_index(groupby).groupby(groupby, observed=False)[closure_vars_2D].std().div(np.sqrt(nb_coloc), axis=0) # 95%
+        centrallimit = centrallimit.rename(columns = {v:'ser__'+v for v in closure_vars_2D})
+
+    
+    # bootstrap errors
+    if compute_error == 'bootstrap' : 
+        def mean_df(df):
+            return df.mean()
+        from scipy.stats import bootstrap
+        def compute_bootstrap_error(dff):
+            # print(len(dff))
+            if len(dff) < 3:
+                return np.nan
+            else:
+                data = (dff,)  # samples must be in a sequence
+                return bootstrap(data, statistic=mean_df).standard_error
         #print(vars_errors)
         if vars_errors is None : vars_errors = closure_vars_2D
         import dask.dataframe as dd
@@ -374,18 +396,21 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     #Final steps
     dff = dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
     dff['nb_coloc']= nb_coloc
+
     for v in closure_vars : 
         dff[v.replace('*', '')] = dff[v.replace('*', 'e')] + dff[v.replace('*', 'n')]
-        
-    if bootstrap:
+    
+    if compute_error == 'centrallimit' : 
+        dff = pd.concat([dff, centrallimit], axis=1)
+    if compute_error == 'bootstrap' :
         dff = pd.concat([dff, booterrors], axis=1)
+        
         
     dss = dff.to_xarray()
     dss = assign_attrs(dss, dirname)
-    dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
+    #dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
 
     return dss
-
 """ 
 _________________________________________
 ---- PLOTS ----
@@ -641,9 +666,9 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     )
     ax.set_xlabel(r"$[\gamma^2]$")
 
-def plot_error(df, x, v, ax):
+def plot_error(df, x, v, ax, suf = 'ber__'):
     ax.fill_between(
-        df[x], df[v] - df["ber__" + v], df[v] + df["ber__" + v], color="silver"
+        df[x], df[v] - df[suf + v], df[v] + df[suf + v], color="silver"
     )
 
 def plot_join_pdfs(ds, x, y, binx=100, biny=100):
