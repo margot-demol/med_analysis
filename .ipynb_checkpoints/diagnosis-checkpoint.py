@@ -413,6 +413,32 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     #dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
 
     return dss
+
+
+
+def remove_dt_traj_limit_coloc(dfr, dt):
+    """ 
+    Remove colocations that are at the dt-time limit of a drifter trajectories, for all cycle
+    Example dfr  :
+    dfr = dd.read_csv(DRIFTER['nofilter'], parse_dates=['datetime', 'cycle_date'], dtype=dtypes).set_index('row_number')[['cycle_date','datetime', 'drifter_id']]
+    """
+    # Build test table 
+    cycle_dates = dfr.cycle_date.unique()
+    drifter_id = dfr.drifter_id.unique()
+
+    test_tmin = xr.DataArray(np.full((len(drifter_id),len(cycle_dates)), True), coords={'drifter_id':drifter_id, 'cycle_date':cycle_dates}).rename('drifter_tmin')
+    test_tmax = xr.DataArray(np.full((len(drifter_id),len(cycle_dates)), True), coords={'drifter_id':drifter_id, 'cycle_date':cycle_dates}).rename('drifter_tmax')
+
+    for d in drifter_id :
+        for c in cycle_dates:
+            test_tmin.loc[d, c] = (c-pd.Timedelta('10d')> tmin.loc[d])
+            test_tmax.loc[d, c] = (c+pd.Timedelta('10d')< tmax.loc[d])
+    dft = pd.concat([test_tmin.to_dataframe(), test_tmax.to_dataframe()], axis=1)
+    dft['test'] = dft.drifter_tmin & dft.drifter_tmax
+
+    return dfr.reset_index().set_index(['drifter_id', 'cycle_date']).where(dft.test).dropna().reset_index().set_index('row_number')
+
+    
 """ 
 _________________________________________
 ---- PLOTS ----
