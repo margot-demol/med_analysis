@@ -31,9 +31,11 @@ _________________________________________
 
 drifters_sources = 'all_med_variational_10min_v0.nc'
 spectral_decomp = True
-#dt = '12h' #'nearestswath'
-dt = '10d' #'nearestswath'
+low_pass = False
+dt = '12h' #'nearestswath'
+#dt = '10d' #'nearestswath'
 if spectral_decomp == True : drifters_sources = 'spectral_decomp_'+ drifters_sources
+if low_pass == True : drifters_sources = 'low_pass_'+ drifters_sources
 colocs_sources = f'{dt}_'+drifters_sources
 
 
@@ -47,29 +49,12 @@ DRIFTER = {'nofilter' : os.path.join(zarr_dir,'drifters', f'drifterscoloc_'+colo
           }
 ALTI = {
     'swot250naive' : os.path.join(zarr_dir,'alti', 'swot_250_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot250gauss1e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
-#    'swot250gauss2e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
-#    'swot250gauss3e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
-#    'swot250gauss4e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
-#    'swot250gauss5e3' : os.path.join(zarr_dir, 'swot_250_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
+    **{f'swot250{int(cutoff)}' : os.path.join(zarr_dir, 'alti', 'swot_250_'+colocs_sources.replace('.nc', '')+f'_gauss{int(cutoff)}.csv') for cutoff in list(np.arange(1000, 15000, 1000))},
     'swot2kmnaive' : os.path.join(zarr_dir,'alti','swot_2km_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmgauss1e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e3.csv'), 
-#    'swot2kmgauss2e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss2e3.csv'),
-#    'swot2kmgauss3e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss3e3.csv'), 
-#    'swot2kmgauss4e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss4e3.csv'), 
-#    'swot2kmgauss5e3' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss5e3.csv'), 
-#    'swot2kmgauss1e4' : os.path.join(zarr_dir, 'swot_2km_'+drifters_sources.replace('.nc', '')+'_gauss1e4.csv'), 
+    **{f'swot2km{int(cutoff)}' : os.path.join(zarr_dir, 'alti', 'swot_2km_'+colocs_sources.replace('.nc', '')+f'_gauss{int(cutoff)}.csv') for cutoff in list(np.arange(1000, 15000, 1000))},
     'L4noswotregional' : os.path.join(zarr_dir, 'alti',f'L4_regional_europenoswot_'+colocs_sources.replace('.nc', '.csv')), 
     'L4noswotglobal' : os.path.join(zarr_dir, 'alti',f'L4_globalnoswot_'+colocs_sources.replace('.nc', '.csv')), 
     'L4withswot' : os.path.join(zarr_dir, 'alti',f'L4_withswot_'+colocs_sources.replace('.nc', '.csv')), 
-#    'swot2kmnaive_1' : os.path.join(zarr_dir, 'swot_2km_cycleplus1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_-1' : os.path.join(zarr_dir, 'swot_2km_cycleplus-1_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_2' : os.path.join(zarr_dir, 'swot_2km_cycleplus2_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_-2' : os.path.join(zarr_dir, 'swot_2km_cycleplus-2_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_3' : os.path.join(zarr_dir, 'swot_2km_cycleplus3_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_-3' : os.path.join(zarr_dir, 'swot_2km_cycleplus-3_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_4' : os.path.join(zarr_dir, 'swot_2km_cycleplus4_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
-#    'swot2kmnaive_-4' : os.path.join(zarr_dir, 'swot_2km_cycleplus-4_'+drifters_sources.replace('.nc', '')+'_naive.csv'), 
 }
 
 WD = {'era5' : os.path.join(zarr_dir, 'wind', 'era5_'+colocs_sources.replace('.nc', '')+'.csv')}
@@ -113,7 +98,7 @@ def prepared_alti(alti_key, ggd_var=None) :
         dfs['ggdn_adtc'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
     
     elif 'L4' in alti_key : 
-        if ggd_var == None : ggd_var = ['adt', 'sla', 'err_sla']
+        if ggd_var == None : ggd_var = ['adt', 'sla', 'err_sla', 'fromduacsv']
         l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]
         dfs = dfs[l]
     return dfs#.rename(columns ={v : v+'_' +alti_key for v in dfs})
@@ -400,7 +385,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     dff['nb_coloc']= nb_coloc
 
     for v in closure_vars : 
-        dff[v.replace('*', '')] = dff[v.replace('*', 'e')] + dff[v.replace('*', 'n')]
+        dff[v.replace('*', '')] = dff[v.replace('*', dirname[0])] + dff[v.replace('*', dirname[1])]
     
     if compute_error == 'centrallimit' : 
         dff = pd.concat([dff, centrallimit], axis=1)

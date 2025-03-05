@@ -404,6 +404,7 @@ def coloc_swot(dfr, dfs, cutoff, ggd_variables, variables, method_gradient='gaus
     for swath in dfr.pass_number.unique() : 
         for cycle in dfr.where(dfr.pass_number==swath).dropna().cycle_number.unique():
             DF.append(coloc_swot_cycle_swath(dfr, dfs, cycle,  swath, cutoff,  ggd_variables, variables, method_gradient))
+            print(cycle)
     return pd.concat(DF)
     
 """
