@@ -22,6 +22,8 @@ def browse_swot_250():
         files = sorted(glob(os.path.join(swot_dir, f"{p}_*.zarr")))
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
+            if (p==3)& (c in [568]) : continue #empty cycle_number
+            if (p==16)& (c in [508,513, 534, 554, 568]) : continue #empty cycle_number
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
@@ -52,6 +54,8 @@ def browse_swot_2km():
         files = sorted(glob(os.path.join(swot_dir_2km, f"{p}_*.zarr")))
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
+            if (p==3)& (c in [568]) : continue #empty cycle_number
+            if (p==16)& (c in [508,513, 534, 554, 568]) : continue #empty cycle_number
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
             #print(f)
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
@@ -414,6 +418,7 @@ ______________
 """
 def rotate(x, y, phi):
     return np.cos(phi)*x - np.sin(phi)*y, np.sin(phi)*x + np.cos(phi)*y
+    
 def rotate_ggd(df, ggd_variables):
     for v in ggd_variables : 
         df['ggde_'+v], df['ggdn_'+v] = rotate(df['ggdx_'+v], df['ggdy_'+v], df['phi'])
