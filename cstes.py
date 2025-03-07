@@ -10,11 +10,10 @@ c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-space = 'local'
+space = 'datarmor'
 if space == 'datarmor' :
     #DATARMOR
-    swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
-    swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
+    swot_dir_2km = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2'
     swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_1.0.2'
     drifters_dir = '/home/datawork-lops-oc/aponte/swot/cswot/drifters_harmonized'
     zarr_dir = "/home/datawork-lops-oc/aponte/margot/med_coloc"

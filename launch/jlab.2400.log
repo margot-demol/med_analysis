@@ -1,0 +1,2117 @@
+ssh -N -L 8877:r1i6n17:8877 -L 8787:r1i6n17:8787 mdemol@datarmor1-10g
+(Change the first port number if it is already used)
+Then open the following URLs:
+	Jupyter lab: http://localhost:8877
+	Dask dashboard: http://localhost:8787
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8334 0.8395 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-09T18...
+  * pass_cycle       (pass_cycle) <U6 24B '16_577'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8334 0.8395 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-09T18...
+  * pass_cycle       (pass_cycle) <U6 24B '16_577'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8384 0.8445 ... 3.354
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-07T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_483'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8299 0.836 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-23T02...
+  * pass_cycle       (pass_cycle) <U6 24B '16_529'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-07T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_513'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-27T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_503'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8283 0.8344 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-12T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_518'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8274 0.8335 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-23T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_499'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8334 0.8395 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-09T18...
+  * pass_cycle       (pass_cycle) <U6 24B '16_577'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8321 0.8382 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-12T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_488'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8328 0.8389 ... 3.349
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-11T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_487'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8308 0.8369 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-19T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_525'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-26T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_502'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8297 0.8358 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-18T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_494'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-06T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_512'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.84 0.8461 ... 3.356
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-03T10...
+  * pass_cycle       (pass_cycle) <U6 24B '16_479'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8307 0.8368 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-16T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_492'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8297 0.8358 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-18T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_494'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8411 0.8472 ... 3.357
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-05T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_481'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8288 0.8349 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-20T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_496'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-02T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_508'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8367 0.8428 ... 3.353
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-08T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_484'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8402 0.8463 ... 3.356
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-06T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_482'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8288 0.8349 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-20T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_496'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8269 0.833 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-24T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_500'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-02T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_508'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8283 0.8344 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-12T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_518'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8317 0.8378 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-13T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_489'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8307 0.8368 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-16T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_492'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.827 0.8331 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-09T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_515'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-28T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_504'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8291 0.8352 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-14T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_520'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8291 0.8352 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-27T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_533'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8269 0.833 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-24T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_500'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8367 0.8428 ... 3.353
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-08T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_484'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8328 0.8389 ... 3.349
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-11T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_487'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8338 0.8399 ... 3.35
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-10T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_486'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8313 0.8374 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-14T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_490'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.826 0.8321 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-01T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_507'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-08T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_514'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8292 0.8353 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-19T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_495'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8308 0.8369 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-17T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_523'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8384 0.8445 ... 3.354
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-07T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_483'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8313 0.8374 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-14T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_490'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-08T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_514'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8395 0.8456 ... 3.355
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-02T10...
+  * pass_cycle       (pass_cycle) <U6 24B '16_478'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8302 0.8363 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-17T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_493'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8262 0.8323 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-05T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_511'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-25T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_501'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8263 0.8324 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-29T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_505'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8395 0.8456 ... 3.355
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-02T10...
+  * pass_cycle       (pass_cycle) <U6 24B '16_478'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8317 0.8378 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-13T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_489'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8274 0.8335 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-23T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_499'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8263 0.8324 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-29T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_505'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.84 0.8461 ... 3.356
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-03T10...
+  * pass_cycle       (pass_cycle) <U6 24B '16_479'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8311 0.8372 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-15T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_491'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8351 0.8412 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-09T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_485'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8311 0.8372 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-15T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_491'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8275 0.8336 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-10T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_516'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-27T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_503'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8327 0.8388 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-08T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_546'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8257 0.8318 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-03T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_509'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-28T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_534'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8402 0.8463 ... 3.356
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-06T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_482'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8351 0.8412 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-09T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_485'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8411 0.8472 ... 3.357
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-05T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_481'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8321 0.8382 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-12T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_488'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8282 0.8343 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-22T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_498'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-25T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_501'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8297 0.8358 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-24T02...
+  * pass_cycle       (pass_cycle) <U6 24B '16_530'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8295 0.8356 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-15T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_521'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8328 0.8389 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-06T00...
+  * pass_cycle       (pass_cycle) <U6 24B '16_543'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8338 0.8399 ... 3.35
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-10T09...
+  * pass_cycle       (pass_cycle) <U6 24B '16_486'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8287 0.8348 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-21T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_497'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8262 0.8323 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-30T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_506'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8379 0.844 ... 3.353
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-19T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_557'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB nan nan nan ... nan nan
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-07T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_513'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8291 0.8352 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-14T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_520'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8348 0.8409 ... 3.35
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-12T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_550'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8321 0.8382 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-03T00...
+  * pass_cycle       (pass_cycle) <U6 24B '16_540'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8293 0.8354 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-26T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_532'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8302 0.8363 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-17T08...
+  * pass_cycle       (pass_cycle) <U6 24B '16_493'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8308 0.8369 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-17T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_523'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.827 0.8331 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-09T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_515'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-28T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_504'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8291 0.8352 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-27T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_533'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8328 0.8389 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-07T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_545'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.829 0.8351 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-29T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_535'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8406 0.8467 ... 3.355
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-16T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_554'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8366 0.8427 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-01T20...
+  * pass_cycle       (pass_cycle) <U6 24B '16_569'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8266 0.8327 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-26T06...
+  * pass_cycle       (pass_cycle) <U6 24B '16_502'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8296 0.8357 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-25T02...
+  * pass_cycle       (pass_cycle) <U6 24B '16_531'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8308 0.8369 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-19T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_525'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8293 0.8354 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-30T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_536'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8264 0.8325 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-06T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_512'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8328 0.8389 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-09T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_547'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8346 0.8407 ... 3.349
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-25T21...
+  * pass_cycle       (pass_cycle) <U6 24B '16_563'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.837 0.8431 ... 3.352
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-20T21...
+  * pass_cycle       (pass_cycle) <U6 24B '16_558'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.45 ... 35.07 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.84 0.8461 0.8522 ... 3.351 3.356
+    time             (num_lines) datetime64[ns] 4kB 2023-04-03T10:14:30.95500...
+    pass_cycle       <U6 24B '16_479'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8315 0.8376 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-18T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_524'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8287 0.8348 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-13T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_519'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8262 0.8323 ... 3.343
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-05T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_511'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8389 0.845 ... 3.354
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-18T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_556'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8349 0.841 ... 3.35
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-26T20...
+  * pass_cycle       (pass_cycle) <U6 24B '16_564'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8331 0.8392 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-05T19...
+  * pass_cycle       (pass_cycle) <U6 24B '16_573'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.45 ... 35.07 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8395 0.8456 ... 3.351 3.355
+    time             (num_lines) datetime64[ns] 4kB 2023-04-02T10:23:53.19570...
+    pass_cycle       <U6 24B '16_478'
+Dimensions without coordinates: num_lines, num_pixels
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.826 0.8321 ... 3.342
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-01T05...
+  * pass_cycle       (pass_cycle) <U6 24B '16_507'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8292 0.8353 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-04-19T07...
+  * pass_cycle       (pass_cycle) <U6 24B '16_495'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8361 0.8422 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-21T21...
+  * pass_cycle       (pass_cycle) <U6 24B '16_559'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8331 0.8392 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-10T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_548'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8326 0.8387 ... 3.348
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-05T00...
+  * pass_cycle       (pass_cycle) <U6 24B '16_542'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8298 0.8359 ... 3.345
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-31T01...
+  * pass_cycle       (pass_cycle) <U6 24B '16_537'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8361 0.8422 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-28T20...
+  * pass_cycle       (pass_cycle) <U6 24B '16_566'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.45 ... 35.07 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8402 0.8463 ... 3.351 3.356
+    time             (num_lines) datetime64[ns] 4kB 2023-04-06T09:46:24.37855...
+    pass_cycle       <U6 24B '16_482'
+Dimensions without coordinates: num_lines, num_pixels
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           <xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.828 0.8341 ... 3.344
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-11T04...
+  * pass_cycle       (pass_cycle) <U6 24B '16_517'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8318 0.8379 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-02T00...
+  * pass_cycle       (pass_cycle) <U6 24B '16_539'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8338 0.8399 ... 3.349
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-11T23...
+  * pass_cycle       (pass_cycle) <U6 24B '16_549'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8393 0.8454 ... 3.354
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-15T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_553'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8323 0.8384 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-04T00...
+  * pass_cycle       (pass_cycle) <U6 24B '16_541'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8348 0.8409 ... 3.35
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-23T21...
+  * pass_cycle       (pass_cycle) <U6 24B '16_561'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8327 0.8388 ... 3.347
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-07-07T19...
+  * pass_cycle       (pass_cycle) <U6 24B '16_575'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8374 0.8435 ... 3.352
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-30T20...
+  * pass_cycle       (pass_cycle) <U6 24B '16_568'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.44 ... 35.07 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8367 0.8428 ... 3.348 3.353
+    time             (num_lines) datetime64[ns] 4kB 2023-04-08T09:27:40.78701...
+    pass_cycle       <U6 24B '16_484'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.83 0.8361 ... 3.346
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-05-16T03...
+  * pass_cycle       (pass_cycle) <U6 24B '16_522'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8362 0.8423 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-13T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_551'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8397 0.8458 ... 3.355
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-17T22...
+  * pass_cycle       (pass_cycle) <U6 24B '16_555'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (pass_cycle: 1, num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[[nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan],
+        [nan, nan, nan, ..., nan, nan, nan]]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (pass_cycle, num_lines) float64 4kB 43.48 43.46 ... 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (pass_cycle, num_lines) float64 4kB 0.8369 0.843 ... 3.351
+    time             (pass_cycle, num_lines) datetime64[ns] 4kB 2023-06-29T20...
+  * pass_cycle       (pass_cycle) <U6 24B '16_567'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.44 ... 35.07 35.06
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8384 0.8445 0.8506 ... 3.35 3.354
+    time             (num_lines) datetime64[ns] 4kB 2023-04-07T09:37:02.60161...
+    pass_cycle       <U6 24B '16_483'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.44 ... 35.07 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8297 0.8358 ... 3.341 3.346
+    time             (num_lines) datetime64[ns] 4kB 2023-04-18T07:54:00.87596...
+    pass_cycle       <U6 24B '16_494'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.44 ... 35.07 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8287 0.8348 0.8408 ... 3.34 3.345
+    time             (num_lines) datetime64[ns] 4kB 2023-04-21T07:25:54.23071...
+    pass_cycle       <U6 24B '16_497'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB 43.48 43.46 43.44 ... 35.07 35.05
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB 0.8257 0.8318 ... 3.337 3.342
+    time             (num_lines) datetime64[ns] 4kB 2023-05-03T05:33:28.39396...
+    pass_cycle       <U6 24B '16_509'
+Dimensions without coordinates: num_lines, num_pixels
+<xarray.DataArray 'etaf' (num_lines: 481, num_pixels: 69)> Size: 266kB
+array([[nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       ...,
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan],
+       [nan, nan, nan, ..., nan, nan, nan]])
+Coordinates:
+    latitude         (num_lines, num_pixels) float64 266kB 43.63 43.62 ... 34.92
+    latitude_nadir   (num_lines) float64 4kB nan nan nan nan ... nan nan nan nan
+    longitude        (num_lines, num_pixels) float64 266kB 1.643 1.619 ... 2.616
+    longitude_nadir  (num_lines) float64 4kB nan nan nan nan ... nan nan nan nan
+    time             (num_lines) datetime64[ns] 4kB 2023-05-07T04:55:58.92159...
+    pass_cycle       <U6 24B '16_513'
+Dimensions without coordinates: num_lines, num_pixels

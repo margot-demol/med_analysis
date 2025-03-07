@@ -1,0 +1,57 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Fri Feb 28 12:46:04 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-02-28 12:46:55.500 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-02-28 12:46:56.259 ServerApp] Package jupyter_lsp took 0.7583s to import
+[W 2025-02-28 12:46:56.259 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-02-28 12:46:56.547 ServerApp] Package jupyter_server_terminals took 0.2873s to import
+[I 2025-02-28 12:46:56.547 ServerApp] Package notebook took 0.0000s to import
+[I 2025-02-28 12:46:56.573 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-02-28 12:46:56.573 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-02-28 12:47:41.563 ServerApp] Package panel.io.jupyter_server_extension took 44.9756s to import
+[I 2025-02-28 12:47:41.564 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-28 12:47:41.570 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-02-28 12:47:41.575 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-02-28 12:47:41.678 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-02-28 12:47:41.681 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-02-28 12:47:41.681 ServerApp] notebook | extension was successfully linked.
+[I 2025-02-28 12:47:57.851 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-28 12:47:57.852 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-02-28 12:47:58.326 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-28 12:47:58.328 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-28 12:47:58.330 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-28 12:47:58.510 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-02-28 12:47:58.510 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-02-28 12:47:58.525 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-28 12:47:58.529 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-28 12:47:58.532 ServerApp] notebook | extension was successfully loaded.
+[I 2025-02-28 12:47:58.533 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-02-28 12:47:58.534 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-02-28 12:47:58.534 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-02-28 12:47:58.534 ServerApp] http://r1i0n34:8877/lab
+[I 2025-02-28 12:47:58.534 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-02-28 12:47:58.534 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-02-28 12:47:58.646 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-02-28 12:49:26.382 ServerApp] 404 GET /apple-touch-icon-precomposed.png (@10.148.1.145) 235.86ms referer=None
+[W 2025-02-28 12:49:28.608 ServerApp] 404 GET /apple-touch-icon.png (@10.148.1.145) 1.53ms referer=None
+[W 2025-02-28 12:49:29.782 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-02-28 12:49:43.656 ServerApp] Kernel started: c5af21c3-3609-4776-8ed9-310f3d045dd4
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-02-28 12:49:56.438 ServerApp] Connecting to kernel c5af21c3-3609-4776-8ed9-310f3d045dd4.
+[I 2025-02-28 12:49:56.440 ServerApp] Connecting to kernel c5af21c3-3609-4776-8ed9-310f3d045dd4.
+[I 2025-02-28 12:49:56.442 ServerApp] Connecting to kernel c5af21c3-3609-4776-8ed9-310f3d045dd4.
+[I 2025-02-28 12:51:41.799 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:28:18.934 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:30:19.552 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:32:19.665 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:34:19.856 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:38:19.966 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:40:20.095 ServerApp] Saving file at /processing_insitu_trajectories/Untitled.ipynb
+[I 2025-02-28 14:42:26.774 ServerApp] Saving file at /processing_insitu_trajectories/41_L1_to_L2_harmonized.py
+[W 2025-02-28 16:14:56.442 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2025-02-28 16:15:01.446 ServerApp] Starting buffering for c5af21c3-3609-4776-8ed9-310f3d045dd4:1653e320-32d4-45a2-a5bd-42acea5c3ce4
+Sat Mar  1 12:46:12 GMT 2025
