@@ -13,7 +13,7 @@ from pyproj import Geod
 
 from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir
 
-def browse_swot_250():
+def browse_swot_250m():
     """ browse SWOT files """
     passes = [3, 16]
     
@@ -418,6 +418,7 @@ ______________
 """
 def rotate(x, y, phi):
     return np.cos(phi)*x - np.sin(phi)*y, np.sin(phi)*x + np.cos(phi)*y
+    
 def rotate_ggd(df, ggd_variables):
     for v in ggd_variables : 
         df['ggde_'+v], df['ggdn_'+v] = rotate(df['ggdx_'+v], df['ggdy_'+v], df['phi'])

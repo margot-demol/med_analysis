@@ -10,13 +10,14 @@ c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-space = 'local'
+space = 'datarmor'
 if space == 'datarmor' :
     #DATARMOR
     swot_dir_2km = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2'
     swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_1.0.2'
     drifters_dir = '/home/datawork-lops-oc/aponte/swot/cswot/drifters_harmonized'
-    zarr_dir = "/home/datawork-lops-oc/aponte/margot/med_coloc"
+    zarr_dir = "/home/datawork-lops-oc/aponte/margot/DATA_MED_COLOC"
+    images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
 
 if space == 'local':
     #LOCAL MARGOT
@@ -47,6 +48,7 @@ depth_drifters = ['OSMC','SVP','SVPSIO', 'SVP-B','SVPOGS', 'SVPSIO', 'SVPBGC']
 depth_50 = ['300534062472380','300534060112360','300534060113380']
 depth_100 = ['300534060116350','300534060017750']
 
+drifters_sources = 'all_med_variational_10min_v0.nc'
 
 """
 PROJECTION

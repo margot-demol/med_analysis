@@ -13,7 +13,7 @@ from pyproj import Geod
 
 from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir
 
-def browse_swot_250():
+def browse_swot_250m():
     """ browse SWOT files """
     passes = [3, 16]
     

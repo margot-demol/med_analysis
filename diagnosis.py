@@ -28,43 +28,39 @@ _________________________________________
 ---- CREATE DATASETS ----
 _________________________________________
 """
+def define_coloc_source(dt, drifter_preprocess = '', drifter_preprocess_param='') :
+    #default 
+    file_key, spectral_key='spectral_decomp', '' #spectral_decomp files contain original velocities/accelerations
+    
+    # assert
+    assert drifter_preprocess in ['', 'spectral_decomp', 'low_pass'], "drifter_preprocess should be in ['', 'spectral_decomp', 'low_pass']"
+    
+    # spectral decomp
+    if drifter_preprocess == 'spectral_decomp' : 
+        assert  drifter_preprocess_param in ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF'], "drifter_preprocess_param while using spectral_decomp should be in  ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF']"
+        spectral_key = drifter_preprocess_param+'_'
+        file_key = 'spectral_decomp'
+        
+    # low pass    
+    if drifter_preprocess == 'low_pass' : 
+        cutoff = drifter_preprocess_param
+        file_key = f"low_pass_{str(cutoff).replace('0.', '0')}"
 
-drifters_sources = 'all_med_variational_10min_v0.nc'
-spectral_decomp = True
-low_pass = False
-dt = '12h' #'nearestswath'
-#dt = '10d' #'nearestswath'
-if spectral_decomp == True : drifters_sources = 'spectral_decomp_'+ drifters_sources
-if low_pass == True : drifters_sources = 'low_pass_'+ drifters_sources
-colocs_sources = f'{dt}_'+drifters_sources
-
-
-drifter_file = os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '.csv'))
-
-DRIFTER = {'nofilter' : os.path.join(zarr_dir,'drifters', f'drifterscoloc_'+colocs_sources.replace('.nc', '.csv')),
-#           '0.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered05.csv')),
-#           '1.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered15.csv')),
-#           '2.5cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered25.csv')),
-#           '3cpd' : os.path.join(zarr_dir, 'drifters_'+drifters_sources.replace('.nc', '_filtered3.csv')),
-          }
-ALTI = {
-    'swot250naive' : os.path.join(zarr_dir,'alti', 'swot_250_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
-    **{f'swot250{int(cutoff)}' : os.path.join(zarr_dir, 'alti', 'swot_250_'+colocs_sources.replace('.nc', '')+f'_gauss{int(cutoff)}.csv') for cutoff in list(np.arange(1000, 15000, 1000))},
-    'swot2kmnaive' : os.path.join(zarr_dir,'alti','swot_2km_'+colocs_sources.replace('.nc', '')+'_naive.csv'), 
-    **{f'swot2km{int(cutoff)}' : os.path.join(zarr_dir, 'alti', 'swot_2km_'+colocs_sources.replace('.nc', '')+f'_gauss{int(cutoff)}.csv') for cutoff in list(np.arange(1000, 15000, 1000))},
-    'L4noswotregional' : os.path.join(zarr_dir, 'alti',f'L4_regional_europenoswot_'+colocs_sources.replace('.nc', '.csv')), 
-    'L4noswotglobal' : os.path.join(zarr_dir, 'alti',f'L4_globalnoswot_'+colocs_sources.replace('.nc', '.csv')), 
-    'L4withswot' : os.path.join(zarr_dir, 'alti',f'L4_withswot_'+colocs_sources.replace('.nc', '.csv')), 
-}
-
-WD = {'era5' : os.path.join(zarr_dir, 'wind', 'era5_'+colocs_sources.replace('.nc', '')+'.csv')}
+    # find good file
+    return f'{dt}_{file_key}_'+drifters_sources.replace('.nc', '')
 
 dtypes = {'drifter_id':str, 'drifter_type':str}
 
-def prepared_drifters(drifter_key, spectral_key = '') :
-    if spectral_key not in ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF']: assert False, "spectral_key should be in  ['', 'LF', 'inertial', 'diurnal', 'semidiurnal', 'HF']"
-    if spectral_key != '': spectral_key += '_'
-    dfr = pd.read_csv(DRIFTER[drifter_key], parse_dates=['datetime'], dtype=dtypes).set_index('row_number')
+def prepared_drifters(dt, drifter_preprocess = '', drifter_preprocess_param='') :
+    
+    colocs_sources = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
+    drifters_path = os.path.join(zarr_dir, 'coloc_files', 'drifters', f'drifterscoloc_'+colocs_sources+'.csv')
+
+    if drifter_preprocess == 'spectral_decomp' : spectral_key = drifter_preprocess_param+'_'
+    else : spectral_key=''
+            
+    # Treat
+    dfr = pd.read_csv(drifters_path, parse_dates=['datetime'], dtype=dtypes).set_index('row_number')
     dfr['time_to_swot'] = dfr.time_to_swot.astype("timedelta64[ns]")
     dfr['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfr.latitude * np.pi / 180)
     dfr['core']= -dfr.f * dfr[spectral_key + 'velocity_north']
@@ -72,60 +68,113 @@ def prepared_drifters(drifter_key, spectral_key = '') :
     dfr = dfr.rename(columns = {spectral_key + 'acceleration_north':'accn', spectral_key + 'acceleration_east':'acce'})
     return dfr[['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','cycle_date','drifter_id','drifter_type','accn', 'acce', 'core', 'corn']]
 
-def prepared_alti(alti_key, ggd_var=None) :
-    dfs = pd.read_csv(ALTI[alti_key]).set_index('row_number')
-    dfs['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfs.latitude * np.pi / 180)
+def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti_product_key='swot2km', alti_diff_method = 'diff_only', alti_diff_method_param = '') :
     
-    # L3 products
-    if 'L4' not in alti_key :
-        if ggd_var == None : ggd_var = ['duacs_ssha_karin_2_filtered','duacs_ssha_karin_2_calibrated','cvl_mean_dynamic_topography_cnes_cls_22','cvl_ocean_tide_fes_2022']
+    colocs_sources = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
+
+    # L4 products
+    if 'L4' in alti_product_key :
+        dfs = pd.read_csv(os.path.join(zarr_dir, "coloc_files",'alti', 'alticoloc_'+alti_product_key+'_'+colocs_source+'.csv')).set_index('row_number')
+        dfs['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfs.latitude * np.pi / 180)
+        dfs['ggde_fromduacsv'] = dfs.f * dfs.vgos
+        dfs['ggdn_fromduacsv'] = -dfs.f *dfs.ugos
+        l = ['ggde_fromduacsv','ggdn_fromduacsv'] 
+        dfs = dfs[l]
+    
+    #L3 products
+    else : 
+        # SSH
+        if alti_diff_method_param != '': alti_diff_method_param = str(alti_diff_method_param)+'_'
+        dfs = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_diff_method_param}{alti_product_key}_{alti_diff_method}_'+colocs_sources+'.csv')).set_index('row_number')
+        
+        #General
+        dfg = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_general_'+colocs_sources+'.csv')).set_index('row_number')
+        dfg['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfs.latitude * np.pi / 180)
+    
+        dfs = pd.concat([dfg, dfs], axis=1)
+        
+        # from duacs
         dfs = dfs.copy()#defragmented
         dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
         dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
-        if 'naive_' in alti_key : 
-            l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv', 'time_to_swot_update', 'phi']
-        else: 
-            l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['ggde_fromduacsv', 'ggdn_fromduacsv','phi']
-            
+        
+        ggd_var = ['etaf', 'etac']
+        # rotate and compute quantities
+        for v in ggd_var :
+            g=9.81
+            from swot import rotate
+            dfs['ggde_'+v] = g * rotate(dfs['dx_'+v], dfs['dy_'+v], dfs['phi'])[0]
+            dfs['ggdn_'+v] = g * rotate(dfs['dx_'+v], dfs['dy_'+v], dfs['phi'])[1]
+            dfs['vorticity_'+v] = g * (dfs['dxx_'+v] + dfs['dyy_'+v])/dfs.f**2
+            dfs['strain_s_'+v] = g * (dfs['dxx_'+v] - dfs['dyy_'+v])/dfs.f**2
+            dfs['strain_n_'+v] = -2 * g *(dfs['dxy_'+v] - dfs['dxy_'+v])/dfs.f**2
+
+        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['vorticity_'+v for v in ggd_var]+['strain_s_'+v for v in ggd_var]+['strain_n_'+v for v in ggd_var] + ['ggde_fromduacsv', 'ggdn_fromduacsv', 'phi']
+
         dfs = dfs[l]
-        dfs['ggde_etaf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
-        dfs['ggdn_etaf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
-        dfs['ggde_adtf'] = dfs.ggde_duacs_ssha_karin_2_filtered + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
-        dfs['ggdn_adtf'] = dfs.ggdn_duacs_ssha_karin_2_filtered + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
-        dfs['ggde_etac'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggde_cvl_ocean_tide_fes_2022
-        dfs['ggdn_etac'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22+dfs.ggdn_cvl_ocean_tide_fes_2022
-        dfs['ggde_adtc'] = dfs.ggde_duacs_ssha_karin_2_calibrated + dfs.ggde_cvl_mean_dynamic_topography_cnes_cls_22
-        dfs['ggdn_adtc'] = dfs.ggdn_duacs_ssha_karin_2_calibrated + dfs.ggdn_cvl_mean_dynamic_topography_cnes_cls_22
+        
+    return dfs#.rename(columns ={v : v+'_' +alti_product_key for v in dfs})
+
+def prepared_wd(dt, drifter_preprocess = '', drifter_preprocess_param='', wd_product_key = 'era5', wd_model ='rio'):
     
-    elif 'L4' in alti_key : 
-        if ggd_var == None : ggd_var = ['adt', 'sla', 'err_sla', 'fromduacsv']
-        l = ['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]
-        dfs = dfs[l]
-    return dfs#.rename(columns ={v : v+'_' +alti_key for v in dfs})
-    
-def prepared_wd(wd_key): 
-    dfw = pd.read_csv(WD[wd_key]).set_index('row_number')
+    colocs_source = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
+    if wd_model in 'rioagesc': wd_model = 'rioagesc' #both in one file
+    dfw = pd.read_csv(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')).set_index('row_number')
     dfw = dfw[[v for v in dfw if ('vsde' in v or 'vsdn' in v)]]
-    return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
-    
-def create_id_comb(drifter_key, spectral_key,  alti_key, wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio'):
-    return drifter_key+'_'+spectral_key + '__' + alti_key +'_' + ggd_var + '__' + wd_model+'_'+ wd_depth + wd_key
+    return dfw
+
+from cstes import surface_drifters, depth_drifters, depth_50, depth_100
+
+def create_id_comb(dt, 
+                   drifter_preprocess,
+            drifter_preprocess_param,
+            alti_product_key,
+            alti_diff_method,
+            alti_diff_method_param,
+            ggd_var,
+            wd_product_key, 
+            wd_model, 
+            depth):
+    colocs_source = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
+    return f"{colocs_source}__{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}_{ggd_var}__{wd_product_key}_{wd_model}{depth}"
 
 def select_nearest_swot_coloc(df):
     idx = df.groupby(['pass_number','cycle_number','drifter_id']).time_to_swot.idxmin()
     return df.loc[idx]
 
-def one_coloc(drifter_key, alti_key, spectral_key='', wd_key = 'era5', ggd_var='etaf', wd_depth='0', wd_model='rio',):
-    if 'naive_' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'time_to_swot_update', 'phi']
-    elif 'L4' in alti_key : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
-    else: l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
-    df = pd.concat([prepared_drifters(drifter_key, spectral_key),
-                    prepared_alti(alti_key)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
-                    prepared_wd(wd_key)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
+def one_comb(dt, 
+            drifter_preprocess,
+            drifter_preprocess_param,
+            alti_product_key,
+            alti_diff_method,
+            alti_diff_method_param,
+            ggd_var,
+            wd_product_key, 
+            wd_model, 
+            depth):
+    
+    id_comb = create_id_comb(dt, drifter_preprocess,drifter_preprocess_param, alti_product_key, alti_diff_method, alti_diff_method_param, ggd_var, wd_product_key, wd_model, depth)
+
+    #For coherence
+    if 'L4' in alti_product_key : 
+        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
+        alti_diff_method = 'fromduacsv'
+        alti_diff_method_param =''
+        ggd_var = 'fromduacsv'
+
+    else : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
+
+    if ggd_var == 'fromduacsv':
+        alti_diff_method = 'fromduacsv'
+        alti_diff_method_param =''
+
+    
+    df = pd.concat([prepared_drifters(dt, drifter_preprocess, drifter_preprocess_param),
+                    prepared_alti(dt, drifter_preprocess, drifter_preprocess_param, alti_product_key,alti_diff_method, alti_diff_method_param)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
+                    prepared_wd(dt, drifter_preprocess, drifter_preprocess_param, wd_product_key, wd_model)[['vsde_'+wd_model + '_z'+depth,'vsdn_'+wd_model + '_z'+depth]].rename(columns = {'vsde_'+wd_model + '_z'+depth: 'wde','vsdn_'+wd_model + '_z'+depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
     if 'phi' not in df.columns :
         df['phi'] = np.zeros(len(df))
-    id_comb = create_id_comb(drifter_key, spectral_key, alti_key, wd_key, ggd_var, wd_depth, wd_model)
     
     #depth
     depth = df['pass_number'].copy()
@@ -139,11 +188,10 @@ def one_coloc(drifter_key, alti_key, spectral_key='', wd_key = 'era5', ggd_var='
     
     return df, id_comb
 
-
 def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
     D = []
     for comb in comb_list :
-        df, id_comb = one_coloc(**comb)
+        df, id_comb = one_comb(**comb)
 
         # remove identified swot outliers
         if remove_id_outliers :
@@ -154,10 +202,7 @@ def dataset_coloc_combs(comb_list, nearest =True, remove_id_outliers = True):
             # select only nearest in time colocalisation
             df = select_nearest_swot_coloc(df)#.dropna()
             
-        if 'naive_' in comb['alti_key'] : 
-            coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'time_to_swot_update', 'phi']
-        else: 
-            coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi']
+        coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi']
                 
         ds = df[coords_list].to_xarray()
         ds['id_comb'] = id_comb
