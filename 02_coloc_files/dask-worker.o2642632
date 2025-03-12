@@ -1,0 +1,208 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:37221'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:37011'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:51015'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:56974'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:56194'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:42421'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:34705'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:57367'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:37663'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:35711'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:60938'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:49242'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:37413'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:53262'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:56409'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:33654'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:41539'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:41922'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:54217'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:45534'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:55224'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:58466'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:58837'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:46475'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:40294'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:47524'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:33374'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.96:45244'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+Terminated
+distributed._signals - INFO - Received signal SIGTERM (15)
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:37221'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:37011'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:51015'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:58466'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:40294'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:56974'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:54217'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:41539'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:57367'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:46475'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:37413'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:60938'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:35711'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:49242'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:33374'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:33654'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:53262'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:47524'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:41922'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:34705'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:58837'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:42421'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:56194'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:55224'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:56409'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:45534'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:45244'. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.96:37663'. Reason: signal-15
+distributed.nanny - INFO - Worker process 31375 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31383 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31391 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31411 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31419 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31425 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31435 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31450 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31401 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31460 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31453 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31369 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31525 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31377 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31385 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31367 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31429 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31446 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31482 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31515 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31405 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31438 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31493 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31417 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31463 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31395 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31501 was killed by unknown signal
+distributed.nanny - INFO - Worker process 31473 was killed by unknown signal

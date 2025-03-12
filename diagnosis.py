@@ -8,7 +8,7 @@ import os
 from glob import glob
 
 from cstes import c0, U2, zarr_dir, surface_drifters, depth_drifters, depth_100, depth_50, images_dir
-from swot import browse_swot_250, browse_swot_2km
+from swot import browse_swot_250m, browse_swot_2km
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
@@ -22,6 +22,7 @@ import cartopy.feature as cfeature
 import pyproj
 from pyproj import Geod
 
+from cstes import drifters_sources
 
 """ 
 _________________________________________
@@ -134,9 +135,22 @@ def create_id_comb(dt,
             ggd_var,
             wd_product_key, 
             wd_model, 
-            depth):
+            wd_depth):
+    
+    #For coherence
+    if 'L4' in alti_product_key : 
+        alti_diff_method = 'fromduacsv'
+        alti_diff_method_param =''
+        ggd_var = 'fromduacsv'
+
+    else : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
+
+    if ggd_var == 'fromduacsv':
+        alti_diff_method = 'fromduacsv'
+        alti_diff_method_param =''
+        
     colocs_source = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
-    return f"{colocs_source}__{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}_{ggd_var}__{wd_product_key}_{wd_model}{depth}"
+    return f"{colocs_source}__{drifter_preprocess_param}__{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}_{ggd_var}__{wd_product_key}_{wd_model}{wd_depth}"
 
 def select_nearest_swot_coloc(df):
     idx = df.groupby(['pass_number','cycle_number','drifter_id']).time_to_swot.idxmin()
@@ -151,16 +165,17 @@ def one_comb(dt,
             ggd_var,
             wd_product_key, 
             wd_model, 
-            depth):
+            wd_depth):
     
-    id_comb = create_id_comb(dt, drifter_preprocess,drifter_preprocess_param, alti_product_key, alti_diff_method, alti_diff_method_param, ggd_var, wd_product_key, wd_model, depth)
+    id_comb = create_id_comb(dt, drifter_preprocess, drifter_preprocess_param, alti_product_key, alti_diff_method, alti_diff_method_param, ggd_var, wd_product_key, wd_model, wd_depth)
 
     #For coherence
     if 'L4' in alti_product_key : 
-        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
         alti_diff_method = 'fromduacsv'
         alti_diff_method_param =''
         ggd_var = 'fromduacsv'
+        print("only 'fromduacsv' method is available for L4")
+        l = ['ggde_'+ggd_var,'ggdn_'+ggd_var]
 
     else : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi']
 
@@ -171,8 +186,10 @@ def one_comb(dt,
     
     df = pd.concat([prepared_drifters(dt, drifter_preprocess, drifter_preprocess_param),
                     prepared_alti(dt, drifter_preprocess, drifter_preprocess_param, alti_product_key,alti_diff_method, alti_diff_method_param)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
-                    prepared_wd(dt, drifter_preprocess, drifter_preprocess_param, wd_product_key, wd_model)[['vsde_'+wd_model + '_z'+depth,'vsdn_'+wd_model + '_z'+depth]].rename(columns = {'vsde_'+wd_model + '_z'+depth: 'wde','vsdn_'+wd_model + '_z'+depth:'wdn'}),
+                    prepared_wd(dt, drifter_preprocess, drifter_preprocess_param, wd_product_key, wd_model)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
+    print(len(df))
+    
     if 'phi' not in df.columns :
         df['phi'] = np.zeros(len(df))
     

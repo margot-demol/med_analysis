@@ -27,7 +27,7 @@ def browse_swot_250m():
             t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
-    df = pd.DataFrame(D)
+    df = pd.DataFrame(D).reset_index()
     df["day"] = df["time"].dt.floor("1d")
     
     df['dt_before'] = df.groupby('pass_number').time.diff()/2
@@ -60,7 +60,7 @@ def browse_swot_2km():
             #print(f)
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
-    df = pd.DataFrame(D)
+    df = pd.DataFrame(D).reset_index()
     df["day"] = df["time"].dt.floor("1d")
     
     df['dt_before'] = df.groupby('pass_number').time.diff()/2
