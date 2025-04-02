@@ -90,7 +90,7 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         dfg = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_general_'+colocs_sources+'.csv')).set_index('row_number')
         dfg['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfg.latitude * np.pi / 180)
         
-        if alti_diff_method !='fromduacsv':
+        if (alti_diff_method !='fromduacsv'):
             # SSH
             if alti_diff_method_param != '': alti_diff_method_param = str(alti_diff_method_param)+'_'
             dfs = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}'+colocs_sources+'.csv')).set_index('row_number')
@@ -440,7 +440,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         #print(vars_errors)
         if vars_errors is None : vars_errors = closure_vars_2D
         import dask.dataframe as dd
-        dfd = dd.from_pandas(dff)
+        dfd = dd.from_pandas(dff, chunksize=10)
         DF = []
         #print(vars_errors)
         for v in vars_errors:

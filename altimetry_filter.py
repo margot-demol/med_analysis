@@ -30,28 +30,6 @@ def apply_stencil_diff(image, var, dx, dy):
     
     return xr.DataArray(output, dims=image.dims)
 
-# Fitting kernel
-def fitting_coeff(image, var): 
-    """
-    var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
-    """
-    meaning_coeff = {'cste':0, 'dx':1, 'dy':2, 'dxx':3, 'dyy':4, 'dxy':5}
-    assert var in meaning_coeff.keys(), "var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
-    n=int(np.sqrt(image.shape[0]))
-    if isinstance(image, xr.DataArray): image = image.values
-    x = np.arange(n)
-    y = np.arange(n)
-    X, Y = np.meshgrid(x, y, copy=False)
-    X, Y = np.meshgrid(x, y, copy=False)
-
-    X = X.flatten()
-    Y = Y.flatten()
-
-    A = np.array([X*0+1, X, Y, X**2, Y**2, X*Y**2, X*Y]).T
-
-    coeff, r, rank, s = np.linalg.lstsq(A, image)
-    return coeff[meaning_coeff[var]]
-
 
 # Fitting kernel
 def fitting_coeff(image, var, dx, dy): 
@@ -140,6 +118,17 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
                 for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
                     output[var + '_'+eta] = apply_stencil_diff(swot_image, var, dx=dx, dy=dy)
                 D.append(output)
+                
+            # xarray simple diff
+            if filter_diff_method == 'xarray_diff' :
+                output = swot_image.rename(eta).to_dataset()
+                output['dx_'+eta] = output[eta].differentiate('num_pixels')/dx
+                output['dy_'+eta] = output[eta].differentiate('num_lines')/dy
+                output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
+                output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
+                output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
+                D.append(output)
+                
     except: 
         assert False, f
     return xr.merge(D + [ds[['longitude', 'latitude']]]).where(ds.duacs_editing_flag==0)

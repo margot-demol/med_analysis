@@ -1,0 +1,1086 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:58571'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:57175'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:46120'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:58460'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:58628'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:37073'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:56693'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:33655'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:50362'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:36169'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:46256'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:35010'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:48873'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:59873'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:55005'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:48430'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:40957'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:41675'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:37262'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:43940'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:37661'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:37535'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:59869'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:33235'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:33362'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:49569'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:42979'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.121:60576'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:34367
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41429
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:35459
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41429
+distributed.worker - INFO -           Worker name:             PBSCluster-0-4
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:35459
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:39370
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:49440
+distributed.worker - INFO -           Worker name:             PBSCluster-0-1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:34367
+distributed.worker - INFO -          dashboard at:         10.148.0.121:59240
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41367
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:39370
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          dashboard at:         10.148.0.121:48874
+distributed.worker - INFO -           Worker name:             PBSCluster-0-3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-26
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:49440
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41367
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.121:45776
+distributed.worker - INFO -          dashboard at:         10.148.0.121:34756
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:            PBSCluster-0-14
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -           Worker name:             PBSCluster-0-9
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-r1itwi09
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.121:59693
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-pxwbdjq4
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          dashboard at:         10.148.0.121:55113
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-oo3eyiq0
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-mkcmj11n
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-4u7fbufz
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-kab1sbtn
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:43155
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:43155
+distributed.worker - INFO -           Worker name:             PBSCluster-0-5
+distributed.worker - INFO -          dashboard at:         10.148.0.121:53798
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:54248
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:55738
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:59520
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:55738
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:54248
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:49399
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:59520
+distributed.worker - INFO -           Worker name:            PBSCluster-0-27
+distributed.worker - INFO -           Worker name:            PBSCluster-0-18
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:60587
+distributed.worker - INFO -           Worker name:            PBSCluster-0-16
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41759
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:51922
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-ubbnb9qc
+distributed.worker - INFO -          dashboard at:         10.148.0.121:50100
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:48349
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:59449
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:49399
+distributed.worker - INFO -          dashboard at:         10.148.0.121:33808
+distributed.worker - INFO -          dashboard at:         10.148.0.121:44613
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:60587
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:48349
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41759
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:51922
+distributed.worker - INFO -           Worker name:            PBSCluster-0-22
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:59449
+distributed.worker - INFO -           Worker name:            PBSCluster-0-15
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-24
+distributed.worker - INFO -           Worker name:            PBSCluster-0-20
+distributed.worker - INFO -           Worker name:            PBSCluster-0-10
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:         10.148.0.121:35123
+distributed.worker - INFO -           Worker name:            PBSCluster-0-19
+distributed.worker - INFO -          dashboard at:         10.148.0.121:60024
+distributed.worker - INFO -          dashboard at:         10.148.0.121:44979
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41117
+distributed.worker - INFO -          dashboard at:         10.148.0.121:58643
+distributed.worker - INFO -          dashboard at:         10.148.0.121:46825
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:         10.148.0.121:42215
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-t3kbe13v
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:47077
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-3hig43ai
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-drkp7oj8
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-os4zsckt
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:47077
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-dynd2v_x
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-0f72cofk
+distributed.worker - INFO -           Worker name:            PBSCluster-0-25
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-6nmdyu08
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-5cnptf5n
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-kmpa1m_w
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:35911
+distributed.worker - INFO -          dashboard at:         10.148.0.121:51007
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:35911
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-21
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:         10.148.0.121:36048
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:37389
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-_zqn5a5z
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:37389
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:34742
+distributed.worker - INFO -           Worker name:             PBSCluster-0-7
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:         10.148.0.121:51806
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41117
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-g0jye6q6
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -           Worker name:             PBSCluster-0-6
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:35367
+distributed.worker - INFO -          dashboard at:         10.148.0.121:49983
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:35367
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-12
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-ywtfcavm
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:         10.148.0.121:51968
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-1olmfi6d
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-w865yj3f
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:34742
+distributed.worker - INFO -           Worker name:             PBSCluster-0-2
+distributed.worker - INFO -          dashboard at:         10.148.0.121:53429
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-tzi_d2u1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:55856
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:55856
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:48296
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:47578
+distributed.worker - INFO -           Worker name:            PBSCluster-0-17
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41460
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:48296
+distributed.worker - INFO -          dashboard at:         10.148.0.121:35433
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:47578
+distributed.worker - INFO -           Worker name:            PBSCluster-0-13
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41460
+distributed.worker - INFO -           Worker name:            PBSCluster-0-11
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.121:37688
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:41768
+distributed.worker - INFO -           Worker name:             PBSCluster-0-8
+distributed.worker - INFO -          dashboard at:         10.148.0.121:52878
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.121:48753
+distributed.worker - INFO -          dashboard at:         10.148.0.121:52713
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:41768
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-lp_omxa5
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.121:48753
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:             PBSCluster-0-0
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-gckc1l6o
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-dtkiuvqm
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:         10.148.0.121:56175
+distributed.worker - INFO -           Worker name:            PBSCluster-0-23
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-ivup2gtg
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -          dashboard at:         10.148.0.121:43325
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:56828
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-q1j_oika
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772292.datarmor0/dask-scratch-space/worker-2rdz_88i
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:56828
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:56828
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.21s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.53s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.55s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.53s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.53s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.51s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.58s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.53s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.59s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.58s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.56s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.55s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.59s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 45)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7522a60>, <function _concat at 0x2aaac7522af0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-07-09T00:00:00.000000000'], dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16]), {})], ['index', (('cycle_number',), array([184]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_577.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-07-09T18:56:22.024233728'], dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-07-09T07:01:03.101010112'], dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-07-10T06:51:40.958929024'], dtype='datetime64[ns]'), {})]]), (<class 'dict'>, [['cycle_number', (('cycle_number',), PandasIndexingAdapter(array=Index([577], dtype='int64', name='cycle_number'), dtype=dtype('int64')), {})]]), {})], {'f
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 35)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac73f4820>, <function _concat at 0x2aaac73f48b0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-18T00:00:00.000000000', '2023-06-19T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([164, 165]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_556.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_557.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-18T22:13:05.325316736', '2023-06-19T22:03:43.428543488'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-18T10:17:46.254521152', '2023-06-19T10:08:24.376930112'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-19T10:08:24.376930112
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 10)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74fd670>, <function _concat at 0x2aaac74fd700>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-23T00:00:00.000000000', '2023-04-24T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([114, 115]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_499.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_500.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-23T07:07:10.084130944', '2023-04-24T06:57:48.051112320'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-22T19:11:51.086318656', '2023-04-23T19:02:29.067621632'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-23T19:02:29.067621632
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 0)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac76a6700>, <function _concat at 0x2aaac76a6550>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-02T00:00:00.000000000', '2023-04-03T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([94, 95]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_478.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_479.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-02T10:23:53.195702272', '2023-04-03T10:14:30.955004544'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-01T22:28:34.261006976', '2023-04-02T22:19:12.075353408'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-02T22:19:12.075353408',
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 15)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac76c8af0>, <function _concat at 0x2aaac76c8b80>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-04T00:00:00.000000000', '2023-05-05T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([124, 125]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_510.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_511.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-04T05:24:06.056801792', '2023-05-05T05:14:43.694204544'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-03T17:28:47.225385408', '2023-05-04T17:19:24.875503168'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-04T17:19:24.875503168
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 13)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7690670>, <function _concat at 0x2aaac7690310>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-29T00:00:00.000000000', '2023-04-30T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([120, 121]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_505.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_506.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-29T06:10:57.411592704', '2023-04-30T06:01:35.204401664'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-28T18:15:38.500686592', '2023-04-29T18:06:16.307997184'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-29T18:06:16.307997184
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 23)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac776e5e0>, <function _concat at 0x2aaac776e670>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-24T00:00:00.000000000', '2023-05-25T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([140, 141]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_530.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_531.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-24T02:16:41.969116928', '2023-05-25T02:07:19.891276544'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-23T14:21:22.997545664', '2023-05-24T14:12:00.930196736'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-24T14:12:00.930196736
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 40)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7433820>, <function _concat at 0x2aaac74338b0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-28T00:00:00.000000000', '2023-06-29T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([174, 175]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_566.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_567.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-28T20:39:24.849431424', '2023-06-29T20:30:02.639778688'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-28T08:44:05.942482176', '2023-06-29T08:34:43.744605056'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-29T08:34:43.744605056
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 8)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74e33a0>, <function _concat at 0x2aaac74e3430>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-19T00:00:00.000000000', '2023-04-20T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([110, 111]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_495.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_496.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-19T07:44:38.702123776', '2023-04-20T07:35:16.485458688'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-18T19:49:19.789046400', '2023-04-19T19:39:57.593791232'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-19T19:39:57.593791232
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 12)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7841e50>, <function _concat at 0x2aaac7841dc0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-27T00:00:00.000000000', '2023-04-28T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([118, 119]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_503.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_504.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-27T06:29:41.741209856', '2023-04-28T06:20:19.589780480'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-26T18:34:22.806514560', '2023-04-27T18:25:00.665495168'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-27T18:25:00.665495168
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 37)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7518790>, <function _concat at 0x2aaac7518160>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-22T00:00:00.000000000', '2023-06-23T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([168, 169]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_560.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_561.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-22T21:35:37.530805760', '2023-06-23T21:26:15.497824384'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-22T09:40:18.531678848', '2023-06-23T09:30:56.514315072'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-23T09:30:56.514315072
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 34)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74f6040>, <function _concat at 0x2aaac74f60d0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-15T00:00:00.000000000', '2023-06-17T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([162, 163]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_553.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_555.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-15T22:41:11.350449280', '2023-06-17T22:22:27.183725568'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-15T10:45:52.539231168', '2023-06-16T22:31:49.267087424'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-16T22:31:49.267087424
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 27)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac773bca0>, <function _concat at 0x2aaac773bd30>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-02T00:00:00.000000000', '2023-06-03T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([148, 149]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_539.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_540.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-02T00:52:22.189068032', '2023-06-03T00:43:00.145065472'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-01T12:57:03.344978368', '2023-06-02T12:47:41.167066752'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-02T12:47:41.167066752
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 17)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7602dc0>, <function _concat at 0x2aaac7602f70>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-09T00:00:00.000000000', '2023-05-10T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([128, 129]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_515.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_516.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-09T04:37:14.924996352', '2023-05-10T04:27:52.705868544'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-08T16:41:56.019647616', '2023-05-09T16:32:33.815432448'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-09T16:32:33.815432448
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 39)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74f14c0>, <function _concat at 0x2aaac74f1af0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-06-26T00:00:00.000000000', '2023-06-27T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([172, 173]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_564.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_565.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-06-26T20:58:09.196163840', '2023-06-27T20:48:47.035532928'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-06-26T09:02:50.261720256', '2023-06-27T08:53:28.115848384'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-06-27T08:53:28.115848384
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 5)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74b2b80>, <function _concat at 0x2aaac74b2c10>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-13T00:00:00.000000000', '2023-04-14T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([104, 105]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_489.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_490.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-13T08:40:51.218464384', '2023-04-14T08:31:29.211334400'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-12T20:45:32.203931968', '2023-04-13T20:36:10.214899392'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-13T20:36:10.214899392
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 21)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac75a5310>, <function _concat at 0x2aaac75a5280>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-17T00:00:00.000000000', '2023-05-18T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([136, 137]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_523.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_524.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-17T03:22:16.224445312', '2023-05-18T03:12:53.897975296'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-16T15:26:57.446449664', '2023-05-17T15:17:35.061210304'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-17T15:17:35.061210304
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 19)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac762a550>, <function _concat at 0x2aaac762a5e0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-13T00:00:00.000000000', '2023-05-14T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([132, 133]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_519.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_520.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-13T03:59:45.865622144', '2023-05-14T03:50:23.462964608'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-12T16:04:27.021263296', '2023-05-13T15:55:04.664293376'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-13T15:55:04.664293376
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 2)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7433d30>, <function _concat at 0x2aaac7433dc0>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-07T00:00:00.000000000', '2023-04-08T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([98, 99]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_483.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_484.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-07T09:37:02.601610112', '2023-04-08T09:27:40.787014400'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-06T21:41:43.490081920', '2023-04-07T21:32:21.694312256'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-07T21:32:21.694312256',
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 26)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac780cb80>, <function _concat at 0x2aaac780cc10>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-31T00:00:00.000000000', '2023-06-01T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([146, 147]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_537.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_538.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-31T01:11:06.785595904', '2023-06-01T01:01:44.500888704'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-30T13:15:47.915025984', '2023-05-31T13:06:25.643242304'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-31T13:06:25.643242304
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 16)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac7557670>, <function _concat at 0x2aaac7557700>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-05-06T00:00:00.000000000', '2023-05-08T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([126, 127]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_512.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_514.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-05-06T05:05:21.414791424', '2023-05-08T04:46:37.114298880'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-05-05T17:10:02.554497984', '2023-05-07T04:55:59.264545152'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-05-07T04:55:59.264545152
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('_concat-8a0118f9d5a4ce583860d82be780b775', 9)
+Function:  execute_task
+args:      ((<function map_blocks.<locals>._wrapper at 0x2aaac74a28b0>, <function _concat at 0x2aaac74a2940>, [(<class 'xarray.core.dataset.Dataset'>, (<class 'dict'>, [['day', (('cycle_number',), array(['2023-04-21T00:00:00.000000000', '2023-04-22T00:00:00.000000000'],
+      dtype='datetime64[ns]'), {})], ['pass_number', (('cycle_number',), array([16, 16]), {})], ['index', (('cycle_number',), array([112, 113]), {})], ['file', (('cycle_number',), array(['/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_497.zarr',
+       '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2/16_498.zarr'],
+      dtype=object), {})], ['time', (('cycle_number',), array(['2023-04-21T07:25:54.230719872', '2023-04-22T07:16:32.088506368'],
+      dtype='datetime64[ns]'), {})], ['start_time_cut', (('cycle_number',), array(['2023-04-20T19:30:35.358089280', '2023-04-21T19:21:13.159613120'],
+      dtype='datetime64[ns]'), {})], ['end_time_cut', (('cycle_number',), array(['2023-04-21T19:21:13.159613120
+kwargs:    {}
+Exception: 'ValueError("Result from applying user function does not contain data variables {\'filtered_etaf\', \'filtered_etac\'}.")'
+
+distributed._signals - INFO - Received signal SIGTERM (15)
+Terminated
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:58571'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:57175'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:46120'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:58460'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:58628'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:33655'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:50362'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:36169'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:46256'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:35010'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:48873'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:59873'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:55005'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:48430'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:40957'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:41675'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:37262'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:43940'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:37661'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:37535'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:59869'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:33235'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:33362'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:49569'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:42979'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:60576'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:37073'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.121:56693'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Worker process 53216 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53218 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53224 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53214 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53243 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53249 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53288 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53273 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53277 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53284 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53290 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53294 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53227 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53240 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53234 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53282 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53246 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53286 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53237 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53296 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53230 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53252 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53264 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53280 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53220 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53212 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53258 was killed by unknown signal
+distributed.nanny - INFO - Worker process 53292 was killed by unknown signal
+distributed.dask_worker - INFO - End worker
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 28 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

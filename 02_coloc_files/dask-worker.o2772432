@@ -1,0 +1,1452 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:53577'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:50184'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:33068'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:56369'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:54055'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:38956'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:48986'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:59560'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:36453'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:33301'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:53194'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:41223'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:46499'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:45332'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:45188'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:43957'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:47243'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:39258'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:45634'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:54215'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:48066'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:47214'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:37849'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:43868'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:52395'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:44955'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:48762'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.1.26:49053'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:53969
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:53969
+distributed.worker - INFO -           Worker name:            PBSCluster-1-13
+distributed.worker - INFO -          dashboard at:          10.148.1.26:33123
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-_s_rvw3y
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:44270
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:44270
+distributed.worker - INFO -           Worker name:             PBSCluster-1-5
+distributed.worker - INFO -          dashboard at:          10.148.1.26:48912
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-bhkq5k1a
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:38231
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:48688
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:38231
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:48688
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:41586
+distributed.worker - INFO -           Worker name:             PBSCluster-1-8
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:60074
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:40358
+distributed.worker - INFO -           Worker name:            PBSCluster-1-23
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:42033
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:41586
+distributed.worker - INFO -          dashboard at:          10.148.1.26:33846
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:60074
+distributed.worker - INFO -          dashboard at:          10.148.1.26:51794
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:42033
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:34619
+distributed.worker - INFO -           Worker name:             PBSCluster-1-0
+distributed.worker - INFO -           Worker name:            PBSCluster-1-21
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:             PBSCluster-1-2
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:53680
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:53071
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:34619
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.1.26:54274
+distributed.worker - INFO -          dashboard at:          10.148.1.26:56404
+distributed.worker - INFO -          dashboard at:          10.148.1.26:46812
+distributed.worker - INFO -           Worker name:            PBSCluster-1-17
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:53680
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:53071
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-0931pl58
+distributed.worker - INFO -          dashboard at:          10.148.1.26:40289
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-1-22
+distributed.worker - INFO -           Worker name:             PBSCluster-1-7
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-z5r_0rr2
+distributed.worker - INFO -          dashboard at:          10.148.1.26:52448
+distributed.worker - INFO -          dashboard at:          10.148.1.26:37372
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:40358
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ranybau0
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ifsjvn7s
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-093_mf19
+distributed.worker - INFO -           Worker name:            PBSCluster-1-20
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-zwvrbu64
+distributed.worker - INFO -          dashboard at:          10.148.1.26:35408
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ydl_h4uk
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ueqtqj_4
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:45352
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:47273
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:38246
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:39168
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:45352
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:47273
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:39168
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:38246
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:33924
+distributed.worker - INFO -           Worker name:            PBSCluster-1-12
+distributed.worker - INFO -           Worker name:            PBSCluster-1-15
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:49315
+distributed.worker - INFO -           Worker name:            PBSCluster-1-19
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-zqyide39
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:54848
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:39819
+distributed.worker - INFO -           Worker name:            PBSCluster-1-27
+distributed.worker - INFO -          dashboard at:          10.148.1.26:41750
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:45007
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:33924
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:54848
+distributed.worker - INFO -          dashboard at:          10.148.1.26:38837
+distributed.worker - INFO -          dashboard at:          10.148.1.26:39046
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:39819
+distributed.worker - INFO -          dashboard at:          10.148.1.26:58895
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:49315
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:40255
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:45007
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:38599
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:58442
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:             PBSCluster-1-1
+distributed.worker - INFO -           Worker name:             PBSCluster-1-3
+distributed.worker - INFO -           Worker name:            PBSCluster-1-14
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:             PBSCluster-1-4
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:             PBSCluster-1-9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:40255
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:38599
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.1.26:35013
+distributed.worker - INFO -          dashboard at:          10.148.1.26:57895
+distributed.worker - INFO -          dashboard at:          10.148.1.26:36131
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:58442
+distributed.worker - INFO -          dashboard at:          10.148.1.26:53665
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:60825
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:          10.148.1.26:54462
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:            PBSCluster-1-11
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:            PBSCluster-1-24
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:            PBSCluster-1-25
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:          10.148.1.26:57880
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -          dashboard at:          10.148.1.26:34051
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:60825
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-fy_kwirt
+distributed.worker - INFO -          dashboard at:          10.148.1.26:33459
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-31zafz4w
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ftad9lvx
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-ylfnq7ws
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -           Worker name:            PBSCluster-1-18
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.1.26:51843
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-vfpugwa6
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-d1x0nwdj
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-kiykn96o
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-czgek_yo
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-lpmzxlpd
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-77yi9k5f
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:54057
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-jecoxk9b
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-8ep2msot
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:54057
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-pnf4tmx4
+distributed.worker - INFO -           Worker name:            PBSCluster-1-10
+distributed.worker - INFO -          dashboard at:          10.148.1.26:50956
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:59060
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:59060
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:            PBSCluster-1-16
+distributed.worker - INFO -          dashboard at:          10.148.1.26:36641
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-7smeoaa_
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-dkesh_zn
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:55586
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:55586
+distributed.worker - INFO -           Worker name:            PBSCluster-1-26
+distributed.worker - INFO -          dashboard at:          10.148.1.26:37519
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:    tcp://10.148.1.26:34895
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-xaxf7vse
+distributed.worker - INFO -          Listening to:    tcp://10.148.1.26:34895
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:             PBSCluster-1-6
+distributed.worker - INFO -          dashboard at:          10.148.1.26:60310
+distributed.worker - INFO - Waiting to connect to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.2772432.datarmor0/dask-scratch-space/worker-rvgkxtgp
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.worker - INFO -         Registered to:     tcp://10.148.0.5:42019
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.5:42019
+distributed.core - INFO - Event loop was unresponsive in Worker for 9.49s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 9.50s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.60s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.59s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.60s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.60s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.60s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.59s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 13.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - Received stale shuffle run with run_id=1; expected run_id > 1
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 240, in _refresh
+    raise RuntimeError(
+RuntimeError: Received stale shuffle run with run_id=1; expected run_id > 1
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.shuffle._comms - ERROR - '81c644ac68d20fd5d5081f315587b333'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: '81c644ac68d20fd5d5081f315587b333'
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-81c644ac68d20fd5d5081f315587b333', 29)
+Function:  shuffle_transfer
+args:      (            pass_number drifter_id  ...                     cycle_date  _partitions
+row_number                          ...                                            
+195288                3    4388632  ...  2023-05-30 14:29:46.373771904           45
+195289                3    4388632  ...  2023-05-30 14:29:46.373771904           45
+195290                3    4388632  ...  2023-05-30 14:29:46.373771904           45
+195291                3    4388632  ...  2023-05-30 14:29:46.373771904           45
+195292                3    4388632  ...  2023-05-30 14:29:46.373771904           45
+...                 ...        ...  ...                            ...          ...
+202003                3  0-4367707  ...  2023-06-04 13:42:55.547578112            2
+202004                3  0-4367707  ...  2023-06-04 13:42:55.547578112            2
+202005                3  0-4367707  ...  2023-06-04 13:42:55.547578112            2
+202006                3  0-4367707  ...  2023-06-04 13:42:55.547578112     
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling 81c644ac68d20fd5d5081f315587b333 failed during transfer phase')"
+
+distributed.core - INFO - Event loop was unresponsive in Worker for 12.05s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 12.04s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 12.04s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+Terminated
+distributed._signals - INFO - Received signal SIGTERM (15)
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:53577'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:50184'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:33068'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:56369'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:54055'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:38956'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:48986'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:59560'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:36453'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:33301'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:53194'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:41223'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:46499'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:45332'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:45188'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:43957'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:47243'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:39258'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:45634'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:54215'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:48066'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:47214'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:37849'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:43868'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:52395'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:44955'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:48762'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.1.26:49053'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Worker process 55312 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55315 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55297 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55330 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55388 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55324 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55348 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55369 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55299 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55386 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55364 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55303 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55318 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55354 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55390 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55327 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55380 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55384 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55333 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55308 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55321 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55375 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55360 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55341 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55305 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55382 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55336 was killed by unknown signal
+distributed.nanny - INFO - Worker process 55301 was killed by unknown signal
+distributed.dask_worker - INFO - End worker
