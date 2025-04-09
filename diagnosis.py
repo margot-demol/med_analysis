@@ -126,7 +126,10 @@ def prepared_wd(dt, drifter_preprocess = '', drifter_preprocess_param='', wd_pro
     
     colocs_source = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
     if wd_model in 'rioagesc': wd_model = 'rioagesc' #both in one file
-    dfw = pd.read_csv(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')).set_index('row_number')
+    if os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')):
+        dfw = pd.read_csv(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')).set_index('row_number')
+    if os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.parquet')):
+        dfw = pd.read_parquet(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.parquet'))#.set_index('row_number')
     dfw = dfw[[v for v in dfw if ('vsde' in v or 'vsdn' in v)]]
     return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
 

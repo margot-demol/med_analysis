@@ -19,14 +19,15 @@ def apply_stencil_diff(image, var, dx, dy):
     from scipy.ndimage import convolve
     assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
     
-    stx = np.array([[1/280, -4/105, 1/5], [4/5, 0, -4/5], [-1/5, 4/105, -1/280]])
+    stx = np.array([[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280]])
     sty = stx.T
+    norm = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
 
-    if var == 'dx' : output = convolve(image, stx)/dx
-    if var == 'dy' : output = convolve(image, sty)/dy
-    if var == 'dxx' : output = convolve(convolve(image, stx), stx)/dx/dx
-    if var == 'dyy' : output = convolve(convolve(image, sty), sty)/dy/dy
-    if var == 'dxy' : output = convolve(convolve(image, stx), sty)/dy/dx
+    if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx/norm
+    if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy/norm
+    if var == 'dxx' : output = convolve(convolve(image, stx, mode='mirror'), stx)/dx/dx/(norm**2)
+    if var == 'dyy' : output = convolve(convolve(image, sty, mode='mirror'), sty)/dy/dy/(norm**2)
+    if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx/(norm**2)
     
     return xr.DataArray(output, dims=image.dims)
 
@@ -90,7 +91,8 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
     
     ds =ds.drop_vars(['latitude_nadir','longitude_nadir','dx','phi','dy'])[vars_]
     
-    ds = ds.interpolate_na('num_pixels').interpolate_na('num_lines')
+    if filter_diff_method == 'fitting_kernel':
+        ds = ds.interpolate_na('num_pixels').interpolate_na('num_lines') # erreur dans l'entre-fauchée pour gaussian filter but ok for fitting kernel
     mask = ds.duacs_editing_flag.where(ds.duacs_editing_flag!=0,1).where(ds.duacs_editing_flag==0,0)
     try : 
         D = []
