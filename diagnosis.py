@@ -104,7 +104,7 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         l =  ['ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
         
         if alti_diff_method !='fromduacsv':
-            ggd_var = ['etaf', 'etac']
+            ggd_var = [v for v in dfs.columns if (('etaf' in v)|('etac' in v))&('_' not in v)]
             # rotate and compute quantities
             for v in ggd_var :
                 g=9.81

@@ -77,17 +77,22 @@ def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
     return xr.DataArray(fg/fm, dims=swot_image.dims)#normalized
 
 # Wraper
-def define_eta(ds):
+def define_eta(ds, mean_sla):
     ds['etaf'] = ds.duacs_ssha_karin_2_filtered + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
     ds['etac'] = ds.duacs_ssha_karin_2_calibrated + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
+    if mean_sla : 
+        dsm = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc','preprocessed_swot','swot2km', f'pass{int(ds.pass_number.mean().values)}_swot2km_meansla.nc'))
+        ds['etafm'] = ds.etaf - dsm.mean_slaf
+        ds['etacm'] = ds.etac - dsm.mean_slac
 
-def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}):
-    vars_ = ['etaf', 'etac','duacs_editing_flag', 'longitude', 'latitude']
+def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}, mean_sla=False):
     ds = xr.open_dataset(f)
-    define_eta(ds)
+    define_eta(ds, mean_sla)
     ds = add_grid_metrics(ds)
     dx = float(ds.dx.mean())
     dy = float(ds.dy.mean())
+
+    vars_ = [v for v in list(ds.keys()) if ('etaf' in v)|('etac' in v)]+['duacs_editing_flag', 'longitude', 'latitude']
     
     ds =ds.drop_vars(['latitude_nadir','longitude_nadir','dx','phi','dy'])[vars_]
     
@@ -96,7 +101,7 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
     mask = ds.duacs_editing_flag.where(ds.duacs_editing_flag!=0,1).where(ds.duacs_editing_flag==0,0)
     try : 
         D = []
-        for eta in ['etaf', 'etac'] :
+        for eta in [v for v in list(ds.keys()) if ('etaf' in v)|('etac' in v)] :
             swot_image = ds[eta]
             #gaussian method
             if filter_diff_method == 'gaussian' :
@@ -135,19 +140,19 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
         assert False, f
     return xr.merge(D + [ds[['longitude', 'latitude']]]).where(ds.duacs_editing_flag==0)
 
-def _concat(ds, filter_diff_method, filter_diff_kwargs):
+def _concat(ds, filter_diff_method, filter_diff_kwargs, mean_sla):
     D = []
     for f in ds.file.values :
-        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs))
+        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs, mean_sla = mean_sla))
     try : 
         xs = xr.concat(D, dim=ds.cycle_number)
     except : 
         assert False, f
     return xs
 
-def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs):
+def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla):
 
-    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}).compute()
+    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}, mean_sla=mean_sla).compute()
     template = template.isel(cycle_number=0).expand_dims({'cycle_number':ds.cycle_number}).chunk({**ds.chunks, **{'num_pixels':-1, 'num_lines':-1}})
     dims = [ "cycle_number", "num_lines", "num_pixels"]
     template = template.transpose(*dims)
@@ -155,8 +160,7 @@ def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs):
     # actually perform the calculation
     ds_diff = ds.map_blocks(
         _concat,
-        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs),
+        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs, mean_sla=mean_sla),
         template=template,
     )
     return ds_diff
-
