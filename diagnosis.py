@@ -90,7 +90,7 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         dfg = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_general_'+colocs_sources+'.csv')).set_index('row_number')
         dfg['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfg.latitude * np.pi / 180)
         
-        if (alti_diff_method !='fromduacsv'):
+        if alti_diff_method !='fromduacsv':
             # SSH
             if alti_diff_method_param != '': alti_diff_method_param = str(alti_diff_method_param)+'_'
             dfs = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}'+colocs_sources+'.csv')).set_index('row_number')
@@ -104,7 +104,7 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         l =  ['ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
         
         if alti_diff_method !='fromduacsv':
-            ggd_var = [v for v in dfs.columns if (('etaf' in v)|('etac' in v))&('_' not in v)]
+            ggd_var = [v.replace('dx_', '') for v in dfs.columns if (('etaf' in v)|('etac' in v))&('dx_' in v)]
             # rotate and compute quantities
             for v in ggd_var :
                 g=9.81
@@ -217,29 +217,18 @@ def one_comb(dt,
     
     return df, id_comb
 
+def create_prod_exc_sum(df,id_comb, null_mean = False):
+    coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi', 'distance_to_coast']
+    ds = df[coords_list].to_xarray()
+    ds['id_comb'] = id_comb
 
-def dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True):
-    D = []
-    for comb in comb_list :
-        df, id_comb = one_comb(**comb)
-
-        # remove identified swot outliers
-        if remove_id_outliers :
-            from cstes import remove_pb_swot
-            df = remove_pb_swot(df)
-            
-        if nearest :
-            # select only nearest in time colocalisation
-            df = select_nearest_swot_coloc(df)#.dropna()
-            
-        coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi', 'distance_to_coast']
-                
-        ds = df[coords_list].to_xarray()
-        ds['id_comb'] = id_comb
-        
-        for direction in ['e', 'n'] : 
+    for direction in ['e', 'n'] : 
             if direction == 'e' : l = {'acc':'acce', 'cor':'core', 'ggd':'ggde', 'wd':'wde'}
             if direction == 'n' : l = {'acc':'accn', 'cor':'corn', 'ggd':'ggdn', 'wd':'wdn'}
+
+            if null_mean : 
+                for v in l:
+                    df[l[v]] = df[l[v]] - df[l[v]].mean()
                 
             # sum 
             ds['sum'+direction] = sum([df[l[v]] for v in l])
@@ -254,7 +243,26 @@ def dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True):
             couple = list(itertools.combinations(list(l.keys()),2))
             for c in couple : 
                 ds['prod'+direction+'_'+'_'.join(c)] = ds[c[0]+direction] * ds[c[1]+direction]
-                
+    return ds
+
+
+def dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True, null_mean = False):
+    coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi', 'distance_to_coast']
+    D = []
+    for comb in comb_list :
+        df, id_comb = one_comb(**comb)
+
+        # remove identified swot outliers
+        if remove_id_outliers :
+            from cstes import remove_pb_swot
+            df = remove_pb_swot(df)
+            
+        if nearest :
+            # select only nearest in time colocalisation
+            df = select_nearest_swot_coloc(df)#.dropna()
+        
+        ds = create_prod_exc_sum(df, id_comb, null_mean)
+        
         D.append(ds.set_coords('id_comb'))
     ds = xr.concat(D, dim='id_comb').set_coords(coords_list)
         
@@ -272,6 +280,36 @@ def update_dict(base_dic, kwargs):
     dic.update(**kwargs)
     return dic
 
+def extract_mean_geo(DS, dirname = ('e', 'n')):
+    DSt = DS.copy()
+    for dir_ in dirname:
+        ggdm = DS['ggd'+dir_].mean('row_number').values
+        corm = DS['cor'+dir_].mean('row_number').values
+        delta = xr.DataArray(data = np.where(abs(ggdm)>abs(corm), abs(corm), abs(ggdm)), coords = dict(id_comb = DS.id_comb))
+    
+        DSt['meancor'+dir_] = np.sign(corm)*delta
+        DSt['meanggd'+dir_] = np.sign(ggdm)*delta
+        
+        DSt['ggd'+dir_] = DS['ggd'+dir_]-np.sign(ggdm)*delta
+        DSt['cor'+dir_] = DS['cor'+dir_]-np.sign(corm)*delta
+        
+        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
+        # sum 
+        DSt['sum'+dir_] = sum([DSt[l[v]] for v in l])
+        
+        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
+        # simple var + sum- one term
+        for v in l :
+            DSt['exc'+dir_+'_'+v] = DSt['sum'+dir_]-DSt[l[v]]
+            
+        #2 by 2 product  
+        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
+        import itertools  
+        couple = list(itertools.combinations(list(l.keys()),2))
+        for c in couple : 
+            DSt['prod'+dir_+'_'+'_'.join(c)] = DSt[c[0]+dir_] * DSt[c[1]+dir_]
+            
+    return DSt
 
 """ 
 _________________________________________
@@ -288,10 +326,18 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     dirname : directions of the reconstruction
     """
     d0, d1 = dirname[0], dirname[1]
+
+    closure_vars_=closure_vars
     
     var = ['acc', 'cor', 'ggd', 'wd','sum']
     VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
-    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).rename({var[i]+d1 : VAR[i]+d1 for i in range(5)}).rename({var[i]+d0 : VAR[i]+d0 for i in range(5)})
+    if 'meancor'+dirname[0] in ds :
+        print('ok')
+        var += ['meancor', 'meanggd']
+        VAR += ['meancor'.upper(), 'meanggd'.upper()]
+        closure_vars_ = closure_vars +['MEANCOR*', 'MEANGGD*']
+        
+    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).rename({var[i]+d1 : VAR[i]+d1 for i in range(len(var))}).rename({var[i]+d0 : VAR[i]+d0 for i in range(len(var))})
     dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
     dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
     
@@ -313,7 +359,7 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
         dss['D'+direction+'_anticyclo'] = -2 *(ds['acc'+direction]+ds['ggd'+direction])*ds['cor'+direction]
 
     #Sum of both direction
-    for v in closure_vars :
+    for v in closure_vars_ :
         dss[v.replace('*', '')] = dss[v.replace('*', dirname[0])] + dss[v.replace('*', dirname[1])]
 
     # Mean
@@ -323,7 +369,56 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     dsse = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'ser__'+v for v in list(dss.keys())})
 
     dss = xr.merge([dsm, dsse])
+
+    #Mean geostrophics corrections :
+    if 'meancor'+dirname[0] in ds :
+        print('geostrophic mean corrections')
+        for dir_ in dirname:
+            for v in ['cor', 'ggd']:
+                dss[v.upper() + dir_] = dss[v.upper() + dir_] + dss['MEAN'+ v.upper() + dir_]
+                dss['B'+ dir_+'_'+v] = dss['B'+ dir_+'_'+v] + dss['MEAN'+ v.upper() + dir_]
+        dss['X'+ dir_+'_cor_ggd'] = dss['X'+ dir_+'_cor_ggd'] + 2*dss['MEAN'+ v.upper() + dir_]
+        for v in ['cor', 'ggd']:
+            dss[v.upper()] =  dss[v.upper() + dirname[0]]+ dss[v.upper() + dirname[1]]
+            dss['B_'+v] = dss['B'+dirname[0]+'_'+v] + dss['B'+dirname[1]+'_'+v]
+            dss['X_cor_ggd'] = dss['X'+dirname[0]+'_cor_ggd'] + dss['X'+dirname[1]+'_cor_ggd']
+        
+    #end
     dss = assign_attrs(dss, list(dirname) + [''])
+    return dss
+
+
+def compute_variance(ds_, dirname = ('e', 'n')):
+    """ Compute closure stats
+    ds : dataset containing terms values for all row_numbers
+    dirname : directions of the reconstruction
+    """
+    
+    var = ['acc', 'cor', 'ggd', 'wd','sum']
+    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+
+    ds=ds_.copy()
+    # remove mean
+    for dir_ in dirname : 
+        for v in var:
+            ds[v+dir_] = ds[v+dir_]-ds[v+dir_].mean('row_number')
+            
+        # sum 
+        ds['sum'+dir_] = sum([ds[v+dir_] for v in var])
+
+        # simple var + sum- one term
+        for v in var :
+            ds['exc'+dir_+'_'+v] = ds['sum'+dir_]-ds[v+dir_]
+                
+        #2 by 2 product    
+        import itertools
+        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
+        couple = list(itertools.combinations(list(l.keys()),2))
+        for c in couple : 
+            ds['prod'+dir_+'_'+'_'.join(c)] = ds[c[0]+dir_] * ds[c[1]+dir_]
+
+    # MS = var as mean are null
+    dss = compute_mean_square(ds, dirname)
     return dss
 
 
@@ -376,9 +471,14 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     """
     var = ['acc', 'cor', 'ggd', 'wd','sum']
     VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+    if 'meancor'+dirname[0] in df.columns :
+        print('ok')
+        var += ['meancor', 'meanggd']
+        VAR += ['meancor'.upper(), 'meanggd'.upper()]
+        closure_vars_ = closure_vars +['MEANCOR*', 'MEANGGD*']
+        print('geostrophic mean corrections')
 
-
-    dff = (df[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]]**2).rename(columns = {var[i]+dirname[1] : VAR[i]+dirname[1] for i in range(5)}).rename(columns = {var[i]+dirname[0] : VAR[i]+dirname[0] for i in range(5)})/U2
+    dff = (df[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]]**2).rename(columns = {var[i]+dirname[1] : VAR[i]+dirname[1] for i in range(len(var))}).rename(columns = {var[i]+dirname[0] : VAR[i]+dirname[0] for i in range(len(var))})/U2
     dff = pd.concat([dff, df[groupby]], axis=1)
     
     nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
@@ -402,22 +502,10 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     for v in closure_vars :
         dff[v.replace('*', '')] = dff[v.replace('*', dirname[0])] + dff[v.replace('*', dirname[1])]
 
-
-    # bootstrap errors
-    if compute_error == 'bootstrap' : 
-        def mean_df(df):
-            return df.mean()
-        from scipy.stats import bootstrap
-        def compute_bootstrap_error(dff):
-            # print(len(dff))
-            if len(dff) < 3:
-                return np.nan
-            else:
-                data = (dff,)  # samples must be in a sequence
-                return bootstrap(data, statistic=mean_df).standard_error
-        
     closure_vars_2D = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars] + [v.replace('*', '')for v in closure_vars]
-
+    if 'meancor'+dirname[0] in df.columns :
+        closure_vars_2D += ['MEANCORe', 'MEANGGDe', 'MEANCORn', 'MEANGGDn']
+    
     if isinstance(groupby, str) : grp = [groupby]
     else : grp = groupby
     
@@ -474,11 +562,57 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
         
         
     dss = dff.to_xarray()
+
+    #Mean geostrophics corrections :
+    if 'meancor'+dirname[0] in df.columns :
+        for dir_ in dirname:
+            for v in ['cor', 'ggd']:
+                dss[v.upper() + dir_] = dss[v.upper() + dir_] + dss['MEAN'+ v.upper() + dir_]
+                dss['B'+ dir_+'_'+v] = dss['B'+ dir_+'_'+v] + dss['MEAN'+ v.upper() + dir_]
+        dss['X'+ dir_+'_cor_ggd'] = dss['X'+ dir_+'_cor_ggd'] + 2*dss['MEAN'+ v.upper() + dir_]
+        for v in ['cor', 'ggd']:
+            dss[v.upper()] =  dss[v.upper() + dirname[0]]+ dss[v.upper() + dirname[1]]
+            dss['B_'+v] = dss['B'+dirname[0]+'_'+v] + dss['B'+dirname[1]+'_'+v]
+            dss['X_cor_ggd'] = dss['X'+dirname[0]+'_cor_ggd'] + dss['X'+dirname[1]+'_cor_ggd']
+
     dss = assign_attrs(dss, dirname)
     #dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
 
     return dss
 
+
+def compute_variance_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), compute_error = 'no', vars_errors=None):
+    """ Compute closure stats on bins
+    ds : dataset containing terms values for all row_numbers
+    groupby : str, name of the binning variable
+    dirname : directions of the reconstruction
+    bootstrap :  bool, rather to compute bootstrap errors or not (longer with)
+    """
+    var = ['acc', 'cor', 'ggd', 'wd','sum']
+    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+
+    nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
+
+    #remove Mean
+    dfm = (df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]] - df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]].groupby(groupby).mean()).reset_index()
+    for dir_ in dirname :
+        dfm['sum'+dir_] = sum([dfm[v+dir_] for v in var])
+
+        # simple var + sum- one term
+        for v in var :
+            dfm['exc'+dir_+'_'+v] = dfm['sum'+dir_]-dfm[v+dir_]
+                
+        #2 by 2 product    
+        import itertools  
+        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
+        couple = list(itertools.combinations(list(l.keys()),2))
+        for c in couple : 
+            dfm['prod'+dir_+'_'+'_'.join(c)] = dfm[c[0]+dir_] * dfm[c[1]+dir_]
+
+    # MS = var as mean are null
+    dss = compute_mean_square_groupby(dfm, groupby, dirname, compute_error, vars_errors)
+    
+    return dss
 
 
 def remove_dt_traj_limit_coloc(dfr, dt):
