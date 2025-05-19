@@ -24,6 +24,21 @@ from pyproj import Geod
 
 from cstes import drifters_sources
 
+import matplotlib.transforms as mtransforms
+def put_fig_letter(fig, ax, letter):
+    trans = mtransforms.ScaledTranslation(10 / 72, -5 / 72, fig.dpi_scale_trans)
+    ax.text(
+        0.0,
+        1.0,
+        letter + ")",
+        transform=ax.transAxes + trans,
+        fontsize="medium",
+        verticalalignment="top",
+        fontfamily="serif",
+        bbox=dict(facecolor="0.7", edgecolor="none", pad=3.0),
+        zorder=30,
+    )
+    
 """ 
 _________________________________________
 ---- CREATE DATASETS ----
@@ -58,7 +73,7 @@ def prepared_drifters(dt, drifter_preprocess = '', drifter_preprocess_param='') 
     colocs_sources = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
     drifters_path = os.path.join(zarr_dir, 'coloc_files', 'drifters', f'drifterscoloc_'+colocs_sources+'.csv')
 
-    if drifter_preprocess == 'spectral_decomp' : spectral_key = drifter_preprocess_param+'_'
+    if (drifter_preprocess == 'spectral_decomp') & (drifter_preprocess_param !='') : spectral_key = drifter_preprocess_param+'_'
     else : spectral_key=''
             
     # Treat

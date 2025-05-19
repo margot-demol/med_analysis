@@ -423,3 +423,71 @@ def rotate_ggd(df, ggd_variables):
     for v in ggd_variables : 
         df['ggde_'+v], df['ggdn_'+v] = rotate(df['ggdx_'+v], df['ggdy_'+v], df['phi'])
 
+"""
+______________
+PLOT 
+______________
+"""
+platform = "datarmor"
+
+def load_swot_tracks(phase="calval", resolution=None, bbox=None, **kwargs):
+    """Load SWOT tracks
+
+
+    Parameters
+    ----------
+    phase: str, optional
+        "calval" or "science"
+    resolution: str, optional
+        Specify resolution, for example "10s", default is "30s"
+    """
+
+    if platform == "datarmor":
+        tracks_dir = "/home/datawork-lops-oc/equinox/misc/swot"
+    else:
+        tracks_dir = "/Users/mdemol/code/swot_tracks"
+    #
+    files = glob(os.path.join(tracks_dir, "*.shp"))
+    files = [f for f in files if phase in f]
+    if resolution is not None:
+        files = [f for f in files if resolution in f]
+    dfiles = {f.split("_")[-1].split(".")[0]: f for f in files}
+    out = {key: gpd.read_file(f, **kwargs) for key, f in dfiles.items()}
+
+    if bbox is None:
+        return out
+
+    central_lon = (bbox[0] + bbox[1]) * 0.5
+    central_lat = (bbox[2] + bbox[3]) * 0.5
+
+    polygon = Polygon(
+        [
+            (bbox[0], bbox[2]),
+            (bbox[1], bbox[2]),
+            (bbox[1], bbox[3]),
+            (bbox[0], bbox[3]),
+            (bbox[0], bbox[2]),
+        ]
+    )
+    out = {key: gpd.clip(gdf, polygon) for key, gdf in out.items()}
+
+    return out
+
+
+def plot_swot_tracks(ax, bbox):
+    tracks = load_swot_tracks(bbox=bbox)["swath"]
+    swot_kwargs = dict(
+        facecolor="none",
+        edgecolor="k",
+        alpha=1,
+        zorder=10,
+    )
+    # if isinstance(swot_tracks, dict):
+    #    swot_kwargs.update(swot_tracks)
+    proj = ax.projection
+    crs_proj4 = proj.proj4_init
+    ax.add_geometries(
+        tracks.to_crs(crs_proj4)["geometry"],
+        crs=proj,
+        **swot_kwargs,
+    )

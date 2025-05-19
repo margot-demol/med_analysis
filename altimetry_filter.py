@@ -12,8 +12,6 @@ from cstes import swot_dir_2km, zarr_dir
 
 
 
-
-
 # Stencil method
 def apply_stencil_diff(image, var, dx, dy):
     from scipy.ndimage import convolve
@@ -35,8 +33,12 @@ def apply_stencil_diff(image, var, dx, dy):
 # Fitting kernel
 def fitting_coeff(image, var, dx, dy): 
     """
-    var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+    fitting method inspired from Tranchant
+    input : 
+        var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+    May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
     """
+    #https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
     meaning_coeff = {'cste':0, 'dx':1, 'dy':2, 'dxx':3, 'dyy':4, 'dxy':5}
     assert var in meaning_coeff.keys(), "var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
     n=int(np.sqrt(image.shape[0]))
