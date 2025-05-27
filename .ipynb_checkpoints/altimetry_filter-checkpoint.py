@@ -29,7 +29,6 @@ def apply_stencil_diff(image, var, dx, dy):
     
     return xr.DataArray(output, dims=image.dims)
 
-
 # Fitting kernel
 def fitting_coeff(image, var, dx, dy): 
     """
@@ -83,16 +82,19 @@ def define_eta(ds, mean_sla):
     ds['etaf'] = ds.duacs_ssha_karin_2_filtered + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
     ds['etac'] = ds.duacs_ssha_karin_2_calibrated + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
     if mean_sla : 
-        dsm = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc','preprocessed_swot','swot2km', f'pass{int(ds.pass_number.mean().values)}_swot2km_meansla.nc'))
-        ds['etafm'] = ds.etaf - dsm.mean_slaf
-        ds['etacm'] = ds.etac - dsm.mean_slac
+        dsm = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc','preprocessed_swot','swot2km', f'pass{int(ds.pass_number.mean().values)}_swot2km_meanssha.nc'))
+        ds['etafm'] = ds.etaf - dsm.mean_sshaf
+        ds['etacm'] = ds.etac - dsm.mean_sshac
 
-def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}, mean_sla=False):
+def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}, mean_sla=False, distance_to_coast_max=None):
     ds = xr.open_dataset(f)
     define_eta(ds, mean_sla)
     ds = add_grid_metrics(ds)
     dx = float(ds.dx.mean())
     dy = float(ds.dy.mean())
+    
+    if distance_to_coast_max != None:
+        ds = ds.where(ds.distance_to_coast>distance_to_coast_max, drop=True)
 
     vars_ = [v for v in list(ds.keys()) if ('etaf' in v)|('etac' in v)]+['duacs_editing_flag', 'longitude', 'latitude']
     
@@ -109,10 +111,19 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
             if filter_diff_method == 'gaussian' :
                 assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
                 output = apply_gaussian_filter(swot_image,  **filter_diff_kwargs, mask = mask, dx=dx, dy=dy).rename('filtered_'+eta).to_dataset()
-                for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
-                    output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
+
+                #stencil diff
+                #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
+                #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
+                
+                # xarray diff
+                output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
+                output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
+                output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
+                output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
+                output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
                 D.append(output)
-            
+             
             # Fitting kernel method
             if filter_diff_method == 'fitting_kernel' :
                 assert list(filter_diff_kwargs.keys()) == ['npts'], 'The fitting kernel method needs one argument npts (odd, kernel = [npts, npts])'
@@ -137,24 +148,24 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
                 output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
                 output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
                 D.append(output)
-                
+                    
     except: 
         assert False, f
     return xr.merge(D + [ds[['longitude', 'latitude']]]).where(ds.duacs_editing_flag==0)
 
-def _concat(ds, filter_diff_method, filter_diff_kwargs, mean_sla):
+def _concat(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_max):
     D = []
     for f in ds.file.values :
-        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs, mean_sla = mean_sla))
+        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs, mean_sla = mean_sla, distance_to_coast_max=distance_to_coast_max))
     try : 
         xs = xr.concat(D, dim=ds.cycle_number)
     except : 
         assert False, f
     return xs
 
-def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla):
+def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_max=None):
 
-    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}, mean_sla=mean_sla).compute()
+    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}, mean_sla=mean_sla, distance_to_coast_max=distance_to_coast_max).compute()
     template = template.isel(cycle_number=0).expand_dims({'cycle_number':ds.cycle_number}).chunk({**ds.chunks, **{'num_pixels':-1, 'num_lines':-1}})
     dims = [ "cycle_number", "num_lines", "num_pixels"]
     template = template.transpose(*dims)
@@ -162,7 +173,7 @@ def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla):
     # actually perform the calculation
     ds_diff = ds.map_blocks(
         _concat,
-        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs, mean_sla=mean_sla),
+        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs, mean_sla=mean_sla, distance_to_coast_max=distance_to_coast_max),
         template=template,
     )
     return ds_diff

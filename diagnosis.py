@@ -1154,3 +1154,35 @@ def plot_flag_colorbar(fig, im, fmt, tickz):
     cb.remove()
     cb = fig.colorbar(im, format=fmt, ticks=tickz)
 
+
+"""
+COM
+________________
+"""
+def MSnoiseggd_from_sshnoisestd(sigmaN, d=2e3) : 
+    """ 
+    sigmaN : white noise std in m
+    d : grid spacing in m
+    """
+    print('Caution : std must be given in m, E_ggd given in gamma^2')
+    from cstes import U2
+    g=9.81
+    K = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
+    b=(1/280)**2 + (4/105)**2+ (1/5)**2+(4/5)**2
+    return 4*g**2/(K**2)/(d**2)*b*(sigmaN**2)/U2
+
+def sshnoisestd_from_MSnoiseggd(E_ggd, d=2e3) : 
+    """ 
+    E_ggd : pressure gradient MS in gamma^2
+    d : grid spacing in m
+    """
+    print('Caution : E_ggd must be given in gamma^2, std must return in m')
+    from cstes import U2
+    g=9.81
+    K = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
+    b=(1/280)**2 + (4/105)**2+ (1/5)**2+(4/5)**2
+    
+    return np.sqrt(E_ggd*U2*(K*d)**2/(4*g**2*b))
+
+
+

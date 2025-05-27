@@ -1,0 +1,183 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Mon May 19 07:25:50 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-05-19 07:26:16.958 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-05-19 07:26:18.732 ServerApp] Package jupyter_lsp took 1.7737s to import
+[W 2025-05-19 07:26:18.732 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-19 07:26:19.390 ServerApp] Package jupyter_server_terminals took 0.6577s to import
+[I 2025-05-19 07:26:19.391 ServerApp] Package notebook took 0.0000s to import
+[I 2025-05-19 07:26:19.394 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-05-19 07:26:19.394 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-19 07:27:21.926 ServerApp] Package panel.io.jupyter_server_extension took 62.5034s to import
+[I 2025-05-19 07:27:21.927 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-19 07:27:21.933 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-19 07:27:21.939 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-05-19 07:27:22.000 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-05-19 07:27:22.003 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-05-19 07:27:22.003 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-19 07:27:33.068 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-19 07:27:33.068 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-19 07:27:33.474 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-19 07:27:33.476 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-19 07:27:33.478 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-19 07:27:33.686 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-05-19 07:27:33.686 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-05-19 07:27:33.697 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-19 07:27:33.700 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-19 07:27:33.704 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-19 07:27:33.705 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-19 07:27:33.705 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-05-19 07:27:33.705 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-05-19 07:27:33.705 ServerApp] http://r1i6n27:8877/lab
+[I 2025-05-19 07:27:33.705 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-05-19 07:27:33.705 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-05-19 07:27:33.875 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-05-19 07:27:55.520 ServerApp] 302 GET / (@10.148.1.145) 0.65ms
+[W 2025-05-19 07:28:01.572 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-19 07:28:12.550 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/junk/22_seastate_filtered.ipynb is not trusted
+[W 2025-05-19 07:28:14.608 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:28:15.938 ServerApp] Kernel started: 31adde5b-d009-4152-a928-6805fd11dcd8
+[I 2025-05-19 07:28:15.978 ServerApp] Kernel started: 5d29cf94-9eb2-4f24-be33-ae145beac85c
+[I 2025-05-19 07:28:16.269 ServerApp] Kernel started: 7a1e4048-6701-47df-a671-3f6c2009c050
+[I 2025-05-19 07:28:16.958 ServerApp] Kernel started: bbb1a87a-cfde-4256-adfc-fa270b151640
+[I 2025-05-19 07:28:17.042 ServerApp] Kernel started: cde4c73f-671b-4dd7-b725-1430e88f8e2f
+[I 2025-05-19 07:28:17.044 ServerApp] Kernel started: 96c8c833-15bc-4a65-8e93-11b12a6051d3
+[I 2025-05-19 07:28:17.456 ServerApp] Kernel started: 304ff3f2-60fc-4971-99ea-f233dcc24e0a
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 07:28:39.158 ServerApp] Connecting to kernel 31adde5b-d009-4152-a928-6805fd11dcd8.
+[I 2025-05-19 07:28:39.179 ServerApp] Connecting to kernel 5d29cf94-9eb2-4f24-be33-ae145beac85c.
+[I 2025-05-19 07:28:39.198 ServerApp] Connecting to kernel 7a1e4048-6701-47df-a671-3f6c2009c050.
+[I 2025-05-19 07:28:39.217 ServerApp] Connecting to kernel bbb1a87a-cfde-4256-adfc-fa270b151640.
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 07:28:39.518 ServerApp] Connecting to kernel cde4c73f-671b-4dd7-b725-1430e88f8e2f.
+[I 2025-05-19 07:28:39.520 ServerApp] Connecting to kernel cde4c73f-671b-4dd7-b725-1430e88f8e2f.
+[I 2025-05-19 07:28:39.546 ServerApp] Connecting to kernel 96c8c833-15bc-4a65-8e93-11b12a6051d3.
+[I 2025-05-19 07:28:39.548 ServerApp] Connecting to kernel 304ff3f2-60fc-4971-99ea-f233dcc24e0a.
+[I 2025-05-19 07:28:39.567 ServerApp] Connecting to kernel 304ff3f2-60fc-4971-99ea-f233dcc24e0a.
+[I 2025-05-19 07:28:39.570 ServerApp] Connecting to kernel 304ff3f2-60fc-4971-99ea-f233dcc24e0a.
+[I 2025-05-19 07:30:14.742 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:30:14.743 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:32:19.125 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:32:19.126 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:34:19.322 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:34:19.323 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:36:19.627 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:36:19.628 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:38:03.744 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-05-19 07:40:19.870 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:40:19.870 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:40:45.336 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:40:45.337 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:40:49.192 ServerApp] Kernel restarted: 304ff3f2-60fc-4971-99ea-f233dcc24e0a
+[I 2025-05-19 07:40:49.197 ServerApp] Starting buffering for 304ff3f2-60fc-4971-99ea-f233dcc24e0a:f657a9ba-7e8d-4680-b4d2-df431dbfddf6
+[I 2025-05-19 07:40:49.202 ServerApp] Connecting to kernel 304ff3f2-60fc-4971-99ea-f233dcc24e0a.
+[I 2025-05-19 07:40:49.202 ServerApp] Restoring connection for 304ff3f2-60fc-4971-99ea-f233dcc24e0a:f657a9ba-7e8d-4680-b4d2-df431dbfddf6
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 07:42:45.693 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:42:45.694 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:44:45.874 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:44:45.875 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:46:46.107 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:46:46.108 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:48:15.903 ServerApp] Kernel started: a044f002-53fc-4a68-b9df-0d794f18eddd
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 07:48:16.808 ServerApp] Connecting to kernel a044f002-53fc-4a68-b9df-0d794f18eddd.
+[W 2025-05-19 07:48:27.021 ServerApp] Notebook med_analysis/01_preprocessing/08_overview_diff_methods.ipynb is not trusted
+[I 2025-05-19 07:48:27.419 ServerApp] Kernel started: 9baf15e3-b613-415e-ab45-d66f30a08879
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 07:48:28.045 ServerApp] Connecting to kernel 9baf15e3-b613-415e-ab45-d66f30a08879.
+[I 2025-05-19 07:48:46.326 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 07:48:46.327 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 07:49:07.574 ServerApp] Starting buffering for 31adde5b-d009-4152-a928-6805fd11dcd8:9ed6fdff-93e6-4bd3-a2c6-56fc8ab2d8a7
+[I 2025-05-19 07:49:08.674 ServerApp] Starting buffering for 7a1e4048-6701-47df-a671-3f6c2009c050:426dd221-1c5b-432e-ba41-fe489442f496
+[I 2025-05-19 07:49:09.641 ServerApp] Starting buffering for 96c8c833-15bc-4a65-8e93-11b12a6051d3:e2ec8af7-2f9e-4e02-8795-87880b38d438
+[I 2025-05-19 07:49:11.045 ServerApp] Starting buffering for cde4c73f-671b-4dd7-b725-1430e88f8e2f:f1f4d957-c20a-4f8b-a3ed-cb5073481e19
+[I 2025-05-19 07:49:12.561 ServerApp] Starting buffering for bbb1a87a-cfde-4256-adfc-fa270b151640:ac5ed869-ec1e-4f30-ba76-c3e33b5dd366
+[I 2025-05-19 07:50:15.774 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 07:52:17.228 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 07:56:19.145 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 07:58:19.454 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:00:19.699 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:02:20.013 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:04:20.381 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:06:21.107 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:10:22.093 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:11:23.104 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 08:11:23.104 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 08:13:23.416 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-19 08:13:23.417 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-19 08:16:23.075 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:17:34.393 ServerApp] Saving file at /med_analysis/01_preprocessing/09_overview_diff_products.ipynb
+[I 2025-05-19 08:19:43.236 ServerApp] Connecting to kernel cde4c73f-671b-4dd7-b725-1430e88f8e2f.
+[I 2025-05-19 08:21:21.532 ServerApp] Starting buffering for 304ff3f2-60fc-4971-99ea-f233dcc24e0a:f657a9ba-7e8d-4680-b4d2-df431dbfddf6
+[I 2025-05-19 08:21:43.160 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-19 08:23:43.337 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-19 08:25:21.075 ServerApp] Connecting to kernel bbb1a87a-cfde-4256-adfc-fa270b151640.
+[I 2025-05-19 08:25:41.311 ServerApp] Connecting to kernel 96c8c833-15bc-4a65-8e93-11b12a6051d3.
+[I 2025-05-19 08:25:43.660 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-19 08:27:43.908 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-19 08:29:45.036 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[W 2025-05-19 08:29:54.030 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-19 08:29:54.335 ServerApp] Kernel started: 31c83117-afbe-441f-ad7e-36fcba61724d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 08:29:55.377 ServerApp] Connecting to kernel 31c83117-afbe-441f-ad7e-36fcba61724d.
+[I 2025-05-19 08:31:54.197 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-19 08:31:54.198 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-19 08:33:54.426 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-19 08:33:54.427 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-19 08:34:06.530 ServerApp] Kernel restarted: 31c83117-afbe-441f-ad7e-36fcba61724d
+[I 2025-05-19 08:34:06.537 ServerApp] Starting buffering for 31c83117-afbe-441f-ad7e-36fcba61724d:0de3e561-4b24-4b6b-b4d0-c3013438a071
+[I 2025-05-19 08:34:06.542 ServerApp] Connecting to kernel 31c83117-afbe-441f-ad7e-36fcba61724d.
+[I 2025-05-19 08:34:06.542 ServerApp] Restoring connection for 31c83117-afbe-441f-ad7e-36fcba61724d:0de3e561-4b24-4b6b-b4d0-c3013438a071
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-19 08:35:54.702 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-19 08:35:54.703 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-19 08:37:54.965 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-19 08:37:54.966 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-19 08:39:47.140 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-19 08:39:55.239 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-19 08:39:55.240 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+Terminated
+[C 2025-05-19 08:47:19.379 ServerApp] received signal 15, stopping
+[I 2025-05-19 08:47:19.430 ServerApp] Shutting down 6 extensions
+[I 2025-05-19 08:47:19.430 ServerApp] Shutting down 10 kernels
+[I 2025-05-19 08:47:19.430 ServerApp] Kernel shutdown: cde4c73f-671b-4dd7-b725-1430e88f8e2f
+[I 2025-05-19 08:47:19.431 ServerApp] Kernel shutdown: a044f002-53fc-4a68-b9df-0d794f18eddd
+[I 2025-05-19 08:47:19.431 ServerApp] Kernel shutdown: 31c83117-afbe-441f-ad7e-36fcba61724d
+[I 2025-05-19 08:47:19.431 ServerApp] Kernel shutdown: 31adde5b-d009-4152-a928-6805fd11dcd8
+[I 2025-05-19 08:47:19.431 ServerApp] Kernel shutdown: 5d29cf94-9eb2-4f24-be33-ae145beac85c
+[I 2025-05-19 08:47:19.432 ServerApp] Kernel shutdown: 9baf15e3-b613-415e-ab45-d66f30a08879
+[I 2025-05-19 08:47:19.432 ServerApp] Kernel shutdown: 96c8c833-15bc-4a65-8e93-11b12a6051d3
+[I 2025-05-19 08:47:19.432 ServerApp] Kernel shutdown: 7a1e4048-6701-47df-a671-3f6c2009c050
+[I 2025-05-19 08:47:19.432 ServerApp] Kernel shutdown: bbb1a87a-cfde-4256-adfc-fa270b151640
+[I 2025-05-19 08:47:19.433 ServerApp] Kernel shutdown: 304ff3f2-60fc-4971-99ea-f233dcc24e0a
+[C 2025-05-19 08:47:20.790 ServerApp] received signal 15, stopping
+[I 2025-05-19 08:47:20.791 ServerApp] Shutting down 6 extensions
+[I 2025-05-19 08:47:20.792 ServerApp] Shutting down 8 kernels
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: cde4c73f-671b-4dd7-b725-1430e88f8e2f
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: a044f002-53fc-4a68-b9df-0d794f18eddd
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 31c83117-afbe-441f-ad7e-36fcba61724d
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 31adde5b-d009-4152-a928-6805fd11dcd8
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 5d29cf94-9eb2-4f24-be33-ae145beac85c
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 9baf15e3-b613-415e-ab45-d66f30a08879
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 7a1e4048-6701-47df-a671-3f6c2009c050
+[I 2025-05-19 08:47:20.792 ServerApp] Kernel shutdown: 304ff3f2-60fc-4971-99ea-f233dcc24e0a
