@@ -545,16 +545,16 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
                 return bootstrap(data, statistic=mean_df).standard_error
         #print(vars_errors)
         if vars_errors is None : vars_errors = closure_vars_2D
-        import dask.dataframe as dd
-        dfd = dd.from_pandas(dff, chunksize=10)
+        #import dask.dataframe as dd
+        #dfd = dd.from_pandas(dff, chunksize=10)
         DF = []
         #print(vars_errors)
         for v in vars_errors:
             DF.append(
-                dfd.reset_index()[vars_errors + grp]
+                dff.reset_index()[vars_errors + grp]#dfd
                 .groupby(groupby, observed=False)[v]
                 .apply(compute_bootstrap_error)
-                .compute()
+                #.compute()
             )
             print(v)
         booterrors = pd.concat(DF, axis=1)
@@ -1182,7 +1182,7 @@ def sshnoisestd_from_MSnoiseggd(E_ggd, d=2e3) :
     K = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
     b=(1/280)**2 + (4/105)**2+ (1/5)**2+(4/5)**2
     
-    return np.sqrt(E_ggd*U2*(Kd)**2/(4*g**2*b))
+    return np.sqrt(E_ggd*U2*(K*d)**2/(4*g**2*b))
 
 
 

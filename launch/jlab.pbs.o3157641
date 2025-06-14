@@ -1,0 +1,240 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Wed May 28 12:35:44 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-05-28 12:35:51.045 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-05-28 12:35:51.411 ServerApp] Package jupyter_lsp took 0.3652s to import
+[W 2025-05-28 12:35:51.411 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-28 12:35:51.563 ServerApp] Package jupyter_server_terminals took 0.1516s to import
+[I 2025-05-28 12:35:51.564 ServerApp] Package notebook took 0.0000s to import
+[I 2025-05-28 12:35:51.566 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-05-28 12:35:51.566 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-28 12:35:53.224 ServerApp] Package panel.io.jupyter_server_extension took 1.6574s to import
+[I 2025-05-28 12:35:53.225 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-28 12:35:53.229 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-28 12:35:53.235 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-05-28 12:35:53.271 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-05-28 12:35:53.274 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-05-28 12:35:53.274 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-28 12:35:56.293 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-28 12:35:56.293 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-28 12:35:56.777 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-28 12:35:56.780 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-28 12:35:56.781 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-28 12:35:56.846 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-05-28 12:35:56.846 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-05-28 12:35:56.927 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-28 12:35:56.930 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-28 12:35:56.934 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-28 12:35:56.934 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-28 12:35:56.935 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-05-28 12:35:56.935 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-05-28 12:35:56.935 ServerApp] http://r1i2n19:8877/lab
+[I 2025-05-28 12:35:56.935 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-05-28 12:35:56.935 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-05-28 12:35:57.074 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-28 12:36:21.679 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-28 12:36:27.744 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/junk/22_seastate_filtered.ipynb is not trusted
+[W 2025-05-28 12:36:28.138 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/20_diag_gpsargos_droguedundrogued_cutoff.ipynb is not trusted
+[W 2025-05-28 12:36:28.425 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/22_seastate_duacs.ipynb is not trusted
+[W 2025-05-28 12:36:28.710 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-28 12:36:29.702 ServerApp] Kernel started: 051a2875-4e72-4e31-a532-09fc4071bc2c
+[I 2025-05-28 12:36:29.705 ServerApp] Kernel started: 7df6d218-c3b0-4364-857b-ac1103e1e4b6
+[I 2025-05-28 12:36:29.977 ServerApp] Kernel started: 38d3a213-46b8-40c3-b62e-77c386fa4b02
+[I 2025-05-28 12:36:30.610 ServerApp] Kernel started: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 12:36:30.654 ServerApp] Kernel started: d5b8edea-888f-481a-b1f0-3924a9905e5a
+[I 2025-05-28 12:36:30.658 ServerApp] Kernel started: 3f9625ab-f031-459c-9a9a-08bc3c6be8de
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 12:36:51.072 ServerApp] Connecting to kernel 7df6d218-c3b0-4364-857b-ac1103e1e4b6.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 12:36:51.292 ServerApp] Connecting to kernel 051a2875-4e72-4e31-a532-09fc4071bc2c.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 12:36:51.591 ServerApp] Connecting to kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b.
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 12:36:51.892 ServerApp] Connecting to kernel d5b8edea-888f-481a-b1f0-3924a9905e5a.
+[I 2025-05-28 12:36:51.913 ServerApp] Connecting to kernel 3f9625ab-f031-459c-9a9a-08bc3c6be8de.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 12:36:51.955 ServerApp] Connecting to kernel 38d3a213-46b8-40c3-b62e-77c386fa4b02.
+[I 2025-05-28 12:38:19.496 ServerApp] Connecting to kernel 3f9625ab-f031-459c-9a9a-08bc3c6be8de.
+[I 2025-05-28 12:40:28.581 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:42:29.005 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:44:29.521 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:46:30.563 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:50:31.549 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:56:33.535 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 12:58:34.027 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:00:34.639 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:02:35.535 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:06:36.513 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:10:38.520 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:14:40.508 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:18:42.495 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:20:43.097 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:22:43.632 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:24:44.479 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:28:47.486 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:30:48.480 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:34:50.473 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:36:51.474 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:54:59.449 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 13:59:01.425 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:03:03.423 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:07:05.416 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:11:07.409 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:45:59.352 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:48:00.604 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:48:50.930 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.113 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.280 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.464 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.647 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.814 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:51.997 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:52.166 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:48:52.382 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:49:23.774 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:49:23.939 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:49:24.107 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:49:24.291 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:49:24.473 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:02.302 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:50:03.372 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:03.539 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:03.723 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:09.429 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:09.612 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:09.777 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:09.961 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:10.162 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:10.362 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:10.563 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:10.744 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:10.946 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:59.201 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:59.385 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:59.567 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:59.752 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:50:59.952 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:51:00.152 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:51:00.344 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:51:00.527 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:51:00.719 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:01.118 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:01.300 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.
+[I 2025-05-28 14:52:01.518 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:01.736 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:01.936 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:02.170 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:02.433 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:02.686 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:02.808 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:52:05.390 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:05.530 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:05.531 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:05.531 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:05.532 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:05.746 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:08.274 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:08.458 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:08.692 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:08.923 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:09.226 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:39.750 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:39.951 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:40.133 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:40.300 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:40.501 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:47.195 ServerApp] Kernel restarted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:52:47.201 ServerApp] Starting buffering for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+[I 2025-05-28 14:52:47.206 ServerApp] Connecting to kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b.
+[I 2025-05-28 14:52:47.206 ServerApp] Restoring connection for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+[W 2025-05-28 14:52:51.716 ServerApp] Nudge: attempt 10 on kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[W 2025-05-28 14:52:56.728 ServerApp] Nudge: attempt 20 on kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[W 2025-05-28 14:53:01.739 ServerApp] Nudge: attempt 30 on kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[W 2025-05-28 14:53:06.750 ServerApp] Nudge: attempt 40 on kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 14:54:06.345 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:56:06.835 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 14:56:42.966 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:56:43.113 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:56:43.313 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:56:43.498 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:56:43.682 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:56:43.865 ServerApp] Kernel interrupted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:57:05.862 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-05-28 14:57:17.864 ServerApp] Kernel restarted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 14:57:17.874 ServerApp] Starting buffering for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+[I 2025-05-28 14:57:17.878 ServerApp] Connecting to kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b.
+[I 2025-05-28 14:57:17.878 ServerApp] Restoring connection for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 14:58:07.566 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:00:08.278 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:01:06.261 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-05-28 15:01:11.723 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-05-28 15:01:19.332 ServerApp] Kernel restarted: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-05-28 15:01:19.338 ServerApp] Starting buffering for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+[I 2025-05-28 15:01:19.342 ServerApp] Connecting to kernel 7ea2e411-efdb-4cd4-9404-65e3dc75c90b.
+[I 2025-05-28 15:01:19.343 ServerApp] Restoring connection for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 15:02:08.815 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:04:10.321 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:06:10.894 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:08:11.435 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:10:11.925 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:12:12.416 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:14:13.295 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:16:13.839 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:20:15.262 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:22:16.258 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:24:17.268 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:34:21.256 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:36:22.328 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:38:22.882 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:40:23.466 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:42:23.981 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[I 2025-05-28 15:44:26.247 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+[W 2025-05-28 16:23:23.676 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/28_mean_sla.ipynb is not trusted
+[I 2025-05-28 16:23:41.459 ServerApp] Kernel started: ab1ec94f-6f4b-4ff6-8b99-6ad569581df9
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-28 16:24:04.308 ServerApp] Connecting to kernel ab1ec94f-6f4b-4ff6-8b99-6ad569581df9.
+[W 2025-05-28 16:40:49.344 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 16:40:51.073 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 16:40:51.293 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 16:40:51.893 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 16:40:51.914 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 16:40:51.955 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-05-28 16:40:54.548 ServerApp] Starting buffering for 7ea2e411-efdb-4cd4-9404-65e3dc75c90b:dc3a3f48-46aa-4536-9464-c725e4c95702
+[I 2025-05-28 16:40:56.074 ServerApp] Starting buffering for 7df6d218-c3b0-4364-857b-ac1103e1e4b6:397d4e53-a3ac-4150-85df-64232e7fccba
+[I 2025-05-28 16:40:56.293 ServerApp] Starting buffering for 051a2875-4e72-4e31-a532-09fc4071bc2c:79c57349-8813-475c-afc3-eadd18d9a780
+[I 2025-05-28 16:40:56.893 ServerApp] Starting buffering for d5b8edea-888f-481a-b1f0-3924a9905e5a:00e3048f-21b1-4f1e-8148-69ef8c195e85
+[I 2025-05-28 16:40:56.915 ServerApp] Starting buffering for 3f9625ab-f031-459c-9a9a-08bc3c6be8de:a3f49f7b-9a6b-46ac-a311-6f706b7eef3d
+[I 2025-05-28 16:40:56.956 ServerApp] Starting buffering for 38d3a213-46b8-40c3-b62e-77c386fa4b02:710c303a-ad74-46c6-bfd1-669388f5b689
+[W 2025-05-28 16:41:04.311 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-05-28 16:41:09.312 ServerApp] Starting buffering for ab1ec94f-6f4b-4ff6-8b99-6ad569581df9:d5b0da80-2b2c-40d0-9fe7-bf85b8ac9736
+Mon Jun  2 05:46:51 GMT 2025
+=>> PBS: job killed: walltime 407470 exceeded limit 86400
+[C 2025-06-02 05:46:57.189 ServerApp] received signal 15, stopping
+[I 2025-06-02 05:46:57.280 ServerApp] Shutting down 6 extensions
+[I 2025-06-02 05:46:57.281 ServerApp] Shutting down 7 kernels
+[I 2025-06-02 05:46:57.281 ServerApp] Kernel shutdown: 3f9625ab-f031-459c-9a9a-08bc3c6be8de
+[I 2025-06-02 05:46:57.282 ServerApp] Kernel shutdown: 7ea2e411-efdb-4cd4-9404-65e3dc75c90b
+[I 2025-06-02 05:46:57.282 ServerApp] Kernel shutdown: 051a2875-4e72-4e31-a532-09fc4071bc2c
+[I 2025-06-02 05:46:57.283 ServerApp] Kernel shutdown: 38d3a213-46b8-40c3-b62e-77c386fa4b02
+[I 2025-06-02 05:46:57.283 ServerApp] Kernel shutdown: 7df6d218-c3b0-4364-857b-ac1103e1e4b6
+[I 2025-06-02 05:46:57.283 ServerApp] Kernel shutdown: ab1ec94f-6f4b-4ff6-8b99-6ad569581df9
+[I 2025-06-02 05:46:57.284 ServerApp] Kernel shutdown: d5b8edea-888f-481a-b1f0-3924a9905e5a

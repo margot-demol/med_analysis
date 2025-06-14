@@ -1,0 +1,245 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Tue May 27 12:33:55 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-05-27 12:33:56.476 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-05-27 12:33:56.500 ServerApp] Package jupyter_lsp took 0.0235s to import
+[W 2025-05-27 12:33:56.500 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-27 12:33:56.509 ServerApp] Package jupyter_server_terminals took 0.0086s to import
+[I 2025-05-27 12:33:56.510 ServerApp] Package notebook took 0.0000s to import
+[I 2025-05-27 12:33:56.512 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-05-27 12:33:56.512 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-05-27 12:33:58.084 ServerApp] Package panel.io.jupyter_server_extension took 1.5710s to import
+[I 2025-05-27 12:33:58.084 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-27 12:33:58.089 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-27 12:33:58.094 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-05-27 12:33:58.096 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-05-27 12:33:58.099 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-05-27 12:33:58.099 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-27 12:33:58.450 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-27 12:33:58.450 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-27 12:33:58.483 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-27 12:33:58.486 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-27 12:33:58.487 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-27 12:33:58.491 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-05-27 12:33:58.491 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-05-27 12:33:58.491 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-27 12:33:58.494 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-27 12:33:58.498 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-27 12:33:58.498 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-27 12:33:58.499 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-05-27 12:33:58.499 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-05-27 12:33:58.499 ServerApp] http://r1i2n19:8877/lab
+[I 2025-05-27 12:33:58.499 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-05-27 12:33:58.499 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-05-27 12:33:58.536 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-27 17:58:28.475 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-27 17:58:37.772 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/junk/22_seastate_filtered.ipynb is not trusted
+[W 2025-05-27 17:58:38.355 ServerApp] Notebook historical_analysis/1_both_GPS_ARGOS_drogued/20_diag_gpsargos_droguedundrogued_cutoff.ipynb is not trusted
+[W 2025-05-27 17:58:38.744 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/22_seastate_duacs.ipynb is not trusted
+[I 2025-05-27 17:58:41.158 ServerApp] Kernel started: 071ba337-601e-4890-bf10-d122c18f15b3
+[I 2025-05-27 17:58:41.161 ServerApp] Kernel started: 7af8e322-56e2-4f97-8f37-5f7fc9da4dea
+[I 2025-05-27 17:58:41.162 ServerApp] Kernel started: ef558fa8-fcc7-4231-8185-7398298fb77e
+[I 2025-05-27 17:58:41.536 ServerApp] Kernel started: 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd
+[I 2025-05-27 17:58:42.127 ServerApp] Kernel started: b6032c01-656b-4881-bde8-504af448507a
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 17:59:34.047 ServerApp] Connecting to kernel 071ba337-601e-4890-bf10-d122c18f15b3.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 17:59:34.107 ServerApp] Connecting to kernel ef558fa8-fcc7-4231-8185-7398298fb77e.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 17:59:34.222 ServerApp] Connecting to kernel 7af8e322-56e2-4f97-8f37-5f7fc9da4dea.
+[I 2025-05-27 17:59:34.227 ServerApp] Starting buffering for ef558fa8-fcc7-4231-8185-7398298fb77e:31d6ded1-d06f-40e0-8507-537f575d750a
+[I 2025-05-27 17:59:34.253 ServerApp] Connecting to kernel ef558fa8-fcc7-4231-8185-7398298fb77e.
+[I 2025-05-27 17:59:34.322 ServerApp] Connecting to kernel 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd.
+[I 2025-05-27 17:59:34.351 ServerApp] Connecting to kernel 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd.
+[I 2025-05-27 17:59:34.431 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-27 17:59:34.440 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-27 17:59:34.517 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-27 18:06:47.224 ServerApp] Starting buffering for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-27 18:06:47.225 ServerApp] Starting buffering for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[I 2025-05-27 18:06:47.225 ServerApp] Starting buffering for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-27 18:06:47.225 ServerApp] Starting buffering for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[I 2025-05-27 18:06:47.226 ServerApp] Starting buffering for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-27 19:18:09.374 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-27 19:18:09.375 ServerApp] Restoring connection for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-27 19:18:10.261 ServerApp] Connecting to kernel 7af8e322-56e2-4f97-8f37-5f7fc9da4dea.
+[I 2025-05-27 19:18:10.261 ServerApp] Restoring connection for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-27 19:18:13.295 ServerApp] Connecting to kernel 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd.
+[I 2025-05-27 19:18:13.295 ServerApp] Restoring connection for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-27 19:18:13.555 ServerApp] Connecting to kernel 071ba337-601e-4890-bf10-d122c18f15b3.
+[I 2025-05-27 19:18:13.555 ServerApp] Restoring connection for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[I 2025-05-27 19:18:17.353 ServerApp] Connecting to kernel ef558fa8-fcc7-4231-8185-7398298fb77e.
+[I 2025-05-27 19:18:17.353 ServerApp] Restoring connection for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[W 2025-05-27 19:18:21.720 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:18:23.348 ServerApp] Kernel started: fc76de9a-065e-42a0-aaa5-0948ca3e0355
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 19:18:32.843 ServerApp] Connecting to kernel fc76de9a-065e-42a0-aaa5-0948ca3e0355.
+[I 2025-05-27 19:20:24.713 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:20:24.714 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:22:27.101 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:22:27.102 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:23:10.508 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-27 19:24:27.710 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:24:27.711 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:25:11.701 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-05-27 19:26:18.464 ServerApp] Kernel started: 043baaaa-23da-4447-9f00-899b2377958e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 19:26:19.214 ServerApp] Connecting to kernel 043baaaa-23da-4447-9f00-899b2377958e.
+[I 2025-05-27 19:26:28.305 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:26:28.306 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:28:28.583 ServerApp] Kernel interrupted: fc76de9a-065e-42a0-aaa5-0948ca3e0355
+[I 2025-05-27 19:28:28.854 ServerApp] Kernel interrupted: fc76de9a-065e-42a0-aaa5-0948ca3e0355
+[I 2025-05-27 19:28:28.864 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:28:28.865 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:28:29.082 ServerApp] Kernel interrupted: fc76de9a-065e-42a0-aaa5-0948ca3e0355
+[I 2025-05-27 19:30:31.025 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:30:31.026 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:32:32.840 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:32:32.841 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:34:34.572 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:34:34.573 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:36:36.337 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:36:36.338 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:38:36.877 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:38:36.878 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:40:37.419 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:40:37.420 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:42:37.945 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:42:37.946 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:44:38.833 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:44:38.834 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[W 2025-05-27 19:45:04.974 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-05-27 19:45:06.576 ServerApp] Kernel started: ce5c2854-9c7a-4860-9e31-2c1c206064ce
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 19:45:07.921 ServerApp] Connecting to kernel ce5c2854-9c7a-4860-9e31-2c1c206064ce.
+[I 2025-05-27 19:46:40.462 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:46:40.463 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:47:07.495 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-05-27 19:47:07.496 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-05-27 19:56:45.113 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:56:45.115 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 19:58:48.116 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 19:58:48.117 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 20:08:56.523 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 20:08:56.524 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 20:12:59.280 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 20:12:59.281 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 20:15:00.372 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 20:15:00.373 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[I 2025-05-27 20:17:02.259 ServerApp] Saving file at /med_analysis/03_Overview_visualization/10_overview.ipynb
+[W 2025-05-27 20:17:02.260 ServerApp] Notebook med_analysis/03_Overview_visualization/10_overview.ipynb is not trusted
+[W 2025-05-27 20:20:34.681 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-27 20:20:35.952 ServerApp] Kernel started: 003baf0d-47ee-4b53-b40d-b8536ab79a53
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-05-27 20:20:40.955 ServerApp] Connecting to kernel 003baf0d-47ee-4b53-b40d-b8536ab79a53.
+[I 2025-05-27 20:22:35.880 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-27 20:22:35.881 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[I 2025-05-27 20:24:36.376 ServerApp] Saving file at /med_analysis/01_preprocessing/10_overview_gaussian.ipynb
+[W 2025-05-27 20:24:36.377 ServerApp] Notebook med_analysis/01_preprocessing/10_overview_gaussian.ipynb is not trusted
+[W 2025-05-27 20:53:17.354 ServerApp] WebSocket ping timeout after 119957 ms.
+[W 2025-05-27 20:53:19.215 ServerApp] WebSocket ping timeout after 119869 ms.
+[I 2025-05-27 20:53:22.356 ServerApp] Starting buffering for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[I 2025-05-27 20:53:24.217 ServerApp] Starting buffering for 043baaaa-23da-4447-9f00-899b2377958e:e2a84ea1-87a5-4467-8370-f8c10d8137ba
+[W 2025-05-27 20:53:32.844 ServerApp] WebSocket ping timeout after 119883 ms.
+[I 2025-05-27 20:53:37.845 ServerApp] Starting buffering for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[W 2025-05-27 20:53:37.921 ServerApp] WebSocket ping timeout after 119939 ms.
+[W 2025-05-27 20:53:39.375 ServerApp] WebSocket ping timeout after 119857 ms.
+[W 2025-05-27 20:53:40.262 ServerApp] WebSocket ping timeout after 119924 ms.
+[W 2025-05-27 20:53:40.955 ServerApp] WebSocket ping timeout after 119901 ms.
+[I 2025-05-27 20:53:42.922 ServerApp] Starting buffering for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[W 2025-05-27 20:53:43.295 ServerApp] WebSocket ping timeout after 119890 ms.
+[W 2025-05-27 20:53:43.556 ServerApp] WebSocket ping timeout after 119965 ms.
+[I 2025-05-27 20:53:44.376 ServerApp] Starting buffering for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-27 20:53:45.263 ServerApp] Starting buffering for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-27 20:53:45.957 ServerApp] Starting buffering for 003baf0d-47ee-4b53-b40d-b8536ab79a53:6f7939ed-60a8-4118-9f35-782ae2b12846
+[I 2025-05-27 20:53:48.296 ServerApp] Starting buffering for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-27 20:53:48.557 ServerApp] Starting buffering for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[I 2025-05-28 07:59:42.057 ServerApp] Connecting to kernel fc76de9a-065e-42a0-aaa5-0948ca3e0355.
+[I 2025-05-28 07:59:42.057 ServerApp] Restoring connection for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[I 2025-05-28 07:59:47.905 ServerApp] Connecting to kernel 043baaaa-23da-4447-9f00-899b2377958e.
+[I 2025-05-28 07:59:47.905 ServerApp] Restoring connection for 043baaaa-23da-4447-9f00-899b2377958e:e2a84ea1-87a5-4467-8370-f8c10d8137ba
+[I 2025-05-28 07:59:50.417 ServerApp] Connecting to kernel 7af8e322-56e2-4f97-8f37-5f7fc9da4dea.
+[I 2025-05-28 07:59:50.418 ServerApp] Restoring connection for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-28 07:59:51.711 ServerApp] Connecting to kernel 003baf0d-47ee-4b53-b40d-b8536ab79a53.
+[I 2025-05-28 07:59:51.711 ServerApp] Restoring connection for 003baf0d-47ee-4b53-b40d-b8536ab79a53:6f7939ed-60a8-4118-9f35-782ae2b12846
+[I 2025-05-28 07:59:57.875 ServerApp] Connecting to kernel ce5c2854-9c7a-4860-9e31-2c1c206064ce.
+[I 2025-05-28 07:59:57.875 ServerApp] Restoring connection for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[I 2025-05-28 07:59:58.944 ServerApp] Connecting to kernel ef558fa8-fcc7-4231-8185-7398298fb77e.
+[I 2025-05-28 07:59:58.944 ServerApp] Restoring connection for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[I 2025-05-28 08:00:01.237 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-28 08:00:01.237 ServerApp] Restoring connection for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-28 08:00:02.831 ServerApp] Connecting to kernel 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd.
+[I 2025-05-28 08:00:02.831 ServerApp] Restoring connection for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-28 08:00:06.660 ServerApp] Connecting to kernel 071ba337-601e-4890-bf10-d122c18f15b3.
+[I 2025-05-28 08:00:06.661 ServerApp] Restoring connection for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[W 2025-05-28 09:35:42.057 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-05-28 09:35:47.059 ServerApp] Starting buffering for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[W 2025-05-28 09:35:47.905 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 09:35:50.418 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 09:35:51.711 ServerApp] WebSocket ping timeout after 119996 ms.
+[I 2025-05-28 09:35:52.907 ServerApp] Starting buffering for 043baaaa-23da-4447-9f00-899b2377958e:e2a84ea1-87a5-4467-8370-f8c10d8137ba
+[I 2025-05-28 09:35:55.419 ServerApp] Starting buffering for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-28 09:35:56.713 ServerApp] Starting buffering for 003baf0d-47ee-4b53-b40d-b8536ab79a53:6f7939ed-60a8-4118-9f35-782ae2b12846
+[W 2025-05-28 09:35:57.875 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-05-28 09:35:58.754 ServerApp] Starting buffering for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[I 2025-05-28 09:35:58.768 ServerApp] Connecting to kernel fc76de9a-065e-42a0-aaa5-0948ca3e0355.
+[I 2025-05-28 09:35:58.768 ServerApp] Restoring connection for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[I 2025-05-28 09:35:58.785 ServerApp] Connecting to kernel 043baaaa-23da-4447-9f00-899b2377958e.
+[I 2025-05-28 09:35:58.785 ServerApp] Restoring connection for 043baaaa-23da-4447-9f00-899b2377958e:e2a84ea1-87a5-4467-8370-f8c10d8137ba
+[I 2025-05-28 09:35:58.802 ServerApp] Connecting to kernel 7af8e322-56e2-4f97-8f37-5f7fc9da4dea.
+[I 2025-05-28 09:35:58.802 ServerApp] Restoring connection for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-28 09:35:58.819 ServerApp] Connecting to kernel 003baf0d-47ee-4b53-b40d-b8536ab79a53.
+[I 2025-05-28 09:35:58.819 ServerApp] Restoring connection for 003baf0d-47ee-4b53-b40d-b8536ab79a53:6f7939ed-60a8-4118-9f35-782ae2b12846
+[I 2025-05-28 09:35:58.836 ServerApp] Connecting to kernel ce5c2854-9c7a-4860-9e31-2c1c206064ce.
+[I 2025-05-28 09:35:58.836 ServerApp] Restoring connection for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[W 2025-05-28 09:45:32.831 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 09:45:36.661 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-05-28 09:45:37.833 ServerApp] Starting buffering for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-28 09:45:41.663 ServerApp] Starting buffering for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[W 2025-05-28 09:45:58.769 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 09:45:58.786 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 09:45:58.803 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 09:45:58.819 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-05-28 09:45:58.836 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 09:45:58.945 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-05-28 09:46:01.238 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-05-28 09:46:03.771 ServerApp] Starting buffering for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[I 2025-05-28 09:46:03.786 ServerApp] Starting buffering for 043baaaa-23da-4447-9f00-899b2377958e:e2a84ea1-87a5-4467-8370-f8c10d8137ba
+[I 2025-05-28 09:46:03.804 ServerApp] Starting buffering for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-28 09:46:03.820 ServerApp] Starting buffering for 003baf0d-47ee-4b53-b40d-b8536ab79a53:6f7939ed-60a8-4118-9f35-782ae2b12846
+[I 2025-05-28 09:46:03.838 ServerApp] Starting buffering for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[I 2025-05-28 09:46:03.946 ServerApp] Starting buffering for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[I 2025-05-28 09:46:06.239 ServerApp] Starting buffering for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-28 12:30:33.421 ServerApp] Connecting to kernel 071ba337-601e-4890-bf10-d122c18f15b3.
+[I 2025-05-28 12:30:33.421 ServerApp] Restoring connection for 071ba337-601e-4890-bf10-d122c18f15b3:b8e877c5-0afc-44f2-9e5a-c8e7c0a3f5d8
+[I 2025-05-28 12:30:39.629 ServerApp] Connecting to kernel ce5c2854-9c7a-4860-9e31-2c1c206064ce.
+[I 2025-05-28 12:30:39.629 ServerApp] Restoring connection for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[I 2025-05-28 12:30:41.342 ServerApp] Connecting to kernel 7af8e322-56e2-4f97-8f37-5f7fc9da4dea.
+[I 2025-05-28 12:30:41.342 ServerApp] Restoring connection for 7af8e322-56e2-4f97-8f37-5f7fc9da4dea:5766257d-4019-4749-a80f-a5c909bc6ae7
+[I 2025-05-28 12:30:44.540 ServerApp] Connecting to kernel ef558fa8-fcc7-4231-8185-7398298fb77e.
+[I 2025-05-28 12:30:44.540 ServerApp] Restoring connection for ef558fa8-fcc7-4231-8185-7398298fb77e:4e8fceff-9618-4066-b2ff-ae92f1c17074
+[I 2025-05-28 12:30:44.757 ServerApp] Starting buffering for ce5c2854-9c7a-4860-9e31-2c1c206064ce:84e9a43c-162c-4efd-80c5-f3d0e0110340
+[I 2025-05-28 12:30:47.458 ServerApp] Connecting to kernel 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd.
+[I 2025-05-28 12:30:47.458 ServerApp] Restoring connection for 954f7dc6-7d47-48dc-9d26-ddcb9ff45bcd:c46612a8-247a-4fe4-86d2-194632ca1ee8
+[I 2025-05-28 12:30:47.939 ServerApp] Connecting to kernel b6032c01-656b-4881-bde8-504af448507a.
+[I 2025-05-28 12:30:47.939 ServerApp] Restoring connection for b6032c01-656b-4881-bde8-504af448507a:f7a787a2-69a3-4845-8747-c15a8a9e4b33
+[I 2025-05-28 12:30:50.033 ServerApp] Connecting to kernel fc76de9a-065e-42a0-aaa5-0948ca3e0355.
+[I 2025-05-28 12:30:50.033 ServerApp] Restoring connection for fc76de9a-065e-42a0-aaa5-0948ca3e0355:be02047a-bb75-4847-9ee8-774e9367d68a
+[I 2025-05-28 12:32:59.558 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/23_nadirdistance_duacs.ipynb
+Wed May 28 12:33:55 GMT 2025
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
