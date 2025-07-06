@@ -14,6 +14,16 @@ from cstes import swot_dir_2km, zarr_dir
 
 # Stencil method
 def apply_stencil_diff(image, var, dx, dy):
+    """
+    Apply same stencil as CLS
+    input : 
+        image : 2D array, image swot
+        var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+
+        dx : float, x direction time step
+        dy : float, y direction time step
+    May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
+    """
     from scipy.ndimage import convolve
     assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
     
@@ -34,7 +44,11 @@ def fitting_coeff(image, var, dx, dy):
     """
     fitting method inspired from Tranchant
     input : 
-        var must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+        image : 2D array, image swot
+        var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+
+        dx : float, x direction time step
+        dy : float, y direction time step
     May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
     """
     #https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
@@ -59,12 +73,31 @@ def fitting_coeff(image, var, dx, dy):
     return coeff[meaning_coeff[var]]
 
 def apply_fitting_kernel(swot_image, var, npts,dx, dy):
+    """
+    apply fitting method inspired from Tranchant
+    input : 
+        image : 2D array, image swot
+        var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+        npts :  int, fitting kernel number of point
+        dx : float, x direction time step
+        dy : float, y direction time step
+    May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
+    """
     from scipy.ndimage import generic_filter
     assert npts%2 ==1, 'must be odd'
     return xr.DataArray(generic_filter(swot_image, fitting_coeff, size=[npts, npts], extra_keywords = {'var':var, 'dx':dx, 'dy':dy}), dims=swot_image.dims)
 
 # Gaussian
 def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
+    """
+    Filter swot_image with a gaussian filter
+    input : 
+        swot_image : 2D array, image swot
+        cutoff :  float, cutoff length (width at mid height of the gaussian filter)
+        mask : 2D array with 0 out of swot swath and 1 within
+        dx : float, x direction time step
+        dy : float, y direction time step
+    """
     from scipy.ndimage import convolve1d
     import scipy.signal.windows as wdw
     
@@ -79,6 +112,13 @@ def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
 
 # Wraper
 def define_eta(ds, mean_sla):
+    """
+     Compute calibrated and filtered DSL from SWOT product variables
+     input : 
+         ds :  swot xarray 
+         mean_sla : boolean, if True, remove the mean SSH from the DSL
+         
+    """
     ds['etaf'] = ds.duacs_ssha_karin_2_filtered + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
     ds['etac'] = ds.duacs_ssha_karin_2_calibrated + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
     if mean_sla : 
@@ -86,15 +126,25 @@ def define_eta(ds, mean_sla):
         ds['etafm'] = ds.etaf - dsm.mean_sshaf
         ds['etacm'] = ds.etac - dsm.mean_sshac
 
-def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}, mean_sla=False, distance_to_coast_max=None):
+def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'cutoff': 5e3}, mean_sla=False, distance_to_coast_min=None):
+    """
+    Filter or differenciate a SWOT image with one of the previous functions.
+    input : 
+        f : str, file containing SWOT image (netcdf)
+        filter_diff_method : str, should be among: 'gaussian' (calls apply_gaussian_filter), 'fitting_kernel' (calls apply_fitting_kernel), 'diff_only' (call apply_stencil_diff) or xarray_diff (use xarray differentiate function)
+        filter_diff_kwargs : dict, arguments of the chosen filter_diff_method
+        mean_sla : boolean, if True, remove the mean SSH from the DSL
+        distance_to_coast_min : select only points at more than XX km from the coast
+
+    """
     ds = xr.open_dataset(f)
     define_eta(ds, mean_sla)
     ds = add_grid_metrics(ds)
     dx = float(ds.dx.mean())
     dy = float(ds.dy.mean())
     
-    if distance_to_coast_max != None:
-        ds = ds.where(ds.distance_to_coast>distance_to_coast_max, drop=True)
+    if distance_to_coast_min != None:
+        ds = ds.where(ds.distance_to_coast>distance_to_coast_min, drop=True)
 
     vars_ = [v for v in list(ds.keys()) if ('etaf' in v)|('etac' in v)]+['duacs_editing_flag', 'longitude', 'latitude']
     
@@ -153,27 +203,47 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
         assert False, f
     return xr.merge(D + [ds[['longitude', 'latitude']]]).where(ds.duacs_editing_flag==0)
 
-def _concat(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_max):
+def _concat(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_min):
+    """
+    Filter or differenciate some SWOT image with one of the previous functions.
+    input : 
+        ds : xarray dataset, contain SWOT file name and some properties
+        filter_diff_method : str, should be among: 'gaussian' (calls apply_gaussian_filter), 'fitting_kernel' (calls apply_fitting_kernel), 'diff_only' (call apply_stencil_diff) or xarray_diff (use xarray differentiate function)
+        filter_diff_kwargs : dict, arguments of the chosen filter_diff_method
+        mean_sla : boolean, if True, remove the mean SSH from the DSL
+        distance_to_coast_min : select only points at more than XX km from the coast
+
+    """
     D = []
     for f in ds.file.values :
-        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs, mean_sla = mean_sla, distance_to_coast_max=distance_to_coast_max))
+        D.append(filter_diff_one(f, filter_diff_method , filter_diff_kwargs, mean_sla = mean_sla, distance_to_coast_min=distance_to_coast_min))
     try : 
         xs = xr.concat(D, dim=ds.cycle_number)
     except : 
         assert False, f
     return xs
 
-def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_max=None):
+def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla, distance_to_coast_min=None):
+    """
+    Filter or differenciate all SWOT images with one of the previous functions with map_blocks.
+    input : 
+        ds : xarray dataset, contain SWOT file name and some properties
+        filter_diff_method : str, should be among: 'gaussian' (calls apply_gaussian_filter), 'fitting_kernel' (calls apply_fitting_kernel), 'diff_only' (call apply_stencil_diff) or xarray_diff (use xarray differentiate function)
+        filter_diff_kwargs : dict, arguments of the chosen filter_diff_method
+        mean_sla : boolean, if True, remove the mean SSH from the DSL
+        distance_to_coast_min : select only points at more than XX km from the coast
 
-    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}, mean_sla=mean_sla, distance_to_coast_max=distance_to_coast_max).compute()
+    """
+    #template
+    template = _concat(ds.isel(cycle_number = slice(0,2)), filter_diff_method ='gaussian', filter_diff_kwargs={'cutoff':5e3}, mean_sla=mean_sla, distance_to_coast_min=distance_to_coast_min).compute()
     template = template.isel(cycle_number=0).expand_dims({'cycle_number':ds.cycle_number}).chunk({**ds.chunks, **{'num_pixels':-1, 'num_lines':-1}})
     dims = [ "cycle_number", "num_lines", "num_pixels"]
     template = template.transpose(*dims)
 
-    # actually perform the calculation
+    #perform the calculation
     ds_diff = ds.map_blocks(
         _concat,
-        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs, mean_sla=mean_sla, distance_to_coast_max=distance_to_coast_max),
+        kwargs = dict( filter_diff_method =filter_diff_method, filter_diff_kwargs=filter_diff_kwargs, mean_sla=mean_sla, distance_to_coast_min=distance_to_coast_min),
         template=template,
     )
     return ds_diff
