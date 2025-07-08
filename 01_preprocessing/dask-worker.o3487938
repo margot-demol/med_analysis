@@ -1,0 +1,1708 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:34651'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:33969'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:59605'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:41383'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:34295'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:42528'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:43420'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:41094'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:50476'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:57335'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:41377'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:48760'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:34279'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:33048'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:36523'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:39452'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:60833'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:56681'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:58087'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:54436'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:59854'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:54521'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:39499'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:53122'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:43206'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:52550'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:47268'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.82:41118'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:60357
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:57196
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:49208
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:44348
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:42422
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:57196
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:49208
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:60914
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:44348
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:52696
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:42767
+distributed.worker - INFO -           Worker name:            PBSCluster-0-10
+distributed.worker - INFO -           Worker name:             PBSCluster-0-7
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:36808
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:34276
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:44034
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:58668
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:41074
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:60914
+distributed.worker - INFO -           Worker name:            PBSCluster-0-26
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:42422
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:57244
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:52696
+distributed.worker - INFO -          dashboard at:          10.148.0.82:45185
+distributed.worker - INFO -          dashboard at:          10.148.0.82:51250
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:42767
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:51080
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:60357
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:34276
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:44034
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:39104
+distributed.worker - INFO -           Worker name:            PBSCluster-0-25
+distributed.worker - INFO -          dashboard at:          10.148.0.82:38155
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:47766
+distributed.worker - INFO -           Worker name:            PBSCluster-0-21
+distributed.worker - INFO -           Worker name:            PBSCluster-0-23
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:33196
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -           Worker name:            PBSCluster-0-18
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:57244
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:58668
+distributed.worker - INFO -           Worker name:             PBSCluster-0-6
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:41074
+distributed.worker - INFO -           Worker name:            PBSCluster-0-12
+distributed.worker - INFO -           Worker name:            PBSCluster-0-15
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.0.82:37617
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:47943
+distributed.worker - INFO -          dashboard at:          10.148.0.82:50822
+distributed.worker - INFO -          dashboard at:          10.148.0.82:55150
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:47766
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:39104
+distributed.worker - INFO -          dashboard at:          10.148.0.82:48445
+distributed.worker - INFO -           Worker name:             PBSCluster-0-5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-20
+distributed.worker - INFO -          dashboard at:          10.148.0.82:51553
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:             PBSCluster-0-4
+distributed.worker - INFO -          dashboard at:          10.148.0.82:44457
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:          10.148.0.82:42884
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:36808
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:54332
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -           Worker name:            PBSCluster-0-19
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:47943
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.0.82:55962
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -          dashboard at:          10.148.0.82:56315
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -          dashboard at:          10.148.0.82:50058
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-16
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.0.82:56750
+distributed.worker - INFO -           Worker name:             PBSCluster-0-2
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:51080
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:54332
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-yk5uw57h
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-hjqm057s
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:          10.148.0.82:39969
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-uxa4w4yw
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:33196
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:          10.148.0.82:50532
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-24
+distributed.worker - INFO -           Worker name:             PBSCluster-0-9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:            PBSCluster-0-22
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-xze1x3wp
+distributed.worker - INFO -          dashboard at:          10.148.0.82:55202
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-wbrjc4u3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-76b3li8g
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-j3vthf41
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-i6exbwi8
+distributed.worker - INFO -           Worker name:            PBSCluster-0-14
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-1pgdzc_5
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:          10.148.0.82:39461
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -          dashboard at:          10.148.0.82:47880
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-2f4pmxx6
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-hd4tg4fn
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-3bi6htfk
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-ho1ur3te
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -          dashboard at:          10.148.0.82:59593
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-29mkyerv
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-s9kqqroj
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-h2kqolc8
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-pq9beu46
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-baomxsl4
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-owmgxov4
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-1hpp3e3i
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:43274
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:43274
+distributed.worker - INFO -           Worker name:             PBSCluster-0-3
+distributed.worker - INFO -          dashboard at:          10.148.0.82:35109
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-i27xklz0
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:57401
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:40692
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:57401
+distributed.worker - INFO -           Worker name:             PBSCluster-0-0
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:40692
+distributed.worker - INFO -          dashboard at:          10.148.0.82:43246
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:38374
+distributed.worker - INFO -           Worker name:            PBSCluster-0-27
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:38374
+distributed.worker - INFO -          dashboard at:          10.148.0.82:48658
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:             PBSCluster-0-8
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-pji8t74o
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:44948
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.0.82:56159
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:44948
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -           Worker name:            PBSCluster-0-11
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          10.148.0.82:53610
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-wdxa_t47
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-oidtm6rj
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-5f101ot8
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:52973
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:52973
+distributed.worker - INFO -           Worker name:            PBSCluster-0-17
+distributed.worker - INFO -          dashboard at:          10.148.0.82:34455
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-srif4ji2
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:39214
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:39214
+distributed.worker - INFO -           Worker name:             PBSCluster-0-1
+distributed.worker - INFO -          dashboard at:          10.148.0.82:51898
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-5b607hyx
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.82:43973
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.82:43973
+distributed.worker - INFO -           Worker name:            PBSCluster-0-13
+distributed.worker - INFO -          dashboard at:          10.148.0.82:46693
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3487938.datarmor0/dask-scratch-space/worker-dvq5beie
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.73:54130
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.73:54130
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'netcdf4' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/xarray/backends/plugins.py:159: RuntimeWarning: 'scipy' fails while guessing
+  warnings.warn(f"{engine!r} fails while guessing", RuntimeWarning)
+distributed._signals - INFO - Received signal SIGTERM (15)
+Terminated
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:34651'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:33969'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:59605'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:39452'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:34295'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:60833'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:56681'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:58087'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:48760'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:50476'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:54436'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:36523'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:59854'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:54521'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:39499'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:34279'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:43420'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:53122'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:33048'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:43206'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:57335'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:52550'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:41094'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:47268'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:41377'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:41118'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:42528'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.82:41383'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Worker process 6088 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6074 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6106 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6070 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6072 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6076 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6098 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6103 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6109 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6119 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6068 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6137 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6085 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6166 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6092 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6078 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6112 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6135 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6146 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6174 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6095 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6082 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6144 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6152 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6101 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6128 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6159 was killed by unknown signal
+distributed.nanny - INFO - Worker process 6181 was killed by unknown signal
+distributed.dask_worker - INFO - End worker
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 28 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

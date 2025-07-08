@@ -133,8 +133,8 @@ def define_eta(ds, mean_sla):
          mean_sla : boolean, if True, remove the mean SSH from the DSL
          
     """
-    ds['etaf'] = ds[sshaf_key] + ds[mdt_key] + ds[oceantide_key]
-    ds['etac'] = ds[sshac_key] + ds[mdt_key] + ds[oceantide_key]
+    ds['etaf'] = ds[sshaf_key] + ds[mdt_key] #+ ds[oceantide_key] #not necessary in the Western Mediterranean Sea
+    ds['etac'] = ds[sshac_key] + ds[mdt_key] #+ ds[oceantide_key]
     if mean_sla : 
         dsm = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc','preprocessed_swot','swot2km', f'pass{int(ds.pass_number.mean().values)}_swot2km_meanssha.nc'))
         ds['etafm'] = ds.etaf - dsm.mean_sshaf
@@ -152,10 +152,13 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
 
     """
     ds = xr.open_dataset(f)
+    #correct SWOT product time
+    if version_swot == '2.0.1' : ds['time'] = (ds.time - np.timedelta64(946684800000000000, 'ns'))
+        
     define_eta(ds, mean_sla)
     ds = add_grid_metrics(ds)
-    dx = float(ds.dx.mean())
-    dy = float(ds.dy.mean())
+    dx = np.round(float(ds.dx.mean()))
+    dy = np.round(float(ds.dy.mean()))
     
     if distance_to_coast_min != None:
         ds = ds.where(ds.distance_to_coast>distance_to_coast_min, drop=True)
@@ -166,13 +169,15 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
     
     if filter_diff_method == 'fitting_kernel':
         ds = ds.interpolate_na('num_pixels').interpolate_na('num_lines') # erreur dans l'entre-fauchée pour gaussian filter but ok for fitting kernel
-    mask = ds.duacs_editing_flag.where(ds.duacs_editing_flag!=0,1).where(ds.duacs_editing_flag==0,0)
+    #mask = ds.duacs_editing_flag.where(ds.duacs_editing_flag!=0,1).where(ds.duacs_editing_flag==0,0)
+    mask = xr.where((~np.isnan(ds.longitude)) & (~np.isnan(ds.latitude))& (~np.isnan(ds['etaf'])),1, 0)
+    
     try : 
         D = []
         for eta in [v for v in list(ds.keys()) if ('etaf' in v)|('etac' in v)] :
             swot_image = ds[eta]
-            #gaussian method
-            if filter_diff_method == 'gaussian' :
+            #gaussian method (old version apply 2 1D gaussian filter succesively)
+            if filter_diff_method == 'gaussian_2times1D' :
                 assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
                 output = apply_gaussian_filter(swot_image,  **filter_diff_kwargs, mask = mask, dx=dx, dy=dy).rename('filtered_'+eta).to_dataset()
 
@@ -187,9 +192,64 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
                 output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
                 output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
                 D.append(output)
-             
+            
+
+            #gaussian method using aviso at the edge
+            elif filter_diff_method == 'gaussian_aviso' :
+                assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
+                
+                #AVISO
+                L4_key = 'L4_withnadirswot'
+                aviso = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc', 'L4_sealevel', L4_key+'.nc'))
+                # select only area where swath is ... adjust for swath 16
+                aviso = aviso.sel(longitude=slice(ds.longitude.min()-1,ds.longitude.max()+1), latitude=slice(ds.latitude.min()-1, ds.latitude.max()+1))
+                aviso = aviso.interp(time = ds.time.mean().compute().values)
+                aviso = aviso['adt']
+                #return swot_image, mask, dx, aviso
+
+                output = apply_gaussian_filter_aviso(swot_image, **filter_diff_kwargs, mask = mask, dx = dx, aviso_image = aviso).rename('filtered_'+eta).to_dataset()
+
+                #stencil diff
+                #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
+                #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
+                
+                # xarray diff
+                output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
+                output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
+                output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
+                output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
+                output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
+                D.append(output)
+
+        
+            #gaussian method with 2D filter (version 'a la mano' with numba by aurelien)
+            elif filter_diff_method == 'gaussian_aviso' :
+                assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
+                
+                #AVISO
+                aviso = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc', 'L4_sealevel', L4_key+'.nc'))
+                # select only area where swath is ... adjust for swath 16
+                aviso = aviso.sel(longitude=slice(ds.longitude.min()-1,ds.longitude.max()+1), latitude=slice(ds.latitude.min()-1, ds.latitude.max()+1))
+                aviso = aviso.interp(time = ds.time.mean().compute().values)
+                aviso = aviso['adt']
+                #return swot_image, mask, dx, aviso
+
+                output = apply_gaussian_filter_nb(swot_image, **filter_diff_kwargs, mask = mask, dx = dx).rename('filtered_'+eta).to_dataset()
+
+                #stencil diff
+                #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
+                #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
+                
+                # xarray diff
+                output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
+                output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
+                output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
+                output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
+                output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
+                D.append(output)
+            
             # Fitting kernel method
-            if filter_diff_method == 'fitting_kernel' :
+            elif filter_diff_method == 'fitting_kernel' :
                 assert list(filter_diff_kwargs.keys()) == ['npts'], 'The fitting kernel method needs one argument npts (odd, kernel = [npts, npts])'
                 output = apply_fitting_kernel(swot_image, **filter_diff_kwargs, var = 'cste', dx=dx, dy=dy).rename('filtered_'+eta).to_dataset()
                 for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
@@ -197,14 +257,14 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
                 D.append(output)
 
             #diff only method
-            if filter_diff_method == 'diff_only' :
+            elif filter_diff_method == 'diff_only' :
                 output = swot_image.rename(eta).to_dataset()
                 for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
                     output[var + '_'+eta] = apply_stencil_diff(swot_image, var, dx=dx, dy=dy)
                 D.append(output)
                 
             # xarray simple diff
-            if filter_diff_method == 'xarray_diff' :
+            elif filter_diff_method == 'xarray_diff' :
                 output = swot_image.rename(eta).to_dataset()
                 output['dx_'+eta] = output[eta].differentiate('num_pixels')/dx
                 output['dy_'+eta] = output[eta].differentiate('num_lines')/dy
@@ -479,7 +539,7 @@ def apply_gaussian_filter_aviso(
     lon1, lat1 = da.longitude.data, da.latitude.data
     da = da.assign_coords(
         mask0=xr.where(np.isnan(da), 0, 1),
-        mask1=("point", nb_mask_grid(lon0, lat0, lon1, lat1, dl)),
+        mask1=("point", nb_mask_grid(lon0, lat0, lon1, lat1, dx)),
     )
     da = da.where( (da.mask0*da.mask1)>0, drop=True)
     lon1, lat1 = da.longitude.data, da.latitude.data

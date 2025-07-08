@@ -11,7 +11,7 @@ from shapely.geometry import Polygon
 import pyproj
 from pyproj import Geod
 
-from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir
+from cstes import swot_dir, swot_dir_2km, drifters_dir, get_proj, lonlat2xy, zarr_dir, version_swot
 
 def browse_swot_250m():
     """ browse SWOT files """
@@ -25,7 +25,10 @@ def browse_swot_250m():
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             if (p==3)& (c in [568]) : continue #empty cycle_number
             if (p==16)& (c in [508,513, 534, 554, 568]) : continue #empty cycle_number
-            t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
+            df = xr.open_zarr(f)
+            #correct SWOT product time
+            if version_swot == '2.0.1' : df['time'] = (df.time - np.timedelta64(946684800000000000, 'ns'))
+            t = df.isel(num_lines=0)["time"].data.compute()[()]
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
     df = pd.DataFrame(D).reset_index()
@@ -58,8 +61,10 @@ def browse_swot_2km():
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             if (p==3)& (c in [568]) : continue #empty cycle_number
             if (p==16)& (c in [508,513, 534, 554, 568]) : continue #empty cycle_number
-            t = xr.open_zarr(f).isel(num_lines=0)["time"].data.compute()[()]
-            #print(f)
+            df = xr.open_zarr(f)
+            #correct SWOT product time
+            if version_swot == '2.0.1' : df['time'] = (df.time - np.timedelta64(946684800000000000, 'ns'))
+            t = df.isel(num_lines=0)["time"].data.compute()[()]
             D.append(dict(cycle_number=c, pass_number=p, file=f, time=t))
 
     df = pd.DataFrame(D).reset_index()
