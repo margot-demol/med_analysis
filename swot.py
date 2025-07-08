@@ -20,6 +20,7 @@ def browse_swot_250m():
     D = []
     for p in passes:
         files = sorted(glob(os.path.join(swot_dir, f"{p}_*.zarr")))
+        files = [f for f in files if 'concatenated' not in f]
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             if (p==3)& (c in [568]) : continue #empty cycle_number
@@ -52,6 +53,7 @@ def browse_swot_2km():
     D = []
     for p in passes:
         files = sorted(glob(os.path.join(swot_dir_2km, f"{p}_*.zarr")))
+        files = [f for f in files if 'concatenated' not in f]
         for f in files:
             c = int(f.split("/")[-1].replace(".zarr","").split("_")[1])
             if (p==3)& (c in [568]) : continue #empty cycle_number

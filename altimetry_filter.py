@@ -10,7 +10,19 @@ import matplotlib.pyplot as plt
 import os
 from glob import glob
 from swot import browse_swot_250m, browse_swot_2km, add_grid_metrics,rotate_ggd
-from cstes import swot_dir_2km, zarr_dir
+from cstes import swot_dir_2km, zarr_dir, version_swot
+
+if version_swot == '1.0.2':
+    sshaf_key = 'duacs_ssha_karin_2_filtered'
+    sshac_key = 'duacs_ssha_karin_2_calibrated'
+    mdt_key ='cvl_mean_dynamic_topography_cnes_cls_22'
+    ocean_tide_key ='cvl_ocean_tide_fes_2022'
+    
+if version_swot == '2.0.1':
+    sshaf_key = 'duacs_ssha_karin_2_filtered'
+    sshac_key = 'duacs_ssha_karin_2_calibrated'
+    mdt_key ='duacs_mean_dynamic_topography'
+    oceantide_key ='cvl_ocean_tide_fes_2022'
 
 
 
@@ -121,8 +133,8 @@ def define_eta(ds, mean_sla):
          mean_sla : boolean, if True, remove the mean SSH from the DSL
          
     """
-    ds['etaf'] = ds.duacs_ssha_karin_2_filtered + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
-    ds['etac'] = ds.duacs_ssha_karin_2_calibrated + ds.cvl_mean_dynamic_topography_cnes_cls_22 + ds.cvl_ocean_tide_fes_2022
+    ds['etaf'] = ds[sshaf_key] + ds[mdt_key] + ds[oceantide_key]
+    ds['etac'] = ds[sshac_key] + ds[mdt_key] + ds[oceantide_key]
     if mean_sla : 
         dsm = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc','preprocessed_swot','swot2km', f'pass{int(ds.pass_number.mean().values)}_swot2km_meanssha.nc'))
         ds['etafm'] = ds.etaf - dsm.mean_sshaf

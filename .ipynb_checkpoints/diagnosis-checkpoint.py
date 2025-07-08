@@ -22,7 +22,7 @@ import cartopy.feature as cfeature
 import pyproj
 from pyproj import Geod
 
-from cstes import drifters_sources
+from cstes import drifters_sources, version_swot
 
 import matplotlib.transforms as mtransforms
 def put_fig_letter(fig, ax, letter):
@@ -115,8 +115,12 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         dfs = dfg.copy()#defragmented
         dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
         dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
-
-        l =  ['ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
+        l =  ['ggde_fromduacsv', 'ggdn_fromduacsv','ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
+        
+        if version_swot == '2.0.1'
+            dfs['ggde_fromduacsv_unfiltered'] = dfs.f * (dfs.duacs_speed_meridional_abs - dfs.duacs_speed_meridional + dfs.duacs_speed_meridional_unfiltered)
+            dfs['ggdn_fromduacsv_unfiltered'] = -dfs.f *(dfs.duacs_speed_zonal_abs - dfs.duacs_speed_zonal + dfs.duacs_speed_zonal_unfiltered)
+            l+=['ggde_fromduacsv_unfiltered', 'ggdn_fromduacsv_unfiltered']
         
         if alti_diff_method !='fromduacsv':
             ggd_var = [v.replace('dx_', '') for v in dfs.columns if (('etaf' in v)|('etac' in v))&('dx_' in v)]
@@ -190,6 +194,21 @@ def one_comb(dt,
             wd_product_key, 
             wd_model, 
             wd_depth):
+    """
+    Create dataset with all variables for reconstruction (acc, cor, ggd, wd)
+    input : 
+            dt : '12h'
+            drifter_preprocess : 
+            drifter_preprocess_param : 
+            alti_product_key : 'swot2km', 'swot250m', 'L4_noswot_regional', 'L4_noswot_global', 'L4_withnadirswot'
+            alti_diff_method : 'diff_only', 'fromduacsv', '', 'xarray_diff',
+            alti_diff_method_param : 
+            ggd_var : 'etac', 'etaf', 'fromduacsv', 'fromduacsv_unfiltered'
+            wd_product_key : 'era5'
+            wd_model : 'rio'
+            wd_depth : '0' or '15'
+    
+    """
     
     id_comb = create_id_comb(dt, drifter_preprocess, drifter_preprocess_param, alti_product_key, alti_diff_method, alti_diff_method_param, ggd_var, wd_product_key, wd_model, wd_depth)
 

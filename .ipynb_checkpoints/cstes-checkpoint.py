@@ -11,12 +11,14 @@ PATHS
 ---------------------------------------------------------------------------------------------------------
 """
 space = 'datarmor'
+version_swot = '2.0.1'
+
 if space == 'datarmor' :
     #DATARMOR
-    swot_dir_2km = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_1.0.2'
-    swot_dir = '/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_1.0.2'
+    swot_dir_2km = f'/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_calval_{version_swot}'
+    swot_dir = f'/home/datawork-lops-oc/aponte/swot/cswot/swot/L3_unsmoothed_calval_{version_swot}'
     drifters_dir = '/home/datawork-lops-oc/aponte/swot/cswot/drifters_harmonized'
-    zarr_dir = "/home/datawork-lops-oc/aponte/margot/DATA_MED_COLOC"
+    zarr_dir = f"/home/datawork-lops-oc/aponte/margot/DATA_MED_COLOC_v{version_swot}"
     images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
 
 if space == 'local':
