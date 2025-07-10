@@ -38,7 +38,18 @@ def put_fig_letter(fig, ax, letter):
         bbox=dict(facecolor="0.7", edgecolor="none", pad=3.0),
         zorder=30,
     )
-    
+
+def mean_df(df):
+    return df.mean()
+from scipy.stats import bootstrap
+def compute_bootstrap_error(dff):
+    # print(len(dff))
+    if len(dff) < 3:
+        return np.nan
+    else:
+        data = (dff,)  # samples must be in a sequence
+        return bootstrap(data, statistic=mean_df).standard_error
+
 """ 
 _________________________________________
 ---- CREATE DATASETS ----
@@ -108,6 +119,8 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         if alti_diff_method !='fromduacsv':
             # SSH
             if alti_diff_method_param != '': alti_diff_method_param = str(alti_diff_method_param)+'_'
+            path = os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}'+colocs_sources+'.csv')
+
             dfs = pd.read_csv(os.path.join(zarr_dir, 'coloc_files', 'alti',f'alticoloc_{alti_product_key}_{alti_diff_method}_{alti_diff_method_param}'+colocs_sources+'.csv')).set_index('row_number')
             dfg = pd.concat([dfg, dfs], axis=1)
         
@@ -115,9 +128,9 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
         dfs = dfg.copy()#defragmented
         dfs['ggde_fromduacsv'] = dfs.f * dfs.duacs_speed_meridional_abs
         dfs['ggdn_fromduacsv'] = -dfs.f *dfs.duacs_speed_zonal_abs
-        l =  ['ggde_fromduacsv', 'ggdn_fromduacsv','ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
+        l =  ['ggde_fromduacsv', 'ggdn_fromduacsv', 'phi', 'distance_to_coast']
         
-        if version_swot == '2.0.1'
+        if version_swot == '2.0.1':
             dfs['ggde_fromduacsv_unfiltered'] = dfs.f * (dfs.duacs_speed_meridional_abs - dfs.duacs_speed_meridional + dfs.duacs_speed_meridional_unfiltered)
             dfs['ggdn_fromduacsv_unfiltered'] = -dfs.f *(dfs.duacs_speed_zonal_abs - dfs.duacs_speed_zonal + dfs.duacs_speed_zonal_unfiltered)
             l+=['ggde_fromduacsv_unfiltered', 'ggdn_fromduacsv_unfiltered']
@@ -135,7 +148,8 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
                 dfs['strain_n_'+v] = -2 * g *(dfs['dxy_'+v] - dfs['dxy_'+v])/dfs.f**2
 
             l = l+['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['vorticity_'+v for v in ggd_var]+['strain_s_'+v for v in ggd_var]+['strain_n_'+v for v in ggd_var]
-
+        
+        l = list(set(l))#drop duplicates in list 
         dfs = dfs[l]
         
     return dfs.sort_index()#.rename(columns ={v : v+'_' +alti_product_key for v in dfs})
@@ -222,10 +236,11 @@ def one_comb(dt,
 
     else : l = ['ggde_'+ggd_var,'ggdn_'+ggd_var, 'phi', 'distance_to_coast']
 
-    if (ggd_var == 'fromduacsv') | (alti_diff_method =='fromduacsv'):
-        ggd_var = 'fromduacsv'
-        alti_diff_method = 'fromduacsv'
-        alti_diff_method_param =''
+    #CHECK METHOD arg
+    if (ggd_var == 'fromduacsv') | (ggd_var == 'fromduacsv_unfiltered') :
+        assert alti_diff_method =='fromduacsv', "alti_diff_method should be 'fromduacsv' with ggd_var ='fromduacsv' or 'fromduacsv_unfiltered'"
+    if alti_diff_method == 'fromduacsv' :
+        assert (ggd_var == 'fromduacsv') | (ggd_var == 'fromduacsv_unfiltered'), "ggd_var should be 'fromduacsv' or 'fromduacsv_unfiltered' with alti_diff_method='fromduacsv'"
 
     
     df = pd.concat([prepared_drifters(dt, drifter_preprocess, drifter_preprocess_param),
@@ -323,7 +338,7 @@ _________________________________________
 
 closure_vars = ['ACC*', 'COR*', 'GGD*', 'WD*', 'S*', 'sigma*'] + ['B*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['E*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['X*_acc_cor', 'X*_acc_ggd', 'X*_acc_wd', 'X*_cor_ggd', 'X*_cor_wd', 'X*_ggd_wd'] + ['D*_cyclo', 'D*_anticyclo']
 
-def compute_mean_square(ds, dirname = ('e', 'n')):
+def compute_mean_square(ds, dirname = ('e', 'n'), compute_error='no', vars_errors=None):
     """ Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
@@ -368,11 +383,31 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
 
     # Mean
     dsm = dss.mean('row_number')
-    
-    # Add errors central limit
-    dsse = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'ser__'+v for v in list(dss.keys())})
 
-    dss = xr.merge([dsm, dsse])
+    
+    #STATISTICAL ERRORS
+    #central limit
+    if compute_error == 'centrallimit':
+        dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
+        dsm = xr.merge([dsm, dsme])
+        
+    #bootstrap
+    if compute_error == 'bootstrap':
+        if vars_errors == None :
+            vars_errors = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars] + [v.replace('*', '')for v in closure_vars]
+
+        D = []
+        for id_ in dss.id_comb : 
+            dsme = xr.Dataset()
+            dsme['id_comb']=id_
+            dsme = dsme.set_coords('id_comb').expand_dims('id_comb')
+            for v in vars_errors :
+                dsme[v] = ('id_comb', [compute_bootstrap_error(dss.sel(id_comb=id_)[v])])
+                print(v)
+            D.append(dsme)
+            print(id_)
+        dsme = xr.concat(D, dim='id_comb').rename({v:'er__'+v for v in vars_errors})
+        dsm = xr.merge([dsm, dsme])
 
     #Mean geostrophics corrections :
     #if 'meancor'+dirname[0] in ds :
@@ -388,11 +423,13 @@ def compute_mean_square(ds, dirname = ('e', 'n')):
     #        dss['X_cor_ggd'] = dss['X'+dirname[0]+'_cor_ggd'] + dss['X'+dirname[1]+'_cor_ggd']
         
     #end
-    dss = assign_attrs(dss, list(dirname) + [''])
-    return dss
+    #ATTRS    
+    dsm.attrs['error_method'] = compute_error
+    dsm = assign_attrs(dsm, list(dirname) + [''])
+    return dsm
 
 
-def compute_variance(ds_, dirname = ('e', 'n')):
+def compute_variance(ds_, dirname = ('e', 'n'), compute_error='no', vars_errors=None):
     """ Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
@@ -421,7 +458,7 @@ def compute_variance(ds_, dirname = ('e', 'n')):
             ds['prod'+dir_+'_'+'_'.join(c)] = ds[c[0]+dir_] * ds[c[1]+dir_]
 
     # MS = var as mean are null
-    dss = compute_mean_square(ds, dirname)
+    dss = compute_mean_square(ds, dirname, compute_error, vars_errors)
     return dss
 
 
@@ -537,7 +574,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
                 #.compute()
             )
             print(v)
-        booterrors = pd.concat(DF, axis=1)
+        booterrors = pd.concat(DF, axis=1)*2
         booterrors = booterrors.rename(columns={v: "ber__" + v for v in booterrors.columns})
         # sum of both dim
         for v in vars_errors : 

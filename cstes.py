@@ -52,7 +52,7 @@ depth_drifters = ['OSMC','SVP','SVPSIO', 'SVP-B','SVPOGS', 'SVPSIO', 'SVPBGC']
 depth_50 = ['300534062472380','300534060112360','300534060113380']
 depth_100 = ['300534060116350','300534060017750']
 
-drifters_sources = 'all_med_variational_10min_v0.nc'
+drifters_sources = 'all_med_variational_10min_v1.nc'
 
 """
 PROJECTION

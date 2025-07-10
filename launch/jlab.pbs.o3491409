@@ -1,0 +1,808 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Wed Jul  9 07:57:18 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-07-09 07:57:21.615 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-07-09 07:57:21.739 ServerApp] Package jupyter_lsp took 0.1233s to import
+[W 2025-07-09 07:57:21.739 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-09 07:57:21.787 ServerApp] Package jupyter_server_terminals took 0.0483s to import
+[I 2025-07-09 07:57:21.788 ServerApp] Package notebook took 0.0000s to import
+[I 2025-07-09 07:57:21.793 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-07-09 07:57:21.793 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-09 07:57:26.987 ServerApp] Package panel.io.jupyter_server_extension took 5.1926s to import
+[I 2025-07-09 07:57:26.988 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-07-09 07:57:26.994 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-07-09 07:57:27.001 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-07-09 07:57:27.006 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-07-09 07:57:27.010 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-07-09 07:57:27.010 ServerApp] notebook | extension was successfully linked.
+[I 2025-07-09 07:57:28.362 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-07-09 07:57:28.362 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-07-09 07:57:28.459 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-07-09 07:57:28.462 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-07-09 07:57:28.463 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-07-09 07:57:28.482 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-07-09 07:57:28.482 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-07-09 07:57:28.483 LabApp] Extension Manager is 'pypi'.
+[I 2025-07-09 07:57:28.486 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-07-09 07:57:28.492 ServerApp] notebook | extension was successfully loaded.
+[I 2025-07-09 07:57:28.492 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-07-09 07:57:28.493 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-07-09 07:57:28.493 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-07-09 07:57:28.493 ServerApp] http://r1i2n29:8877/lab
+[I 2025-07-09 07:57:28.493 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-07-09 07:57:28.493 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-07-09 07:57:28.569 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-07-09 07:58:43.278 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509?1752047923254 (10.148.1.145): Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509
+[W 2025-07-09 07:58:43.278 ServerApp] wrote error: 'Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509)
+[W 2025-07-09 07:58:43.289 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509?1752047923254 (2091e27fb0d040b4bd4bc32db2ef0ac1@10.148.1.145) 11.53ms referer=http://localhost:8877/lab/tree/med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 07:58:43.998 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509/channels?session_id=973392c7-b657-443c-940f-286e4bc8406f (10.148.1.145): Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509
+[W 2025-07-09 07:58:44.040 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509/channels?session_id=973392c7-b657-443c-940f-286e4bc8406f (2091e27fb0d040b4bd4bc32db2ef0ac1@10.148.1.145) 42.34ms referer=None
+[W 2025-07-09 07:58:44.047 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509?1752047924022 (10.148.1.145): Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509
+[W 2025-07-09 07:58:44.047 ServerApp] wrote error: 'Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509)
+[W 2025-07-09 07:58:44.047 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509?1752047924022 (2091e27fb0d040b4bd4bc32db2ef0ac1@10.148.1.145) 0.89ms referer=http://localhost:8877/lab/tree/med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 07:58:47.608 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509/channels?session_id=973392c7-b657-443c-940f-286e4bc8406f (10.148.1.145): Kernel does not exist: 48ff270e-c23b-4f38-852d-da9bebc94509
+[W 2025-07-09 07:58:47.609 ServerApp] 404 GET /api/kernels/48ff270e-c23b-4f38-852d-da9bebc94509/channels?session_id=973392c7-b657-443c-940f-286e4bc8406f (2091e27fb0d040b4bd4bc32db2ef0ac1@10.148.1.145) 1.41ms referer=None
+[W 2025-07-09 07:58:49.781 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-07-09 07:58:50.761 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-07-09 07:58:51.075 ServerApp] Kernel started: b20b47b0-451f-4dde-9a28-7c94d024f001
+[I 2025-07-09 07:58:51.080 ServerApp] Kernel started: 026adb21-0227-425d-8443-9930619e6967
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 07:58:52.315 ServerApp] Connecting to kernel b20b47b0-451f-4dde-9a28-7c94d024f001.
+[I 2025-07-09 07:58:52.317 ServerApp] Connecting to kernel 026adb21-0227-425d-8443-9930619e6967.
+[I 2025-07-09 07:58:52.337 ServerApp] Connecting to kernel 026adb21-0227-425d-8443-9930619e6967.
+[I 2025-07-09 07:58:52.339 ServerApp] Connecting to kernel 026adb21-0227-425d-8443-9930619e6967.
+[I 2025-07-09 08:00:50.979 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 08:00:50.980 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-07-09 08:02:51.091 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 08:02:51.092 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-07-09 08:04:51.205 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 08:04:51.205 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-07-09 08:06:51.310 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 08:06:51.311 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[I 2025-07-09 08:08:51.974 ServerApp] Saving file at /med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb
+[W 2025-07-09 08:08:51.975 ServerApp] Notebook med_analysis/01_preprocessing/02_nc_preprocessing_swot_2km.ipynb is not trusted
+[W 2025-07-09 08:13:09.507 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/22_seastate_duacs.ipynb is not trusted
+[I 2025-07-09 08:13:09.722 ServerApp] Kernel started: 44ccf8c6-8eb5-4561-b3fe-941bdc6d3b90
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:13:10.881 ServerApp] Connecting to kernel 44ccf8c6-8eb5-4561-b3fe-941bdc6d3b90.
+[I 2025-07-09 08:13:11.545 ServerApp] Kernel started: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:13:12.279 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 08:13:38.368 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 08:15:11.478 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 08:15:17.863 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2025-07-09 08:15:23.969 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 08:15:23.978 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:de832187-a821-493d-a1cc-88599cb97f29
+[I 2025-07-09 08:15:23.982 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 08:15:23.982 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:de832187-a821-493d-a1cc-88599cb97f29
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:17:12.414 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 08:23:54.342 ServerApp] Kernel started: aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:23:55.663 ServerApp] Connecting to kernel aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186.
+[W 2025-07-09 08:24:33.523 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:24:33.702 ServerApp] Kernel started: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:24:34.451 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[W 2025-07-09 08:24:42.802 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:24:42.995 ServerApp] Kernel started: 466c12f0-0a74-4fea-86c1-8efcbb028279
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 08:24:43.792 ServerApp] Connecting to kernel 466c12f0-0a74-4fea-86c1-8efcbb028279.
+[I 2025-07-09 08:24:53.393 ServerApp] Starting buffering for aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186:79df4437-c741-402d-8deb-a9f8439c2fa0
+[I 2025-07-09 08:24:54.688 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:de832187-a821-493d-a1cc-88599cb97f29
+[I 2025-07-09 08:24:55.542 ServerApp] Starting buffering for 44ccf8c6-8eb5-4561-b3fe-941bdc6d3b90:807c855f-b7e2-4ba4-aa91-dff64fd5dd50
+[I 2025-07-09 08:24:56.392 ServerApp] Starting buffering for 026adb21-0227-425d-8443-9930619e6967:c97ada50-30ce-40b2-b0c9-3e167b81800c
+[I 2025-07-09 08:24:57.649 ServerApp] Starting buffering for b20b47b0-451f-4dde-9a28-7c94d024f001:9f04f8b9-aaa1-416f-b21b-e6ca037a2be0
+[I 2025-07-09 08:26:33.589 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:26:33.590 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:26:42.885 ServerApp] Saving file at /med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb
+[W 2025-07-09 08:26:42.886 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:28:33.639 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:28:33.640 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:28:43.199 ServerApp] Saving file at /med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb
+[W 2025-07-09 08:28:43.200 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:30:33.701 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:30:33.702 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:30:43.254 ServerApp] Saving file at /med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb
+[W 2025-07-09 08:30:43.255 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:32:43.322 ServerApp] Saving file at /med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb
+[W 2025-07-09 08:32:43.324 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:34:33.752 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:34:33.753 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:34:43.389 ServerApp] Saving file at /med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb
+[W 2025-07-09 08:34:43.391 ServerApp] Notebook med_analysis/02_coloc_files/01_csv_create_and_count_coloc.ipynb is not trusted
+[I 2025-07-09 08:36:33.790 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:36:33.791 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:38:33.838 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:38:33.839 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:40:33.877 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:40:33.878 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:42:33.915 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:42:33.916 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:44:33.952 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:44:33.953 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:46:33.993 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:46:33.994 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:48:34.035 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:48:34.036 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:50:34.083 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:50:34.084 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:52:34.118 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:52:34.119 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:54:34.161 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:54:34.162 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:56:34.195 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:56:34.196 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 08:58:34.231 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 08:58:34.232 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:00:34.273 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:00:34.274 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:02:34.312 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:02:34.313 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:04:34.361 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:04:34.362 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:06:34.418 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:06:34.419 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[W 2025-07-09 09:09:24.241 ServerApp] Notebook med_analysis/00_pre_analysis/140_era5_vs_insituwind.ipynb is not trusted
+[I 2025-07-09 09:09:24.486 ServerApp] Kernel started: c13a68c4-168c-452a-b76f-3f4ec121bb53
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 09:09:26.777 ServerApp] Connecting to kernel c13a68c4-168c-452a-b76f-3f4ec121bb53.
+[I 2025-07-09 09:09:33.197 ServerApp] Kernel started: 6c08db4b-9f83-4137-8be5-5662c5485527
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 09:09:34.087 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 09:09:48.035 ServerApp] Starting buffering for c13a68c4-168c-452a-b76f-3f4ec121bb53:b39cd795-a626-4903-8089-05d6c5aad496
+[I 2025-07-09 09:11:33.092 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[W 2025-07-09 09:12:08.346 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:12:08.560 ServerApp] Kernel started: 07b125c7-44e5-492b-8420-5e71b1b604c6
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 09:12:10.516 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 09:14:08.811 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:14:08.812 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:14:34.793 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:14:34.794 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:16:34.839 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:16:34.840 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:32:59.782 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:32:59.782 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:35:16.349 ServerApp] Starting buffering for 466c12f0-0a74-4fea-86c1-8efcbb028279:66b10f55-3ab8-4c99-bbcd-9e1b8c5293ca
+[I 2025-07-09 09:35:43.696 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 09:35:43.702 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 09:35:43.714 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 09:35:43.714 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 09:36:00.089 ServerApp] Kernel restarted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 09:36:00.094 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 09:36:00.100 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 09:36:00.100 ServerApp] Restoring connection for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 09:36:53.098 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 09:36:59.800 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:36:59.801 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:36:59.849 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 09:36:59.849 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 09:39:00.769 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:39:00.770 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:41:00.859 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:41:00.860 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:43:00.937 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:43:00.938 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 09:45:01.043 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 09:45:01.044 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[W 2025-07-09 09:48:30.101 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-07-09 09:48:34.453 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-07-09 09:48:35.104 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 09:48:39.453 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:9c370783-91e2-4358-b7cb-d437022fdfca
+[W 2025-07-09 09:48:43.714 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-07-09 09:48:48.715 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 11:31:55.463 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 11:31:55.463 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 11:32:01.077 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 11:32:01.077 ServerApp] Restoring connection for 3ab40c74-bd9a-41b6-b53c-a562771e4248:9c370783-91e2-4358-b7cb-d437022fdfca
+[I 2025-07-09 11:32:10.333 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 11:32:16.606 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:9c370783-91e2-4358-b7cb-d437022fdfca
+[I 2025-07-09 11:32:16.952 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 11:32:16.952 ServerApp] Restoring connection for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 11:32:30.304 ServerApp] Kernel restarted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:32:30.323 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 11:32:30.354 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 11:32:30.354 ServerApp] Restoring connection for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[W 2025-07-09 11:33:24.198 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3131593
+[W 2025-07-09 11:33:24.214 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3064477
+[W 2025-07-09 11:33:24.222 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3131647
+[W 2025-07-09 11:33:24.230 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3132247
+[W 2025-07-09 11:33:24.237 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3132282
+[W 2025-07-09 11:33:24.245 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3491612
+[W 2025-07-09 11:33:24.255 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3491907
+[W 2025-07-09 11:33:24.263 ServerApp] delete /med_analysis/02_coloc_files/dask-worker.o3491906
+[I 2025-07-09 11:33:53.320 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:33:53.321 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:35:53.426 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:35:53.426 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:37:53.533 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:37:53.534 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:40:10.777 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 11:42:10.835 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 11:43:53.649 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:43:53.650 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:44:23.419 ServerApp] Kernel interrupted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:44:23.601 ServerApp] Kernel interrupted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:44:23.784 ServerApp] Kernel interrupted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:44:41.309 ServerApp] Kernel restarted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:44:41.316 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 11:44:41.321 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 11:44:41.321 ServerApp] Restoring connection for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 11:45:23.146 ServerApp] Kernel restarted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:45:23.155 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[I 2025-07-09 11:45:23.160 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 11:45:23.160 ServerApp] Restoring connection for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 11:45:53.732 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:45:53.733 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:47:53.813 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:47:53.814 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:49:53.902 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:49:53.903 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:51:36.476 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:51:36.476 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:53:29.867 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:53:29.868 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:54:54.999 ServerApp] Kernel interrupted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:54:55.200 ServerApp] Kernel interrupted: 07b125c7-44e5-492b-8420-5e71b1b604c6
+[I 2025-07-09 11:55:14.910 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 11:55:14.916 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 11:55:14.922 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 11:55:14.922 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 11:55:29.942 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2025-07-09 11:55:29.943 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-09 11:56:10.876 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 11:57:53.188 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 11:57:53.193 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 11:57:53.197 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 11:57:53.197 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 11:58:10.957 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 11:59:07.231 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:00:11.033 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:02:11.099 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:04:11.179 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:05:07.254 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:05:20.067 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:05:30.119 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:05:35.130 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:05:35.136 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 12:05:35.143 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 12:05:35.143 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:06:11.366 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:08:25.859 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:08:36.312 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:08:36.319 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 12:08:36.329 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 12:08:36.329 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:09:43.868 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:10:11.541 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:12:11.610 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:13:04.063 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:14:11.813 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:15:04.087 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:15:08.406 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:15:08.574 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:15:08.756 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:16:11.886 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:16:33.393 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:16:33.576 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:16:33.741 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:16:33.910 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:16:34.108 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:17:28.858 ServerApp] Kernel restarted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:17:28.879 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 12:17:28.886 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 12:17:28.886 ServerApp] Restoring connection for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:17:59.468 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:18:11.949 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:20:12.025 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:22:12.106 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:26:12.170 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:28:12.502 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:30:12.784 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:32:12.849 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:34:12.918 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[W 2025-07-09 12:34:36.279 ServerApp] Notebook med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb is not trusted
+[I 2025-07-09 12:34:36.698 ServerApp] Kernel started: a242feb0-8b94-4733-8a02-ea5a60c77cf7
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:34:38.779 ServerApp] Connecting to kernel a242feb0-8b94-4733-8a02-ea5a60c77cf7.
+[I 2025-07-09 12:34:49.151 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 12:35:18.349 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:35:50.719 ServerApp] Copying med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb to /med_analysis/03_Overview_visualization
+[W 2025-07-09 12:35:50.759 ServerApp] Notebook med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb is not trusted
+[W 2025-07-09 12:35:50.797 ServerApp] Notebook med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb is not trusted
+[W 2025-07-09 12:35:50.799 ServerApp] Notebook med_analysis/03_Overview_visualization/08_pb_aberant_values-Copy1.ipynb is not trusted
+[I 2025-07-09 12:36:12.983 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:36:36.751 ServerApp] Saving file at /med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb
+[W 2025-07-09 12:36:36.752 ServerApp] Notebook med_analysis/03_Overview_visualization/08_pb_aberant_values.ipynb is not trusted
+[I 2025-07-09 12:38:13.044 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:38:32.784 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:38:32.969 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:38:33.156 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:38:33.335 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 12:39:18.431 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:40:13.110 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:41:18.498 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:41:59.476 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:42:13.170 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:43:59.523 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:44:13.228 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 12:44:59.308 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:45:11.552 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:45:17.812 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 12:45:17.817 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 12:45:17.822 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 12:45:17.822 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 12:45:18.775 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:45:28.039 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:3f642efc-9f9a-4db5-b509-64e6571fb22d
+[W 2025-07-09 12:47:06.803 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 12:47:06.945 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 12:47:16.844 ServerApp] Kernel restarted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 12:47:16.850 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:b585701c-5cf1-46bd-9c42-3999c6e98739
+[I 2025-07-09 12:47:16.857 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 12:47:16.857 ServerApp] Restoring connection for 3ab40c74-bd9a-41b6-b53c-a562771e4248:b585701c-5cf1-46bd-9c42-3999c6e98739
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:47:18.841 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:49:06.859 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 12:49:06.860 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 12:49:19.206 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:49:20.877 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:51:11.575 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:53:11.604 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:53:15.445 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 12:53:24.541 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 12:53:24.564 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 12:53:24.569 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 12:53:24.569 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 12:55:06.910 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 12:55:06.912 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 12:55:20.951 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:56:01.042 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 12:56:01.042 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 12:57:21.039 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 12:59:21.455 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:01:21.552 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:03:21.877 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:03:28.052 ServerApp] Connecting to kernel aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186.
+[I 2025-07-09 13:06:13.601 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 13:08:13.880 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 13:09:58.875 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:09:59.055 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:09:59.255 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:09:59.438 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:09:59.656 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[W 2025-07-09 13:10:00.730 ServerApp] Replacing stale connection: 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 13:10:00.730 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[W 2025-07-09 13:10:00.734 ServerApp] 
+[W 2025-07-09 13:10:00.736 ServerApp] 
+[W 2025-07-09 13:10:00.738 ServerApp] 
+[W 2025-07-09 13:10:00.739 ServerApp] 
+[W 2025-07-09 13:10:00.742 ServerApp] 
+[W 2025-07-09 13:10:00.743 ServerApp] 
+[I 2025-07-09 13:10:01.089 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 13:10:01.090 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:10:04.145 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:04.148 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:04.148 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:04.150 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[W 2025-07-09 13:10:09.420 ServerApp] Replacing stale connection: 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[I 2025-07-09 13:10:09.422 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[W 2025-07-09 13:10:09.789 ServerApp] Replacing stale connection: a242feb0-8b94-4733-8a02-ea5a60c77cf7:fad4cbb4-aadc-4115-b92e-e26f4c148751
+[I 2025-07-09 13:10:09.790 ServerApp] Connecting to kernel a242feb0-8b94-4733-8a02-ea5a60c77cf7.
+[W 2025-07-09 13:10:09.794 ServerApp] 
+[W 2025-07-09 13:10:09.796 ServerApp] 
+[W 2025-07-09 13:10:09.797 ServerApp] 
+[W 2025-07-09 13:10:09.798 ServerApp] 
+[W 2025-07-09 13:10:09.801 ServerApp] 
+[W 2025-07-09 13:10:09.802 ServerApp] 
+[W 2025-07-09 13:10:12.433 ServerApp] 
+[W 2025-07-09 13:10:12.435 ServerApp] 
+[W 2025-07-09 13:10:12.449 ServerApp] 
+[W 2025-07-09 13:10:12.453 ServerApp] 
+[I 2025-07-09 13:10:13.955 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[W 2025-07-09 13:10:16.152 ServerApp] Replacing stale connection: aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186:2d50c06a-4cf7-4fcd-ab8c-3b588720ae6e
+[I 2025-07-09 13:10:16.153 ServerApp] Connecting to kernel aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186.
+[W 2025-07-09 13:10:16.159 ServerApp] 
+[W 2025-07-09 13:10:16.159 ServerApp] 
+[W 2025-07-09 13:10:16.161 ServerApp] 
+[W 2025-07-09 13:10:16.162 ServerApp] 
+[W 2025-07-09 13:10:16.166 ServerApp] 
+[W 2025-07-09 13:10:16.167 ServerApp] 
+[W 2025-07-09 13:10:16.845 ServerApp] Replacing stale connection: 3ab40c74-bd9a-41b6-b53c-a562771e4248:b585701c-5cf1-46bd-9c42-3999c6e98739
+[I 2025-07-09 13:10:16.846 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[W 2025-07-09 13:10:16.852 ServerApp] 
+[W 2025-07-09 13:10:16.852 ServerApp] 
+[W 2025-07-09 13:10:16.854 ServerApp] 
+[W 2025-07-09 13:10:16.855 ServerApp] 
+[W 2025-07-09 13:10:16.859 ServerApp] 
+[W 2025-07-09 13:10:16.860 ServerApp] 
+[W 2025-07-09 13:10:18.710 ServerApp] 
+[W 2025-07-09 13:10:18.710 ServerApp] 
+[W 2025-07-09 13:10:18.733 ServerApp] 
+[W 2025-07-09 13:10:18.735 ServerApp] 
+[I 2025-07-09 13:10:27.378 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:27.560 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:27.760 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:27.943 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:29.982 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:52.531 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:52.730 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:52.930 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:53.121 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:53.314 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:53.531 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:55.549 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:55.732 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:10:55.949 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:22.774 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:22.971 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:23.155 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:23.339 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:23.555 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:32.546 ServerApp] Starting buffering for aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186:2d50c06a-4cf7-4fcd-ab8c-3b588720ae6e
+[I 2025-07-09 13:11:56.900 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:57.083 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:57.266 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:11:58.600 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:b585701c-5cf1-46bd-9c42-3999c6e98739
+[W 2025-07-09 13:12:00.994 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:12:01.167 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 13:12:03.640 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:03.821 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:04.021 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:06.207 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:08.342 ServerApp] Kernel interrupted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:13.998 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 13:12:17.728 ServerApp] Kernel restarted: 3ab40c74-bd9a-41b6-b53c-a562771e4248
+[I 2025-07-09 13:12:17.753 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:bf4b334d-863f-4360-8624-07a68f5d5c80
+[I 2025-07-09 13:12:17.757 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 13:12:17.757 ServerApp] Restoring connection for 3ab40c74-bd9a-41b6-b53c-a562771e4248:bf4b334d-863f-4360-8624-07a68f5d5c80
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 13:14:01.060 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 13:14:01.061 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:16:01.104 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 13:16:01.105 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:33:53.258 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2025-07-09 13:33:53.258 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:33:54.393 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:bf4b334d-863f-4360-8624-07a68f5d5c80
+[I 2025-07-09 13:34:03.565 ServerApp] Starting buffering for a242feb0-8b94-4733-8a02-ea5a60c77cf7:fad4cbb4-aadc-4115-b92e-e26f4c148751
+[I 2025-07-09 13:34:08.139 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:08.339 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:08.539 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:08.705 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:08.906 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:09.104 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:14.978 ServerApp] Kernel interrupted: 6c08db4b-9f83-4137-8be5-5662c5485527
+[I 2025-07-09 13:34:18.114 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:6aeae537-f52c-4ad6-9a06-8f31d1f7e21e
+[W 2025-07-09 13:34:19.275 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2025-07-09 13:34:19.430 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 13:34:32.524 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 13:36:06.615 ServerApp] Saving file at /med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb
+[I 2025-07-09 13:36:09.505 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:7bc54547-132f-4851-be78-14213dbd93bb
+[I 2025-07-09 13:36:13.973 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:858996e3-2185-405e-a4e4-0482927f6b51
+[I 2025-07-09 13:36:51.674 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:38:09.186 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:38:09.386 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:38:09.586 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:38:50.882 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:38:51.778 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:39:47.639 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:41:47.661 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:43:47.685 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:45:47.710 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:47:47.737 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:48:51.870 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:50:51.967 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:52:52.054 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:52:55.376 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:52:55.541 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:52:55.742 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:52:55.976 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:52:56.277 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:54:30.531 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-07-09 13:54:30.531 ServerApp] kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945 restarted
+[I 2025-07-09 13:54:30.541 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 13:54:30.590 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 13:54:30.591 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 13:54:52.136 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:55:25.157 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:55:49.441 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 13:56:52.657 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 13:57:55.787 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:57:55.956 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:57:56.137 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:57:56.356 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 13:58:18.005 ServerApp] Creating new notebook in /med_analysis
+[I 2025-07-09 13:58:19.745 ServerApp] Kernel started: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 13:58:21.001 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 13:58:52.741 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 14:00:18.143 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:02:18.191 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:04:18.248 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:06:18.303 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:08:18.354 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:10:18.429 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:12:18.500 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:12:35.857 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:36.052 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:36.235 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:36.419 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:36.619 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:38.542 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:38.705 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:38.904 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:39.088 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:39.271 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:39.455 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:39.638 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:39.855 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:40.055 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:44.748 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:44.943 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:45.126 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:49.525 ServerApp] Kernel restarted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 14:12:49.530 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+[I 2025-07-09 14:12:49.534 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 14:12:49.534 ServerApp] Restoring connection for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 14:14:18.560 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:16:18.615 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:17:43.031 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 14:18:18.678 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:19:43.049 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 14:20:18.730 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:22:18.779 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:24:18.860 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:26:18.923 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:28:18.984 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:28:58.149 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 14:29:03.522 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 14:30:19.043 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:32:19.611 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:34:19.659 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:36:19.712 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:38:19.753 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:40:19.798 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:42:19.838 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:44:19.882 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:46:19.941 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:48:19.986 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:50:20.036 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:52:20.558 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 14:53:34.515 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-07-09 14:53:34.516 ServerApp] kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d restarted
+[I 2025-07-09 14:53:34.557 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+[I 2025-07-09 14:53:34.572 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 14:53:34.572 ServerApp] Restoring connection for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 14:54:20.604 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:01:50.204 ServerApp] Kernel restarted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:01:50.212 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+[I 2025-07-09 15:01:50.216 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 15:01:50.217 ServerApp] Restoring connection for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 15:02:23.543 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:04:23.603 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:06:24.529 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:14:27.520 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:16:27.580 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:18:28.513 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:20:29.511 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:22:30.507 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:26:30.551 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:28:30.598 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:30:30.636 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:31:21.062 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:31:21.259 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:31:21.442 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:31:21.626 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:32:30.676 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:34:30.711 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:35:44.744 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:35:44.907 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:35:45.091 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:35:45.257 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:35:45.459 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:35:45.658 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:36:02.209 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:36:02.388 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:36:02.555 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 15:36:30.749 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:38:30.791 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[W 2025-07-09 15:38:30.842 ServerApp] /home1/datahome/mdemol/med_analysis/.~test_bootstrap.ipynb doesn't exist
+[I 2025-07-09 15:40:30.829 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:42:31.478 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:44:31.517 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:46:31.557 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:48:31.597 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:50:31.638 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:56:31.674 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 15:58:31.740 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:02:31.785 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:04:11.196 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 16:04:31.822 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:06:59.768 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:06:59.772 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 16:06:59.775 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 16:06:59.775 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 16:08:54.469 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 16:09:09.024 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 16:09:33.139 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:09:33.146 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 16:09:33.151 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 16:09:33.151 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 16:10:31.864 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:10:48.643 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:48.841 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:49.007 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:49.191 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:49.374 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:49.574 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:51.810 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:51.976 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:52.161 ServerApp] Kernel interrupted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:10:54.554 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 16:11:31.523 ServerApp] Kernel restarted: 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d
+[I 2025-07-09 16:11:31.533 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+[I 2025-07-09 16:11:31.545 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 16:11:31.545 ServerApp] Restoring connection for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 16:12:31.906 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:14:32.176 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:16:32.225 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:24:54.627 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 16:25:36.284 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:25:36.469 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:25:36.652 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:25:36.855 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 16:26:32.275 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 16:26:54.711 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[W 2025-07-09 16:29:31.545 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-07-09 16:29:33.152 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-07-09 16:29:33.832 ServerApp] 
+[W 2025-07-09 16:29:34.061 ServerApp] 
+[I 2025-07-09 16:29:36.547 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8e038e22-bee7-4506-95a5-602d9a374d8e
+[I 2025-07-09 16:29:38.153 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[W 2025-07-09 22:56:07.317 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-07-09 22:56:07.392 ServerApp] Connecting to kernel b20b47b0-451f-4dde-9a28-7c94d024f001.
+[I 2025-07-09 22:56:07.495 ServerApp] Connecting to kernel 026adb21-0227-425d-8443-9930619e6967.
+[I 2025-07-09 22:56:07.532 ServerApp] Starting buffering for b20b47b0-451f-4dde-9a28-7c94d024f001:e48990a9-e452-4292-85d0-6cfa4907d3dd
+[I 2025-07-09 22:56:07.595 ServerApp] Connecting to kernel 44ccf8c6-8eb5-4561-b3fe-941bdc6d3b90.
+[I 2025-07-09 22:56:07.626 ServerApp] Starting buffering for 026adb21-0227-425d-8443-9930619e6967:d2a03230-a515-4b63-bc54-25c6d5c44c58
+[I 2025-07-09 22:56:07.695 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 22:56:07.696 ServerApp] Discarding 13 buffered messages for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7511feca-0023-405e-ba27-11b58e8c7fc2
+[I 2025-07-09 22:56:07.697 ServerApp] Connecting to kernel aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186.
+[I 2025-07-09 22:56:07.784 ServerApp] Starting buffering for 44ccf8c6-8eb5-4561-b3fe-941bdc6d3b90:4ce51ed4-4d87-48c3-adca-fa00b995839d
+[I 2025-07-09 22:56:07.793 ServerApp] Connecting to kernel 3ab40c74-bd9a-41b6-b53c-a562771e4248.
+[I 2025-07-09 22:56:07.818 ServerApp] Connecting to kernel 466c12f0-0a74-4fea-86c1-8efcbb028279.
+[I 2025-07-09 22:56:07.821 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:ac819412-3f0d-4649-941f-cdc4f4442b22
+[I 2025-07-09 22:56:07.822 ServerApp] Starting buffering for aa1c658e-4e31-4d1d-8dfa-c5b40d8e8186:2fbc838c-bd1a-4700-b283-f406599d31b5
+[I 2025-07-09 22:56:07.906 ServerApp] Starting buffering for 3ab40c74-bd9a-41b6-b53c-a562771e4248:375aefa5-da2b-4edf-82c8-bd9296f6b04a
+[I 2025-07-09 22:56:07.924 ServerApp] Connecting to kernel 6c08db4b-9f83-4137-8be5-5662c5485527.
+[I 2025-07-09 22:56:07.926 ServerApp] Connecting to kernel c13a68c4-168c-452a-b76f-3f4ec121bb53.
+[I 2025-07-09 22:56:07.987 ServerApp] Starting buffering for 466c12f0-0a74-4fea-86c1-8efcbb028279:d326686e-e92b-4738-9643-ad3a3f012e58
+[I 2025-07-09 22:56:08.068 ServerApp] Connecting to kernel 07b125c7-44e5-492b-8420-5e71b1b604c6.
+[I 2025-07-09 22:56:08.070 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 22:56:08.075 ServerApp] Starting buffering for 6c08db4b-9f83-4137-8be5-5662c5485527:521861de-5ee5-4b3d-9b69-691d0b7169ae
+[I 2025-07-09 22:56:08.075 ServerApp] Starting buffering for c13a68c4-168c-452a-b76f-3f4ec121bb53:d7f2a22c-a4a3-4196-bf30-454c8320e308
+[I 2025-07-09 22:56:08.486 ServerApp] Connecting to kernel a242feb0-8b94-4733-8a02-ea5a60c77cf7.
+[I 2025-07-09 22:56:08.556 ServerApp] Starting buffering for 07b125c7-44e5-492b-8420-5e71b1b604c6:4a3d56dc-4a3a-4f60-8cf1-6a4d68390153
+[I 2025-07-09 22:56:08.556 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:f2eb2671-115a-4fa6-bb73-789d69158d57
+[I 2025-07-09 22:56:08.641 ServerApp] Starting buffering for a242feb0-8b94-4733-8a02-ea5a60c77cf7:049bb5b2-5248-4361-8002-5233fb42daa8
+[I 2025-07-09 22:56:08.735 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 22:56:08.869 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 22:56:13.927 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:a1b64368-3b1a-4041-babb-27f9707a6ae2
+[I 2025-07-09 22:58:08.868 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:00:09.966 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:01:16.416 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 23:01:24.986 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:01:25.067 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-09 23:01:25.136 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 23:01:25.136 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 23:01:53.057 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 23:01:58.610 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:01:58.655 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-09 23:01:58.724 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 23:01:58.724 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 23:02:10.710 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:03:21.791 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:03:21.966 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:04:11.069 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:05:27.060 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-09 23:05:53.190 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 23:05:56.898 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 23:06:04.298 ServerApp] Kernel restarted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:06:04.430 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-09 23:06:04.518 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 23:06:04.518 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 23:06:11.548 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:08:09.881 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:10.094 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:10.298 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:10.544 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:10.762 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:10.961 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:11.213 ServerApp] Kernel interrupted: 7f9d0de5-e73b-409b-a70f-5d66673fa945
+[I 2025-07-09 23:08:11.926 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:08:40.602 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-09 23:09:46.288 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-07-09 23:09:46.289 ServerApp] kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945 restarted
+[I 2025-07-09 23:09:46.433 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-09 23:09:46.495 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-09 23:09:46.495 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-09 23:10:12.300 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-09 23:11:26.953 ServerApp] Saving file at /med_analysis/test_bootstrap.ipynb
+[I 2025-07-09 23:12:12.626 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[W 2025-07-09 23:13:57.061 ServerApp] WebSocket ping timeout after 119868 ms.
+[I 2025-07-09 23:14:02.062 ServerApp] Starting buffering for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8f8c87d4-7efb-44a6-9682-97560e2c1c5d
+[W 2025-07-09 23:14:16.496 ServerApp] WebSocket ping timeout after 119950 ms.
+[I 2025-07-09 23:14:21.497 ServerApp] Starting buffering for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-10 07:42:50.769 ServerApp] Connecting to kernel 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d.
+[I 2025-07-10 07:42:50.770 ServerApp] Restoring connection for 24c50ff4-71dc-4dbd-b53e-b0ceb8c5e29d:8f8c87d4-7efb-44a6-9682-97560e2c1c5d
+[I 2025-07-10 07:42:53.317 ServerApp] Connecting to kernel 7f9d0de5-e73b-409b-a70f-5d66673fa945.
+[I 2025-07-10 07:42:53.318 ServerApp] Restoring connection for 7f9d0de5-e73b-409b-a70f-5d66673fa945:7d713bf9-3e8e-4cd8-aacb-ab2431b81809
+[I 2025-07-10 07:42:53.318 ServerApp] Replaying 565 buffered messages
+[I 2025-07-10 07:43:54.175 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:45:55.150 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:47:56.143 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:49:57.122 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:51:58.131 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:53:58.191 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-07-10 07:55:58.252 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+Thu Jul 10 07:57:18 GMT 2025
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
