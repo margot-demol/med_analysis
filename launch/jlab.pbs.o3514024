@@ -1,0 +1,322 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Sun Jul 13 09:30:49 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-07-13 09:30:53.839 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-07-13 09:30:53.990 ServerApp] Package jupyter_lsp took 0.1499s to import
+[W 2025-07-13 09:30:53.990 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-13 09:30:54.050 ServerApp] Package jupyter_server_terminals took 0.0598s to import
+[I 2025-07-13 09:30:54.051 ServerApp] Package notebook took 0.0000s to import
+[I 2025-07-13 09:30:54.056 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-07-13 09:30:54.056 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-13 09:30:59.692 ServerApp] Package panel.io.jupyter_server_extension took 5.6340s to import
+[I 2025-07-13 09:30:59.692 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-07-13 09:30:59.699 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-07-13 09:30:59.706 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-07-13 09:30:59.711 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-07-13 09:30:59.715 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-07-13 09:30:59.715 ServerApp] notebook | extension was successfully linked.
+[I 2025-07-13 09:31:01.236 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-07-13 09:31:01.236 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-07-13 09:31:01.338 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-07-13 09:31:01.340 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-07-13 09:31:01.342 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-07-13 09:31:01.371 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-07-13 09:31:01.371 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-07-13 09:31:01.373 LabApp] Extension Manager is 'pypi'.
+[I 2025-07-13 09:31:01.376 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-07-13 09:31:01.383 ServerApp] notebook | extension was successfully loaded.
+[I 2025-07-13 09:31:01.383 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-07-13 09:31:01.384 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-07-13 09:31:01.384 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-07-13 09:31:01.384 ServerApp] http://r1i1n28:8877/lab
+[I 2025-07-13 09:31:01.384 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-07-13 09:31:01.384 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-07-13 09:31:01.461 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-07-13 09:32:26.722 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-07-13 09:32:30.032 ServerApp] Kernel started: 63ee8cc9-c6ce-437e-a456-c5a08c705779
+[I 2025-07-13 09:32:30.518 ServerApp] Kernel started: 95b18986-b00a-4587-a4c4-33b7e2ecb3b6
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 09:32:32.392 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 09:32:32.394 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 09:32:32.579 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 09:32:32.589 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 09:32:32.661 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 09:32:32.686 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 09:34:30.222 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:36:31.392 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:38:31.820 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:40:32.399 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:42:32.753 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:44:33.180 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:46:33.786 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:48:34.232 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:50:34.567 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:52:35.185 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:54:35.445 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:56:35.712 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 09:58:35.991 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:00:36.310 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:02:39.330 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:03:40.418 ServerApp] Starting buffering for 95b18986-b00a-4587-a4c4-33b7e2ecb3b6:c2f6bf97-e804-4219-835e-725da8ec1856
+[I 2025-07-13 10:03:40.418 ServerApp] Starting buffering for 63ee8cc9-c6ce-437e-a456-c5a08c705779:c9dd65f0-dbc5-467e-b84d-c2b49b342228
+[W 2025-07-13 10:04:05.264 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-07-13 10:04:05.328 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 10:04:05.427 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 10:04:05.456 ServerApp] Starting buffering for 63ee8cc9-c6ce-437e-a456-c5a08c705779:66317d4a-4013-4b73-9487-9461eded4b91
+[I 2025-07-13 10:04:05.545 ServerApp] Starting buffering for 95b18986-b00a-4587-a4c4-33b7e2ecb3b6:9e2f0a54-ece9-48f6-b29c-ed9a44a654f0
+[I 2025-07-13 10:04:07.392 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 10:04:08.062 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 10:06:07.510 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[W 2025-07-13 10:06:52.331 ServerApp] Notebook med_analysis/03_Overview_visualization/13_visualize_one_coloc.ipynb is not trusted
+[I 2025-07-13 10:06:58.865 ServerApp] Kernel started: e4289309-6d0f-4df1-bcb2-45ef98762b51
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 10:07:00.008 ServerApp] Connecting to kernel e4289309-6d0f-4df1-bcb2-45ef98762b51.
+[I 2025-07-13 10:08:08.010 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:09:01.191 ServerApp] Saving file at /med_analysis/03_Overview_visualization/13_visualize_one_coloc.ipynb
+[W 2025-07-13 10:09:01.193 ServerApp] Notebook med_analysis/03_Overview_visualization/13_visualize_one_coloc.ipynb is not trusted
+[I 2025-07-13 10:10:08.388 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:14:08.723 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:16:09.072 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:18:09.388 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:20:09.783 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:22:10.214 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:24:10.710 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:26:11.383 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:28:11.771 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:32:12.766 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:34:14.218 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:36:15.079 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:38:15.928 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:39:07.053 ServerApp] Kernel interrupted: 63ee8cc9-c6ce-437e-a456-c5a08c705779
+[I 2025-07-13 10:40:17.122 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:42:17.950 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:46:18.833 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:48:19.526 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:50:20.041 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:52:20.499 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:54:20.877 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 10:58:21.217 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:00:21.543 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:02:21.854 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:04:22.253 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:06:22.640 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:08:23.008 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:10:23.326 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:12:23.649 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:14:24.104 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:16:24.422 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:18:24.777 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:20:25.160 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:22:25.730 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:24:26.055 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:26:26.588 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[W 2025-07-13 11:29:38.590 ServerApp] Notebook processing_insitu_trajectories/75_diag_raw_L2_traj.ipynb is not trusted
+[I 2025-07-13 11:29:40.773 ServerApp] Kernel started: b4372f8a-68d5-4b28-bdb3-09f6e052dd2b
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 11:29:41.800 ServerApp] Connecting to kernel b4372f8a-68d5-4b28-bdb3-09f6e052dd2b.
+[W 2025-07-13 11:29:48.752 ServerApp] Notebook processing_insitu_trajectories/6_load_L2-L1_L0_insitu_drifters.ipynb is not trusted
+[I 2025-07-13 11:29:49.217 ServerApp] Kernel started: 1e4d4a29-df86-4819-837b-a324265fc442
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 11:29:49.888 ServerApp] Connecting to kernel 1e4d4a29-df86-4819-837b-a324265fc442.
+[W 2025-07-13 11:29:50.730 ServerApp] Notebook processing_insitu_trajectories/71_diag_raw_L2_rms_distribution_spectra.ipynb is not trusted
+[I 2025-07-13 11:29:51.653 ServerApp] Kernel started: 83b8315b-bd6f-43ed-b801-e61046cdaea9
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 11:29:52.326 ServerApp] Connecting to kernel 83b8315b-bd6f-43ed-b801-e61046cdaea9.
+[I 2025-07-13 11:30:27.116 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:32:08.409 ServerApp] Starting buffering for 83b8315b-bd6f-43ed-b801-e61046cdaea9:69deeee4-e82d-4702-a433-348e54021f64
+[I 2025-07-13 11:32:27.663 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:34:28.230 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:36:28.557 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:38:29.154 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:40:30.272 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:42:30.866 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:44:31.477 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:46:32.061 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:50:32.481 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:52:32.849 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:54:33.340 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 11:56:34.189 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[W 2025-07-13 12:01:20.103 ServerApp] Replacing stale connection: 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+[I 2025-07-13 12:01:20.104 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[W 2025-07-13 12:01:20.110 ServerApp] 
+[W 2025-07-13 12:01:20.110 ServerApp] 
+[W 2025-07-13 12:01:20.112 ServerApp] 
+[W 2025-07-13 12:01:20.113 ServerApp] 
+[W 2025-07-13 12:01:20.139 ServerApp] 
+[W 2025-07-13 12:01:20.140 ServerApp] 
+[W 2025-07-13 12:01:22.801 ServerApp] Replacing stale connection: e4289309-6d0f-4df1-bcb2-45ef98762b51:3f486329-de61-4feb-94a9-90c2518c7dd9
+[I 2025-07-13 12:01:22.802 ServerApp] Connecting to kernel e4289309-6d0f-4df1-bcb2-45ef98762b51.
+[W 2025-07-13 12:01:22.806 ServerApp] 
+[W 2025-07-13 12:01:22.807 ServerApp] 
+[W 2025-07-13 12:01:22.809 ServerApp] 
+[W 2025-07-13 12:01:22.810 ServerApp] 
+[W 2025-07-13 12:01:22.861 ServerApp] 
+[W 2025-07-13 12:01:22.863 ServerApp] 
+[I 2025-07-13 12:01:29.561 ServerApp] Starting buffering for b4372f8a-68d5-4b28-bdb3-09f6e052dd2b:4c0ad396-b571-4d34-976f-07a2c7ccbec2
+[I 2025-07-13 12:01:29.561 ServerApp] Starting buffering for 1e4d4a29-df86-4819-837b-a324265fc442:e1054acd-b98f-4480-9ea2-3f768348afd0
+[I 2025-07-13 12:01:29.562 ServerApp] Starting buffering for 95b18986-b00a-4587-a4c4-33b7e2ecb3b6:ecea987a-32ad-4700-b868-5e4e59ce2fde
+[I 2025-07-13 12:01:30.463 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:01:33.929 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:01:34.257 ServerApp] Connecting to kernel b4372f8a-68d5-4b28-bdb3-09f6e052dd2b.
+[I 2025-07-13 12:01:34.257 ServerApp] Restoring connection for b4372f8a-68d5-4b28-bdb3-09f6e052dd2b:4c0ad396-b571-4d34-976f-07a2c7ccbec2
+[I 2025-07-13 12:01:38.285 ServerApp] Connecting to kernel 1e4d4a29-df86-4819-837b-a324265fc442.
+[I 2025-07-13 12:01:38.285 ServerApp] Restoring connection for 1e4d4a29-df86-4819-837b-a324265fc442:e1054acd-b98f-4480-9ea2-3f768348afd0
+[I 2025-07-13 12:01:42.309 ServerApp] Connecting to kernel 95b18986-b00a-4587-a4c4-33b7e2ecb3b6.
+[I 2025-07-13 12:01:42.309 ServerApp] Restoring connection for 95b18986-b00a-4587-a4c4-33b7e2ecb3b6:ecea987a-32ad-4700-b868-5e4e59ce2fde
+[I 2025-07-13 12:01:47.214 ServerApp] Starting buffering for b4372f8a-68d5-4b28-bdb3-09f6e052dd2b:4c0ad396-b571-4d34-976f-07a2c7ccbec2
+[I 2025-07-13 12:01:47.961 ServerApp] Starting buffering for 1e4d4a29-df86-4819-837b-a324265fc442:e1054acd-b98f-4480-9ea2-3f768348afd0
+[I 2025-07-13 12:01:49.420 ServerApp] Starting buffering for e4289309-6d0f-4df1-bcb2-45ef98762b51:3f486329-de61-4feb-94a9-90c2518c7dd9
+[I 2025-07-13 12:01:50.078 ServerApp] Starting buffering for 95b18986-b00a-4587-a4c4-33b7e2ecb3b6:ecea987a-32ad-4700-b868-5e4e59ce2fde
+[I 2025-07-13 12:05:34.763 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:07:36.496 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:09:38.379 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:11:40.254 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:13:41.229 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:15:43.015 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:17:43.967 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:21:44.658 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:23:45.329 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:25:45.943 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:27:46.557 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:29:47.195 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:31:47.892 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:33:48.695 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 12:34:50.081 ServerApp] Starting buffering for 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+[I 2025-07-13 20:06:33.045 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 20:06:33.045 ServerApp] Restoring connection for 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+[I 2025-07-13 20:07:09.814 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:09:10.876 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:11:11.497 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:13:12.854 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:15:13.485 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:17:14.177 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:18:45.669 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:18:53.779 ServerApp] Kernel restarted: 63ee8cc9-c6ce-437e-a456-c5a08c705779
+[I 2025-07-13 20:18:53.905 ServerApp] Starting buffering for 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+[I 2025-07-13 20:18:53.959 ServerApp] Connecting to kernel 63ee8cc9-c6ce-437e-a456-c5a08c705779.
+[I 2025-07-13 20:18:53.959 ServerApp] Restoring connection for 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 20:20:46.389 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:22:46.946 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:24:47.472 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[W 2025-07-13 20:29:47.890 ServerApp] Notebook med_analysis/01_preprocessing/00_csv_decomp_spectra_drifter.ipynb is not trusted
+[I 2025-07-13 20:29:48.582 ServerApp] Kernel started: 1771f394-aa22-42ba-a7d9-42e4c349fd81
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 20:29:49.727 ServerApp] Connecting to kernel 1771f394-aa22-42ba-a7d9-42e4c349fd81.
+[I 2025-07-13 20:30:48.016 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:32:48.784 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:34:49.467 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:36:50.047 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:38:50.712 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:40:51.563 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:42:52.193 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:44:52.813 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:46:53.567 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:48:54.433 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:50:55.325 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:52:56.369 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 20:58:03.553 ServerApp] Copying med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb to /med_analysis/20_dynamical_analysis
+[I 2025-07-13 21:00:57.477 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 21:02:57.856 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 21:04:58.104 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT.ipynb
+[I 2025-07-13 21:10:10.601 ServerApp] Kernel started: f50828bb-3ee5-4be4-a9e5-f151f6b648a5
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 21:10:11.804 ServerApp] Connecting to kernel f50828bb-3ee5-4be4-a9e5-f151f6b648a5.
+[I 2025-07-13 21:11:00.213 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/21_BIOSWOT_filter.ipynb
+[I 2025-07-13 21:11:15.599 ServerApp] Copying med_analysis/20_dynamical_analysis/21_BIOSWOT_filter.ipynb to /med_analysis/20_dynamical_analysis
+[I 2025-07-13 21:11:40.300 ServerApp] Kernel started: 5f2bc47f-9fb9-48e3-b146-32243cacbe4f
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 21:11:41.355 ServerApp] Connecting to kernel 5f2bc47f-9fb9-48e3-b146-32243cacbe4f.
+[I 2025-07-13 21:13:40.220 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:15:40.357 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:17:40.517 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:19:40.673 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:21:40.812 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:23:41.006 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:25:42.165 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:29:42.367 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:31:42.497 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:33:42.815 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:35:36.999 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:37:37.244 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:39:37.483 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:41:37.820 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:43:38.044 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:45:38.191 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:47:38.541 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:49:38.849 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:51:39.271 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:53:39.743 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 21:55:39.952 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:01:41.264 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:03:42.149 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:05:42.403 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:07:03.765 ServerApp] Kernel restarted: 5f2bc47f-9fb9-48e3-b146-32243cacbe4f
+[I 2025-07-13 22:07:03.798 ServerApp] Starting buffering for 5f2bc47f-9fb9-48e3-b146-32243cacbe4f:b1ea048e-9858-4587-a649-e4304f6dcb95
+[I 2025-07-13 22:07:03.858 ServerApp] Connecting to kernel 5f2bc47f-9fb9-48e3-b146-32243cacbe4f.
+[I 2025-07-13 22:07:03.858 ServerApp] Restoring connection for 5f2bc47f-9fb9-48e3-b146-32243cacbe4f:b1ea048e-9858-4587-a649-e4304f6dcb95
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 22:07:42.610 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:09:42.817 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:11:43.056 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:13:43.308 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:15:43.750 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:17:44.097 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:19:44.435 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:21:44.872 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:23:45.336 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:25:45.772 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:27:46.099 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:29:46.478 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:31:46.836 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[W 2025-07-13 22:34:27.636 ServerApp] Notebook processing_insitu_trajectories/71_diag_raw_L2_rms_distribution_spectra.ipynb is not trusted
+[I 2025-07-13 22:34:29.119 ServerApp] Connecting to kernel 83b8315b-bd6f-43ed-b801-e61046cdaea9.
+[W 2025-07-13 22:34:36.957 ServerApp] Notebook processing_insitu_trajectories/75_diag_raw_L2_traj.ipynb is not trusted
+[I 2025-07-13 22:34:39.288 ServerApp] Connecting to kernel b4372f8a-68d5-4b28-bdb3-09f6e052dd2b.
+[I 2025-07-13 22:35:47.219 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:37:47.534 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:39:47.836 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:41:48.151 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:43:48.553 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:45:48.911 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:47:49.131 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:49:49.329 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:51:49.744 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:53:49.945 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:55:50.369 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:57:50.633 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 22:59:50.846 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 23:01:51.067 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 23:02:29.066 ServerApp] Copying med_analysis/20_dynamical_analysis/12_spectra.ipynb to /med_analysis/20_dynamical_analysis
+[I 2025-07-13 23:03:06.391 ServerApp] Kernel started: cd3f4129-5d10-4e7c-a551-9ba789133d43
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-13 23:03:07.471 ServerApp] Connecting to kernel cd3f4129-5d10-4e7c-a551-9ba789133d43.
+[I 2025-07-13 23:03:07.901 ServerApp] Starting buffering for 83b8315b-bd6f-43ed-b801-e61046cdaea9:ae0ee9e9-9797-49a4-8c9a-d4228bc2797d
+[I 2025-07-13 23:03:09.176 ServerApp] Starting buffering for b4372f8a-68d5-4b28-bdb3-09f6e052dd2b:d1d25a7e-0039-4d1a-8b39-0f8bfd0f8829
+[I 2025-07-13 23:03:51.285 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 23:04:31.347 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-13 23:05:06.393 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/22_BIIOSWOT_spectra.ipynb
+[I 2025-07-13 23:05:26.616 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/22_BIIOSWOT_spectra.ipynb
+[I 2025-07-13 23:05:32.820 ServerApp] Starting buffering for 1771f394-aa22-42ba-a7d9-42e4c349fd81:d1076ce3-9fbf-4430-a0f9-66e2c6e88862
+[I 2025-07-13 23:05:32.820 ServerApp] Starting buffering for 63ee8cc9-c6ce-437e-a456-c5a08c705779:42409f9d-775f-4d73-93d4-829d5a9a4f07
+[I 2025-07-13 23:05:32.821 ServerApp] Starting buffering for f50828bb-3ee5-4be4-a9e5-f151f6b648a5:39dc7570-b02a-4187-8c2b-afda5455e925
+[I 2025-07-13 23:05:32.821 ServerApp] Starting buffering for cd3f4129-5d10-4e7c-a551-9ba789133d43:01be0d4e-06e7-4428-b229-3e6444840761
+[I 2025-07-13 23:05:32.821 ServerApp] Starting buffering for 5f2bc47f-9fb9-48e3-b146-32243cacbe4f:b1ea048e-9858-4587-a649-e4304f6dcb95
+Mon Jul 14 09:30:50 GMT 2025
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

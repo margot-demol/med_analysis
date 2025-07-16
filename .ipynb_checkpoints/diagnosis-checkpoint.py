@@ -93,8 +93,18 @@ def prepared_drifters(dt, drifter_preprocess = '', drifter_preprocess_param='') 
     dfr['f'] =  2 * 2 * np.pi / 86164.1 * np.sin(dfr.latitude * np.pi / 180)
     dfr['core']= -dfr.f * dfr[spectral_key + 'velocity_north']
     dfr['corn']= dfr.f * dfr[spectral_key + 'velocity_east']
+
+    #depth
+    depth = dfr['pass_number'].copy()
+    depth.loc[dfr['drifter_type'].isin(surface_drifters)]=0
+    depth.loc[dfr['drifter_type'].isin(depth_drifters)]=15
+    depth.loc[dfr['drifter_id'].isin(depth_50)]=50
+    depth.loc[dfr['drifter_id'].isin(depth_100)]=100
+
+    dfr['depth'] = depth
+    
     dfr = dfr.rename(columns = {spectral_key + 'acceleration_north':'accn', spectral_key + 'acceleration_east':'acce'})
-    return dfr[['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','cycle_date','drifter_id','drifter_type','accn', 'acce', 'core', 'corn']]
+    return dfr[['datetime', 'longitude', 'latitude', 'pass_number','depth', 'time_to_swot','cycle_number','cycle_date','drifter_id','drifter_type','accn', 'acce', 'core', 'corn']]
 
 
 def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti_product_key='swot2km', alti_diff_method = 'diff_only', alti_diff_method_param = '') :
@@ -147,7 +157,7 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
                 dfs['strain_s_'+v] = g * (dfs['dxx_'+v] - dfs['dyy_'+v])/dfs.f**2
                 dfs['strain_n_'+v] = -2 * g *(dfs['dxy_'+v] - dfs['dxy_'+v])/dfs.f**2
 
-            l = l+['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['vorticity_'+v for v in ggd_var]+['strain_s_'+v for v in ggd_var]+['strain_n_'+v for v in ggd_var]
+            l = l+['ggde_'+v for v in ggd_var]+['ggdn_'+v for v in ggd_var]+['vorticity_'+v for v in ggd_var]+['strain_s_'+v for v in ggd_var]+['strain_n_'+v for v in ggd_var]+['duacs_relative_vorticity', 'duacs_strain']
         
         l = list(set(l))#drop duplicates in list 
         dfs = dfs[l]
@@ -158,12 +168,25 @@ def prepared_alti(dt, drifter_preprocess = '', drifter_preprocess_param='', alti
 def prepared_wd(dt, drifter_preprocess = '', drifter_preprocess_param='', wd_product_key = 'era5', wd_model ='rio'):
     
     colocs_source = define_coloc_source(dt, drifter_preprocess, drifter_preprocess_param)
+    
+    # filtered wind
+    if (drifter_preprocess == 'spectral_decomp') & (drifter_preprocess_param !='') : 
+        spectral_key = drifter_preprocess_param
+    else : spectral_key=''
+
     if wd_model in 'rioagesc': wd_model = 'rioagesc' #both in one file
-    if os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')):
+
+    if drifter_preprocess == 'spectral_decomp' :
+        dfw = pd.read_csv(os.path.join(zarr_dir,'coloc_files', 'wind', 'windcoloc_spectral_decomp_12h_all_med_variational_10min_v1.csv'), dtype={'drifter_id':str}, parse_dates=['datetime']).set_index('row_number')
+        
+    elif os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')):
         dfw = pd.read_csv(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.csv')).set_index('row_number')
-    if os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.parquet')):
+        
+    elif os.path.isfile(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.parquet')):
         dfw = pd.read_parquet(os.path.join(zarr_dir,'coloc_files','wind',f'{wd_product_key}_{wd_model}_'+colocs_source.replace('.nc', '')+'.parquet'))#.set_index('row_number')
-    dfw = dfw[[v for v in dfw if ('vsde' in v or 'vsdn' in v)]]
+
+    dfw = dfw[[v for v in dfw if (spectral_key +'vsde' in v or spectral_key +'vsdn' in v)]]
+    dfw = dfw.rename(columns = {v : v.replace(spectral_key, '') for v in dfw})
     return dfw#.rename(columns ={v : v+'_' +wd_key for v in dfw})
 
 from cstes import surface_drifters, depth_drifters, depth_50, depth_100
@@ -247,7 +270,7 @@ def one_comb(dt,
                     prepared_alti(dt, drifter_preprocess, drifter_preprocess_param, alti_product_key, alti_diff_method, alti_diff_method_param)[l].rename(columns = {'ggde_'+ggd_var:'ggde','ggdn_'+ggd_var:'ggdn'}), 
                     prepared_wd(dt, drifter_preprocess, drifter_preprocess_param, wd_product_key, wd_model)[['vsde_'+wd_model + '_z'+wd_depth,'vsdn_'+wd_model + '_z'+wd_depth]].rename(columns = {'vsde_'+wd_model + '_z'+wd_depth: 'wde','vsdn_'+wd_model + '_z'+wd_depth:'wdn'}),
                    ], axis=1).dropna() # with dropna, depends on the altimetry filter
-    print(len(df))
+
     
     if 'phi' not in df.columns :
         df['phi'] = np.zeros(len(df))
@@ -388,7 +411,11 @@ def compute_mean_square(ds, dirname = ('e', 'n'), compute_error='no', vars_error
     #STATISTICAL ERRORS
     #central limit
     if compute_error == 'centrallimit':
-        dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
+        # effective freedom degree
+        effective_degree = len(ds.isel(id_comb=0).to_dataframe().groupby(['drifter_id', 'cycle_number', 'pass_number'], observed=False).count())
+        print(effective_degree)
+        #dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
+        dsme = (2*dss.std('row_number')/np.sqrt(effective_degree)).rename({v:'er__'+v for v in list(dss.keys())})
         dsm = xr.merge([dsm, dsme])
         
     #bootstrap
@@ -516,7 +543,7 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     dff = pd.concat([dff, df[groupby]], axis=1)
     
     nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
-
+    print(nb_coloc)
     #Balanced and error
     for direction in [dirname[0], dirname[1]]:
         dff['sigma'+direction] = dff['ACC'+direction] + dff['COR'+direction] + dff['GGD'+direction] + dff['WD'+direction]
@@ -540,26 +567,23 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
     
     if isinstance(groupby, str) : grp = [groupby]
     else : grp = groupby
-    
-    # centrallimit errors
+
+    # Effective degree of freedom
+    def compute_freedom_degree(df):
+        return len(df.reset_index().groupby(['drifter_id', 'cycle_number', 'pass_number'], observed=False).count())
+    # effective freedom degree
+    effective_degree = df.set_index(groupby).groupby(groupby, observed=False).apply(compute_freedom_degree)
+
+    #central limit
     if compute_error == 'centrallimit' : 
+        print(effective_degree)
         # Add errors central limit
-        centrallimit = 2*dff.set_index(groupby).groupby(groupby, observed=False)[closure_vars_2D].std().div(np.sqrt(nb_coloc), axis=0) # 95%
-        centrallimit = centrallimit.rename(columns = {v:'ser__'+v for v in closure_vars_2D})
+        centrallimit = 2*dff.set_index(groupby).groupby(groupby, observed=False)[closure_vars_2D].std().div(np.sqrt(effective_degree), axis=0) # 95%
+        centrallimit = centrallimit.rename(columns = {v:'er__'+v for v in closure_vars_2D})
 
     
     # bootstrap errors
     if compute_error == 'bootstrap' : 
-        def mean_df(df):
-            return df.mean()
-        from scipy.stats import bootstrap
-        def compute_bootstrap_error(dff):
-            # print(len(dff))
-            if len(dff) < 3:
-                return np.nan
-            else:
-                data = (dff,)  # samples must be in a sequence
-                return bootstrap(data, statistic=mean_df).standard_error
         #print(vars_errors)
         if vars_errors is None : vars_errors = closure_vars_2D
         #import dask.dataframe as dd
@@ -574,11 +598,11 @@ def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e',
                 #.compute()
             )
             print(v)
-        booterrors = pd.concat(DF, axis=1)*2
-        booterrors = booterrors.rename(columns={v: "ber__" + v for v in booterrors.columns})
+        booterrors = pd.concat(DF, axis=1)*2#factor 2 for 95% confidence interval
+        booterrors = booterrors.rename(columns={v: "er__" + v for v in booterrors.columns})
         # sum of both dim
         for v in vars_errors : 
-            booterrors['ber__'+v.replace('*', '')] = booterrors['ber__'+v.replace('*', dirname[0])] + booterrors['ber__'+v.replace('*', dirname[1])]
+            booterrors['ber__'+v.replace('*', '')] = booterrors['er__'+v.replace('*', dirname[0])] + booterrors['er__'+v.replace('*', dirname[1])]
     
     #Final steps
     dff = dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
@@ -615,7 +639,7 @@ def compute_variance_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n
 
     #remove Mean
     dfm = (df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]] - df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]].groupby(groupby).mean()).reset_index()
-    
+    dfm = pd.concat([dfm, df[['drifter_id', 'pass_number', 'cycle_number']]], axis=1)
     for dir_ in dirname :
         dfm['sum'+dir_] = sum([dfm[v+dir_] for v in var])
 
@@ -914,9 +938,9 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     )
     ax.set_xlabel(r"$[\gamma^2]$")
 
-def plot_error(df, x, v, ax, suf = 'ber__'):
+def plot_error(df, x, v, ax, suf = 'er__', color ="silver", alpha=1):
     ax.fill_between(
-        df[x], df[v] - df[suf + v], df[v] + df[suf + v], color="silver"
+        df[x], df[v] - df[suf + v], df[v] + df[suf + v], color=color, alpha=alpha
     )
 
 def plot_join_pdfs(ds, x, y, binx=100, biny=100):

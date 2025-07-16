@@ -1,0 +1,269 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.19:43516'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.19:55634'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.19:57928'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.19:33221'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.19:47774'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.19:59100
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.19:52135
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.19:37991
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.19:34065
+distributed.worker - INFO -       Start worker at:    tcp://10.148.0.19:52031
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.19:59100
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.19:52135
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.19:37991
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.19:34065
+distributed.worker - INFO -           Worker name:             PBSCluster-1-4
+distributed.worker - INFO -           Worker name:             PBSCluster-1-2
+distributed.worker - INFO -          Listening to:    tcp://10.148.0.19:52031
+distributed.worker - INFO -           Worker name:             PBSCluster-1-1
+distributed.worker - INFO -           Worker name:             PBSCluster-1-3
+distributed.worker - INFO -          dashboard at:          10.148.0.19:35738
+distributed.worker - INFO -          dashboard at:          10.148.0.19:38399
+distributed.worker - INFO -           Worker name:             PBSCluster-1-0
+distributed.worker - INFO -          dashboard at:          10.148.0.19:59088
+distributed.worker - INFO -          dashboard at:          10.148.0.19:34572
+distributed.worker - INFO - Waiting to connect to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - Waiting to connect to:   tcp://10.148.0.188:47923
+distributed.worker - INFO -          dashboard at:          10.148.0.19:43847
+distributed.worker - INFO - Waiting to connect to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - Waiting to connect to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  22.35 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  22.35 GiB
+distributed.worker - INFO -                Memory:                  22.35 GiB
+distributed.worker - INFO -                Memory:                  22.35 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3532000.datarmor0/dask-scratch-space/worker-kzllskeb
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3532000.datarmor0/dask-scratch-space/worker-nt6r6fhy
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3532000.datarmor0/dask-scratch-space/worker-i49p70v0
+distributed.worker - INFO -                Memory:                  22.35 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3532000.datarmor0/dask-scratch-space/worker-a_9vv8q7
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3532000.datarmor0/dask-scratch-space/worker-fmr2pu91
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.188:47923
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.188:47923
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.188:47923
+distributed.worker - INFO -         Registered to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.188:47923
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:   tcp://10.148.0.188:47923
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.188:47923
+distributed.core - INFO - Connection to tcp://10.148.0.188:47923 has been closed.
+distributed.core - INFO - Connection to tcp://10.148.0.188:47923 has been closed.
+distributed.worker - INFO - Stopping worker at tcp://10.148.0.19:37991. Reason: worker-handle-scheduler-connection-broken
+distributed.worker - INFO - Stopping worker at tcp://10.148.0.19:34065. Reason: worker-handle-scheduler-connection-broken
+distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1255, in heartbeat
+    response = await retry_operation(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 455, in retry_operation
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 434, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://10.148.0.19:39355 remote=tcp://10.148.0.188:47923>: ConnectionResetError: [Errno 104] Connection reset by peer
+distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1255, in heartbeat
+    response = await retry_operation(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 455, in retry_operation
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 434, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://10.148.0.19:39353 remote=tcp://10.148.0.188:47923>: ConnectionResetError: [Errno 104] Connection reset by peer
+distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1255, in heartbeat
+    response = await retry_operation(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 455, in retry_operation
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 434, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://10.148.0.19:39351 remote=tcp://10.148.0.188:47923>: ConnectionResetError: [Errno 104] Connection reset by peer
+distributed.core - INFO - Connection to tcp://10.148.0.188:47923 has been closed.
+distributed.core - INFO - Connection to tcp://10.148.0.188:47923 has been closed.
+distributed.worker - INFO - Stopping worker at tcp://10.148.0.19:59100. Reason: worker-handle-scheduler-connection-broken
+distributed.worker - INFO - Stopping worker at tcp://10.148.0.19:52135. Reason: worker-handle-scheduler-connection-broken
+distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1255, in heartbeat
+    response = await retry_operation(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 455, in retry_operation
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 434, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://10.148.0.19:39354 remote=tcp://10.148.0.188:47923>: ConnectionResetError: [Errno 104] Connection reset by peer
+distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1255, in heartbeat
+    response = await retry_operation(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 455, in retry_operation
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 434, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://10.148.0.19:39352 remote=tcp://10.148.0.188:47923>: ConnectionResetError: [Errno 104] Connection reset by peer
+distributed.core - INFO - Connection to tcp://10.148.0.188:47923 has been closed.
+distributed.worker - INFO - Stopping worker at tcp://10.148.0.19:52031. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://10.148.0.19:55634'. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://10.148.0.19:47774'. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://10.148.0.19:57928'. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://10.148.0.19:43516'. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://10.148.0.19:33221'. Reason: worker-handle-scheduler-connection-broken
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Worker closed
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - ERROR - Worker process died unexpectedly
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.19:55634'. Reason: nanny-close-gracefully
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.19:57928'. Reason: nanny-close-gracefully
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.19:43516'. Reason: nanny-close-gracefully
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.19:47774'. Reason: nanny-close-gracefully
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.19:33221'. Reason: nanny-close-gracefully
+distributed.dask_worker - INFO - End worker
