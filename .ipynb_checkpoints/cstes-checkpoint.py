@@ -10,7 +10,7 @@ c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-space = 'datarmor'
+space = 'local'
 version_swot = '2.0.1'
 version_drifter = 'v1'
 
@@ -28,7 +28,7 @@ if space == 'local':
     swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
     swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
     drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
-    zarr_dir = "/Users/mdemol/DATA_MED_COLOC"
+    zarr_dir = "/Users/mdemol/DATA_MED_COLOC_v{version_swot}"
     images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
     #path_wind = 
 
