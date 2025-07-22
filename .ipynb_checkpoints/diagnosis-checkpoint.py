@@ -1214,5 +1214,80 @@ def sshnoisestd_from_MSnoiseggd(E_ggd, d=2e3) :
     
     return np.sqrt(E_ggd*U2*(K*d)**2/(4*g**2*b))
 
+"""
+STRUCTURES ANALYSIS
+________________
+"""
+
+def sel_structure(dfr, cmin, lomin, lamin, cmax, lomax, lamax, pass_, drifter_id):
+    #id = dfr[(dfr.longitude>=lomin)&(dfr.longitude<=lomax)&(dfr.latitude>=lamin)&(dfr.latitude<=lamax)&(dfr.cycle_number>=cmin)&(dfr.cycle_number<=cmax)].drifter_id.unique()
+    id = drifter_id
+    dfr = dfr[((dfr.drifter_id.isin(id))
+               &(dfr.longitude>=lomin)
+               &(dfr.longitude<=lomax)
+               &(dfr.latitude>=lamin)
+               &(dfr.latitude<=lamax)
+               &(dfr.cycle_number>=cmin)
+               &(dfr.cycle_number<=cmax)
+               #&(~((dfr.longitude<4.75)&(dfr.latitude<40.6)))
+              )]
+    return dfr
+
+def generate_0_15m_coloc_dataframe(freq_band, DT = 12):
+
+    
+    # SURFACE
+    base_dic = dict(dt='12h', 
+            drifter_preprocess = 'spectral_decomp',
+            drifter_preprocess_param= freq_band,
+            alti_product_key='swot2km',
+            alti_diff_method = 'fromduacsv',
+            alti_diff_method_param = '',
+            ggd_var = 'fromduacsv',
+            wd_product_key = 'era5', 
+            wd_model ='rio', 
+            wd_depth = '0')
+    
+    
+    comb_list = [base_dic]
+    
+    
+    ds0 = dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True)
+    #ds0 = ds0.where(ds0.depth==0, drop=True)
+    #distance_to_coast = ds0.distance_to_coast.isel(id_comb=0)
+    #ds0['distance_to_coast'] = ('row_number', distance_to_coast.values)
+    ds0 = ds0.where(ds0.time_to_swot/pd.Timedelta('1h')<DT, drop=True)
+    #ds0 = ds0.where((abs(ds0.ggde)<1e-4) & (abs(ds0.ggdn)<1e-4), drop=True)
+    #ds0 = ds0.where(ds0.distance_to_coast>distance_to_coast_max, drop=True)
+    
+    df0 = ds0.to_dataframe().reset_index().set_index('row_number')
+    
+    #DEPTH 15M
+    base_dic = dict(dt='12h', 
+                drifter_preprocess = 'spectral_decomp',
+                drifter_preprocess_param=freq_band,
+                alti_product_key='swot2km',
+                alti_diff_method = 'fromduacsv',
+                alti_diff_method_param = '',
+                ggd_var = 'fromduacsv',
+                wd_product_key = 'era5', 
+                wd_model ='rio', 
+                wd_depth = '15')
+    
+    comb_list = [    
+        base_dic, 
+    ]
+    
+    ds15 = dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True)
+    #ds15 =ds15.where(ds15.depth==15, drop=True)
+    #distance_to_coast = ds15.distance_to_coast.isel(id_comb=0)
+    #ds15['distance_to_coast'] = ('row_number', distance_to_coast.values)
+    ds15 = ds15.where(ds15.time_to_swot/pd.Timedelta('1h')<DT, drop=True)
+    #ds15 = ds15.where((abs(ds15.ggde)<1e-4) & (abs(ds15.ggdn)<1e-4), drop=True)
+    #ds15 = ds15.where(ds15.distance_to_coast>distance_to_coast_max, drop=True)
+    
+    df15 = ds15.to_dataframe().reset_index().set_index('row_number')
+
+    return df0, df15
 
 

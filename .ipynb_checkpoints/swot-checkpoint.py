@@ -480,7 +480,7 @@ def load_swot_tracks(phase="calval", resolution=None, bbox=None, **kwargs):
 
     return out
 
-
+"""
 def plot_swot_tracks(ax, bbox):
     tracks = load_swot_tracks(bbox=bbox)["swath"]
     swot_kwargs = dict(
@@ -498,3 +498,24 @@ def plot_swot_tracks(ax, bbox):
         crs=proj,
         **swot_kwargs,
     )
+"""
+
+
+def plot_swot_tracks(ax, bbox):
+    tracks = load_swot_tracks(bbox=bbox)["swath"]
+    swot_kwargs = dict(
+        facecolor="0.7",
+        edgecolor="white",
+        alpha=0.2,
+        zorder=-1,
+    )
+    # if isinstance(swot_tracks, dict):
+    #    swot_kwargs.update(swot_tracks)
+    proj = ax.projection
+    crs_proj4 = proj.proj4_init
+    ax.add_geometries(
+        tracks.to_crs(crs_proj4)["geometry"],
+        crs=proj,
+        **swot_kwargs,
+    )
+

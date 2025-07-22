@@ -1,0 +1,634 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:43950'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:34672'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:42758'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:49059'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:53135'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:60219'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:41283'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:54326'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:59103'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:60037'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:47022'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:52960'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:54192'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:37984'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:33819'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:35846'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:55026'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:33646'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:39089'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:36335'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:48374'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:44857'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:42639'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:59256'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:36223'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:36239'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:56457'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.148.0.206:42420'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:34767
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:57544
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:50111
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:57544
+distributed.worker - INFO -           Worker name:            PBSCluster-0-12
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:50111
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:34662
+distributed.worker - INFO -          dashboard at:         10.148.0.206:38159
+distributed.worker - INFO -           Worker name:            PBSCluster-0-21
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:34767
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:34662
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -          dashboard at:         10.148.0.206:41880
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:             PBSCluster-0-3
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:            PBSCluster-0-10
+distributed.worker - INFO -          dashboard at:         10.148.0.206:52886
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -          dashboard at:         10.148.0.206:48461
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-p3bkwtup
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-muzcs7wq
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-2zv8i3oq
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:53123
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-82862w91
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:53123
+distributed.worker - INFO -           Worker name:            PBSCluster-0-26
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.206:40425
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-qf46b6g3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:50550
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:50550
+distributed.worker - INFO -           Worker name:             PBSCluster-0-2
+distributed.worker - INFO -          dashboard at:         10.148.0.206:33504
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:58383
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:57218
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:57218
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:58314
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:58383
+distributed.worker - INFO -           Worker name:            PBSCluster-0-27
+distributed.worker - INFO -          dashboard at:         10.148.0.206:57852
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:            PBSCluster-0-15
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:58314
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:57042
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-126qi4ms
+distributed.worker - INFO -           Worker name:            PBSCluster-0-17
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:         10.148.0.206:35620
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-235w5h17
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:57042
+distributed.worker - INFO -          dashboard at:         10.148.0.206:53918
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -           Worker name:            PBSCluster-0-24
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.206:52618
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:48860
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:50052
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-uh_2jfmg
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:48860
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-dzkprou9
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:50052
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:            PBSCluster-0-14
+distributed.worker - INFO -           Worker name:            PBSCluster-0-20
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-be1iysae
+distributed.worker - INFO -          dashboard at:         10.148.0.206:32780
+distributed.worker - INFO -          dashboard at:         10.148.0.206:52191
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-q7r38m2w
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-ryz4kx28
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:38609
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:44634
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:38609
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:44634
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:58901
+distributed.worker - INFO -           Worker name:            PBSCluster-0-18
+distributed.worker - INFO -           Worker name:             PBSCluster-0-9
+distributed.worker - INFO -          dashboard at:         10.148.0.206:57807
+distributed.worker - INFO -          dashboard at:         10.148.0.206:55988
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:58901
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -           Worker name:             PBSCluster-0-0
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          dashboard at:         10.148.0.206:45672
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:34625
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-8qzlv_ru
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-s3j_ao53
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:34625
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -           Worker name:             PBSCluster-0-5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -          dashboard at:         10.148.0.206:50331
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-lgvhfyq1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-4t8z65dz
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:51289
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:51289
+distributed.worker - INFO -           Worker name:             PBSCluster-0-6
+distributed.worker - INFO -          dashboard at:         10.148.0.206:33815
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:55409
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:55409
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:41134
+distributed.worker - INFO -           Worker name:            PBSCluster-0-16
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:41134
+distributed.worker - INFO -          dashboard at:         10.148.0.206:49209
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -           Worker name:             PBSCluster-0-1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-u_d0rq46
+distributed.worker - INFO -          dashboard at:         10.148.0.206:55406
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:42854
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-tkiimxbe
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:45304
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:42854
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:45304
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:             PBSCluster-0-7
+distributed.worker - INFO -           Worker name:             PBSCluster-0-4
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-uulxebju
+distributed.worker - INFO -          dashboard at:         10.148.0.206:53352
+distributed.worker - INFO -          dashboard at:         10.148.0.206:58799
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-od0p8_rb
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-4py0dfem
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:38680
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:38680
+distributed.worker - INFO -           Worker name:             PBSCluster-0-8
+distributed.worker - INFO -          dashboard at:         10.148.0.206:57960
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:45893
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:45893
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:40436
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:58452
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:47877
+distributed.worker - INFO -           Worker name:            PBSCluster-0-11
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-px6z6mfn
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:58452
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:40436
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:47877
+distributed.worker - INFO -          dashboard at:         10.148.0.206:51240
+distributed.worker - INFO -           Worker name:            PBSCluster-0-13
+distributed.worker - INFO -           Worker name:            PBSCluster-0-25
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.206:53163
+distributed.worker - INFO -           Worker name:            PBSCluster-0-22
+distributed.worker - INFO -          dashboard at:         10.148.0.206:46702
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.148.0.206:45608
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-8eoo7513
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:50684
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-s_eg1t5m
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-0qdk0ek6
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:50684
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -           Worker name:            PBSCluster-0-23
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-4g7p43ik
+distributed.worker - INFO -          dashboard at:         10.148.0.206:55358
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-fu314ud7
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.148.0.206:46312
+distributed.worker - INFO -          Listening to:   tcp://10.148.0.206:46312
+distributed.worker - INFO -           Worker name:            PBSCluster-0-19
+distributed.worker - INFO -          dashboard at:         10.148.0.206:39262
+distributed.worker - INFO - Waiting to connect to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   3.99 GiB
+distributed.worker - INFO -       Local Directory: /dev/shm/pbs.3561339.datarmor0/dask-scratch-space/worker-g7ywmi_m
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+distributed.worker - INFO - Starting Worker plugin shuffle
+distributed.worker - INFO -         Registered to:    tcp://10.148.0.93:51323
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection to tcp://10.148.0.93:51323
+Terminated
+distributed._signals - INFO - Received signal SIGTERM (15)
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:34672'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:43950'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:42758'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:54326'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:59256'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:49059'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:55026'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:36239'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:56457'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:47022'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:44857'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:35846'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:54192'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:52960'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:59103'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:39089'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:33819'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:60037'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:53135'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:36223'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:42639'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:48374'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:41283'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:33646'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:36335'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:37984'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:42420'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.148.0.206:60219'. Reason: signal-15
+distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+distributed.nanny - INFO - Worker process 18994 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19019 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19046 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18990 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19001 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19011 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19014 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18992 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18982 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18984 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19040 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19049 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19053 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19073 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18988 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18999 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19017 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19025 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19033 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19055 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19063 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19007 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19022 was killed by unknown signal
+distributed.nanny - INFO - Worker process 18986 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19059 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19027 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19057 was killed by unknown signal
+distributed.nanny - INFO - Worker process 19005 was killed by unknown signal
+distributed.dask_worker - INFO - End worker

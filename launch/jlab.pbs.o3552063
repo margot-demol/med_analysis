@@ -1,0 +1,340 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Sat Jul 19 13:57:05 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-07-19 13:57:08.965 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-07-19 13:57:09.095 ServerApp] Package jupyter_lsp took 0.1283s to import
+[W 2025-07-19 13:57:09.095 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-19 13:57:09.141 ServerApp] Package jupyter_server_terminals took 0.0462s to import
+[I 2025-07-19 13:57:09.142 ServerApp] Package notebook took 0.0000s to import
+[I 2025-07-19 13:57:09.146 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-07-19 13:57:09.146 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-19 13:57:14.110 ServerApp] Package panel.io.jupyter_server_extension took 4.9621s to import
+[I 2025-07-19 13:57:14.110 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-07-19 13:57:14.117 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-07-19 13:57:14.124 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-07-19 13:57:14.130 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-07-19 13:57:14.133 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-07-19 13:57:14.133 ServerApp] notebook | extension was successfully linked.
+[I 2025-07-19 13:57:15.513 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-07-19 13:57:15.514 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-07-19 13:57:15.609 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-07-19 13:57:15.612 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-07-19 13:57:15.613 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-07-19 13:57:15.643 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-07-19 13:57:15.644 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-07-19 13:57:15.645 LabApp] Extension Manager is 'pypi'.
+[I 2025-07-19 13:57:15.648 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-07-19 13:57:15.654 ServerApp] notebook | extension was successfully loaded.
+[I 2025-07-19 13:57:15.655 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-07-19 13:57:15.656 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-07-19 13:57:15.656 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-07-19 13:57:15.656 ServerApp] http://r1i2n30:8877/lab
+[I 2025-07-19 13:57:15.656 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-07-19 13:57:15.656 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-07-19 13:57:15.728 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-07-19 13:59:42.829 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-07-19 13:59:44.177 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_BIOSWOT_timeseries.ipynb is not trusted
+[W 2025-07-19 13:59:44.197 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2025-07-19 13:59:44.740 ServerApp] Kernel started: 27b0c66d-d93c-48db-b618-365358fc8f1d
+[I 2025-07-19 13:59:44.862 ServerApp] Kernel started: 6c145234-1a7d-4660-8697-82869d725352
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 13:59:45.954 ServerApp] Connecting to kernel 27b0c66d-d93c-48db-b618-365358fc8f1d.
+[I 2025-07-19 13:59:45.956 ServerApp] Connecting to kernel 27b0c66d-d93c-48db-b618-365358fc8f1d.
+[I 2025-07-19 13:59:46.074 ServerApp] Connecting to kernel 6c145234-1a7d-4660-8697-82869d725352.
+[I 2025-07-19 13:59:46.080 ServerApp] Connecting to kernel 6c145234-1a7d-4660-8697-82869d725352.
+[I 2025-07-19 13:59:46.154 ServerApp] Connecting to kernel 6c145234-1a7d-4660-8697-82869d725352.
+[W 2025-07-19 14:00:02.364 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:00:08.019 ServerApp] Kernel started: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 14:00:09.037 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 14:01:45.177 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_BIOSWOT_timeseries.ipynb
+[W 2025-07-19 14:01:45.178 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_BIOSWOT_timeseries.ipynb is not trusted
+[I 2025-07-19 14:02:09.199 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:02:09.201 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:04:11.150 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:04:11.151 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:05:12.705 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 14:05:12.738 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 14:05:12.789 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 14:05:12.789 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 14:06:13.534 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:06:13.536 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:06:35.529 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2025-07-19 14:06:42.258 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 14:06:42.292 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 14:06:42.343 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 14:06:42.343 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 14:08:15.064 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:08:15.066 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:10:16.339 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:10:16.340 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:12:17.457 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:12:17.458 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:14:18.373 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:14:18.374 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:16:19.132 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:16:19.133 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:18:20.026 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:18:20.027 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:20:20.786 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:20:20.787 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:22:21.975 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:22:21.976 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:24:22.823 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:24:22.824 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:26:23.601 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:26:23.602 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:28:24.642 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:28:24.643 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:30:25.463 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:30:25.464 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:32:26.293 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:32:26.294 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:34:27.139 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:34:27.140 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:36:29.146 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:36:29.148 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:38:31.406 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:38:31.407 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:40:34.426 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:40:34.428 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 14:42:37.232 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 14:42:37.233 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[W 2025-07-19 18:37:12.344 ServerApp] WebSocket ping timeout after 119947 ms.
+[W 2025-07-19 18:37:15.958 ServerApp] WebSocket ping timeout after 119874 ms.
+[W 2025-07-19 18:37:16.081 ServerApp] WebSocket ping timeout after 119972 ms.
+[I 2025-07-19 18:37:17.347 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 18:37:20.959 ServerApp] Starting buffering for 27b0c66d-d93c-48db-b618-365358fc8f1d:aab26631-d05d-4748-82f0-fd71ead7cdca
+[I 2025-07-19 18:37:21.082 ServerApp] Starting buffering for 6c145234-1a7d-4660-8697-82869d725352:c97110cf-9b96-4ffe-85a7-23edae60ccda
+[I 2025-07-19 20:21:40.001 ServerApp] Connecting to kernel 6c145234-1a7d-4660-8697-82869d725352.
+[I 2025-07-19 20:21:40.002 ServerApp] Restoring connection for 6c145234-1a7d-4660-8697-82869d725352:c97110cf-9b96-4ffe-85a7-23edae60ccda
+[I 2025-07-19 20:21:40.871 ServerApp] Connecting to kernel 27b0c66d-d93c-48db-b618-365358fc8f1d.
+[I 2025-07-19 20:21:40.871 ServerApp] Restoring connection for 27b0c66d-d93c-48db-b618-365358fc8f1d:aab26631-d05d-4748-82f0-fd71ead7cdca
+[I 2025-07-19 20:21:49.260 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 20:21:49.260 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 20:22:25.333 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:22:25.334 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:24:26.769 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:24:26.770 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:26:29.145 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:26:29.146 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:28:30.410 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:28:30.411 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:30:31.446 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:30:31.447 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:32:32.269 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:32:32.270 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:34:33.208 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:34:33.209 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:35:38.948 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 20:35:39.098 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 20:35:39.159 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 20:35:39.159 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 20:36:34.169 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:36:34.171 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:38:34.974 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:38:34.975 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:40:35.898 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:40:35.899 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:42:22.051 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-07-19 20:42:36.932 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:42:36.933 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:44:37.825 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:44:37.826 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:46:38.770 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:46:38.771 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:48:39.563 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:48:39.564 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[W 2025-07-19 20:49:34.824 ServerApp] Notebook med_analysis/00_pre_analysis/140_era5_vs_insituwind.ipynb is not trusted
+[I 2025-07-19 20:49:35.704 ServerApp] Kernel started: 1b9f1a50-336f-4b9e-946e-9385c91b4228
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 20:49:36.808 ServerApp] Connecting to kernel 1b9f1a50-336f-4b9e-946e-9385c91b4228.
+[W 2025-07-19 20:50:07.344 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2025-07-19 20:50:07.823 ServerApp] Kernel started: 6b35149a-62cb-4b25-9e72-437b95505346
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 20:50:08.508 ServerApp] Connecting to kernel 6b35149a-62cb-4b25-9e72-437b95505346.
+[I 2025-07-19 20:50:40.404 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:50:40.405 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:52:41.343 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:52:41.344 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:54:42.248 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:54:42.249 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:56:43.170 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:56:43.171 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 20:58:43.948 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 20:58:43.950 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[W 2025-07-19 21:00:22.755 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-07-19 21:00:23.438 ServerApp] Kernel started: a6e4ffbc-dd06-42cb-8ef4-f79dad688a6a
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 21:00:24.529 ServerApp] Connecting to kernel a6e4ffbc-dd06-42cb-8ef4-f79dad688a6a.
+[W 2025-07-19 21:00:38.811 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_gif.ipynb is not trusted
+[I 2025-07-19 21:00:39.069 ServerApp] Kernel started: 238a4bc0-dd9e-4923-90e3-67a8c6a90aab
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 21:00:39.744 ServerApp] Connecting to kernel 238a4bc0-dd9e-4923-90e3-67a8c6a90aab.
+[I 2025-07-19 21:00:44.764 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:00:44.765 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:02:23.398 ServerApp] Saving file at /med_analysis/03_Overview_visualization/12_image_coloc.ipynb
+[W 2025-07-19 21:02:23.399 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-07-19 21:02:45.727 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:02:45.728 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:04:46.654 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:04:46.655 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:06:47.606 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:06:47.607 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:08:48.648 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:08:48.649 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:10:49.676 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:10:49.677 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:12:50.706 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:12:50.708 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:14:51.669 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:14:51.670 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:16:52.773 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:16:52.773 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:18:53.730 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:18:53.731 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:20:54.716 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:20:54.717 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:22:55.799 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:22:55.800 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:24:56.850 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:24:56.851 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:26:57.871 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:26:57.873 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:28:59.069 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:28:59.071 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:31:00.093 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:31:00.094 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:33:01.323 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:33:01.325 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:35:02.787 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:35:02.789 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:36:55.661 ServerApp] Starting buffering for a6e4ffbc-dd06-42cb-8ef4-f79dad688a6a:9c171da2-d056-4e61-92b6-969feb40469e
+[I 2025-07-19 21:36:56.787 ServerApp] Starting buffering for 238a4bc0-dd9e-4923-90e3-67a8c6a90aab:6e6afc21-1fa7-4061-b377-08c5f7168f13
+[I 2025-07-19 21:36:57.678 ServerApp] Starting buffering for 1b9f1a50-336f-4b9e-946e-9385c91b4228:050adccd-8ee3-4ca4-9f87-1f125759d88b
+[I 2025-07-19 21:36:58.578 ServerApp] Starting buffering for 6b35149a-62cb-4b25-9e72-437b95505346:f0c6de83-5357-40bf-98f3-aa6b5ce4f2e4
+[I 2025-07-19 21:36:59.862 ServerApp] Starting buffering for 6c145234-1a7d-4660-8697-82869d725352:c97110cf-9b96-4ffe-85a7-23edae60ccda
+[I 2025-07-19 21:37:01.214 ServerApp] Starting buffering for 27b0c66d-d93c-48db-b618-365358fc8f1d:aab26631-d05d-4748-82f0-fd71ead7cdca
+[I 2025-07-19 21:37:04.427 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:37:04.428 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:37:58.611 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2025-07-19 21:38:06.492 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 21:38:06.571 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 21:38:06.629 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 21:38:06.629 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 21:39:05.549 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:39:05.551 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:41:06.800 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:41:06.802 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:43:08.366 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:43:08.367 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:45:09.592 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:45:09.593 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:47:10.683 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:47:10.684 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:49:12.004 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:49:12.005 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:50:47.350 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 21:50:47.444 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 21:50:47.504 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 21:50:47.504 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 21:51:13.057 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:51:13.058 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:53:14.132 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:53:14.134 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:55:15.378 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:55:15.383 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:57:16.572 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:57:16.575 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 21:59:18.209 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 21:59:18.210 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:01:19.789 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:01:19.790 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:03:22.974 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:03:22.976 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:05:25.546 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:05:25.547 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:07:29.029 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:07:29.030 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:09:32.282 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:09:32.283 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:11:35.669 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:11:35.671 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:13:38.886 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:13:38.887 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:15:41.457 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:15:41.459 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:19:28.681 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2025-07-19 22:19:44.349 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:19:44.350 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:19:48.116 ServerApp] Kernel restarted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:19:48.171 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+[I 2025-07-19 22:19:48.228 ServerApp] Connecting to kernel 4d0792a1-13ea-43f2-b5d6-210576f0626d.
+[I 2025-07-19 22:19:48.228 ServerApp] Restoring connection for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 22:21:46.947 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:21:46.949 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:23:50.284 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:23:50.286 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:25:53.430 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:25:53.432 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:27:56.218 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:27:56.220 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:30:00.285 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/32_small_structures.ipynb
+[W 2025-07-19 22:30:00.287 ServerApp] Notebook med_analysis/20_dynamical_analysis/32_small_structures.ipynb is not trusted
+[I 2025-07-19 22:32:02.981 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:32:05.242 ServerApp] Copying med_analysis/20_dynamical_analysis/20_overview_structure.ipynb to /med_analysis/20_dynamical_analysis
+[I 2025-07-19 22:33:04.350 ServerApp] Copying med_analysis/20_dynamical_analysis/21_wind_inertia.ipynb to /med_analysis/20_dynamical_analysis
+[I 2025-07-19 22:36:06.923 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:38:09.498 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:42:11.986 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:43:48.154 ServerApp] Kernel interrupted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:43:48.349 ServerApp] Kernel interrupted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:43:48.517 ServerApp] Kernel interrupted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:43:48.715 ServerApp] Kernel interrupted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:43:48.891 ServerApp] Kernel interrupted: 4d0792a1-13ea-43f2-b5d6-210576f0626d
+[I 2025-07-19 22:44:12.671 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:46:13.707 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:48:15.239 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:50:16.087 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:52:17.634 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:56:19.267 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[I 2025-07-19 22:57:17.148 ServerApp] Kernel started: cf8ce89b-e931-44d6-8a75-58402a5ede34
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-19 22:57:18.232 ServerApp] Connecting to kernel cf8ce89b-e931-44d6-8a75-58402a5ede34.
+[I 2025-07-19 22:59:17.031 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-07-19 23:01:17.207 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-07-19 23:05:53.471 ServerApp] Starting buffering for cf8ce89b-e931-44d6-8a75-58402a5ede34:3dd95412-75c3-4690-9421-65880082352b
+[I 2025-07-19 23:05:53.471 ServerApp] Starting buffering for 4d0792a1-13ea-43f2-b5d6-210576f0626d:2365437c-73f1-4da8-a35b-5704b9eee6fa
+Terminated
+[C 2025-07-20 11:15:42.075 ServerApp] received signal 15, stopping
+[I 2025-07-20 11:15:42.079 ServerApp] Shutting down 6 extensions
+[I 2025-07-20 11:15:42.079 ServerApp] Shutting down 8 kernels
+[I 2025-07-20 11:15:42.080 ServerApp] Kernel shutdown: 6c145234-1a7d-4660-8697-82869d725352
+[I 2025-07-20 11:15:42.080 ServerApp] Kernel shutdown: 1b9f1a50-336f-4b9e-946e-9385c91b4228
+[I 2025-07-20 11:15:42.080 ServerApp] Kernel shutdown: 6b35149a-62cb-4b25-9e72-437b95505346
+[I 2025-07-20 11:15:42.081 ServerApp] Kernel shutdown: 238a4bc0-dd9e-4923-90e3-67a8c6a90aab
+[I 2025-07-20 11:15:42.081 ServerApp] Kernel shutdown: 27b0c66d-d93c-48db-b618-365358fc8f1d
+[I 2025-07-20 11:15:42.082 ServerApp] Kernel shutdown: a6e4ffbc-dd06-42cb-8ef4-f79dad688a6a
+[I 2025-07-20 11:15:42.082 ServerApp] Kernel shutdown: cf8ce89b-e931-44d6-8a75-58402a5ede34
+[I 2025-07-20 11:15:42.082 ServerApp] Kernel shutdown: 4d0792a1-13ea-43f2-b5d6-210576f0626d
