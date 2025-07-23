@@ -10,7 +10,7 @@ c0 ={'acc':'#941717', 'cor':'#388E3C','ggd':'#42A5F5', 'wd':'#FFA000'}
 PATHS
 ---------------------------------------------------------------------------------------------------------
 """
-space = 'datarmor'
+space = 'local'
 version_swot = '2.0.1'
 version_drifter = 'v1'
 
@@ -25,10 +25,10 @@ if space == 'datarmor' :
 
 if space == 'local':
     #LOCAL MARGOT
-    swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_1.0.2'
-    swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_1.0.2'
+    swot_dir = '/Users/mdemol/DATA_KARIN/L3_unsmoothed_calval_2.0.1'
+    swot_dir_2km = '/Users/mdemol/DATA_KARIN/L3_calval_2.0.1'
     drifters_dir = '/Users/mdemol/DATA_DRIFTERS/drifters_harmonized'
-    zarr_dir = "/Users/mdemol/DATA_MED_COLOC_v{version_swot}"
+    zarr_dir = f"/Users/mdemol/DATA_MED_COLOC_v{version_swot}"
     images_dir = '/Users/mdemol/ownCloud/PhD/images/med_images'
     #path_wind = 
 
@@ -56,10 +56,10 @@ drifters_sources = 'all_med_variational_10min_v1.nc'
 
 drifters_structure = {
     'Dipole D1': ['300534060113380','300534062474750', '300534060112360', '0-4388605'],
-    'Cyclone C1' : ['300534060112360'], 
-    'Cyclone C2' : ['300534060112360'],#, '4389458', '4388938', '300534060015760'], 
+    'Cyclone C2' : ['300534060112360'], 
+    'Cyclone C3' : ['300534060112360'],#, '4389458', '4388938', '300534060015760'], 
     'Anticyclone A3':[ '300534060116350', '300534060315840', '300534062470440'], 
-    'Cyclone C3' : ['300534060017440','300534061170360', '300534060015760','300534062479690', '4388589', '0-4388635', '13'],
+    'Cyclone C1' : ['300534060017440','300534061170360', '300534060015760','300534062479690', '4388589', '0-4388635', '13'],
     'BioSWOT-Med' : [ '300534060216070',
  '300534062472690', '300534060218400', '0-4388581',
  '4388589', '4388593', '8', '300534062471390', '13', '12',
@@ -120,10 +120,10 @@ drifters_structure = {
 }
 
 structure = {'Dipole D1':dict(cmin=505, lomin = 4, lamin = 39.2, cmax = 516, lomax = 5.15, lamax=40, pass_=3,),
-          'Cyclone C1':dict(cmin=517, lomin = 3.9, lamin = 39.3, cmax = 520, lomax = 4.25, lamax=39.75, pass_=3,),
-            'Cyclone C2':dict(cmin=529, lomin = 4.25, lamin = 38.5, cmax = 542, lomax = 4.75, lamax=39.25, pass_=3,),
+          'Cyclone C2':dict(cmin=517, lomin = 3.9, lamin = 39.3, cmax = 520, lomax = 4.25, lamax=39.75, pass_=3,),
+            'Cyclone C3':dict(cmin=529, lomin = 4.25, lamin = 38.5, cmax = 542, lomax = 4.75, lamax=39.25, pass_=3,),
           'Anticyclone A3':dict(cmin=479, lomin = 4.5, lamin = 41.9, cmax = 493, lomax = 5.1, lamax=42.3, pass_=3,),
-          'Cyclone C3':dict(cmin=499, lomin = 4, lamin = 40.1, cmax = 510, lomax = 4.8, lamax=40.65, pass_=3,),
+          'Cyclone C1':dict(cmin=499, lomin = 4, lamin = 40.1, cmax = 510, lomax = 4.8, lamax=40.65, pass_=3,),
              'BioSWOT-Med' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 523, lomax = 5.5, lamax=41.3, pass_=3,),
              'BioSWOT-Med front F1' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 520, lomax = 5.5, lamax=41.3, pass_=3,),
              'BioSWOT-Med anticyclone A1' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 523, lomax = 5.5, lamax=41.3, pass_=3,),

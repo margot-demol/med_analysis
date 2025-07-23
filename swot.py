@@ -435,7 +435,8 @@ ______________
 PLOT 
 ______________
 """
-platform = "datarmor"
+from cstes import space
+platform = space
 
 def load_swot_tracks(phase="calval", resolution=None, bbox=None, **kwargs):
     """Load SWOT tracks
