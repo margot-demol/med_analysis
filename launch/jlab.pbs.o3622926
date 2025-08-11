@@ -1,0 +1,278 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Fri Jul 25 07:32:59 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-07-25 07:33:02.362 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-07-25 07:33:02.489 ServerApp] Package jupyter_lsp took 0.1245s to import
+[W 2025-07-25 07:33:02.489 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-25 07:33:02.533 ServerApp] Package jupyter_server_terminals took 0.0444s to import
+[I 2025-07-25 07:33:02.534 ServerApp] Package notebook took 0.0000s to import
+[I 2025-07-25 07:33:02.538 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-07-25 07:33:02.538 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-07-25 07:33:07.539 ServerApp] Package panel.io.jupyter_server_extension took 4.9987s to import
+[I 2025-07-25 07:33:07.539 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-07-25 07:33:07.546 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-07-25 07:33:07.552 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-07-25 07:33:07.557 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-07-25 07:33:07.560 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-07-25 07:33:07.561 ServerApp] notebook | extension was successfully linked.
+[I 2025-07-25 07:33:08.873 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-07-25 07:33:08.874 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-07-25 07:33:08.967 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-07-25 07:33:08.970 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-07-25 07:33:08.971 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-07-25 07:33:08.996 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-07-25 07:33:08.996 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-07-25 07:33:08.997 LabApp] Extension Manager is 'pypi'.
+[I 2025-07-25 07:33:09.000 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-07-25 07:33:09.007 ServerApp] notebook | extension was successfully loaded.
+[I 2025-07-25 07:33:09.008 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-07-25 07:33:09.008 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-07-25 07:33:09.008 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-07-25 07:33:09.008 ServerApp] http://r1i1n31:8877/lab
+[I 2025-07-25 07:33:09.008 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-07-25 07:33:09.008 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-07-25 07:33:09.082 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-07-25 07:33:48.303 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-07-25 07:33:49.375 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[W 2025-07-25 07:33:49.519 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_pour_aurelien.ipynb is not trusted
+[I 2025-07-25 07:33:49.946 ServerApp] Kernel started: 0a4fe34e-911b-4d02-9266-0c255c05585c
+[I 2025-07-25 07:33:49.948 ServerApp] Kernel started: 05077dc8-8e64-4572-8049-b25db98faf4c
+[I 2025-07-25 07:33:49.957 ServerApp] Kernel started: a59883b0-7c0a-41a3-8910-d741f1ad206b
+[I 2025-07-25 07:33:50.114 ServerApp] Kernel started: f889ea3f-c603-4964-a9e6-5b2d265b26e4
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 07:33:51.099 ServerApp] Connecting to kernel 0a4fe34e-911b-4d02-9266-0c255c05585c.
+[I 2025-07-25 07:33:51.100 ServerApp] Connecting to kernel a59883b0-7c0a-41a3-8910-d741f1ad206b.
+[I 2025-07-25 07:33:51.121 ServerApp] Connecting to kernel a59883b0-7c0a-41a3-8910-d741f1ad206b.
+[I 2025-07-25 07:33:51.127 ServerApp] Connecting to kernel 05077dc8-8e64-4572-8049-b25db98faf4c.
+[I 2025-07-25 07:33:51.149 ServerApp] Connecting to kernel f889ea3f-c603-4964-a9e6-5b2d265b26e4.
+[I 2025-07-25 07:33:51.151 ServerApp] Connecting to kernel f889ea3f-c603-4964-a9e6-5b2d265b26e4.
+[I 2025-07-25 07:33:51.179 ServerApp] Connecting to kernel f889ea3f-c603-4964-a9e6-5b2d265b26e4.
+[I 2025-07-25 07:34:43.177 ServerApp] Copying med_analysis/20_dynamical_analysis/20_overview_structure.ipynb to /med_analysis/20_dynamical_analysis
+[W 2025-07-25 07:34:43.247 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[W 2025-07-25 07:34:43.310 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[W 2025-07-25 07:34:43.311 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure-Copy1.ipynb is not trusted
+[W 2025-07-25 07:35:10.881 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:35:11.502 ServerApp] Kernel started: 429627e7-0e94-4afd-8507-c45b734d2803
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 07:35:12.583 ServerApp] Connecting to kernel 429627e7-0e94-4afd-8507-c45b734d2803.
+[I 2025-07-25 07:35:50.512 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[W 2025-07-25 07:35:50.513 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[I 2025-07-25 07:37:11.857 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:37:11.858 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:39:12.547 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:39:12.548 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:41:13.166 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:41:13.167 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:43:04.241 ServerApp] Kernel started: 31355474-3c85-4910-9605-94eb8d851f4c
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 07:43:05.609 ServerApp] Connecting to kernel 31355474-3c85-4910-9605-94eb8d851f4c.
+[I 2025-07-25 07:43:13.839 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:43:13.840 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:45:14.578 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:45:14.579 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:47:15.300 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:47:15.301 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:48:51.933 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:48:51.934 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:50:52.622 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:50:52.623 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:52:13.783 ServerApp] Kernel restarted: 429627e7-0e94-4afd-8507-c45b734d2803
+[I 2025-07-25 07:52:13.792 ServerApp] Starting buffering for 429627e7-0e94-4afd-8507-c45b734d2803:2af56121-08f6-415c-8227-9108de80d479
+[I 2025-07-25 07:52:13.800 ServerApp] Connecting to kernel 429627e7-0e94-4afd-8507-c45b734d2803.
+[I 2025-07-25 07:52:13.800 ServerApp] Restoring connection for 429627e7-0e94-4afd-8507-c45b734d2803:2af56121-08f6-415c-8227-9108de80d479
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 07:52:53.376 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:52:53.377 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:54:54.050 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:54:54.051 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:56:54.705 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:56:54.706 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 07:58:55.376 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 07:58:55.377 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[W 2025-07-25 07:58:55.582 ServerApp] /home1/datahome/mdemol/med_analysis/20_dynamical_analysis/.~24_eddy_view.ipynb doesn't exist
+[I 2025-07-25 08:00:56.032 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:00:56.033 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:02:56.905 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:02:56.906 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[W 2025-07-25 08:03:39.979 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-07-25 08:03:40.159 ServerApp] Kernel started: 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 08:03:41.318 ServerApp] Connecting to kernel 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a.
+[I 2025-07-25 08:04:57.606 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:04:57.607 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:05:40.168 ServerApp] Saving file at /med_analysis/03_Overview_visualization/12_image_coloc.ipynb
+[W 2025-07-25 08:05:40.169 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-07-25 08:06:58.318 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:06:58.319 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:08:59.026 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:08:59.027 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:10:59.833 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:10:59.833 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:15:00.649 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:15:00.650 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:17:01.402 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:17:01.403 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:17:27.544 ServerApp] Starting buffering for a59883b0-7c0a-41a3-8910-d741f1ad206b:dba48004-bbbc-4c54-a03e-160737d9441b
+[I 2025-07-25 08:19:02.197 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:19:02.198 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:21:03.019 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:21:03.020 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:23:03.955 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:23:03.956 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:25:04.869 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:25:04.871 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:27:05.713 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:27:05.714 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:29:06.677 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:29:06.679 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:31:07.642 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:31:07.643 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:33:08.582 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:33:08.583 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:35:09.508 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:35:09.509 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:37:10.411 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:37:10.412 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:39:11.361 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:39:11.362 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:41:12.264 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:41:12.265 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:43:13.133 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:43:13.133 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:45:13.953 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:45:13.954 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:47:14.768 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:47:14.769 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:49:15.641 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:49:15.642 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:51:16.475 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 08:51:16.476 ServerApp] Notebook med_analysis/20_dynamical_analysis/24_eddy_view.ipynb is not trusted
+[I 2025-07-25 08:53:16.873 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 08:55:17.830 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 08:57:18.065 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 08:59:18.295 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:01:18.528 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:03:18.788 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:05:19.012 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:07:19.314 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:09:19.618 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:15:20.004 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:17:20.369 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:19:20.722 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:21:21.074 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:23:21.427 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:27:21.787 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 09:29:09.156 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-07-25 09:29:09.190 ServerApp] Connecting to kernel 0a4fe34e-911b-4d02-9266-0c255c05585c.
+[I 2025-07-25 09:29:09.208 ServerApp] Connecting to kernel 05077dc8-8e64-4572-8049-b25db98faf4c.
+[W 2025-07-25 09:29:09.231 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad4e61520>
+[W 2025-07-25 09:29:09.231 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad4e61520>
+[E 2025-07-25 09:29:09.233 ServerApp] Uncaught exception GET /api/kernels/a59883b0-7c0a-41a3-8910-d741f1ad206b/channels?session_id=e44cbda8-8bf2-44f4-a456-06876254df17 (10.148.1.145)
+    HTTPServerRequest(protocol='http', host='localhost:8877', method='GET', uri='/api/kernels/a59883b0-7c0a-41a3-8910-d741f1ad206b/channels?session_id=e44cbda8-8bf2-44f4-a456-06876254df17', version='HTTP/1.1', remote_ip='10.148.1.145')
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/websocket.py", line 65, in get
+        await super().get(kernel_id=kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/websocket.py", line 272, in get
+        await self.ws_connection.accept_connection(self)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/websocket.py", line 862, in accept_connection
+        await self._accept_connection(handler)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/websocket.py", line 902, in _accept_connection
+        self.selected_subprotocol = handler.select_subprotocol(subprotocols)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/websocket.py", line 87, in select_subprotocol
+        preferred_protocol = self.connection.kernel_ws_protocol
+    AttributeError: 'NoneType' object has no attribute 'kernel_ws_protocol'
+[E 2025-07-25 09:29:09.282 ServerApp] {
+      "Host": "localhost:8877",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    }
+[E 2025-07-25 09:29:09.282 ServerApp] 500 GET /api/kernels/a59883b0-7c0a-41a3-8910-d741f1ad206b/channels?session_id=e44cbda8-8bf2-44f4-a456-06876254df17 (9e82025fd82f40aeae7728a2dad8c931@10.148.1.145) 53.83ms referer=None
+[I 2025-07-25 09:29:22.548 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 09:40:49.723 ServerApp] Starting buffering for 429627e7-0e94-4afd-8507-c45b734d2803:2af56121-08f6-415c-8227-9108de80d479
+[I 2025-07-25 09:40:49.723 ServerApp] Starting buffering for 31355474-3c85-4910-9605-94eb8d851f4c:0f4c011f-1320-492f-b3f2-d082d702474b
+[I 2025-07-25 09:40:49.724 ServerApp] Starting buffering for 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a:0de31f89-723b-449e-a799-f73db964e7cd
+[I 2025-07-25 09:40:49.724 ServerApp] Starting buffering for 0a4fe34e-911b-4d02-9266-0c255c05585c:2c148807-917f-48f2-a5b2-a7ff26e7aeff
+[I 2025-07-25 09:40:49.724 ServerApp] Starting buffering for 05077dc8-8e64-4572-8049-b25db98faf4c:a212cd66-b064-4aa4-a84e-45e5bc55f967
+[I 2025-07-25 09:40:49.725 ServerApp] Starting buffering for f889ea3f-c603-4964-a9e6-5b2d265b26e4:6628a9e1-1cef-412b-bca2-dcc9be55324b
+[I 2025-07-25 09:44:00.822 ServerApp] Connecting to kernel 31355474-3c85-4910-9605-94eb8d851f4c.
+[I 2025-07-25 09:44:00.822 ServerApp] Restoring connection for 31355474-3c85-4910-9605-94eb8d851f4c:0f4c011f-1320-492f-b3f2-d082d702474b
+[I 2025-07-25 09:44:04.596 ServerApp] Connecting to kernel 429627e7-0e94-4afd-8507-c45b734d2803.
+[I 2025-07-25 09:44:04.596 ServerApp] Restoring connection for 429627e7-0e94-4afd-8507-c45b734d2803:2af56121-08f6-415c-8227-9108de80d479
+[I 2025-07-25 09:44:06.902 ServerApp] Connecting to kernel f889ea3f-c603-4964-a9e6-5b2d265b26e4.
+[I 2025-07-25 09:44:06.902 ServerApp] Restoring connection for f889ea3f-c603-4964-a9e6-5b2d265b26e4:6628a9e1-1cef-412b-bca2-dcc9be55324b
+[I 2025-07-25 09:44:09.454 ServerApp] Connecting to kernel 05077dc8-8e64-4572-8049-b25db98faf4c.
+[I 2025-07-25 09:44:09.455 ServerApp] Restoring connection for 05077dc8-8e64-4572-8049-b25db98faf4c:a212cd66-b064-4aa4-a84e-45e5bc55f967
+[I 2025-07-25 09:44:10.239 ServerApp] Kernel started: a612db5f-2a18-487e-ad54-aaedc33c7d1d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-07-25 09:44:11.878 ServerApp] Connecting to kernel a612db5f-2a18-487e-ad54-aaedc33c7d1d.
+[I 2025-07-25 09:44:13.990 ServerApp] Connecting to kernel 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a.
+[I 2025-07-25 09:44:13.991 ServerApp] Restoring connection for 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a:0de31f89-723b-449e-a799-f73db964e7cd
+[I 2025-07-25 09:44:23.779 ServerApp] Connecting to kernel 0a4fe34e-911b-4d02-9266-0c255c05585c.
+[I 2025-07-25 09:44:23.780 ServerApp] Restoring connection for 0a4fe34e-911b-4d02-9266-0c255c05585c:2c148807-917f-48f2-a5b2-a7ff26e7aeff
+[I 2025-07-25 09:46:10.147 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-07-25 11:37:07.256 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:39:08.255 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:43:09.243 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:45:09.325 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:47:09.390 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:49:09.471 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:51:09.579 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:55:10.227 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 11:57:11.219 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:01:12.221 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:03:12.327 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:05:12.437 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:07:12.545 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:09:12.637 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:11:12.723 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-07-25 12:22:06.362 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:24:06.726 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:26:07.353 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:28:07.701 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:30:08.354 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:36:10.326 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:38:10.678 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:40:11.106 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:42:12.382 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:57:06.366 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 12:59:06.820 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 13:01:07.286 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 13:03:08.827 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 13:05:09.368 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-07-25 13:27:06.342 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[W 2025-07-25 14:00:23.780 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-07-25 14:00:28.782 ServerApp] Starting buffering for 0a4fe34e-911b-4d02-9266-0c255c05585c:2c148807-917f-48f2-a5b2-a7ff26e7aeff
+[W 2025-07-25 14:00:30.823 ServerApp] WebSocket ping timeout after 119996 ms.
+[W 2025-07-25 14:00:34.597 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-07-25 14:00:35.824 ServerApp] Starting buffering for 31355474-3c85-4910-9605-94eb8d851f4c:0f4c011f-1320-492f-b3f2-d082d702474b
+[W 2025-07-25 14:00:36.903 ServerApp] WebSocket ping timeout after 119996 ms.
+[W 2025-07-25 14:00:39.456 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-07-25 14:00:39.599 ServerApp] Starting buffering for 429627e7-0e94-4afd-8507-c45b734d2803:2af56121-08f6-415c-8227-9108de80d479
+[W 2025-07-25 14:00:41.879 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-07-25 14:00:41.904 ServerApp] Starting buffering for f889ea3f-c603-4964-a9e6-5b2d265b26e4:6628a9e1-1cef-412b-bca2-dcc9be55324b
+[W 2025-07-25 14:00:43.992 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-07-25 14:00:44.457 ServerApp] Starting buffering for 05077dc8-8e64-4572-8049-b25db98faf4c:a212cd66-b064-4aa4-a84e-45e5bc55f967
+[I 2025-07-25 14:00:46.879 ServerApp] Starting buffering for a612db5f-2a18-487e-ad54-aaedc33c7d1d:d41ef9fc-3690-4fb3-9168-9ce59097366f
+[I 2025-07-25 14:00:48.996 ServerApp] Starting buffering for 3ee5f22a-3ce8-4772-a5e2-92f1349c3c8a:0de31f89-723b-449e-a799-f73db964e7cd
+Sat Jul 26 07:32:59 GMT 2025
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
