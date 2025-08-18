@@ -997,6 +997,45 @@ def plot_join_pdfs(ds, x, y, binx=100, biny=100):
 def select_row(df, pass_number, cycle_number, drifter_id):
     return df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()
 
+
+import cartopy.feature as cfeature
+from pyproj import Geod
+
+def scale_bar(ax, length, location=(0.5, 0.05), linewidth=3):
+    """
+    Ajoute une barre d’échelle en km sur une carte Cartopy.
+    - ax : axes matplotlib/cartopy
+    - length : longueur de la barre en km
+    - location : position (x,y) en coordonnées axes [0,1]
+    - linewidth : épaisseur de la barre
+    """
+    # Projection géodésique pour calculer les distances
+    geod = Geod(ellps="WGS84")
+
+    # Récupérer l’étendue actuelle de la carte
+    x0, x1, y0, y1 = ax.get_extent(ccrs.PlateCarree())
+
+    # Latitude au centre pour minimiser la distorsion
+    lat = (y0 + y1) / 2
+
+    # Point central de la barre
+    lon_center = (x0 + x1) / 2
+    lat_center = y0 + (y1 - y0) * location[1]
+
+    # Conversion de km → degrés longitude
+    lon1 = lon_center - length / (2 * 111) / np.cos(np.deg2rad(lat))
+    lon2 = lon_center + length / (2 * 111) / np.cos(np.deg2rad(lat))
+
+    # Tracer la barre
+    ax.plot([lon1, lon2], [lat_center, lat_center],
+            transform=ccrs.PlateCarree(), color='k', linewidth=linewidth)
+
+    # Label
+    ax.text(lon_center, lat_center - (y1-y0)*0.02,
+            f"{length} km", ha='center', va='top',
+            transform=ccrs.PlateCarree())
+
+    
 """ 
 _________________________________________
 ---- ONE COLOC PLOTS ----
