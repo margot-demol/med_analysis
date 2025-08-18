@@ -27,9 +27,9 @@ if version_swot == '2.0.1':
 
 
 # Stencil method
-def apply_stencil_diff(image, var, dx, dy):
+def apply_stencil_diff_old(image, var, dx, dy):
     """
-    Apply same stencil as CLS
+    Apply same stencil as CLS (email)
     input : 
         image : 2D array, image swot
         var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
@@ -40,10 +40,10 @@ def apply_stencil_diff(image, var, dx, dy):
     """
     from scipy.ndimage import convolve
     assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
-    
-    stx = np.array([[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280]])
+    S = [1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280]
+    stx = np.array([S])
     sty = stx.T
-    norm = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
+    norm = -sum(np.arange(0, 9)*S)
 
     if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx/norm
     if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy/norm
@@ -52,6 +52,36 @@ def apply_stencil_diff(image, var, dx, dy):
     if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx/(norm**2)
     
     return xr.DataArray(output, dims=image.dims)
+
+
+def apply_stencil_diff(image, var, dx, dy):
+    """
+    Apply same stencil as CLS Arbic 2012
+    input : 
+        image : 2D array, image swot
+        var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
+
+        dx : float, x direction time step
+        dy : float, y direction time step
+    May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
+    """
+    from scipy.ndimage import convolve
+    assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
+    S = np.array([-3, 32, -168, 672, 0, -672, 168, -32, 3])/840
+    stx = np.array([S])
+    sty = stx.T
+    norm = -sum(np.arange(0, 9)*S)
+
+    if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx/norm
+    if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy/norm
+    if var == 'dxx' : output = convolve(convolve(image, stx, mode='mirror'), stx)/dx/dx/(norm**2)
+    if var == 'dyy' : output = convolve(convolve(image, sty, mode='mirror'), sty)/dy/dy/(norm**2)
+    if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx/(norm**2)
+    
+    return xr.DataArray(output, dims=image.dims)
+    
+
+
 
 # Fitting kernel
 def fitting_coeff(image, var, dx, dy): 
@@ -430,32 +460,7 @@ def nb_mask_grid(lon, lat, lon1, lat1, dl):
                 break
 
     return mask1
-
-
-# original script
-def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
-    """
-    Filter swot_image with a gaussian filter
-    input : 
-        swot_image : 2D array, image swot
-        cutoff :  float, cutoff length (width at mid height of the gaussian filter)
-        mask : 2D array with 0 out of swot swath and 1 within
-        dx : float, x direction time step
-        dy : float, y direction time step - not used here ...?
-    """
-    from scipy.ndimage import convolve1d
-    import scipy.signal.windows as wdw
     
-    # Gaussian a la mano
-    lambda_cutoff = cutoff/dx
-    sigma_cutoff = lambda_cutoff * np.sqrt(np.log(2))
-    Mg = int(2 * np.round(4*lambda_cutoff)+1)
-    gaussian = wdw.gaussian(Mg, std = sigma_cutoff)
-    fg = xr.DataArray(convolve1d(convolve1d(swot_image.fillna(0), gaussian, axis=0), gaussian, axis=1), dims=swot_image.dims)#unnromalized
-    fm = xr.DataArray(convolve1d(convolve1d(mask, gaussian, axis=0), gaussian, axis=1), dims=mask.dims)#unnormalized
-    return xr.DataArray(fg/fm, dims=swot_image.dims)#normalized
-
-
 def apply_gaussian_filter_nb(
     swot_image, cutoff, mask, dx, 
 ):

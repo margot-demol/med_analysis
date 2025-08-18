@@ -1,0 +1,191 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Mon Aug 11 08:33:04 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-08-11 08:33:08.374 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-08-11 08:33:08.518 ServerApp] Package jupyter_lsp took 0.1432s to import
+[W 2025-08-11 08:33:08.518 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-08-11 08:33:08.572 ServerApp] Package jupyter_server_terminals took 0.0535s to import
+[I 2025-08-11 08:33:08.572 ServerApp] Package notebook took 0.0000s to import
+[I 2025-08-11 08:33:08.577 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-08-11 08:33:08.577 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-08-11 08:33:14.782 ServerApp] Package panel.io.jupyter_server_extension took 6.2034s to import
+[I 2025-08-11 08:33:14.783 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-11 08:33:14.789 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-11 08:33:14.796 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-11 08:33:14.801 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-11 08:33:14.804 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-08-11 08:33:14.804 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-11 08:33:16.313 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-11 08:33:16.314 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-08-11 08:33:16.419 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-11 08:33:16.422 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-11 08:33:16.423 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-11 08:33:16.466 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-08-11 08:33:16.466 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-08-11 08:33:16.468 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-11 08:33:16.471 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-11 08:33:16.478 ServerApp] notebook | extension was successfully loaded.
+[I 2025-08-11 08:33:16.479 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-08-11 08:33:16.480 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-08-11 08:33:16.480 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-08-11 08:33:16.480 ServerApp] http://r1i6n6:8877/lab
+[I 2025-08-11 08:33:16.480 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-08-11 08:33:16.480 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-11 08:33:16.576 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-08-11 08:34:31.161 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-08-11 08:34:32.487 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[W 2025-08-11 08:34:32.658 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-08-11 08:34:33.293 ServerApp] Kernel started: 8061686c-ec8e-4050-ba10-617ddfee9397
+[I 2025-08-11 08:34:33.294 ServerApp] Kernel started: 61d2d24e-86f3-4ad7-aa76-d25828c76c45
+[I 2025-08-11 08:34:33.299 ServerApp] Kernel started: 08bcae20-c7e6-4cea-a1c5-dff0bcbc529d
+[I 2025-08-11 08:34:33.350 ServerApp] Kernel started: b867f8b6-304b-414d-a116-3f7057f12ead
+[I 2025-08-11 08:34:33.357 ServerApp] Kernel started: fa341b4b-bdfb-4792-bbb4-f73a88cb1134
+[I 2025-08-11 08:34:33.612 ServerApp] Kernel started: 0417bfad-bc80-4753-baf7-82b670b6601f
+[I 2025-08-11 08:34:33.617 ServerApp] Kernel started: d82dabdf-7c43-4f59-b25a-8bfcd5518db7
+readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-08-11 08:34:34.892 ServerApp] Connecting to kernel 8061686c-ec8e-4050-ba10-617ddfee9397.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-08-11 08:34:34.922 ServerApp] Connecting to kernel 61d2d24e-86f3-4ad7-aa76-d25828c76c45.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-08-11 08:34:34.952 ServerApp] Connecting to kernel 08bcae20-c7e6-4cea-a1c5-dff0bcbc529d.
+[I 2025-08-11 08:34:34.954 ServerApp] Connecting to kernel 08bcae20-c7e6-4cea-a1c5-dff0bcbc529d.
+[I 2025-08-11 08:34:34.984 ServerApp] Connecting to kernel b867f8b6-304b-414d-a116-3f7057f12ead.
+[I 2025-08-11 08:34:34.986 ServerApp] Connecting to kernel fa341b4b-bdfb-4792-bbb4-f73a88cb1134.
+[I 2025-08-11 08:34:35.010 ServerApp] Connecting to kernel fa341b4b-bdfb-4792-bbb4-f73a88cb1134.
+[I 2025-08-11 08:34:35.019 ServerApp] Connecting to kernel fa341b4b-bdfb-4792-bbb4-f73a88cb1134.
+[I 2025-08-11 08:34:35.051 ServerApp] Connecting to kernel d82dabdf-7c43-4f59-b25a-8bfcd5518db7.
+[W 2025-08-11 08:34:35.060 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad01f95b0>
+[I 2025-08-11 08:34:35.061 ServerApp] Connecting to kernel 0417bfad-bc80-4753-baf7-82b670b6601f.
+[I 2025-08-11 08:34:35.078 ServerApp] Connecting to kernel d82dabdf-7c43-4f59-b25a-8bfcd5518db7.
+[W 2025-08-11 08:34:35.093 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad01dcb80>
+[I 2025-08-11 08:34:35.098 ServerApp] Connecting to kernel d82dabdf-7c43-4f59-b25a-8bfcd5518db7.
+[W 2025-08-11 08:34:35.123 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabfefaee0>
+[W 2025-08-11 08:34:35.164 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabeed1850>
+[I 2025-08-11 08:34:45.933 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-08-11 08:34:47.610 ServerApp] Saving file at /med_analysis/03_Overview_visualization/12_image_coloc.ipynb
+[W 2025-08-11 08:34:47.610 ServerApp] Notebook med_analysis/03_Overview_visualization/12_image_coloc.ipynb is not trusted
+[I 2025-08-11 08:34:48.803 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/22_timeseries_structure.ipynb
+[W 2025-08-11 08:35:02.141 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:35:02.437 ServerApp] Kernel started: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-08-11 08:35:03.614 ServerApp] Connecting to kernel 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4.
+[I 2025-08-11 08:36:32.692 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-08-11 08:36:32.765 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-08-11 08:36:33.735 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-08-11 08:36:34.048 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/20_overview_structure.ipynb
+[W 2025-08-11 08:36:34.048 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[I 2025-08-11 08:37:02.544 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:37:02.545 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:39:02.849 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:39:02.850 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:41:03.197 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:41:03.198 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:43:03.502 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:43:03.503 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:45:03.874 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:45:03.875 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:47:04.195 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:47:04.197 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:49:04.520 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:49:04.521 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:49:52.816 ServerApp] Kernel restarted: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 08:49:52.887 ServerApp] Starting buffering for 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4:f9465c55-95d1-443d-83eb-a1c1e6f013b5
+[I 2025-08-11 08:49:52.895 ServerApp] Connecting to kernel 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4.
+[I 2025-08-11 08:49:52.895 ServerApp] Restoring connection for 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4:f9465c55-95d1-443d-83eb-a1c1e6f013b5
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-08-11 08:51:05.682 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:51:05.683 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:53:06.021 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:53:06.022 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:55:06.691 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:55:06.692 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:57:07.251 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:57:07.253 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 08:59:07.569 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 08:59:07.570 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:01:08.673 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:01:08.674 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:03:09.655 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:03:09.656 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:05:09.982 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:05:09.984 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:07:10.302 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:07:10.303 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:09:10.678 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:09:10.679 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:11:10.976 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:11:10.977 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:13:11.291 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:13:11.292 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:14:06.991 ServerApp] Kernel interrupted: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 09:14:07.175 ServerApp] Kernel interrupted: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 09:14:07.376 ServerApp] Kernel interrupted: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 09:14:07.575 ServerApp] Kernel interrupted: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 09:15:11.613 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:15:11.614 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:17:11.938 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:17:11.939 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:21:12.323 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:21:12.324 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:23:12.663 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:23:12.664 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:25:12.981 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:25:12.982 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:27:13.316 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:27:13.317 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:29:13.629 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:29:13.630 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:31:13.940 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:31:13.941 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:33:14.255 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:33:14.256 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:35:14.567 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:35:14.568 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:37:14.887 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:37:14.887 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:41:15.194 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:41:15.195 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:43:15.516 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:43:15.517 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:45:15.849 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:45:15.850 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 09:47:16.146 ServerApp] Saving file at /med_analysis/03_Overview_visualization/17_distributions.ipynb
+[W 2025-08-11 09:47:16.147 ServerApp] Notebook med_analysis/03_Overview_visualization/17_distributions.ipynb is not trusted
+[I 2025-08-11 13:35:49.075 ServerApp] Starting buffering for 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4:f9465c55-95d1-443d-83eb-a1c1e6f013b5
+[I 2025-08-11 13:35:49.076 ServerApp] Starting buffering for 8061686c-ec8e-4050-ba10-617ddfee9397:6a186b52-d787-4bb4-b072-15a836cdb596
+[I 2025-08-11 13:35:49.077 ServerApp] Starting buffering for 61d2d24e-86f3-4ad7-aa76-d25828c76c45:0d4e828a-2bfe-446f-9974-d0e5a2427f93
+[I 2025-08-11 13:35:49.077 ServerApp] Starting buffering for 08bcae20-c7e6-4cea-a1c5-dff0bcbc529d:60294f28-088d-4021-a0af-125d29301ea8
+[I 2025-08-11 13:35:49.077 ServerApp] Starting buffering for d82dabdf-7c43-4f59-b25a-8bfcd5518db7:150168d6-de89-4bf5-ad08-9213cb11e203
+[I 2025-08-11 13:35:49.078 ServerApp] Starting buffering for b867f8b6-304b-414d-a116-3f7057f12ead:bb8326fe-ef0f-4e33-bb90-80ef25fdb38d
+[I 2025-08-11 13:35:49.078 ServerApp] Starting buffering for fa341b4b-bdfb-4792-bbb4-f73a88cb1134:dfb90d98-e825-48df-b4f6-601f8005b46e
+[I 2025-08-11 13:35:49.078 ServerApp] Starting buffering for 0417bfad-bc80-4753-baf7-82b670b6601f:ec9b6cc9-c273-45d1-8a87-133ea106bfce
+[C 2025-08-11 13:35:54.931 ServerApp] received signal 15, stopping
+Terminated
+[I 2025-08-11 13:35:54.945 ServerApp] Shutting down 6 extensions
+[I 2025-08-11 13:35:54.945 ServerApp] Shutting down 8 kernels
+[I 2025-08-11 13:35:54.946 ServerApp] Kernel shutdown: 8061686c-ec8e-4050-ba10-617ddfee9397
+[I 2025-08-11 13:35:54.947 ServerApp] Kernel shutdown: 08bcae20-c7e6-4cea-a1c5-dff0bcbc529d
+[I 2025-08-11 13:35:54.947 ServerApp] Kernel shutdown: b867f8b6-304b-414d-a116-3f7057f12ead
+[I 2025-08-11 13:35:54.948 ServerApp] Kernel shutdown: 0417bfad-bc80-4753-baf7-82b670b6601f
+[I 2025-08-11 13:35:54.949 ServerApp] Kernel shutdown: d82dabdf-7c43-4f59-b25a-8bfcd5518db7
+[I 2025-08-11 13:35:54.949 ServerApp] Kernel shutdown: 61d2d24e-86f3-4ad7-aa76-d25828c76c45
+[I 2025-08-11 13:35:54.950 ServerApp] Kernel shutdown: 2d33a3da-5a1b-4edc-93e6-ccba8087b6e4
+[I 2025-08-11 13:35:54.950 ServerApp] Kernel shutdown: fa341b4b-bdfb-4792-bbb4-f73a88cb1134

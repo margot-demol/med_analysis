@@ -127,7 +127,7 @@ structure = {'Dipole D1':dict(cmin=505, lomin = 4, lamin = 39.2, cmax = 516, lom
              'BioSWOT-Med' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 523, lomax = 5.5, lamax=41.3, pass_=3,),
              'BioSWOT-Med front F1' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 520, lomax = 5.5, lamax=41.3, pass_=3,),
              'BioSWOT-Med anticyclone A1' : dict(cmin=500, lomin = 4.75, lamin = 40.3, cmax = 523, lomax = 5.5, lamax=41.3, pass_=3,),
-             'FaSt-SWOT anticyclone A2' : dict(cmin=501, lomin = 1.25, lamin = 39.5, cmax = 524, lomax = 2, lamax=40.2, pass_=16,),
+             'FaSt-SWOT anticyclone A2' : dict(cmin=501, lomin = 1.25, lamin = 39.5, cmax = 523, lomax = 2, lamax=40.2, pass_=16,),
          }          
 for k in structure :
     structure[k].update({'drifter_id':drifters_structure[k]})
