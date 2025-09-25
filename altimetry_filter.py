@@ -353,7 +353,7 @@ def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla, di
     return ds_diff
 
 
-## Gaussian filtering - Aurelien
+## Gaussian filtering - Aurelien ###
 
 @njit()
 def _dist_geo(lon1, lat1, lon2, lat2):
