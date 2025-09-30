@@ -1,0 +1,149 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Thu Sep 25 13:32:19 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-09-25 13:32:23.507 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-09-25 13:32:23.651 ServerApp] Package jupyter_lsp took 0.1439s to import
+[W 2025-09-25 13:32:23.651 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-09-25 13:32:23.712 ServerApp] Package jupyter_server_terminals took 0.0604s to import
+[I 2025-09-25 13:32:23.713 ServerApp] Package notebook took 0.0000s to import
+[I 2025-09-25 13:32:23.718 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-09-25 13:32:23.718 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-09-25 13:32:30.141 ServerApp] Package panel.io.jupyter_server_extension took 6.4211s to import
+[I 2025-09-25 13:32:30.142 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-09-25 13:32:30.148 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-09-25 13:32:30.155 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-09-25 13:32:30.162 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-09-25 13:32:30.165 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-09-25 13:32:30.165 ServerApp] notebook | extension was successfully linked.
+[I 2025-09-25 13:32:31.653 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-09-25 13:32:31.653 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-09-25 13:32:31.757 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-09-25 13:32:31.759 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-09-25 13:32:31.761 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-09-25 13:32:31.795 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-09-25 13:32:31.795 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-09-25 13:32:31.796 LabApp] Extension Manager is 'pypi'.
+[I 2025-09-25 13:32:31.799 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-09-25 13:32:31.807 ServerApp] notebook | extension was successfully loaded.
+[I 2025-09-25 13:32:31.807 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-09-25 13:32:31.808 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-09-25 13:32:31.808 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-09-25 13:32:31.808 ServerApp] http://r1i1n0:8877/lab
+[I 2025-09-25 13:32:31.808 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-09-25 13:32:31.808 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-09-25 13:32:31.887 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-09-25 13:34:24.341 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-09-25 13:34:25.394 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[W 2025-09-25 13:34:25.442 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/28_mean_sla.ipynb is not trusted
+[I 2025-09-25 13:34:26.178 ServerApp] Kernel started: 546982e6-c372-4a8f-827a-d2c69f530840
+[I 2025-09-25 13:34:26.179 ServerApp] Kernel started: f760a6e0-04a9-4bef-8dff-ac0fca7f8a0f
+[I 2025-09-25 13:34:26.180 ServerApp] Kernel started: 953040fc-4b2c-409b-9e3f-d6697f7e3f20
+[I 2025-09-25 13:34:26.183 ServerApp] Kernel started: a81d076e-e341-405e-999f-4e26208a65a4
+[I 2025-09-25 13:34:26.256 ServerApp] Kernel started: 55047df9-3fbb-4bba-ab3d-3903e7c6d0fa
+[I 2025-09-25 13:34:26.257 ServerApp] Kernel started: 09cd3a1c-9f7b-4e40-9d9d-a4feb1dba03b
+[I 2025-09-25 13:34:26.262 ServerApp] Kernel started: b29789df-5fd7-4513-bafd-f186ee1968a9
+[I 2025-09-25 13:34:26.281 ServerApp] Kernel started: 8c9579b7-9cf7-45c6-90fe-c22b945814c8
+[I 2025-09-25 13:34:26.305 ServerApp] Kernel started: c16e1e5f-0074-4d0a-afad-5d15f7856949
+readline: readline: readline: /etc/inputrc: line 19: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:34:27.549 ServerApp] Connecting to kernel 546982e6-c372-4a8f-827a-d2c69f530840.
+[I 2025-09-25 13:34:27.551 ServerApp] Connecting to kernel b29789df-5fd7-4513-bafd-f186ee1968a9.
+readline: /etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:34:27.597 ServerApp] Connecting to kernel f760a6e0-04a9-4bef-8dff-ac0fca7f8a0f.
+[I 2025-09-25 13:34:27.615 ServerApp] Starting buffering for b29789df-5fd7-4513-bafd-f186ee1968a9:859b77c6-b581-4e00-8592-844e978e9703
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:34:27.629 ServerApp] Connecting to kernel a81d076e-e341-405e-999f-4e26208a65a4.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:34:27.654 ServerApp] Connecting to kernel 55047df9-3fbb-4bba-ab3d-3903e7c6d0fa.
+[I 2025-09-25 13:34:27.674 ServerApp] Connecting to kernel 09cd3a1c-9f7b-4e40-9d9d-a4feb1dba03b.
+[I 2025-09-25 13:34:27.693 ServerApp] Connecting to kernel b29789df-5fd7-4513-bafd-f186ee1968a9.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:34:27.708 ServerApp] Connecting to kernel 953040fc-4b2c-409b-9e3f-d6697f7e3f20.
+[I 2025-09-25 13:34:27.722 ServerApp] Connecting to kernel c16e1e5f-0074-4d0a-afad-5d15f7856949.
+[I 2025-09-25 13:34:27.746 ServerApp] Connecting to kernel 8c9579b7-9cf7-45c6-90fe-c22b945814c8.
+[I 2025-09-25 13:34:27.752 ServerApp] Connecting to kernel c16e1e5f-0074-4d0a-afad-5d15f7856949.
+[I 2025-09-25 13:34:27.778 ServerApp] Connecting to kernel c16e1e5f-0074-4d0a-afad-5d15f7856949.
+[W 2025-09-25 13:34:27.799 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad4268af0>
+[I 2025-09-25 13:34:42.082 ServerApp] Starting buffering for 8c9579b7-9cf7-45c6-90fe-c22b945814c8:47fd455c-2d07-40c8-b1ee-a53f48c2e781
+[I 2025-09-25 13:34:43.015 ServerApp] Starting buffering for b29789df-5fd7-4513-bafd-f186ee1968a9:cc5d7909-7e05-4b2b-8ff4-f86485ab150c
+[I 2025-09-25 13:34:43.898 ServerApp] Starting buffering for 55047df9-3fbb-4bba-ab3d-3903e7c6d0fa:9b02007c-7a5c-48bc-b7bb-a6ce71540d66
+[I 2025-09-25 13:34:45.433 ServerApp] Starting buffering for 09cd3a1c-9f7b-4e40-9d9d-a4feb1dba03b:00566175-083a-4c62-988e-08f78f366871
+[I 2025-09-25 13:34:46.252 ServerApp] Starting buffering for f760a6e0-04a9-4bef-8dff-ac0fca7f8a0f:1f87730a-8fad-4dcb-a6bd-98444e592b22
+[I 2025-09-25 13:34:46.836 ServerApp] Starting buffering for c16e1e5f-0074-4d0a-afad-5d15f7856949:626e9ebf-f6c9-4939-8d6e-5b92615f407a
+[I 2025-09-25 13:34:47.518 ServerApp] Starting buffering for 953040fc-4b2c-409b-9e3f-d6697f7e3f20:e4a7bda9-a82a-4c6c-8643-038d14844ea8
+[I 2025-09-25 13:34:48.032 ServerApp] Starting buffering for a81d076e-e341-405e-999f-4e26208a65a4:4c26efeb-a0be-4f24-812b-cc6e64e6396d
+[I 2025-09-25 13:34:48.569 ServerApp] Starting buffering for 546982e6-c372-4a8f-827a-d2c69f530840:11355ae5-623d-4d65-9b49-f0c231d23089
+[I 2025-09-25 13:35:03.715 ServerApp] Kernel started: 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:35:04.841 ServerApp] Connecting to kernel 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d.
+[I 2025-09-25 13:36:06.204 ServerApp] Saving file at /med_analysis/cstes.py
+[I 2025-09-25 13:36:11.694 ServerApp] Kernel restarted: 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d
+[I 2025-09-25 13:36:11.701 ServerApp] Starting buffering for 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d:61778871-79fe-4ea1-8f45-899d267b481f
+[I 2025-09-25 13:36:11.705 ServerApp] Connecting to kernel 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d.
+[I 2025-09-25 13:36:11.705 ServerApp] Restoring connection for 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d:61778871-79fe-4ea1-8f45-899d267b481f
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:37:03.723 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-09-25 13:39:05.123 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-09-25 13:41:05.465 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-09-25 13:43:05.813 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/24_eddy_view.ipynb
+[I 2025-09-25 13:54:32.113 ServerApp] Starting buffering for 7c1a4b6f-e0bf-4d99-98d6-8c7755bb713d:61778871-79fe-4ea1-8f45-899d267b481f
+[W 2025-09-25 13:54:38.326 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[I 2025-09-25 13:54:38.493 ServerApp] Kernel started: 2d30d0f7-6db7-4f24-a0ab-121008649388
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:54:39.749 ServerApp] Connecting to kernel 2d30d0f7-6db7-4f24-a0ab-121008649388.
+[W 2025-09-25 13:55:53.526 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 13:55:53.669 ServerApp] Connecting to kernel a81d076e-e341-405e-999f-4e26208a65a4.
+[I 2025-09-25 13:56:38.396 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[W 2025-09-25 13:56:38.398 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[I 2025-09-25 13:57:53.585 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 13:57:53.586 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 13:57:59.333 ServerApp] Kernel started: ffcb22c2-5812-41c9-83fc-de668fab9027
+[I 2025-09-25 13:58:00.477 ServerApp] Kernel started: 6fd08bb4-702a-4ac7-be46-e276c3d6df9e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:58:00.613 ServerApp] Connecting to kernel ffcb22c2-5812-41c9-83fc-de668fab9027.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-25 13:58:01.331 ServerApp] Connecting to kernel 6fd08bb4-702a-4ac7-be46-e276c3d6df9e.
+[I 2025-09-25 13:58:09.317 ServerApp] Starting buffering for ffcb22c2-5812-41c9-83fc-de668fab9027:af14cae6-c41a-4b44-a98c-a6fbae396a08
+[I 2025-09-25 13:59:53.633 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 13:59:53.634 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 14:01:53.688 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 14:01:53.689 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 14:03:53.741 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 14:03:53.742 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 14:05:53.796 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 14:05:53.797 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 14:08:00.428 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-09-25 14:10:00.490 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-09-25 14:11:53.850 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-25 14:11:53.851 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-25 14:12:00.540 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/12_spectra.ipynb
+[I 2025-09-25 15:02:19.346 ServerApp] Starting buffering for 2d30d0f7-6db7-4f24-a0ab-121008649388:00c3d3ef-85ef-47cd-a0a4-d8327088a2ed
+[I 2025-09-25 15:02:19.346 ServerApp] Starting buffering for a81d076e-e341-405e-999f-4e26208a65a4:f385e2bd-a410-44e7-abfc-d8002a183d24
+[I 2025-09-25 15:02:19.347 ServerApp] Starting buffering for 6fd08bb4-702a-4ac7-be46-e276c3d6df9e:7ab26e28-765d-440f-84e2-6b7a3057a5a2
+[I 2025-09-25 15:02:22.832 ServerApp] Connecting to kernel 6fd08bb4-702a-4ac7-be46-e276c3d6df9e.
+[I 2025-09-25 15:02:22.832 ServerApp] Restoring connection for 6fd08bb4-702a-4ac7-be46-e276c3d6df9e:7ab26e28-765d-440f-84e2-6b7a3057a5a2
+[I 2025-09-25 15:02:22.833 ServerApp] Connecting to kernel a81d076e-e341-405e-999f-4e26208a65a4.
+[I 2025-09-25 15:02:22.833 ServerApp] Restoring connection for a81d076e-e341-405e-999f-4e26208a65a4:f385e2bd-a410-44e7-abfc-d8002a183d24
+[I 2025-09-25 15:02:22.853 ServerApp] Connecting to kernel 2d30d0f7-6db7-4f24-a0ab-121008649388.
+[I 2025-09-25 15:02:22.853 ServerApp] Restoring connection for 2d30d0f7-6db7-4f24-a0ab-121008649388:00c3d3ef-85ef-47cd-a0a4-d8327088a2ed
+[I 2025-09-25 15:05:09.810 ServerApp] Starting buffering for 6fd08bb4-702a-4ac7-be46-e276c3d6df9e:7ab26e28-765d-440f-84e2-6b7a3057a5a2
+[I 2025-09-25 15:05:09.811 ServerApp] Starting buffering for a81d076e-e341-405e-999f-4e26208a65a4:f385e2bd-a410-44e7-abfc-d8002a183d24
+[I 2025-09-25 15:05:09.811 ServerApp] Starting buffering for 2d30d0f7-6db7-4f24-a0ab-121008649388:00c3d3ef-85ef-47cd-a0a4-d8327088a2ed
+Fri Sep 26 13:32:19 GMT 2025
