@@ -27,36 +27,10 @@ if version_swot == '2.0.1':
 
 
 # Stencil method
-def apply_stencil_diff_old(image, var, dx, dy):
-    """
-    Apply same stencil as CLS (email)
-    input : 
-        image : 2D array, image swot
-        var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
-
-        dx : float, x direction time step
-        dy : float, y direction time step
-    May be revised using Tranchant code : https://github.com/treden/SwotDiag/blob/main/SwotDiag/misc.py
-    """
-    from scipy.ndimage import convolve
-    assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
-    S = [1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280]
-    stx = np.array([S])
-    sty = stx.T
-    norm = -sum(np.arange(0, 9)*S)
-
-    if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx/norm
-    if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy/norm
-    if var == 'dxx' : output = convolve(convolve(image, stx, mode='mirror'), stx)/dx/dx/(norm**2)
-    if var == 'dyy' : output = convolve(convolve(image, sty, mode='mirror'), sty)/dy/dy/(norm**2)
-    if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx/(norm**2)
-    
-    return xr.DataArray(output, dims=image.dims)
-
 
 def apply_stencil_diff(image, var, dx, dy):
     """
-    Apply same stencil as CLS Arbic 2012
+    Apply same stencil as CLS = Arbic 2012
     input : 
         image : 2D array, image swot
         var : str, must be in 'cste', 'dx', 'dy', 'dxx', 'dyy', 'dxy'
@@ -67,20 +41,21 @@ def apply_stencil_diff(image, var, dx, dy):
     """
     from scipy.ndimage import convolve
     assert var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'], "var must be in 'dx', 'dy', 'dxx', 'dyy', 'dxy'"
-    S = np.array([-3, 32, -168, 672, 0, -672, 168, -32, 3])/840
-    stx = np.array([S])
-    sty = stx.T
-    norm = -sum(np.arange(0, 9)*S)
 
-    if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx/norm
-    if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy/norm
-    if var == 'dxx' : output = convolve(convolve(image, stx, mode='mirror'), stx)/dx/dx/(norm**2)
-    if var == 'dyy' : output = convolve(convolve(image, sty, mode='mirror'), sty)/dy/dy/(norm**2)
-    if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx/(norm**2)
+    S = -np.array([-3, 32, -168, 672, 0, -672, 168, -32, 3])/840
+    norm = -sum(np.arange(0, 9)*S)
+    stx = np.array([S/norm])
+    sty = stx.T
+    print(norm)
+    
+    if var == 'dx' : output = convolve(image, stx, mode='mirror')/dx
+    if var == 'dy' : output = convolve(image, sty, mode='mirror')/dy
+    if var == 'dxx' : output = convolve(convolve(image, stx, mode='mirror'), stx)/dx/dx#/(norm**2)
+    if var == 'dyy' : output = convolve(convolve(image, sty, mode='mirror'), sty)/dy/dy#/(norm**2)
+    if var == 'dxy' : output = convolve(convolve(image, stx, mode='mirror'), sty)/dy/dx#/(norm**2)
+    
     
     return xr.DataArray(output, dims=image.dims)
-    
-
 
 
 # Fitting kernel
@@ -224,7 +199,7 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
                 D.append(output)
             
 
-            #gaussian method using aviso at the edge
+            #gaussian method with 2D filter (version 'a la mano' with numba by aurelien)
             elif filter_diff_method == 'gaussian_aviso' :
                 assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
                 
@@ -253,30 +228,30 @@ def filter_diff_one(f, filter_diff_method = 'gaussian', filter_diff_kwargs = {'c
 
         
             #gaussian method with 2D filter (version 'a la mano' with numba by aurelien)
-            elif filter_diff_method == 'gaussian_aviso' :
-                assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
+            #elif filter_diff_method == 'gaussian_aviso' :
+            #    assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
                 
-                #AVISO
-                aviso = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc', 'L4_sealevel', L4_key+'.nc'))
-                # select only area where swath is ... adjust for swath 16
-                aviso = aviso.sel(longitude=slice(ds.longitude.min()-1,ds.longitude.max()+1), latitude=slice(ds.latitude.min()-1, ds.latitude.max()+1))
-                aviso = aviso.interp(time = ds.time.mean().compute().values)
-                aviso = aviso['adt']
+            #    #AVISO
+            #    aviso = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc', 'L4_sealevel', L4_key+'.nc'))
+            #    # select only area where swath is ... adjust for swath 16
+            #    aviso = aviso.sel(longitude=slice(ds.longitude.min()-1,ds.longitude.max()+1), latitude=slice(ds.latitude.min()-1, ds.latitude.max()+1))
+            #    aviso = aviso.interp(time = ds.time.mean().compute().values)
+            #    aviso = aviso['adt']
                 #return swot_image, mask, dx, aviso
 
-                output = apply_gaussian_filter_nb(swot_image, **filter_diff_kwargs, mask = mask, dx = dx).rename('filtered_'+eta).to_dataset()
+            #    output = apply_gaussian_filter_nb(swot_image, **filter_diff_kwargs, mask = mask, dx = dx).rename('filtered_'+eta).to_dataset()
 
-                #stencil diff
-                #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
-                #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
+             #   #stencil diff
+            #    #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] : 
+            #    #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
                 
-                # xarray diff
-                output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
-                output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
-                output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
-                output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
-                output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
-                D.append(output)
+            #    # xarray diff
+            #    output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
+            #    output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
+            #    output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
+            #    output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
+            #    output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
+            #    D.append(output)
             
             # Fitting kernel method
             elif filter_diff_method == 'fitting_kernel' :
@@ -353,7 +328,7 @@ def compute_filter_diff(ds, filter_diff_method, filter_diff_kwargs, mean_sla, di
     return ds_diff
 
 
-## Gaussian filtering - Aurelien
+## Gaussian filtering - Aurelien ###
 
 @njit()
 def _dist_geo(lon1, lat1, lon2, lat2):

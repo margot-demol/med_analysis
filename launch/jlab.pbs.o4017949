@@ -1,0 +1,128 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Tue Sep 30 08:43:12 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-09-30 08:43:16.890 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-09-30 08:43:17.031 ServerApp] Package jupyter_lsp took 0.1395s to import
+[W 2025-09-30 08:43:17.031 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-09-30 08:43:17.080 ServerApp] Package jupyter_server_terminals took 0.0485s to import
+[I 2025-09-30 08:43:17.080 ServerApp] Package notebook took 0.0000s to import
+[I 2025-09-30 08:43:17.085 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-09-30 08:43:17.085 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-09-30 08:43:22.871 ServerApp] Package panel.io.jupyter_server_extension took 5.7844s to import
+[I 2025-09-30 08:43:22.872 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-09-30 08:43:22.879 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-09-30 08:43:22.885 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-09-30 08:43:22.891 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-09-30 08:43:22.894 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-09-30 08:43:22.894 ServerApp] notebook | extension was successfully linked.
+[I 2025-09-30 08:43:24.322 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-09-30 08:43:24.322 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-09-30 08:43:24.424 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-09-30 08:43:24.427 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-09-30 08:43:24.428 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-09-30 08:43:24.458 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-09-30 08:43:24.458 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-09-30 08:43:24.459 LabApp] Extension Manager is 'pypi'.
+[I 2025-09-30 08:43:24.462 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-09-30 08:43:24.470 ServerApp] notebook | extension was successfully loaded.
+[I 2025-09-30 08:43:24.471 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-09-30 08:43:24.471 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-09-30 08:43:24.471 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-09-30 08:43:24.471 ServerApp] http://r1i6n16:8877/lab
+[I 2025-09-30 08:43:24.471 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-09-30 08:43:24.471 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-09-30 08:43:24.565 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-09-30 09:26:10.832 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-09-30 09:26:11.891 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[W 2025-09-30 09:26:11.928 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 09:26:12.275 ServerApp] Kernel started: 3d2d3159-be33-455d-9bdf-a120f8e7ca4a
+[I 2025-09-30 09:26:12.275 ServerApp] Kernel started: 235cdaed-9f36-4d49-a691-d2e27e2cb6db
+[I 2025-09-30 09:26:12.277 ServerApp] Kernel started: 2911cb3c-8643-4073-a22c-b37ac883622d
+readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-30 09:26:13.509 ServerApp] Connecting to kernel 3d2d3159-be33-455d-9bdf-a120f8e7ca4a.
+[I 2025-09-30 09:26:13.529 ServerApp] Connecting to kernel 235cdaed-9f36-4d49-a691-d2e27e2cb6db.
+[I 2025-09-30 09:26:13.543 ServerApp] Connecting to kernel 2911cb3c-8643-4073-a22c-b37ac883622d.
+[I 2025-09-30 09:26:13.547 ServerApp] Connecting to kernel 2911cb3c-8643-4073-a22c-b37ac883622d.
+[I 2025-09-30 09:26:13.564 ServerApp] Connecting to kernel 2911cb3c-8643-4073-a22c-b37ac883622d.
+[W 2025-09-30 09:26:13.623 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabef334f0>
+[W 2025-09-30 09:26:42.302 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:26:42.485 ServerApp] Kernel started: 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-09-30 09:26:43.605 ServerApp] Connecting to kernel 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e.
+[I 2025-09-30 09:28:42.363 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:28:42.363 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:30:42.414 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:30:42.414 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:32:42.473 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:32:42.474 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:34:42.528 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:34:42.529 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:36:42.604 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:36:42.604 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:38:42.663 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:38:42.663 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:40:42.717 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:40:42.717 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:42:42.795 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:42:42.795 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:44:42.864 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:44:42.864 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:50:24.757 ServerApp] Saving file at /med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb
+[W 2025-09-30 09:50:24.758 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 09:50:55.342 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 09:50:55.344 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 09:52:55.392 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 09:52:55.393 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 09:54:55.444 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 09:54:55.445 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 09:56:55.494 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 09:56:55.495 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[W 2025-09-30 09:59:13.511 ServerApp] WebSocket ping timeout after 119999 ms.
+[W 2025-09-30 09:59:13.531 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-09-30 09:59:13.547 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-09-30 09:59:13.606 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2025-09-30 09:59:18.513 ServerApp] Starting buffering for 3d2d3159-be33-455d-9bdf-a120f8e7ca4a:8b8b8612-f7e6-43d0-836f-f2f40f4900b4
+[I 2025-09-30 09:59:18.532 ServerApp] Starting buffering for 235cdaed-9f36-4d49-a691-d2e27e2cb6db:fae8c5f5-a8e4-4d9e-adaf-70db04e46668
+[I 2025-09-30 09:59:18.548 ServerApp] Starting buffering for 2911cb3c-8643-4073-a22c-b37ac883622d:9192eacb-752b-46db-bb79-296c7a2812d3
+[I 2025-09-30 09:59:18.606 ServerApp] Starting buffering for 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e:9d51ff21-9688-4203-a3f3-0f60e379798a
+[W 2025-09-30 12:20:05.537 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-09-30 12:20:05.574 ServerApp] Connecting to kernel 3d2d3159-be33-455d-9bdf-a120f8e7ca4a.
+[I 2025-09-30 12:20:05.590 ServerApp] Connecting to kernel 235cdaed-9f36-4d49-a691-d2e27e2cb6db.
+[I 2025-09-30 12:20:05.607 ServerApp] Connecting to kernel 2911cb3c-8643-4073-a22c-b37ac883622d.
+[I 2025-09-30 12:20:05.648 ServerApp] Connecting to kernel 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e.
+[I 2025-09-30 12:20:05.677 ServerApp] Starting buffering for 3d2d3159-be33-455d-9bdf-a120f8e7ca4a:0985c4e2-3d20-4e99-ae0c-7d8f75b0edf1
+[I 2025-09-30 12:20:05.677 ServerApp] Starting buffering for 235cdaed-9f36-4d49-a691-d2e27e2cb6db:aef2b351-fa24-43e9-a437-20bf73806975
+[I 2025-09-30 12:20:05.684 ServerApp] Starting buffering for 2911cb3c-8643-4073-a22c-b37ac883622d:6373ce98-cee5-450c-89ec-fab11525bc6f
+[I 2025-09-30 12:20:05.701 ServerApp] Starting buffering for 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e:bb59834d-d2db-429a-92c7-7b55377deabe
+[W 2025-09-30 12:20:06.279 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[W 2025-09-30 12:20:06.296 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[W 2025-09-30 12:20:06.334 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-09-30 12:20:06.647 ServerApp] Connecting to kernel 3d2d3159-be33-455d-9bdf-a120f8e7ca4a.
+[I 2025-09-30 12:20:06.669 ServerApp] Connecting to kernel 2911cb3c-8643-4073-a22c-b37ac883622d.
+[I 2025-09-30 12:20:06.685 ServerApp] Connecting to kernel 235cdaed-9f36-4d49-a691-d2e27e2cb6db.
+[I 2025-09-30 12:20:06.699 ServerApp] Connecting to kernel 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e.
+[I 2025-09-30 12:22:06.426 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 12:22:06.427 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 13:08:16.270 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-09-30 13:08:16.272 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2025-09-30 13:08:18.703 ServerApp] Starting buffering for 6047f3a9-ff89-4e61-94a6-2c0c29c44c6e:adeab1a7-51f0-4f9e-9aa2-f8f9e918bb54
+[I 2025-09-30 13:08:18.704 ServerApp] Starting buffering for 2911cb3c-8643-4073-a22c-b37ac883622d:78b8e47b-61bd-44e2-8b87-20d9ba404ad6
+[I 2025-09-30 13:08:18.704 ServerApp] Starting buffering for 3d2d3159-be33-455d-9bdf-a120f8e7ca4a:cfd4ef93-9973-48c1-9a6d-251bca478437
+[I 2025-09-30 13:08:18.705 ServerApp] Starting buffering for 235cdaed-9f36-4d49-a691-d2e27e2cb6db:dcd25f12-8bd2-4c15-ae86-d72f668f63ca
+Wed Oct  1 08:43:13 GMT 2025

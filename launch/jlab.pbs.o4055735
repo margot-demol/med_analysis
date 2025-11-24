@@ -1,0 +1,119 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Tue Oct  7 09:33:54 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-10-07 09:33:57.944 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-10-07 09:33:58.081 ServerApp] Package jupyter_lsp took 0.1358s to import
+[W 2025-10-07 09:33:58.081 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-10-07 09:33:58.132 ServerApp] Package jupyter_server_terminals took 0.0506s to import
+[I 2025-10-07 09:33:58.132 ServerApp] Package notebook took 0.0000s to import
+[I 2025-10-07 09:33:58.138 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-10-07 09:33:58.138 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-10-07 09:34:03.636 ServerApp] Package panel.io.jupyter_server_extension took 5.4960s to import
+[I 2025-10-07 09:34:03.636 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-10-07 09:34:03.643 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-10-07 09:34:03.649 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-10-07 09:34:03.654 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-10-07 09:34:03.658 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-10-07 09:34:03.658 ServerApp] notebook | extension was successfully linked.
+[I 2025-10-07 09:34:05.111 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-10-07 09:34:05.112 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-10-07 09:34:05.218 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-10-07 09:34:05.220 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-10-07 09:34:05.222 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-10-07 09:34:05.260 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-10-07 09:34:05.260 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-10-07 09:34:05.264 LabApp] Extension Manager is 'pypi'.
+[I 2025-10-07 09:34:05.267 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-10-07 09:34:05.274 ServerApp] notebook | extension was successfully loaded.
+[I 2025-10-07 09:34:05.275 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-10-07 09:34:05.275 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-10-07 09:34:05.275 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-10-07 09:34:05.275 ServerApp] http://r2i0n13:8877/lab
+[I 2025-10-07 09:34:05.275 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-10-07 09:34:05.275 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-10-07 09:34:05.338 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-10-07 12:18:37.806 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-10-07 12:18:38.935 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/22_seastate_duacs.ipynb is not trusted
+[I 2025-10-07 12:18:39.587 ServerApp] Kernel started: 3c9b4009-6954-42f8-93e0-ee8f7e7fe916
+[I 2025-10-07 12:18:39.589 ServerApp] Kernel started: 9056c106-cd7a-4fb2-afb7-2f96ced3bfff
+[I 2025-10-07 12:18:39.589 ServerApp] Kernel started: a01850e9-b2f0-4f95-963e-80f36d2b69cb
+[I 2025-10-07 12:18:39.611 ServerApp] Kernel started: 5aa627ff-ce02-4026-9215-372f158658b2
+[I 2025-10-07 12:18:39.628 ServerApp] Kernel started: 5f81bf07-1b2d-4d29-8570-135c69005068
+readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-10-07 12:18:40.862 ServerApp] Connecting to kernel 3c9b4009-6954-42f8-93e0-ee8f7e7fe916.
+[I 2025-10-07 12:18:40.872 ServerApp] Connecting to kernel 5aa627ff-ce02-4026-9215-372f158658b2.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-10-07 12:18:40.890 ServerApp] Connecting to kernel 9056c106-cd7a-4fb2-afb7-2f96ced3bfff.
+[I 2025-10-07 12:18:40.895 ServerApp] Connecting to kernel a01850e9-b2f0-4f95-963e-80f36d2b69cb.
+[I 2025-10-07 12:18:40.910 ServerApp] Connecting to kernel 5aa627ff-ce02-4026-9215-372f158658b2.
+[I 2025-10-07 12:18:40.925 ServerApp] Connecting to kernel 5f81bf07-1b2d-4d29-8570-135c69005068.
+[I 2025-10-07 12:18:40.935 ServerApp] Connecting to kernel 5f81bf07-1b2d-4d29-8570-135c69005068.
+[I 2025-10-07 12:18:40.947 ServerApp] Connecting to kernel 5f81bf07-1b2d-4d29-8570-135c69005068.
+[W 2025-10-07 12:18:41.000 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabfee9550>
+[I 2025-10-07 12:20:39.255 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-10-07 12:22:39.963 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-10-07 12:24:40.370 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[W 2025-10-07 12:24:40.426 ServerApp] /home1/datahome/mdemol/med_analysis/20_dynamical_analysis/.~01_closure_spectral_decomp_surface.ipynb doesn't exist
+[I 2025-10-07 12:30:40.827 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-10-07 12:32:39.822 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 12:34:40.814 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 12:36:40.908 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 12:38:40.767 ServerApp] Saving file at /med_analysis/diagnosis.py
+[I 2025-10-07 12:38:41.017 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 12:40:41.803 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 12:42:32.081 ServerApp] Copying med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb to /med_analysis/10_swot_capabilities_diags
+[I 2025-10-07 12:42:43.413 ServerApp] Kernel started: 91f87ed9-1377-47ed-9a75-4b319d9dcb34
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-10-07 12:42:44.501 ServerApp] Connecting to kernel 91f87ed9-1377-47ed-9a75-4b319d9dcb34.
+[I 2025-10-07 12:44:43.359 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:46:43.478 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:48:43.579 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:50:43.656 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:52:43.723 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:54:43.784 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:56:43.856 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 12:58:43.938 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 13:02:44.745 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 13:06:55.755 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:10:57.744 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:12:57.844 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:14:57.944 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:16:03.564 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:16:14.428 ServerApp] Kernel shutdown: 91f87ed9-1377-47ed-9a75-4b319d9dcb34
+[W 2025-10-07 13:16:15.776 ServerApp] delete /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp_velocities.ipynb
+[I 2025-10-07 13:16:19.997 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:17:04.788 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[I 2025-10-07 13:18:35.330 ServerApp] Starting buffering for 3c9b4009-6954-42f8-93e0-ee8f7e7fe916:a05272e1-07f4-4fac-8041-20cd16ca7b4b
+[I 2025-10-07 13:21:25.726 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-10-07 13:23:21.069 ServerApp] Connecting to kernel 3c9b4009-6954-42f8-93e0-ee8f7e7fe916.
+[I 2025-10-07 13:27:25.827 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb
+[I 2025-10-07 13:48:56.669 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[I 2025-10-07 13:50:56.754 ServerApp] Saving file at /med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb
+[W 2025-10-07 13:57:10.893 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-10-07 13:57:10.895 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-10-07 13:57:10.910 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-10-07 13:57:10.936 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2025-10-07 13:57:15.895 ServerApp] Starting buffering for 9056c106-cd7a-4fb2-afb7-2f96ced3bfff:b5c3a493-8332-4fb3-bd22-e7d57dd37c2f
+[I 2025-10-07 13:57:15.896 ServerApp] Starting buffering for a01850e9-b2f0-4f95-963e-80f36d2b69cb:513e19fc-df4b-4c7d-9785-01a1e47e38d1
+[I 2025-10-07 13:57:15.911 ServerApp] Starting buffering for 5aa627ff-ce02-4026-9215-372f158658b2:f10ac7bb-d090-4076-bb16-d9e93e66c628
+[I 2025-10-07 13:57:15.937 ServerApp] Starting buffering for 5f81bf07-1b2d-4d29-8570-135c69005068:8faeff2f-56e2-418f-b5eb-9c7486bce86c
+[W 2025-10-07 13:57:21.072 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2025-10-07 13:57:26.074 ServerApp] Starting buffering for 3c9b4009-6954-42f8-93e0-ee8f7e7fe916:90b7a168-1a15-4209-bdeb-95ab9de6a398
+Wed Oct  8 09:33:54 GMT 2025

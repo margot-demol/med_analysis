@@ -7,12 +7,22 @@ import matplotlib.pyplot as plt
 import os
 from glob import glob
 
-from cstes import c0, U2, zarr_dir, surface_drifters, depth_drifters, depth_100, depth_50, images_dir
+from cstes import (
+    c0,
+    U2,
+    zarr_dir,
+    surface_drifters,
+    depth_drifters,
+    depth_100,
+    depth_50,
+    images_dir,
+)
 from swot import browse_swot_250m, browse_swot_2km
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 import cartopy.geodesic as cgeo
+
 crs = ccrs.PlateCarree()
 
 import cartopy.geodesic as geod
@@ -27,68 +37,104 @@ from cstes import drifters_sources, version_swot
 
 from cstes import surface_drifters, depth_drifters, depth_50, depth_100
 
-def create_prod_exc_sum(df,id_comb, null_mean = False):
-    coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi', 'distance_to_coast']
+
+def create_prod_exc_sum(df, id_comb, null_mean=False):
+    coords_list = [
+        "datetime",
+        "longitude",
+        "latitude",
+        "pass_number",
+        "time_to_swot",
+        "cycle_number",
+        "drifter_id",
+        "drifter_type",
+        "depth",
+        "phi",
+        "distance_to_coast",
+    ]
     ds = df[coords_list].to_xarray()
-    ds['id_comb'] = id_comb
+    ds["id_comb"] = id_comb
 
-    for direction in ['e', 'n'] : 
-            if direction == 'e' : l = {'acc':'acce', 'cor':'core', 'ggd':'ggde', 'wd':'wde'}
-            if direction == 'n' : l = {'acc':'accn', 'cor':'corn', 'ggd':'ggdn', 'wd':'wdn'}
+    for direction in ["e", "n"]:
+        if direction == "e":
+            l = {"acc": "acce", "cor": "core", "ggd": "ggde", "wd": "wde"}
+        if direction == "n":
+            l = {"acc": "accn", "cor": "corn", "ggd": "ggdn", "wd": "wdn"}
 
-            if null_mean : 
-                for v in l:
-                    df[l[v]] = df[l[v]] - df[l[v]].mean()
-                
-            # sum 
-            ds['sum'+direction] = sum([df[l[v]] for v in l])
+        if null_mean:
+            for v in l:
+                df[l[v]] = df[l[v]] - df[l[v]].mean()
 
-            # simple var + sum- one term
-            for v in l :
-                ds[l[v]] = df[l[v]]
-                ds['exc'+direction+'_'+v] = ds['sum'+direction]-ds[l[v]]
-                
-            #2 by 2 product    
-            import itertools  
-            couple = list(itertools.combinations(list(l.keys()),2))
-            for c in couple : 
-                ds['prod'+direction+'_'+'_'.join(c)] = ds[c[0]+direction] * ds[c[1]+direction]
+        # sum
+        ds["sum" + direction] = sum([df[l[v]] for v in l])
+
+        # simple var + sum- one term
+        for v in l:
+            ds[l[v]] = df[l[v]]
+            ds["exc" + direction + "_" + v] = ds["sum" + direction] - ds[l[v]]
+
+        # 2 by 2 product
+        import itertools
+
+        couple = list(itertools.combinations(list(l.keys()), 2))
+        for c in couple:
+            ds["prod" + direction + "_" + "_".join(c)] = (
+                ds[c[0] + direction] * ds[c[1] + direction]
+            )
     return ds
 
 
-def dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True, null_mean = False):
-    coords_list = ['datetime', 'longitude', 'latitude', 'pass_number','time_to_swot','cycle_number','drifter_id', 'drifter_type','depth', 'phi', 'distance_to_coast']
+def dataset_coloc_combs(
+    comb_list, nearest=False, remove_id_outliers=True, null_mean=False
+):
+    coords_list = [
+        "datetime",
+        "longitude",
+        "latitude",
+        "pass_number",
+        "time_to_swot",
+        "cycle_number",
+        "drifter_id",
+        "drifter_type",
+        "depth",
+        "phi",
+        "distance_to_coast",
+    ]
     D = []
-    for comb in comb_list :
+    for comb in comb_list:
         df, id_comb = one_comb(**comb)
 
         # remove identified swot outliers
-        if remove_id_outliers :
+        if remove_id_outliers:
             from cstes import remove_pb_swot
+
             df = remove_pb_swot(df)
-            
-        if nearest :
+
+        if nearest:
             # select only nearest in time colocalisation
-            df = select_nearest_swot_coloc(df)#.dropna()
-        
+            df = select_nearest_swot_coloc(df)  # .dropna()
+
         ds = create_prod_exc_sum(df, id_comb, null_mean)
-        
-        D.append(ds.set_coords('id_comb'))
-    ds = xr.concat(D, dim='id_comb').set_coords(coords_list)
-        
+
+        D.append(ds.set_coords("id_comb"))
+    ds = xr.concat(D, dim="id_comb").set_coords(coords_list)
+
     # remove identified swot outliers
-    if remove_id_outliers :
+    if remove_id_outliers:
         from cstes import err_acc
+
         err_acc_update = np.array(err_acc)[np.isin(err_acc, ds.row_number)]
-        ds = ds.drop_sel(row_number = err_acc_update)  
-        print('Identified SWOT and drifter outliers have been removed')
-        
+        ds = ds.drop_sel(row_number=err_acc_update)
+        print("Identified SWOT and drifter outliers have been removed")
+
     return ds
 
+
 def update_dict(base_dic, kwargs):
-    dic= base_dic.copy()
+    dic = base_dic.copy()
     dic.update(**kwargs)
     return dic
+
 
 """ 
 _________________________________________
@@ -97,85 +143,121 @@ _________________________________________
 """
 
 
-closure_vars = ['ACC*', 'COR*', 'GGD*', 'WD*', 'S*', 'sigma*'] + ['B*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['E*_'+v for v in ['acc', 'cor', 'ggd', 'wd']] + ['X*_acc_cor', 'X*_acc_ggd', 'X*_acc_wd', 'X*_cor_ggd', 'X*_cor_wd', 'X*_ggd_wd'] + ['D*_cyclo', 'D*_anticyclo']
+closure_vars = (
+    ["ACC*", "COR*", "GGD*", "WD*", "S*", "sigma*"]
+    + ["B*_" + v for v in ["acc", "cor", "ggd", "wd"]]
+    + ["E*_" + v for v in ["acc", "cor", "ggd", "wd"]]
+    + ["X*_acc_cor", "X*_acc_ggd", "X*_acc_wd", "X*_cor_ggd", "X*_cor_wd", "X*_ggd_wd"]
+    + ["D*_cyclo", "D*_anticyclo"]
+)
 
-def compute_mean_square(ds, dirname = ('e', 'n'), compute_error='no', vars_errors=None):
-    """ Compute closure stats
+
+def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=None):
+    """Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
     """
     d0, d1 = dirname[0], dirname[1]
 
-    closure_vars_=closure_vars
-    
-    var = ['acc', 'cor', 'ggd', 'wd','sum']
-    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
-    
-    #if 'meancor'+dirname[0] in ds :
+    closure_vars_ = closure_vars
+
+    var = ["acc", "cor", "ggd", "wd", "sum"]
+    VAR = ["ACC", "COR", "GGD", "WD", "S"]
+
+    # if 'meancor'+dirname[0] in ds :
     #    print('ok')
     #    var += ['meancor', 'meanggd']
     #    VAR += ['meancor'.upper(), 'meanggd'.upper()]
     #    closure_vars_ = closure_vars +['MEANCOR*', 'MEANGGD*']
-        
-    dss = (ds[[v+d1 for v in var] + [v+d0 for v in var]]**2).rename({var[i]+d1 : VAR[i]+d1 for i in range(len(var))}).rename({var[i]+d0 : VAR[i]+d0 for i in range(len(var))})
-    dss['sigma'+d0] = dss['ACC'+d0] + dss['COR'+d0] + dss['GGD'+d0] + dss['WD'+d0]
-    dss['sigma'+d1] = dss['ACC'+d1] + dss['COR'+d1] + dss['GGD'+d1] + dss['WD'+d1]
-    
+
+    dss = (
+        (ds[[v + d1 for v in var] + [v + d0 for v in var]] ** 2)
+        .rename({var[i] + d1: VAR[i] + d1 for i in range(len(var))})
+        .rename({var[i] + d0: VAR[i] + d0 for i in range(len(var))})
+    )
+    dss["sigma" + d0] = (
+        dss["ACC" + d0] + dss["COR" + d0] + dss["GGD" + d0] + dss["WD" + d0]
+    )
+    dss["sigma" + d1] = (
+        dss["ACC" + d1] + dss["COR" + d1] + dss["GGD" + d1] + dss["WD" + d1]
+    )
+
     nb_coloc = len(ds.row_number)
-    
-    #Balanced and error
+
+    # Balanced and error
     for direction in [d0, d1]:
-        for v in ['acc', 'cor', 'ggd', 'wd'] : 
-            dss['B'+direction+'_'+v] = -((ds[v+direction]*ds['exc'+direction+'_'+v]))
-            dss['E'+direction+'_'+v] = ((ds[v+direction]*ds['sum'+direction]))
-            
-    #pairs contributions
-    for v in [v for v in ds if 'prod' in v]:
-        dss[v.replace('prod', 'X')]=-2*ds[v]
+        for v in ["acc", "cor", "ggd", "wd"]:
+            dss["B" + direction + "_" + v] = -(
+                (ds[v + direction] * ds["exc" + direction + "_" + v])
+            )
+            dss["E" + direction + "_" + v] = ds[v + direction] * ds["sum" + direction]
+
+    # pairs contributions
+    for v in [v for v in ds if "prod" in v]:
+        dss[v.replace("prod", "X")] = -2 * ds[v]
 
     # Cyclo/anticyclo contribution
     for direction in [d0, d1]:
-        dss['D'+direction+'_cyclo'] = -2 *(ds['acc'+direction]+ds['cor'+direction])*ds['ggd'+direction]
-        dss['D'+direction+'_anticyclo'] = -2 *(ds['acc'+direction]+ds['ggd'+direction])*ds['cor'+direction]
+        dss["D" + direction + "_cyclo"] = (
+            -2 * (ds["acc" + direction] + ds["cor" + direction]) * ds["ggd" + direction]
+        )
+        dss["D" + direction + "_anticyclo"] = (
+            -2 * (ds["acc" + direction] + ds["ggd" + direction]) * ds["cor" + direction]
+        )
 
-    #Sum of both direction
-    for v in closure_vars_ :
-        dss[v.replace('*', '')] = dss[v.replace('*', dirname[0])] + dss[v.replace('*', dirname[1])]
+    # Sum of both direction
+    for v in closure_vars_:
+        dss[v.replace("*", "")] = (
+            dss[v.replace("*", dirname[0])] + dss[v.replace("*", dirname[1])]
+        )
 
     # Mean
-    dsm = dss.mean('row_number')
+    dsm = dss.mean("row_number")
 
-    
-    #STATISTICAL ERRORS
-    #central limit
-    if compute_error == 'centrallimit':
+    # STATISTICAL ERRORS
+    # central limit
+    if compute_error == "centrallimit":
         # effective freedom degree
-        effective_degree = len(ds.isel(id_comb=0).to_dataframe().groupby(['drifter_id', 'cycle_number', 'pass_number'], observed=False).count())
+        effective_degree = len(
+            ds.isel(id_comb=0)
+            .to_dataframe()
+            .groupby(["drifter_id", "cycle_number", "pass_number"], observed=False)
+            .count()
+        )
         print(effective_degree)
-        #dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
-        dsme = (2*dss.std('row_number')/np.sqrt(effective_degree)).rename({v:'er__'+v for v in list(dss.keys())})
+        # dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
+        dsme = (2 * dss.std("row_number") / np.sqrt(effective_degree)).rename(
+            {v: "er__" + v for v in list(dss.keys())}
+        )
         dsm = xr.merge([dsm, dsme])
-        
-    #bootstrap
-    if compute_error == 'bootstrap':
-        if vars_errors == None :
-            vars_errors = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars] + [v.replace('*', '')for v in closure_vars]
+
+    # bootstrap
+    if compute_error == "bootstrap":
+        if vars_errors == None:
+            vars_errors = (
+                [v.replace("*", dirname[0]) for v in closure_vars]
+                + [v.replace("*", dirname[1]) for v in closure_vars]
+                + [v.replace("*", "") for v in closure_vars]
+            )
 
         D = []
-        for id_ in dss.id_comb : 
+        for id_ in dss.id_comb:
             dsme = xr.Dataset()
-            dsme['id_comb']=id_
-            dsme = dsme.set_coords('id_comb').expand_dims('id_comb')
-            for v in vars_errors :
-                dsme[v] = ('id_comb', [compute_bootstrap_error(dss.sel(id_comb=id_)[v])])
+            dsme["id_comb"] = id_
+            dsme = dsme.set_coords("id_comb").expand_dims("id_comb")
+            for v in vars_errors:
+                dsme[v] = (
+                    "id_comb",
+                    [compute_bootstrap_error(dss.sel(id_comb=id_)[v])],
+                )
                 print(v)
             D.append(dsme)
             print(id_)
-        dsme = xr.concat(D, dim='id_comb').rename({v:'er__'+v for v in vars_errors})
+        dsme = xr.concat(D, dim="id_comb").rename({v: "er__" + v for v in vars_errors})
         dsm = xr.merge([dsm, dsme])
 
-    #Mean geostrophics corrections :
-    #if 'meancor'+dirname[0] in ds :
+    # Mean geostrophics corrections :
+    # if 'meancor'+dirname[0] in ds :
     #    print('geostrophic mean corrections')
     #    for dir_ in dirname:
     #        for v in ['cor', 'ggd']:
@@ -186,258 +268,412 @@ def compute_mean_square(ds, dirname = ('e', 'n'), compute_error='no', vars_error
     #        dss[v.upper()] =  dss[v.upper() + dirname[0]]+ dss[v.upper() + dirname[1]]
     #        dss['B_'+v] = dss['B'+dirname[0]+'_'+v] + dss['B'+dirname[1]+'_'+v]
     #        dss['X_cor_ggd'] = dss['X'+dirname[0]+'_cor_ggd'] + dss['X'+dirname[1]+'_cor_ggd']
-        
-    #end
-    #ATTRS    
-    dsm.attrs['error_method'] = compute_error
-    dsm = assign_attrs(dsm, list(dirname) + [''])
+
+    # end
+    # ATTRS
+    dsm.attrs["error_method"] = compute_error
+    dsm = assign_attrs(dsm, list(dirname) + [""])
     return dsm
 
 
-def compute_variance(ds_, dirname = ('e', 'n'), compute_error='no', vars_errors=None):
-    """ Compute closure stats
+def compute_variance(ds_, dirname=("e", "n"), compute_error="no", vars_errors=None):
+    """Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
     """
-    
-    var = ['acc', 'cor', 'ggd', 'wd']
 
-    ds=ds_.copy()
+    var = ["acc", "cor", "ggd", "wd"]
+
+    ds = ds_.copy()
     # remove mean
-    for dir_ in dirname : 
+    for dir_ in dirname:
         for v in var:
-            ds[v+dir_] = ds[v+dir_]-ds[v+dir_].mean('row_number')
-            
-        # sum 
-        ds['sum'+dir_] = sum([ds[v+dir_] for v in var])
+            ds[v + dir_] = ds[v + dir_] - ds[v + dir_].mean("row_number")
+
+        # sum
+        ds["sum" + dir_] = sum([ds[v + dir_] for v in var])
 
         # simple var + sum- one term
-        for v in var :
-            ds['exc'+dir_+'_'+v] = ds['sum'+dir_]-ds[v+dir_]
-                
-        #2 by 2 product    
+        for v in var:
+            ds["exc" + dir_ + "_" + v] = ds["sum" + dir_] - ds[v + dir_]
+
+        # 2 by 2 product
         import itertools
-        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
-        couple = list(itertools.combinations(list(l.keys()),2))
-        for c in couple : 
-            ds['prod'+dir_+'_'+'_'.join(c)] = ds[c[0]+dir_] * ds[c[1]+dir_]
+
+        l = {
+            "acc": "acc" + dir_,
+            "cor": "cor" + dir_,
+            "ggd": "ggd" + dir_,
+            "wd": "wd" + dir_,
+        }
+        couple = list(itertools.combinations(list(l.keys()), 2))
+        for c in couple:
+            ds["prod" + dir_ + "_" + "_".join(c)] = ds[c[0] + dir_] * ds[c[1] + dir_]
 
     # MS = var as mean are null
     dss = compute_mean_square(ds, dirname, compute_error, vars_errors)
     return dss
 
 
-def assign_attrs(ds, dirname=('e', 'n', '')) :
-    """ Assign attributes to compute_mean_square() functions dataset output """
-    for dir_ in dirname :
-        if dir_ == 'e': Dir = 'Zonal'
-        if dir_ == 'n': Dir = 'Meridional'
-        if dir_ == 'x': Dir = 'Cross-track'
-        if dir_ == 'y': Dir = 'Along-track'
-        if dir_ == '': Dir = 'Total'
+def assign_attrs(ds, dirname=("e", "n", "")):
+    """Assign attributes to compute_mean_square() functions dataset output"""
+    for dir_ in dirname:
+        if dir_ == "e":
+            Dir = "Zonal"
+        if dir_ == "n":
+            Dir = "Meridional"
+        if dir_ == "x":
+            Dir = "Cross-track"
+        if dir_ == "y":
+            Dir = "Along-track"
+        if dir_ == "":
+            Dir = "Total"
 
-        
-        ds['ACC'+dir_] = ds['ACC'+dir_].assign_attrs({'long_name':Dir + ' Lagrangian acceleration MS'})
-        ds['COR'+dir_] = ds['COR'+dir_].assign_attrs({'long_name':Dir + ' Coriolis acceleration MS'})
-        ds['GGD'+dir_] = ds['GGD'+dir_].assign_attrs({'long_name':Dir + ' Pressure gradient term MS'})
-        ds['WD'+dir_] = ds['WD'+dir_].assign_attrs({'long_name':Dir + ' Wind term MS'})
-        
-        ds['sigma'+dir_] = ds['sigma'+dir_].assign_attrs({'long_name':Dir+r' $\Sigma$'})
-        ds['S'+dir_] = ds['S'+dir_].assign_attrs({'long_name':Dir+r' Residual'})
-        
-        ds['B'+dir_+'_acc'] = ds['B'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration balanced signal contribution'})
-        ds['B'+dir_+'_cor'] = ds['B'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration balanced signal contribution'})
-        ds['B'+dir_+'_ggd'] = ds['B'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term balanced signal contribution'})
-        ds['B'+dir_+'_wd'] = ds['B'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term balanced signal contribution'})
-        
-        ds['E'+dir_+'_acc'] = ds['E'+dir_+'_acc'].assign_attrs({'long_name':Dir+r' Lagrangian acceleration residual contribution'})
-        ds['E'+dir_+'_cor'] = ds['E'+dir_+'_cor'].assign_attrs({'long_name':Dir+r' Coriolis acceleration residual contribution'})
-        ds['E'+dir_+'_ggd'] = ds['E'+dir_+'_ggd'].assign_attrs({'long_name':Dir+r' Pressure gradient term residual contribution'})
-        ds['E'+dir_+'_wd'] = ds['E'+dir_+'_wd'].assign_attrs({'long_name':Dir+r' Wind term residual contribution'})
-        
-        
-        ds['X'+dir_+'_acc_cor'] = ds['X'+dir_+'_acc_cor'].assign_attrs({'long_name':Dir+r' Inertial balance contribution'})
-        ds['X'+dir_+'_acc_ggd'] = ds['X'+dir_+'_acc_ggd'].assign_attrs({'long_name':Dir+r' Cyclostrophique contribution'})
-        ds['X'+dir_+'_acc_wd'] = ds['X'+dir_+'_acc_wd'].assign_attrs({'long_name':Dir+r' Lagrangian - wind contribution'})
-        ds['X'+dir_+'_cor_ggd'] = ds['X'+dir_+'_cor_ggd'].assign_attrs({'long_name':Dir+r' Geostrophic contribution'})
-        ds['X'+dir_+'_cor_wd'] = ds['X'+dir_+'_cor_wd'].assign_attrs({'long_name':Dir+r' Coriolis - wind contribution'})
-        ds['X'+dir_+'_ggd_wd'] = ds['X'+dir_+'_ggd_wd'].assign_attrs({'long_name':Dir+r' Pressure gradient - wind contribution'})
-        
-        ds['D'+dir_+'_cyclo'] = ds['D'+dir_+'_cyclo'].assign_attrs({'long_name':Dir+r' cyclonic contribution'})
-        ds['D'+dir_+'_anticyclo'] = ds['D'+dir_+'_anticyclo'].assign_attrs({'long_name':Dir+r' anticyclonic contribution'})
+        ds["ACC" + dir_] = ds["ACC" + dir_].assign_attrs(
+            {"long_name": Dir + " Lagrangian acceleration MS"}
+        )
+        ds["COR" + dir_] = ds["COR" + dir_].assign_attrs(
+            {"long_name": Dir + " Coriolis acceleration MS"}
+        )
+        ds["GGD" + dir_] = ds["GGD" + dir_].assign_attrs(
+            {"long_name": Dir + " Pressure gradient term MS"}
+        )
+        ds["WD" + dir_] = ds["WD" + dir_].assign_attrs(
+            {"long_name": Dir + " Wind term MS"}
+        )
+
+        ds["sigma" + dir_] = ds["sigma" + dir_].assign_attrs(
+            {"long_name": Dir + r" $\Sigma$"}
+        )
+        ds["S" + dir_] = ds["S" + dir_].assign_attrs({"long_name": Dir + r" Residual"})
+
+        ds["B" + dir_ + "_acc"] = ds["B" + dir_ + "_acc"].assign_attrs(
+            {
+                "long_name": Dir
+                + r" Lagrangian acceleration balanced signal contribution"
+            }
+        )
+        ds["B" + dir_ + "_cor"] = ds["B" + dir_ + "_cor"].assign_attrs(
+            {"long_name": Dir + r" Coriolis acceleration balanced signal contribution"}
+        )
+        ds["B" + dir_ + "_ggd"] = ds["B" + dir_ + "_ggd"].assign_attrs(
+            {"long_name": Dir + r" Pressure gradient term balanced signal contribution"}
+        )
+        ds["B" + dir_ + "_wd"] = ds["B" + dir_ + "_wd"].assign_attrs(
+            {"long_name": Dir + r" Wind term balanced signal contribution"}
+        )
+
+        ds["E" + dir_ + "_acc"] = ds["E" + dir_ + "_acc"].assign_attrs(
+            {"long_name": Dir + r" Lagrangian acceleration residual contribution"}
+        )
+        ds["E" + dir_ + "_cor"] = ds["E" + dir_ + "_cor"].assign_attrs(
+            {"long_name": Dir + r" Coriolis acceleration residual contribution"}
+        )
+        ds["E" + dir_ + "_ggd"] = ds["E" + dir_ + "_ggd"].assign_attrs(
+            {"long_name": Dir + r" Pressure gradient term residual contribution"}
+        )
+        ds["E" + dir_ + "_wd"] = ds["E" + dir_ + "_wd"].assign_attrs(
+            {"long_name": Dir + r" Wind term residual contribution"}
+        )
+
+        ds["X" + dir_ + "_acc_cor"] = ds["X" + dir_ + "_acc_cor"].assign_attrs(
+            {"long_name": Dir + r" Inertial balance contribution"}
+        )
+        ds["X" + dir_ + "_acc_ggd"] = ds["X" + dir_ + "_acc_ggd"].assign_attrs(
+            {"long_name": Dir + r" Cyclostrophique contribution"}
+        )
+        ds["X" + dir_ + "_acc_wd"] = ds["X" + dir_ + "_acc_wd"].assign_attrs(
+            {"long_name": Dir + r" Lagrangian - wind contribution"}
+        )
+        ds["X" + dir_ + "_cor_ggd"] = ds["X" + dir_ + "_cor_ggd"].assign_attrs(
+            {"long_name": Dir + r" Geostrophic contribution"}
+        )
+        ds["X" + dir_ + "_cor_wd"] = ds["X" + dir_ + "_cor_wd"].assign_attrs(
+            {"long_name": Dir + r" Coriolis - wind contribution"}
+        )
+        ds["X" + dir_ + "_ggd_wd"] = ds["X" + dir_ + "_ggd_wd"].assign_attrs(
+            {"long_name": Dir + r" Pressure gradient - wind contribution"}
+        )
+
+        ds["D" + dir_ + "_cyclo"] = ds["D" + dir_ + "_cyclo"].assign_attrs(
+            {"long_name": Dir + r" cyclonic contribution"}
+        )
+        ds["D" + dir_ + "_anticyclo"] = ds["D" + dir_ + "_anticyclo"].assign_attrs(
+            {"long_name": Dir + r" anticyclonic contribution"}
+        )
     return ds
 
-def compute_mean_square_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), compute_error = 'no', vars_errors=None):
-    """ Compute closure stats on bins
+
+def compute_mean_square_groupby(
+    df,
+    groupby="time_to_swot_1h",
+    dirname=("e", "n"),
+    compute_error="no",
+    vars_errors=None,
+):
+    """Compute closure stats on bins
     ds : dataset containing terms values for all row_numbers
     groupby : str, name of the binning variable
     dirname : directions of the reconstruction
     bootstrap :  bool, rather to compute bootstrap errors or not (longer with)
     """
-    var = ['acc', 'cor', 'ggd', 'wd','sum']
-    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+    var = ["acc", "cor", "ggd", "wd", "sum"]
+    VAR = ["ACC", "COR", "GGD", "WD", "S"]
 
-    dff = (df[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]]**2).rename(columns = {var[i]+dirname[1] : VAR[i]+dirname[1] for i in range(len(var))}).rename(columns = {var[i]+dirname[0] : VAR[i]+dirname[0] for i in range(len(var))})/U2
+    dff = (
+        df[[v + dirname[1] for v in var] + [v + dirname[0] for v in var]] ** 2
+    ).rename(
+        columns={var[i] + dirname[1]: VAR[i] + dirname[1] for i in range(len(var))}
+    ).rename(
+        columns={var[i] + dirname[0]: VAR[i] + dirname[0] for i in range(len(var))}
+    ) / U2
     dff = pd.concat([dff, df[groupby]], axis=1)
-    
-    nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
+
+    nb_coloc = (
+        df.set_index(groupby)
+        .groupby(groupby, observed=False)["acc" + dirname[0]]
+        .count()
+    )
     print(nb_coloc)
-    #Balanced and error
+    # Balanced and error
     for direction in [dirname[0], dirname[1]]:
-        dff['sigma'+direction] = dff['ACC'+direction] + dff['COR'+direction] + dff['GGD'+direction] + dff['WD'+direction]
-        for v in ['acc', 'cor', 'ggd', 'wd'] : 
-                dff['B'+direction+'_'+v] = -((df[v+direction]*df['exc'+direction+'_'+v]))/U2
-                dff['E'+direction+'_'+v] = ((df[v+direction]*df['sum'+direction]))/U2
-    #pairs contributions
-    for v in [v for v in df if 'prod' in v]:
-        dff[v.replace('prod', 'X')]=-2*df[v]/U2
+        dff["sigma" + direction] = (
+            dff["ACC" + direction]
+            + dff["COR" + direction]
+            + dff["GGD" + direction]
+            + dff["WD" + direction]
+        )
+        for v in ["acc", "cor", "ggd", "wd"]:
+            dff["B" + direction + "_" + v] = (
+                -((df[v + direction] * df["exc" + direction + "_" + v])) / U2
+            )
+            dff["E" + direction + "_" + v] = (
+                (df[v + direction] * df["sum" + direction])
+            ) / U2
+    # pairs contributions
+    for v in [v for v in df if "prod" in v]:
+        dff[v.replace("prod", "X")] = -2 * df[v] / U2
 
     # Cyclo/anticyclo contribution
     for direction in [dirname[0], dirname[1]]:
-        dff['D'+direction+'_cyclo'] = (-2 *(df['acc'+direction]+df['cor'+direction])*df['ggd'+direction])/U2
-        dff['D'+direction+'_anticyclo'] = (-2 *(df['acc'+direction]+df['ggd'+direction])*df['cor'+direction])/U2
+        dff["D" + direction + "_cyclo"] = (
+            -2 * (df["acc" + direction] + df["cor" + direction]) * df["ggd" + direction]
+        ) / U2
+        dff["D" + direction + "_anticyclo"] = (
+            -2 * (df["acc" + direction] + df["ggd" + direction]) * df["cor" + direction]
+        ) / U2
 
-    #Sum of both direction
-    for v in closure_vars :
-        dff[v.replace('*', '')] = dff[v.replace('*', dirname[0])] + dff[v.replace('*', dirname[1])]
+    # Sum of both direction
+    for v in closure_vars:
+        dff[v.replace("*", "")] = (
+            dff[v.replace("*", dirname[0])] + dff[v.replace("*", dirname[1])]
+        )
 
-    closure_vars_2D = [v.replace('*', dirname[0]) for v in closure_vars] + [v.replace('*', dirname[1]) for v in closure_vars] + [v.replace('*', '')for v in closure_vars]
-    
-    if isinstance(groupby, str) : grp = [groupby]
-    else : grp = groupby
+    closure_vars_2D = (
+        [v.replace("*", dirname[0]) for v in closure_vars]
+        + [v.replace("*", dirname[1]) for v in closure_vars]
+        + [v.replace("*", "") for v in closure_vars]
+    )
+
+    if isinstance(groupby, str):
+        grp = [groupby]
+    else:
+        grp = groupby
 
     # Effective degree of freedom
     def compute_freedom_degree(df):
-        return len(df.reset_index().groupby(['drifter_id', 'cycle_number', 'pass_number'], observed=False).count())
-    # effective freedom degree
-    effective_degree = df.set_index(groupby).groupby(groupby, observed=False).apply(compute_freedom_degree)
+        return len(
+            df.reset_index()
+            .groupby(["drifter_id", "cycle_number", "pass_number"], observed=False)
+            .count()
+        )
 
-    #central limit
-    if compute_error == 'centrallimit' : 
+    # effective freedom degree
+    effective_degree = (
+        df.set_index(groupby)
+        .groupby(groupby, observed=False)
+        .apply(compute_freedom_degree)
+    )
+
+    # central limit
+    if compute_error == "centrallimit":
         print(effective_degree)
         # Add errors central limit
-        centrallimit = 2*dff.set_index(groupby).groupby(groupby, observed=False)[closure_vars_2D].std().div(np.sqrt(effective_degree), axis=0) # 95%
-        centrallimit = centrallimit.rename(columns = {v:'er__'+v for v in closure_vars_2D})
+        centrallimit = 2 * dff.set_index(groupby).groupby(groupby, observed=False)[
+            closure_vars_2D
+        ].std().div(
+            np.sqrt(effective_degree), axis=0
+        )  # 95%
+        centrallimit = centrallimit.rename(
+            columns={v: "er__" + v for v in closure_vars_2D}
+        )
 
-    
     # bootstrap errors
-    if compute_error == 'bootstrap' : 
-        #print(vars_errors)
-        if vars_errors is None : vars_errors = closure_vars_2D
-        #import dask.dataframe as dd
-        #dfd = dd.from_pandas(dff, chunksize=10)
+    if compute_error == "bootstrap":
+        # print(vars_errors)
+        if vars_errors is None:
+            vars_errors = closure_vars_2D
+        # import dask.dataframe as dd
+        # dfd = dd.from_pandas(dff, chunksize=10)
         DF = []
-        #print(vars_errors)
+        # print(vars_errors)
         for v in vars_errors:
             DF.append(
-                dff.reset_index()[vars_errors + grp]#dfd
+                dff.reset_index()[vars_errors + grp]  # dfd
                 .groupby(groupby, observed=False)[v]
                 .apply(compute_bootstrap_error)
-                #.compute()
+                # .compute()
             )
             print(v)
-        booterrors = pd.concat(DF, axis=1)*2#factor 2 for 95% confidence interval
-        booterrors = booterrors.rename(columns={v: "er__" + v for v in booterrors.columns})
+        booterrors = pd.concat(DF, axis=1) * 2  # factor 2 for 95% confidence interval
+        booterrors = booterrors.rename(
+            columns={v: "er__" + v for v in booterrors.columns}
+        )
         # sum of both dim
-        for v in vars_errors : 
-            booterrors['ber__'+v.replace('*', '')] = booterrors['er__'+v.replace('*', dirname[0])] + booterrors['er__'+v.replace('*', dirname[1])]
-    
-    #Final steps
-    dff = dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
-    dff['nb_coloc']= nb_coloc
+        for v in vars_errors:
+            booterrors["ber__" + v.replace("*", "")] = (
+                booterrors["er__" + v.replace("*", dirname[0])]
+                + booterrors["er__" + v.replace("*", dirname[1])]
+            )
 
-    for v in closure_vars : 
-        dff[v.replace('*', '')] = dff[v.replace('*', dirname[0])] + dff[v.replace('*', dirname[1])]
-    
-    if compute_error == 'centrallimit' : 
+    # Final steps
+    dff = (
+        dff.set_index(groupby)[closure_vars_2D].groupby(groupby, observed=False).mean()
+    )
+    dff["nb_coloc"] = nb_coloc
+
+    for v in closure_vars:
+        dff[v.replace("*", "")] = (
+            dff[v.replace("*", dirname[0])] + dff[v.replace("*", dirname[1])]
+        )
+
+    if compute_error == "centrallimit":
         dff = pd.concat([dff, centrallimit], axis=1)
-    if compute_error == 'bootstrap' :
+    if compute_error == "bootstrap":
         dff = pd.concat([dff, booterrors], axis=1)
-        
-        
+
     dss = dff.to_xarray()
 
     dss = assign_attrs(dss, dirname)
-    #dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
+    # dss.to_netcdf(os.path.join(zarr_dir, 'binned_diag', '_'.join(grp) + '.png'))
 
     return dss
 
 
-def compute_variance_groupby(df, groupby = 'time_to_swot_1h', dirname = ('e', 'n'), compute_error = 'no', vars_errors=None):
-    """ Compute closure stats on bins
+def compute_variance_groupby(
+    df,
+    groupby="time_to_swot_1h",
+    dirname=("e", "n"),
+    compute_error="no",
+    vars_errors=None,
+):
+    """Compute closure stats on bins
     ds : dataset containing terms values for all row_numbers
     groupby : str, name of the binning variable
     dirname : directions of the reconstruction
     bootstrap :  bool, rather to compute bootstrap errors or not (longer with)
     """
-    var = ['acc', 'cor', 'ggd', 'wd']
-    VAR = ['ACC', 'COR', 'GGD', 'WD', 'S']
+    var = ["acc", "cor", "ggd", "wd"]
+    VAR = ["ACC", "COR", "GGD", "WD", "S"]
 
-    nb_coloc = df.set_index(groupby).groupby(groupby, observed=False)['acc'+dirname[0]].count()
+    nb_coloc = (
+        df.set_index(groupby)
+        .groupby(groupby, observed=False)["acc" + dirname[0]]
+        .count()
+    )
 
-    #remove Mean
-    dfm = (df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]] - df.set_index(groupby)[[v+dirname[1] for v in var] + [v+dirname[0] for v in var]].groupby(groupby).mean()).reset_index()
-    dfm = pd.concat([dfm, df[['drifter_id', 'pass_number', 'cycle_number']]], axis=1)
-    for dir_ in dirname :
-        dfm['sum'+dir_] = sum([dfm[v+dir_] for v in var])
+    # remove Mean
+    dfm = (
+        df.set_index(groupby)[
+            [v + dirname[1] for v in var] + [v + dirname[0] for v in var]
+        ]
+        - df.set_index(groupby)[
+            [v + dirname[1] for v in var] + [v + dirname[0] for v in var]
+        ]
+        .groupby(groupby)
+        .mean()
+    ).reset_index()
+    dfm = pd.concat([dfm, df[["drifter_id", "pass_number", "cycle_number"]]], axis=1)
+    for dir_ in dirname:
+        dfm["sum" + dir_] = sum([dfm[v + dir_] for v in var])
 
         # simple var + sum- one term
-        for v in var :
-            dfm['exc'+dir_+'_'+v] = dfm['sum'+dir_]-dfm[v+dir_]
-                
-        #2 by 2 product    
-        import itertools  
-        l = {'acc':'acc'+dir_, 'cor':'cor'+dir_, 'ggd':'ggd'+dir_, 'wd':'wd'+dir_}
-        couple = list(itertools.combinations(list(l.keys()),2))
-        for c in couple : 
-            dfm['prod'+dir_+'_'+'_'.join(c)] = dfm[c[0]+dir_] * dfm[c[1]+dir_]
+        for v in var:
+            dfm["exc" + dir_ + "_" + v] = dfm["sum" + dir_] - dfm[v + dir_]
+
+        # 2 by 2 product
+        import itertools
+
+        l = {
+            "acc": "acc" + dir_,
+            "cor": "cor" + dir_,
+            "ggd": "ggd" + dir_,
+            "wd": "wd" + dir_,
+        }
+        couple = list(itertools.combinations(list(l.keys()), 2))
+        for c in couple:
+            dfm["prod" + dir_ + "_" + "_".join(c)] = dfm[c[0] + dir_] * dfm[c[1] + dir_]
 
     # MS = var as mean are null
     dss = compute_mean_square_groupby(dfm, groupby, dirname, compute_error, vars_errors)
-    
+
     return dss
 
 
 def remove_dt_traj_limit_coloc(dfr, dt):
-    """ 
+    """
     Remove colocations that are at the dt-time limit of a drifter trajectories, for all cycle
     Example dfr  :
     dfr = dd.read_csv(DRIFTER['nofilter'], parse_dates=['datetime', 'cycle_date'], dtype=dtypes).set_index('row_number')[['cycle_date','datetime', 'drifter_id']]
     """
-    # Build test table 
+    # Build test table
     cycle_dates = dfr.cycle_date.unique()
     drifter_id = dfr.drifter_id.unique()
 
-    test_tmin = xr.DataArray(np.full((len(drifter_id),len(cycle_dates)), True), coords={'drifter_id':drifter_id, 'cycle_date':cycle_dates}).rename('drifter_tmin')
-    test_tmax = xr.DataArray(np.full((len(drifter_id),len(cycle_dates)), True), coords={'drifter_id':drifter_id, 'cycle_date':cycle_dates}).rename('drifter_tmax')
+    test_tmin = xr.DataArray(
+        np.full((len(drifter_id), len(cycle_dates)), True),
+        coords={"drifter_id": drifter_id, "cycle_date": cycle_dates},
+    ).rename("drifter_tmin")
+    test_tmax = xr.DataArray(
+        np.full((len(drifter_id), len(cycle_dates)), True),
+        coords={"drifter_id": drifter_id, "cycle_date": cycle_dates},
+    ).rename("drifter_tmax")
 
-    for d in drifter_id :
+    for d in drifter_id:
         for c in cycle_dates:
-            test_tmin.loc[d, c] = (c-pd.Timedelta('10d')> tmin.loc[d])
-            test_tmax.loc[d, c] = (c+pd.Timedelta('10d')< tmax.loc[d])
+            test_tmin.loc[d, c] = c - pd.Timedelta("10d") > tmin.loc[d]
+            test_tmax.loc[d, c] = c + pd.Timedelta("10d") < tmax.loc[d]
     dft = pd.concat([test_tmin.to_dataframe(), test_tmax.to_dataframe()], axis=1)
-    dft['test'] = dft.drifter_tmin & dft.drifter_tmax
+    dft["test"] = dft.drifter_tmin & dft.drifter_tmax
 
-    return dfr.reset_index().set_index(['drifter_id', 'cycle_date']).where(dft.test).dropna().reset_index().set_index('row_number')
+    return (
+        dfr.reset_index()
+        .set_index(["drifter_id", "cycle_date"])
+        .where(dft.test)
+        .dropna()
+        .reset_index()
+        .set_index("row_number")
+    )
 
-    
+
 """ 
 _________________________________________
 ---- PLOTS ----
 _________________________________________
 """
 
-def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
+
+def synthetic_figure(df, ax, xlim=[1], aviso=False, dir="e"):
     from cstes import U2, c0
 
     plt.rcParams["axes.edgecolor"] = "w"
     a = 1.5
     bbox = dict(facecolor="w", alpha=0.8, edgecolor="w")
 
-    ts = df["sigma"+dir]
+    ts = df["sigma" + dir]
     print(ts)
     # gap between bars for readability
-    if len(xlim)!=2:
+    if len(xlim) != 2:
         b = ts / 400
     else:
         b = xlim[0] / 400
@@ -445,32 +681,32 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     # b = 1e-10
 
     ## INDIVIDUAL MS ##
-    ax.barh(2 * a, df["ACC"+dir], color=c0["acc"], label="Lagrangian acceleration")
+    ax.barh(2 * a, df["ACC" + dir], color=c0["acc"], label="Lagrangian acceleration")
     ax.barh(
         2 * a,
-        df["COR"+dir],
-        left=df["ACC"+dir] + b,
+        df["COR" + dir],
+        left=df["ACC" + dir] + b,
         color=c0["cor"],
         label="Coriolis acceleration",
     )
     ax.barh(
         2 * a,
-        df["GGD"+dir],
-        left=df["ACC"+dir] + df["COR"+dir] + 2 * b,
+        df["GGD" + dir],
+        left=df["ACC" + dir] + df["COR" + dir] + 2 * b,
         color=c0["ggd"],
         label="Pressure gradient term",
     )
     ax.barh(
         2 * a,
-        df["WD"+dir],
-        left=df["ACC"+dir] + df["COR"+dir] + df["GGD"+dir] + 3 * b,
+        df["WD" + dir],
+        left=df["ACC" + dir] + df["COR" + dir] + df["GGD" + dir] + 3 * b,
         color=c0["wd"],
         label="Wind term",
     )
 
     ax.text(ts / 2, 2 * a + 0.5, r"Individual MS $A_i$", ha="center")
     # percentage + MS
-    key = ["ACC"+dir, "COR"+dir, "GGD"+dir, "WD"+dir]
+    key = ["ACC" + dir, "COR" + dir, "GGD" + dir, "WD" + dir]
     for i in range(len(key)):
         ax.text(
             sum([df[v] for v in key[:i]]) + df[key[i]] / 2 + i * b,
@@ -498,155 +734,198 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     ## CAPTURED PHYSICAL + ERRORS PARTS ##
     plt.rcParams["hatch.linewidth"] = 8
     plt.rcParams["hatch.color"] = "lightgrey"
-    var = ['acc', 'cor', 'ggd', 'wd']
-    eneg = [ v for v in var if df["E"+dir +"_"+v]<0]
-    epos = [ v for v in var if df["E"+dir +"_"+v]>=0]
+    var = ["acc", "cor", "ggd", "wd"]
+    eneg = [v for v in var if df["E" + dir + "_" + v] < 0]
+    epos = [v for v in var if df["E" + dir + "_" + v] >= 0]
     spos, sneg = 0, 0
     ipos, ineg = 0, 1
-    
-    #text parameters
-    d=0# vertical +
-    db = 0.15  # vertical + 
+
+    # text parameters
+    d = 0  # vertical +
+    db = 0.15  # vertical +
     de = -0.2  # vertical +
     dx = 0  # horizontal + on MS
     dxx = 0  # horizontal + on percentage
-    for v in var :
-        ax.barh(1 * a, df["B"+dir +"_"+v], left=spos+ipos*b, color=c0[v])
-        if (abs(int(np.rint((df["B"+dir +"_"+v] / ts) * 100))) > 0):# does not plot percentage below 1%
+    for v in var:
+        ax.barh(1 * a, df["B" + dir + "_" + v], left=spos + ipos * b, color=c0[v])
+        if (
+            abs(int(np.rint((df["B" + dir + "_" + v] / ts) * 100))) > 0
+        ):  # does not plot percentage below 1%
             ax.text(
-                spos + df["B"+dir +"_"+v]/ 2 + ipos * b / 2 + dxx,
-                    a + db,
-                    f'{int(np.rint((df["B"+dir +"_"+v]/ts)*100))} %',
-                    ha="center",
-                    bbox=bbox,
-                )
+                spos + df["B" + dir + "_" + v] / 2 + ipos * b / 2 + dxx,
+                a + db,
+                f'{int(np.rint((df["B"+dir +"_"+v]/ts)*100))} %',
+                ha="center",
+                bbox=bbox,
+            )
             ax.text(
-                spos + df["B"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                spos + df["B" + dir + "_" + v] / 2 + i * b / 2 + dx,
                 a + d - 0.55,
                 f'{np.round(df["B"+dir +"_"+v],2)}',
                 ha="center",
-                )
-        spos += df["B"+dir +"_"+v]
-            
-        if v in epos : 
-            ax.barh(1 * a, df["E"+dir +"_"+v], left=spos + ipos*b, color=c0[v], hatch="/")
+            )
+        spos += df["B" + dir + "_" + v]
+
+        if v in epos:
+            ax.barh(
+                1 * a,
+                df["E" + dir + "_" + v],
+                left=spos + ipos * b,
+                color=c0[v],
+                hatch="/",
+            )
             ax.text(
-                spos + df["E"+dir +"_"+v]/ 2 + ipos * b / 2 + dxx,
+                spos + df["E" + dir + "_" + v] / 2 + ipos * b / 2 + dxx,
                 a + de,
                 f'{int(np.rint((df["E"+dir +"_"+v]/ts)*100))} %',
                 ha="center",
                 bbox=bbox,
-                )
+            )
             ax.text(
-                spos + df["E"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                spos + df["E" + dir + "_" + v] / 2 + i * b / 2 + dx,
                 a + d - 0.7,
                 f'{np.round(df["E"+dir +"_"+v],2)}',
                 ha="center",
-                )
-            spos += df["E"+dir +"_"+v]
+            )
+            spos += df["E" + dir + "_" + v]
             ipos += 1
-            
-        
-        if v in eneg : 
-            ax.barh(1 * a,-df["E"+dir +"_"+v], left=-b -b*ineg + df["E"+dir +"_"+v]+sneg,color=c0[v],hatch="/",)
-            if (abs(int(np.rint((df["B"+dir +"_"+v] / ts) * 100))) > 0):
+
+        if v in eneg:
+            ax.barh(
+                1 * a,
+                -df["E" + dir + "_" + v],
+                left=-b - b * ineg + df["E" + dir + "_" + v] + sneg,
+                color=c0[v],
+                hatch="/",
+            )
+            if abs(int(np.rint((df["B" + dir + "_" + v] / ts) * 100))) > 0:
                 ax.text(
-                    sneg + df["E"+dir +"_"+v]/ 2 + ineg * b / 2 + dxx,
+                    sneg + df["E" + dir + "_" + v] / 2 + ineg * b / 2 + dxx,
                     a + d,
                     f'{int(np.rint((df["E"+dir +"_"+v]/ts)*100))} %',
                     ha="center",
                     bbox=bbox,
-                    )
+                )
                 ax.text(
-                    sneg + df["E"+dir +"_"+v] / 2 + i * b / 2 + dx,
+                    sneg + df["E" + dir + "_" + v] / 2 + i * b / 2 + dx,
                     a + d - 0.55,
                     f'{np.round(df["E"+dir +"_"+v],2)}',
                     ha="center",
                 )
-            sneg += df["E"+dir +"_"+v]
-            ineg +=1
+            sneg += df["E" + dir + "_" + v]
+            ineg += 1
 
-    ax.text(ts / 2,1 * a + 0.5, r"Balanced signal and residual contributions $\beta_i$ and $\mathcal{E}_i$", ha="center",)
-
+    ax.text(
+        ts / 2,
+        1 * a + 0.5,
+        r"Balanced signal and residual contributions $\beta_i$ and $\mathcal{E}_i$",
+        ha="center",
+    )
 
     ## PAIRS + RESIDUAL ##
-    comb = [("cor", "ggd"), ("acc", "cor"), ("acc", "ggd"), ("cor", "wd"), ("ggd", "wd"), ("acc", "wd")]
+    comb = [
+        ("cor", "ggd"),
+        ("acc", "cor"),
+        ("acc", "ggd"),
+        ("cor", "wd"),
+        ("ggd", "wd"),
+        ("acc", "wd"),
+    ]
     plt.rcParams["hatch.linewidth"] = 8
-    xpos = [c for c in comb if df["X"+dir +"_"+c[0]+"_"+c[1]]>=0]
+    xpos = [c for c in comb if df["X" + dir + "_" + c[0] + "_" + c[1]] >= 0]
     spos, sneg = 0, 0
     ipos, ineg = 0, 1
 
-    for c in comb :
+    for c in comb:
         plt.rcParams["hatch.color"] = c0[c[1]]
-        #positive pairs contributions
-        if c in xpos :
-            ax.barh(0, df["X"+dir +"_"+c[0]+"_"+c[1]], color=c0[c[0]], hatch="/", left=spos + b*ipos)
-            if (abs(int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]] / ts) * 100))) > 0):  # does not plot percentage below 1%
+        # positive pairs contributions
+        if c in xpos:
+            ax.barh(
+                0,
+                df["X" + dir + "_" + c[0] + "_" + c[1]],
+                color=c0[c[0]],
+                hatch="/",
+                left=spos + b * ipos,
+            )
+            if (
+                abs(int(np.rint((df["X" + dir + "_" + c[0] + "_" + c[1]] / ts) * 100)))
+                > 0
+            ):  # does not plot percentage below 1%
                 ax.text(
-                    spos + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    spos + df["X" + dir + "_" + c[0] + "_" + c[1]] / 2 + i * b,
                     0 + d * 2,
                     f'{int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]]/ts)*100))} %',
                     ha="center",
                     bbox=bbox,
                 )
-    
+
                 ax.text(
-                    spos + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    spos + df["X" + dir + "_" + c[0] + "_" + c[1]] / 2 + i * b,
                     0 - 0.55 + d,
                     f'{np.round(df["X"+dir +"_"+c[0]+"_"+c[1]],2)}',
                     ha="center",
                 )
-            spos += df["X"+dir +"_"+c[0]+"_"+c[1]]
+            spos += df["X" + dir + "_" + c[0] + "_" + c[1]]
             ipos += 1
 
-        
         # negative contributions
-        else : 
+        else:
             dp, dj = 0.19, 0
-            if ineg%2 ==0 : 
+            if ineg % 2 == 0:
                 dp = -dp
                 dj = -0.17
 
-            ax.barh(0, -df["X"+dir +"_"+c[0]+"_"+c[1]], color=c0[c[0]], hatch="/", left=df["X"+dir +"_"+c[0]+"_"+c[1]]+sneg - b*ineg)
-            if (abs(int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]] / ts) * 100))) > 0):  # does not plot percentage below 1%
+            ax.barh(
+                0,
+                -df["X" + dir + "_" + c[0] + "_" + c[1]],
+                color=c0[c[0]],
+                hatch="/",
+                left=df["X" + dir + "_" + c[0] + "_" + c[1]] + sneg - b * ineg,
+            )
+            if (
+                abs(int(np.rint((df["X" + dir + "_" + c[0] + "_" + c[1]] / ts) * 100)))
+                > 0
+            ):  # does not plot percentage below 1%
                 ax.text(
-                    sneg + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
-                    0 + d * 2+dp,
+                    sneg + df["X" + dir + "_" + c[0] + "_" + c[1]] / 2 + i * b,
+                    0 + d * 2 + dp,
                     f'{int(np.rint((df["X"+dir +"_"+c[0]+"_"+c[1]]/ts)*100))} %',
                     ha="center",
                     bbox=bbox,
                 )
-    
+
                 ax.text(
-                    sneg + df["X"+dir +"_"+c[0]+"_"+c[1]] / 2 + i * b,
+                    sneg + df["X" + dir + "_" + c[0] + "_" + c[1]] / 2 + i * b,
                     0 - 0.55 + dj,
                     f'{np.round(df["X"+dir +"_"+c[0]+"_"+c[1]],2)}',
                     ha="center",
                 )
-            sneg += df["X"+dir +"_"+c[0]+"_"+c[1]]
+            sneg += df["X" + dir + "_" + c[0] + "_" + c[1]]
             ineg += 1
-    
-    # Residual         
-    ax.barh(0,df["S"+dir],label="Errors",color="lightgrey",left=spos+ ipos * b,)
+
+    # Residual
+    ax.barh(
+        0,
+        df["S" + dir],
+        label="Errors",
+        color="lightgrey",
+        left=spos + ipos * b,
+    )
     ax.text(
-            spos + df["S"+dir] / 2 + i * b,
-            0 - 0.55 + d,
-            f'{np.round(df["S"+dir],2)}',
-            ha="center",
-        )
+        spos + df["S" + dir] / 2 + i * b,
+        0 - 0.55 + d,
+        f'{np.round(df["S"+dir],2)}',
+        ha="center",
+    )
     ax.text(
-        spos + df["S"+dir] / 2 + i * b,
+        spos + df["S" + dir] / 2 + i * b,
         0 + d * 2,
         f'{int(np.rint((df["S"+dir]/ts)*100))} %',
         ha="center",
         bbox=bbox,
     )
-    
 
-    tts = (spos
-        + 4 * b
-        + df["S"+dir]
-    )
+    tts = spos + 4 * b + df["S" + dir]
     print(tts)
     ax.text(spos / 2, 0.6, r"Pairs' contributions $X_{ij}$", ha="center")
 
@@ -657,13 +936,12 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     bx = [id1, id1, id2, id2]
     by = [0.45, 0.5, 0.5, 0.45]
     # ax.plot(bx, by, 'k-', lw=2)
-    ax.text(spos + df["S"+dir] / 2, 0.5, r"$\mathcal{E}$", ha="center")
-
+    ax.text(spos + df["S" + dir] / 2, 0.5, r"$\mathcal{E}$", ha="center")
 
     # FIGURE SET
     ax.set_yticks([])
-    if len(xlim)!=2:
-        xlim = (sneg, spos + df["S"+dir]+0.3)
+    if len(xlim) != 2:
+        xlim = (sneg, spos + df["S" + dir] + 0.3)
     ax.axvline(0, ls=":", c="grey")
     ax.set_xlim(xlim[0], xlim[1] + 0.5)
     ax.set_ylim(-1, 4.1)
@@ -676,17 +954,23 @@ def synthetic_figure(df, ax, xlim=[1], aviso=False, dir = 'e'):
     )
     ax.set_xlabel(r"$[\gamma^2]$")
 
-def plot_error(df, x, v, ax, suf = 'er__', color ="silver", alpha=1):
+
+def plot_error(df, x, v, ax, suf="er__", color="silver", alpha=1):
     ax.fill_between(
         df[x], df[v] - df[suf + v], df[v] + df[suf + v], color=color, alpha=alpha
     )
 
+
 def plot_join_pdfs(ds, x, y, binx=100, biny=100):
     nsamples, xx, yy = np.histogram2d(ds[x], ds[y], bins=(binx, biny))
-    da = xr.DataArray(data=nsamples, dims=[x, y],coords={x:([x], (xx[:-1] + xx[1:])/2), y:([y], (yy[:-1] + yy[1:])/2)})
-    
+    da = xr.DataArray(
+        data=nsamples,
+        dims=[x, y],
+        coords={x: ([x], (xx[:-1] + xx[1:]) / 2), y: ([y], (yy[:-1] + yy[1:]) / 2)},
+    )
+
     fig = plt.figure(figsize=(9, 4))
-    
+
     # Add a gridspec with two rows and two columns and a ratio of 2 to 7 between
     # the size of the marginal axes and the main axes in both directions.
     # Also adjust the subplot parameters for a square plot.
@@ -702,15 +986,13 @@ def plot_join_pdfs(ds, x, y, binx=100, biny=100):
         wspace=0.05,
         hspace=0.05,
     )
-    
+
     ax = fig.add_subplot(gs[1, 0])
     ax_histx = fig.add_subplot(gs[0, 0], sharex=ax)
     ax_histy = fig.add_subplot(gs[1, 1], sharey=ax)
-    
 
-    
     da.plot(ax=ax, add_colorbar=False)
-    ax.plot(xx, -xx, color='r')
+    ax.plot(xx, -xx, color="r")
     ds[x].plot.hist(bins=binx, density=True, ax=ax_histx, zorder=1)
     ds[y].plot.hist(
         bins=biny,
@@ -720,24 +1002,28 @@ def plot_join_pdfs(ds, x, y, binx=100, biny=100):
         zorder=1,
     )
 
-
     # no labels
     ax.grid(zorder=0)
     ax_histx.grid()
     ax_histy.grid()
     ax_histx.tick_params(axis="x", labelbottom=False)
     ax_histy.tick_params(axis="y", labelleft=False)
-    ax_histy.set_title('')
-    ax_histx.set_title('')
+    ax_histy.set_title("")
+    ax_histx.set_title("")
     fig.tight_layout(rect=[0, 0, 1, 1])  # left, bottom, right, top (default is 0,0,1,1)
-    
+
 
 def select_row(df, pass_number, cycle_number, drifter_id):
-    return df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()
+    return df.where(
+        (df.pass_number == pass_number)
+        & (df.cycle_number == cycle_number)
+        & (df.drifter_id == drifter_id)
+    ).dropna()
 
 
 import cartopy.feature as cfeature
 from pyproj import Geod
+
 
 def scale_bar(ax, length, location=(0.5, 0.05), linewidth=3):
     """
@@ -765,28 +1051,39 @@ def scale_bar(ax, length, location=(0.5, 0.05), linewidth=3):
     lon2 = lon_center + length / (2 * 111) / np.cos(np.deg2rad(lat))
 
     # Tracer la barre
-    ax.plot([lon1, lon2], [lat_center, lat_center],
-            transform=ccrs.PlateCarree(), color='k', linewidth=linewidth)
+    ax.plot(
+        [lon1, lon2],
+        [lat_center, lat_center],
+        transform=ccrs.PlateCarree(),
+        color="k",
+        linewidth=linewidth,
+    )
 
     # Label
-    ax.text(lon_center, lat_center - (y1-y0)*0.02,
-            f"{length} km", ha='center', va='top',
-            transform=ccrs.PlateCarree())
+    ax.text(
+        lon_center,
+        lat_center - (y1 - y0) * 0.02,
+        f"{length} km",
+        ha="center",
+        va="top",
+        transform=ccrs.PlateCarree(),
+    )
 
-    
+
 """ 
 _________________________________________
 ---- ONE COLOC PLOTS ----
 _________________________________________
 """
 
-def plot_exemple(row_number, df, directory, swot_product = '250m'):
+
+def plot_exemple(row_number, df, directory, swot_product="250m"):
     """
     Parameters :
     ------------
         row_number : index of the coloc to find in df
         df : dataframe, should contains : pass_number, cycle_number, longitude, latitude, drifter_id, drifter_type, acce, accn, core, corn, ggde, ggdn, wde, wdn,sume, sumn
-    
+
     """
     # Collect info from row_number
     cycle_number = df.loc[row_number].cycle_number
@@ -794,142 +1091,262 @@ def plot_exemple(row_number, df, directory, swot_product = '250m'):
     drifter_id = df.loc[row_number].drifter_id
 
     # select good rows in df
-    df_ = df.where((df.pass_number==pass_number)&(df.cycle_number==cycle_number)&(df.drifter_id==drifter_id)).dropna()#all
-    dfc_ = select_nearest_swot_coloc(df_)#nearest
+    df_ = df.where(
+        (df.pass_number == pass_number)
+        & (df.cycle_number == cycle_number)
+        & (df.drifter_id == drifter_id)
+    ).dropna()  # all
+    dfc_ = select_nearest_swot_coloc(df_)  # nearest
 
     #
     dl = 0.2
-    bbox = [dfc_.longitude.values[0]-dl, dfc_.longitude.values[0]+dl, dfc_.latitude.values[0]-dl, dfc_.latitude.values[0]+dl]
-    #print(bbox)
+    bbox = [
+        dfc_.longitude.values[0] - dl,
+        dfc_.longitude.values[0] + dl,
+        dfc_.latitude.values[0] - dl,
+        dfc_.latitude.values[0] + dl,
+    ]
+    # print(bbox)
 
-    #SWOT data
-    if swot_product=='250m': dfs = browse_swot_250().reset_index()
-    if swot_product=='2km': dfs = browse_swot_2km().reset_index()  
-    dss = xr.open_dataset(dfs.where((dfs.pass_number==pass_number)&(dfs.cycle_number==cycle_number)).dropna().file.values[0])
-    dss = dss.where((dss.latitude>bbox[2]) & (dss.latitude<bbox[3])&(dss.longitude>bbox[0]) & (dss.longitude<bbox[1]))
-    
-    #ERA data
-    era = xr.open_dataset('/Users/mdemol/DATA_WIND/era5/adaptor.mars.internal-1726002205.1540956-13738-7-c8d88fd1-3ec7-4113-8790-c92c59938aa6.nc')
-    
-    #PLOT
-    fig = plt.figure( frameon=False, figsize=(20,12))
+    # SWOT data
+    if swot_product == "250m":
+        dfs = browse_swot_250().reset_index()
+    if swot_product == "2km":
+        dfs = browse_swot_2km().reset_index()
+    dss = xr.open_dataset(
+        dfs.where((dfs.pass_number == pass_number) & (dfs.cycle_number == cycle_number))
+        .dropna()
+        .file.values[0]
+    )
+    dss = dss.where(
+        (dss.latitude > bbox[2])
+        & (dss.latitude < bbox[3])
+        & (dss.longitude > bbox[0])
+        & (dss.longitude < bbox[1])
+    )
+
+    # ERA data
+    era = xr.open_dataset(
+        "/Users/mdemol/DATA_WIND/era5/adaptor.mars.internal-1726002205.1540956-13738-7-c8d88fd1-3ec7-4113-8790-c92c59938aa6.nc"
+    )
+
+    # PLOT
+    fig = plt.figure(frameon=False, figsize=(20, 12))
 
     ax = fig.add_subplot(241)
-    df_['sume'] = df_.acce + df_.core + df_.ggde + df_.wde
-    df_ = df_.set_index('datetime')
-    df_.acce.plot(ax=ax, label = 'acc', c=c0['acc'], ls='', marker='.')
-    df_.core.plot(ax=ax, c=c0['cor'], label = 'cor', ls='', marker='.')
-    df_.ggde.plot(ax=ax,c=c0['ggd'],  label = 'ggd', ls='', marker='.')
-    df_.wde.plot(ax=ax,c=c0['wd'],  label = 'wd', ls='', marker='.')
-    (-(df_.acce + df_.core + df_.wde)).plot(ax=ax,c=c0['ggd'],  label = 'gge for balance', ls='--')
-    df_.sume.plot(ax=ax, c='k', label = 's', ls='--')
-    ax.axvline(dfc_.datetime.values[0], color = 'r',ls=':')
-    ax.axvline(pd.to_datetime(dss.time.mean().values), color = 'b',ls=':')
+    df_["sume"] = df_.acce + df_.core + df_.ggde + df_.wde
+    df_ = df_.set_index("datetime")
+    df_.acce.plot(ax=ax, label="acc", c=c0["acc"], ls="", marker=".")
+    df_.core.plot(ax=ax, c=c0["cor"], label="cor", ls="", marker=".")
+    df_.ggde.plot(ax=ax, c=c0["ggd"], label="ggd", ls="", marker=".")
+    df_.wde.plot(ax=ax, c=c0["wd"], label="wd", ls="", marker=".")
+    (-(df_.acce + df_.core + df_.wde)).plot(
+        ax=ax, c=c0["ggd"], label="gge for balance", ls="--"
+    )
+    df_.sume.plot(ax=ax, c="k", label="s", ls="--")
+    ax.axvline(dfc_.datetime.values[0], color="r", ls=":")
+    ax.axvline(pd.to_datetime(dss.time.mean().values), color="b", ls=":")
     ax.legend()
     ax.grid()
-    ax.set_title('East-West terms')
-    #ax.set_ylim(-7e-5, 7e-5)
-
+    ax.set_title("East-West terms")
+    # ax.set_ylim(-7e-5, 7e-5)
 
     ax = fig.add_subplot(245)
-    df_['sumn'] = df_.accn + df_.corn + df_.ggdn + df_.wdn
-    df_.accn.plot(ax=ax, label = 'acc', c=c0['acc'], ls='', marker='.')
-    df_.corn.plot(ax=ax, c=c0['cor'], label = 'cor', ls='', marker='.')
-    df_.ggdn.plot(ax=ax,c=c0['ggd'],  label = 'ggd', ls='', marker='.')
-    df_.wdn.plot(ax=ax,c=c0['wd'],  label = 'wd', ls='', marker='.')
-    (-(df_.accn + df_.corn + df_.wdn)).plot(ax=ax,c=c0['ggd'],  label = 'ggn for balance', ls='--')
-    df_.sumn.plot(ax=ax, c='k', label = 's', ls='--')
-    ax.axvline(dfc_.datetime.values[0], color = 'r',ls=':')
-    ax.axvline(pd.to_datetime(dss.time.mean().values), color = 'b',ls=':')
+    df_["sumn"] = df_.accn + df_.corn + df_.ggdn + df_.wdn
+    df_.accn.plot(ax=ax, label="acc", c=c0["acc"], ls="", marker=".")
+    df_.corn.plot(ax=ax, c=c0["cor"], label="cor", ls="", marker=".")
+    df_.ggdn.plot(ax=ax, c=c0["ggd"], label="ggd", ls="", marker=".")
+    df_.wdn.plot(ax=ax, c=c0["wd"], label="wd", ls="", marker=".")
+    (-(df_.accn + df_.corn + df_.wdn)).plot(
+        ax=ax, c=c0["ggd"], label="ggn for balance", ls="--"
+    )
+    df_.sumn.plot(ax=ax, c="k", label="s", ls="--")
+    ax.axvline(dfc_.datetime.values[0], color="r", ls=":")
+    ax.axvline(pd.to_datetime(dss.time.mean().values), color="b", ls=":")
     ax.legend()
     ax.grid()
-    ax.set_title('North-south terms')
-    ax.set_title('Global view')
-    #ax.set_ylim(-7e-5, 7e-5)
+    ax.set_title("North-south terms")
+    ax.set_title("Global view")
+    # ax.set_ylim(-7e-5, 7e-5)
 
     # SWOT ETA global view
-    ax = fig.add_subplot(242, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
+    ax = fig.add_subplot(
+        242, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
     bbox_all = [1, 6, 37, 43.5]
     ax.set_extent(bbox_all)
-    dss['eta'] = dss.cvl_mean_dynamic_topography_cnes_cls_22 + dss.cvl_ocean_tide_fes_2022 + dss.duacs_ssha_karin_2_filtered
-    dss.where(dss.duacs_editing_flag==0).eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
-    
+    dss["eta"] = (
+        dss.cvl_mean_dynamic_topography_cnes_cls_22
+        + dss.cvl_ocean_tide_fes_2022
+        + dss.duacs_ssha_karin_2_filtered
+    )
+    dss.where(dss.duacs_editing_flag == 0).eta.plot(
+        x="longitude", y="latitude", ax=ax, transform=crs, cmap="viridis"
+    )
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
+
     # SWOT ETA + ERA wind
-    ax = fig.add_subplot(244, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
+    ax = fig.add_subplot(
+        244, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
     ax.set_extent(bbox)
-    dss['eta'] = dss.cvl_mean_dynamic_topography_cnes_cls_22 + dss.cvl_ocean_tide_fes_2022 + dss.duacs_ssha_karin_2_filtered
-    #dss.where(dss.duacs_editing_flag==0).eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
-    dss.eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
-    ax.set_title('SWOT MDT + SLA + tides correction')
+    dss["eta"] = (
+        dss.cvl_mean_dynamic_topography_cnes_cls_22
+        + dss.cvl_ocean_tide_fes_2022
+        + dss.duacs_ssha_karin_2_filtered
+    )
+    # dss.where(dss.duacs_editing_flag==0).eta.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
+    dss.eta.plot(x="longitude", y="latitude", ax=ax, transform=crs, cmap="viridis")
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
+    ax.set_title("SWOT MDT + SLA + tides correction")
 
     t = dss.time.mean()
-    era_ = era.sel(time=dss.time.mean(), method='nearest').sortby('latitude')
+    era_ = era.sel(time=dss.time.mean(), method="nearest").sortby("latitude")
     era_ = era_.sel(longitude=slice(bbox[0], bbox[1]), latitude=slice(bbox[2], bbox[3]))
-    Q = era_.plot.quiver('longitude', 'latitude', 'u10', 'v10', ax=ax, transform =crs, scale=250, color='magenta', clip_on = False, add_guide = False)
-
+    Q = era_.plot.quiver(
+        "longitude",
+        "latitude",
+        "u10",
+        "v10",
+        ax=ax,
+        transform=crs,
+        scale=250,
+        color="magenta",
+        clip_on=False,
+        add_guide=False,
+    )
 
     # SWOT MDT
-    ax = fig.add_subplot(243, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
+    ax = fig.add_subplot(
+        243, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
     ax.set_extent(bbox)
-    dss.cvl_mean_dynamic_topography_cnes_cls_22.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
-    ax.set_title('SWOT MDT')
+    dss.cvl_mean_dynamic_topography_cnes_cls_22.plot(
+        x="longitude", y="latitude", ax=ax, transform=crs, cmap="viridis"
+    )
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
+    ax.set_title("SWOT MDT")
 
     # SWOT sigma0
-    ax = fig.add_subplot(246, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
+    ax = fig.add_subplot(
+        246, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
     ax.set_extent(bbox)
-    dss.sig0_karin_2.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis')
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
-    ax.set_title('SWOT sigma0')
+    dss.sig0_karin_2.plot(
+        x="longitude", y="latitude", ax=ax, transform=crs, cmap="viridis"
+    )
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
+    ax.set_title("SWOT sigma0")
 
     # SWOT velocities
-    ax = fig.add_subplot(247, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
+    ax = fig.add_subplot(
+        247, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
     ax.set_extent(bbox)
-    dss['U'] = np.sqrt(dss.duacs_speed_zonal**2 + dss.duacs_speed_meridional**2)
-    dss.U.plot(x='longitude', y='latitude', ax=ax, transform=crs,cmap='viridis', vmax=5, vmin=0)
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
-    ax.set_title('SWOT geostrophic velocity')
+    dss["U"] = np.sqrt(dss.duacs_speed_zonal**2 + dss.duacs_speed_meridional**2)
+    dss.U.plot(
+        x="longitude",
+        y="latitude",
+        ax=ax,
+        transform=crs,
+        cmap="viridis",
+        vmax=5,
+        vmin=0,
+    )
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
+    ax.set_title("SWOT geostrophic velocity")
 
     # SWOT duacs editing flags
-    ax = fig.add_subplot(248, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean()))
-    ax.add_feature(cfeature.LAND,)
-    gl = ax.gridlines(draw_labels=True,)
-    def get_indice(flag): 
+    ax = fig.add_subplot(
+        248, projection=ccrs.Orthographic(df.longitude.mean(), df.latitude.mean())
+    )
+    ax.add_feature(
+        cfeature.LAND,
+    )
+    gl = ax.gridlines(
+        draw_labels=True,
+    )
+
+    def get_indice(flag):
         if np.isnan(flag):
             return np.nan
-        else :
+        else:
             return flag_indices[flag]
+
     editing_flags = xr.apply_ufunc(get_indice, dss.duacs_editing_flag, vectorize=True)
     cm, fmt, tickz, norm = create_flag_cmap()
-    im = dss.duacs_editing_flag.plot(x='longitude', y='latitude', transform =crs, ax=ax, cmap=cm, norm=norm,)
+    im = dss.duacs_editing_flag.plot(
+        x="longitude",
+        y="latitude",
+        transform=crs,
+        ax=ax,
+        cmap=cm,
+        norm=norm,
+    )
     plot_flag_colorbar(fig, im, fmt, tickz)
-    df_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, s=2 )
-    dfc_.plot.scatter('longitude', 'latitude', transform =crs, ax=ax, marker='*', color='r', s=10 )
+    df_.plot.scatter("longitude", "latitude", transform=crs, ax=ax, s=2)
+    dfc_.plot.scatter(
+        "longitude", "latitude", transform=crs, ax=ax, marker="*", color="r", s=10
+    )
     ax.set_extent(bbox)
-    ax.set_title('SWOT editing flags')
+    ax.set_title("SWOT editing flags")
 
-    #ax.set_ylim(-7e-5, 7e-5)
+    # ax.set_ylim(-7e-5, 7e-5)
 
-    fig.suptitle(f'row number = {row_number}, pass_number = {pass_number}, cycle = {cycle_number}, drifter = {dfc_.drifter_type.values}, {drifter_id} \n')#+ f'wd ={np.sqrt(dfwc_.u10**2 + dfwc_.v10**2)}')
+    fig.suptitle(
+        f"row number = {row_number}, pass_number = {pass_number}, cycle = {cycle_number}, drifter = {dfc_.drifter_type.values}, {drifter_id} \n"
+    )  # + f'wd ={np.sqrt(dfwc_.u10**2 + dfwc_.v10**2)}')
     fig.tight_layout()
-    fig.savefig(os.path.join(images_dir, directory, f'{row_number}.png'), dpi=200, bbox_inches='tight')
+    fig.savefig(
+        os.path.join(images_dir, directory, f"{row_number}.png"),
+        dpi=200,
+        bbox_inches="tight",
+    )
 
 
 """
@@ -938,16 +1355,42 @@ ________________
 """
 
 flag_values = [0, 5, 10, 20, 30, 50, 70, 100, 101, 102, 200]
-flag_legend = ['good','local_outliers', 'bad_quality_coast','ice','soft_outliers',  'extremes', 'mission_events', 'bad_swath_extremities', 'not_on_sea', 'no_data', 'gradient_nan', ]
-flag_color = ['pink', 'coral', 'orange', 'lightblue', 'magenta', 'red', 'blue','green', 'yellow', 'grey', 'darkgrey']
+flag_legend = [
+    "good",
+    "local_outliers",
+    "bad_quality_coast",
+    "ice",
+    "soft_outliers",
+    "extremes",
+    "mission_events",
+    "bad_swath_extremities",
+    "not_on_sea",
+    "no_data",
+    "gradient_nan",
+]
+flag_color = [
+    "pink",
+    "coral",
+    "orange",
+    "lightblue",
+    "magenta",
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "grey",
+    "darkgrey",
+]
 len_lab = len(flag_values)
-flag_indices = {flag_values[i] : i for i in range(len(flag_values))}
+flag_indices = {flag_values[i]: i for i in range(len(flag_values))}
+
 
 def create_flag_cmap():
     from matplotlib.colors import ListedColormap
     import matplotlib
+
     cm = ListedColormap(flag_color)
-    norm_bins = np.arange(len_lab)+1
+    norm_bins = np.arange(len_lab) + 1
     norm_bins = np.insert(norm_bins, 0, np.min(norm_bins) - 1.0)
     # Make normalizer and formatter
     norm = matplotlib.colors.BoundaryNorm(norm_bins, len_lab, clip=True)
@@ -955,9 +1398,10 @@ def create_flag_cmap():
     diff = norm_bins[1:] - norm_bins[:-1]
     tickz = norm_bins[:-1] + diff / 2
     return cm, fmt, tickz, norm
-    
+
+
 def plot_flag_colorbar(fig, im, fmt, tickz):
-    cb = im.colorbar   
+    cb = im.colorbar
     cb.remove()
     cb = fig.colorbar(im, format=fmt, ticks=tickz)
 
@@ -966,105 +1410,121 @@ def plot_flag_colorbar(fig, im, fmt, tickz):
 COM
 ________________
 """
-def MSnoiseggd_from_sshnoisestd(sigmaN, d=2e3) : 
-    """ 
+
+
+def MSnoiseggd_from_sshnoisestd(sigmaN, d=2e3):
+    """
     sigmaN : white noise std in m
     d : grid spacing in m
     """
-    print('Caution : std must be given in m, E_ggd given in gamma^2')
+    print("Caution : std must be given in m, E_ggd given in gamma^2")
     from cstes import U2
-    g=9.81
-    K = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
-    b=(1/280)**2 + (4/105)**2+ (1/5)**2+(4/5)**2
-    return 4*g**2/(K**2)/(d**2)*b*(sigmaN**2)/U2
 
-def sshnoisestd_from_MSnoiseggd(E_ggd, d=2e3) : 
-    """ 
+    g = 9.81
+    K = -sum(
+        np.arange(0, 9)
+        * [1 / 280, -4 / 105, 1 / 5, 4 / 5, 0, -4 / 5, -1 / 5, 4 / 105, -1 / 280]
+    )
+    b = (1 / 280) ** 2 + (4 / 105) ** 2 + (1 / 5) ** 2 + (4 / 5) ** 2
+    return 4 * g**2 / (K**2) / (d**2) * b * (sigmaN**2) / U2
+
+
+def sshnoisestd_from_MSnoiseggd(E_ggd, d=2e3):
+    """
     E_ggd : pressure gradient MS in gamma^2
     d : grid spacing in m
     """
-    print('Caution : E_ggd must be given in gamma^2, std must return in m')
+    print("Caution : E_ggd must be given in gamma^2, std must return in m")
     from cstes import U2
-    g=9.81
-    K = -sum(np.arange(0, 9)*[1/280, -4/105, 1/5, 4/5, 0, -4/5, -1/5, 4/105, -1/280])
-    b=(1/280)**2 + (4/105)**2+ (1/5)**2+(4/5)**2
-    
-    return np.sqrt(E_ggd*U2*(K*d)**2/(4*g**2*b))
+
+    g = 9.81
+    K = -sum(
+        np.arange(0, 9)
+        * [1 / 280, -4 / 105, 1 / 5, 4 / 5, 0, -4 / 5, -1 / 5, 4 / 105, -1 / 280]
+    )
+    b = (1 / 280) ** 2 + (4 / 105) ** 2 + (1 / 5) ** 2 + (4 / 5) ** 2
+
+    return np.sqrt(E_ggd * U2 * (K * d) ** 2 / (4 * g**2 * b))
+
 
 """
 STRUCTURES ANALYSIS
 ________________
 """
 
+
 def sel_structure(dfr, cmin, lomin, lamin, cmax, lomax, lamax, pass_, drifter_id):
-    #id = dfr[(dfr.longitude>=lomin)&(dfr.longitude<=lomax)&(dfr.latitude>=lamin)&(dfr.latitude<=lamax)&(dfr.cycle_number>=cmin)&(dfr.cycle_number<=cmax)].drifter_id.unique()
+    # id = dfr[(dfr.longitude>=lomin)&(dfr.longitude<=lomax)&(dfr.latitude>=lamin)&(dfr.latitude<=lamax)&(dfr.cycle_number>=cmin)&(dfr.cycle_number<=cmax)].drifter_id.unique()
     id = drifter_id
-    dfr = dfr[((dfr.drifter_id.isin(id))
-               &(dfr.longitude>=lomin)
-               &(dfr.longitude<=lomax)
-               &(dfr.latitude>=lamin)
-               &(dfr.latitude<=lamax)
-               &(dfr.cycle_number>=cmin)
-               &(dfr.cycle_number<=cmax)
-               #&(~((dfr.longitude<4.75)&(dfr.latitude<40.6)))
-              )]
+    dfr = dfr[
+        (
+            (dfr.drifter_id.isin(id))
+            & (dfr.longitude >= lomin)
+            & (dfr.longitude <= lomax)
+            & (dfr.latitude >= lamin)
+            & (dfr.latitude <= lamax)
+            & (dfr.cycle_number >= cmin)
+            & (dfr.cycle_number <= cmax)
+            # &(~((dfr.longitude<4.75)&(dfr.latitude<40.6)))
+        )
+    ]
     return dfr
 
-def generate_0_15m_coloc_dataframe(freq_band, DT = 12):
 
-    
+def generate_0_15m_coloc_dataframe(freq_band, DT=12):
+
     # SURFACE
-    base_dic = dict(dt='12h', 
-            drifter_preprocess = 'spectral_decomp',
-            drifter_preprocess_param= freq_band,
-            alti_product_key='swot2km',
-            alti_diff_method = 'fromduacsv',
-            alti_diff_method_param = '',
-            ggd_var = 'fromduacsv',
-            wd_product_key = 'era5', 
-            wd_model ='rio', 
-            wd_depth = '0')
-    
-    
+    base_dic = dict(
+        dt="12h",
+        drifter_preprocess="spectral_decomp",
+        drifter_preprocess_param=freq_band,
+        alti_product_key="swot2km",
+        alti_diff_method="fromduacsv",
+        alti_diff_method_param="",
+        ggd_var="fromduacsv",
+        wd_product_key="era5",
+        wd_model="rio",
+        wd_depth="0",
+    )
+
     comb_list = [base_dic]
-    
-    
-    ds0 = dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True)
-    #ds0 = ds0.where(ds0.depth==0, drop=True)
-    #distance_to_coast = ds0.distance_to_coast.isel(id_comb=0)
-    #ds0['distance_to_coast'] = ('row_number', distance_to_coast.values)
-    ds0 = ds0.where(ds0.time_to_swot/pd.Timedelta('1h')<DT, drop=True)
-    #ds0 = ds0.where((abs(ds0.ggde)<1e-4) & (abs(ds0.ggdn)<1e-4), drop=True)
-    #ds0 = ds0.where(ds0.distance_to_coast>distance_to_coast_max, drop=True)
-    
-    df0 = ds0.to_dataframe().reset_index().set_index('row_number')
-    
-    #DEPTH 15M
-    base_dic = dict(dt='12h', 
-                drifter_preprocess = 'spectral_decomp',
-                drifter_preprocess_param=freq_band,
-                alti_product_key='swot2km',
-                alti_diff_method = 'fromduacsv',
-                alti_diff_method_param = '',
-                ggd_var = 'fromduacsv',
-                wd_product_key = 'era5', 
-                wd_model ='rio', 
-                wd_depth = '15')
-    
-    comb_list = [    
-        base_dic, 
+
+    ds0 = dataset_coloc_combs(comb_list, nearest=False, remove_id_outliers=True)
+    # ds0 = ds0.where(ds0.depth==0, drop=True)
+    # distance_to_coast = ds0.distance_to_coast.isel(id_comb=0)
+    # ds0['distance_to_coast'] = ('row_number', distance_to_coast.values)
+    ds0 = ds0.where(ds0.time_to_swot / pd.Timedelta("1h") < DT, drop=True)
+    # ds0 = ds0.where((abs(ds0.ggde)<1e-4) & (abs(ds0.ggdn)<1e-4), drop=True)
+    # ds0 = ds0.where(ds0.distance_to_coast>distance_to_coast_max, drop=True)
+
+    df0 = ds0.to_dataframe().reset_index().set_index("row_number")
+
+    # DEPTH 15M
+    base_dic = dict(
+        dt="12h",
+        drifter_preprocess="spectral_decomp",
+        drifter_preprocess_param=freq_band,
+        alti_product_key="swot2km",
+        alti_diff_method="fromduacsv",
+        alti_diff_method_param="",
+        ggd_var="fromduacsv",
+        wd_product_key="era5",
+        wd_model="rio",
+        wd_depth="15",
+    )
+
+    comb_list = [
+        base_dic,
     ]
-    
-    ds15 = dataset_coloc_combs(comb_list, nearest =False, remove_id_outliers = True)
-    #ds15 =ds15.where(ds15.depth==15, drop=True)
-    #distance_to_coast = ds15.distance_to_coast.isel(id_comb=0)
-    #ds15['distance_to_coast'] = ('row_number', distance_to_coast.values)
-    ds15 = ds15.where(ds15.time_to_swot/pd.Timedelta('1h')<DT, drop=True)
-    #ds15 = ds15.where((abs(ds15.ggde)<1e-4) & (abs(ds15.ggdn)<1e-4), drop=True)
-    #ds15 = ds15.where(ds15.distance_to_coast>distance_to_coast_max, drop=True)
-    
-    df15 = ds15.to_dataframe().reset_index().set_index('row_number')
+
+    ds15 = dataset_coloc_combs(comb_list, nearest=False, remove_id_outliers=True)
+    # ds15 =ds15.where(ds15.depth==15, drop=True)
+    # distance_to_coast = ds15.distance_to_coast.isel(id_comb=0)
+    # ds15['distance_to_coast'] = ('row_number', distance_to_coast.values)
+    ds15 = ds15.where(ds15.time_to_swot / pd.Timedelta("1h") < DT, drop=True)
+    # ds15 = ds15.where((abs(ds15.ggde)<1e-4) & (abs(ds15.ggdn)<1e-4), drop=True)
+    # ds15 = ds15.where(ds15.distance_to_coast>distance_to_coast_max, drop=True)
+
+    df15 = ds15.to_dataframe().reset_index().set_index("row_number")
 
     return df0, df15
-
-

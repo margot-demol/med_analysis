@@ -21,18 +21,23 @@ import gc, ctypes
 from glob import glob
 
 from cstes import swot_dir, drifters_dir, get_proj, lonlat2xy, zarr_dir
-from swot import browse_swot_250, add_mask_inside_swot, build_swath_polygon, partition_swot_interp_grad
+from swot import (
+    browse_swot_250,
+    add_mask_inside_swot,
+    build_swath_polygon,
+    partition_swot_interp_grad,
+)
 
 import pynsitu as pyn
 
 # ---- Run parameters
 
-#root_dir = "/home/datawork-lops-osi/equinox/mit4320/parcels/"
+# root_dir = "/home/datawork-lops-osi/equinox/mit4320/parcels/"
 run_name = "coloc_drifters_swot_250"
 
 # will overwrite existing results
 # overwrite = True
-#overwrite = False
+# overwrite = False
 
 # dask parameters
 
@@ -205,80 +210,94 @@ def trim_memory() -> int:
 # ---------------------------------- core of the job to be done ----------------------------------
 
 
-
-
 def run_coloc_swot_250():
     """main execution code"""
 
-    ggrad_variables = ['cvl_mean_dynamic_topography_cnes_cls_22',
-                 'cvl_mean_sea_surface_cnes_22_hybrid',
-                 'cvl_ocean_tide_fes_2022',
-                 'cvl_ssha_reference',
-                 'duacs_ssha_karin_2_calibrated',
-                 'duacs_ssha_karin_2_filtered',]
+    ggrad_variables = [
+        "cvl_mean_dynamic_topography_cnes_cls_22",
+        "cvl_mean_sea_surface_cnes_22_hybrid",
+        "cvl_ocean_tide_fes_2022",
+        "cvl_ssha_reference",
+        "duacs_ssha_karin_2_calibrated",
+        "duacs_ssha_karin_2_filtered",
+    ]
 
-    variables = ['duacs_relative_vorticity',
-                    'duacs_speed_meridional',
-                    'duacs_speed_meridional_abs',
-                    'duacs_speed_zonal',
-                    'duacs_speed_zonal_abs',
-                   'cvl_swh_model', 
-                   ]
-    #SWOT
+    variables = [
+        "duacs_relative_vorticity",
+        "duacs_speed_meridional",
+        "duacs_speed_meridional_abs",
+        "duacs_speed_zonal",
+        "duacs_speed_zonal_abs",
+        "cvl_swh_model",
+    ]
+    # SWOT
     dfs = browse_swot_250().reset_index()
-    
-    #drifters
-    dr = xr.open_dataset(os.path.join(drifters_dir,'L2', 'all_med_variational_10min_v0.nc'))
-    dr_key = dr[['cruise_id', 'drifter_type']]
-    dr = dr.where(dr.gap_mask==1)
+
+    # drifters
+    dr = xr.open_dataset(
+        os.path.join(drifters_dir, "L2", "all_med_variational_10min_v0.nc")
+    )
+    dr_key = dr[["cruise_id", "drifter_type"]]
+    dr = dr.where(dr.gap_mask == 1)
 
     # select drifters under the swath
     def sel_drifters(swath, cycle):
-        dfs_ = dfs.where((dfs.pass_number==swath)&(dfs.cycle_number==cycle)).dropna()
-        dr_ = dr.sel(datetime = slice(pd.to_datetime(dfs_.start_time_cut).values[0], pd.to_datetime(dfs_.end_time_cut).values[0]))
+        dfs_ = dfs.where(
+            (dfs.pass_number == swath) & (dfs.cycle_number == cycle)
+        ).dropna()
+        dr_ = dr.sel(
+            datetime=slice(
+                pd.to_datetime(dfs_.start_time_cut).values[0],
+                pd.to_datetime(dfs_.end_time_cut).values[0],
+            )
+        )
         dfr_ = dr_.to_dataframe().reset_index().dropna()
-        dfr_['time_to_swot']=(dfr_.datetime-dfs_.time.values[0]).abs()
-        
-        dfrs_=pd.DataFrame()
-        dfrs_['time_to_swot_min'] = dfr_.groupby('drifter_id').time_to_swot.min()
-        dfrs_['time_to_swot_max'] = dfr_.groupby('drifter_id').time_to_swot.max()
-        dfrs_['point_number'] = dfr_.groupby('drifter_id').datetime.count()
-        dfrs_['cycle_number'] = int(dfs_.cycle_number.values[0])
-        dfrs_['pass_number'] = int(dfs_.pass_number.values[0])
-        return dfs_, dfr_, dfrs_.reset_index()
-    
-    D = []
-    for swath in [3,16]:
-        for cycle in dfs.where(dfs.pass_number==swath).dropna().cycle_number:
-            dfs_, dfr_, dfrs_ = sel_drifters(swath, cycle)
-            dfr_['cycle_number'] = int(dfs_.cycle_number.values[0])
-            dfr_['pass_number'] = int(dfs_.pass_number.values[0])
-            D.append(dfr_.loc[dfr_.groupby(['drifter_id']).time_to_swot.idxmin()])
-    df = pd.concat(D).set_index('pass_number').reset_index()
-    df['row_number'] = np.arange(len(df))
+        dfr_["time_to_swot"] = (dfr_.datetime - dfs_.time.values[0]).abs()
 
-    #meta
+        dfrs_ = pd.DataFrame()
+        dfrs_["time_to_swot_min"] = dfr_.groupby("drifter_id").time_to_swot.min()
+        dfrs_["time_to_swot_max"] = dfr_.groupby("drifter_id").time_to_swot.max()
+        dfrs_["point_number"] = dfr_.groupby("drifter_id").datetime.count()
+        dfrs_["cycle_number"] = int(dfs_.cycle_number.values[0])
+        dfrs_["pass_number"] = int(dfs_.pass_number.values[0])
+        return dfs_, dfr_, dfrs_.reset_index()
+
+    D = []
+    for swath in [3, 16]:
+        for cycle in dfs.where(dfs.pass_number == swath).dropna().cycle_number:
+            dfs_, dfr_, dfrs_ = sel_drifters(swath, cycle)
+            dfr_["cycle_number"] = int(dfs_.cycle_number.values[0])
+            dfr_["pass_number"] = int(dfs_.pass_number.values[0])
+            D.append(dfr_.loc[dfr_.groupby(["drifter_id"]).time_to_swot.idxmin()])
+    df = pd.concat(D).set_index("pass_number").reset_index()
+    df["row_number"] = np.arange(len(df))
+
+    # meta
     df0_ = df.iloc[0:2]
     df_meta = partition_swot_interp_grad(df0_)
 
-    #interp and ggrad
+    # interp and ggrad
     for i in range(0, len(df), 1000):
-        df_ = df.iloc[i:max(i+1000, len(df))]
+        df_ = df.iloc[i : max(i + 1000, len(df))]
         from dask.dataframe import from_pandas
+
         ddf_ = from_pandas(df_, npartitions=50)
         ddf_done = ddf_.map_partitions(partition_compute_grad_to_df, meta=df_meta)
-        if i==0:
-            ddf_done.to_parquet(os.path.join(zarr_dir, 'DATA_MED_COLOC.parquet'), overwrite=True)
-        else : 
-            ddf_done.to_parquet(os.path.join(zarr_dir, 'DATA_MED_COLOC.parquet'), append=True)
+        if i == 0:
+            ddf_done.to_parquet(
+                os.path.join(zarr_dir, "DATA_MED_COLOC.parquet"), overwrite=True
+            )
+        else:
+            ddf_done.to_parquet(
+                os.path.join(zarr_dir, "DATA_MED_COLOC.parquet"), append=True
+            )
         logging.info(f"process and store {i+1000}/{len(df)}")
 
         # close dask
     close_dask(cluster, client)
 
     logging.info("- all done")
- 
-    
+
 
 # ---------------------------------- execution ----------------------------------
 
@@ -313,5 +332,7 @@ if __name__ == "__main__":
     )
     ssh_command, dashboard_port = dashboard_ssh_forward(client)
     logging.info("dashboard via ssh: " + ssh_command)
-    logging.info(f"open browser at address of the type: http://localhost:{dashboard_port}")
+    logging.info(
+        f"open browser at address of the type: http://localhost:{dashboard_port}"
+    )
     run_coloc_swot_250()
