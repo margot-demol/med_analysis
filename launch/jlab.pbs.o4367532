@@ -1,0 +1,107 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Thu Nov 27 14:25:46 GMT 2025
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2025-11-27 14:25:49.540 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2025-11-27 14:25:49.670 ServerApp] Package jupyter_lsp took 0.1293s to import
+[W 2025-11-27 14:25:49.670 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-11-27 14:25:49.716 ServerApp] Package jupyter_server_terminals took 0.0452s to import
+[I 2025-11-27 14:25:49.716 ServerApp] Package notebook took 0.0000s to import
+[I 2025-11-27 14:25:49.721 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2025-11-27 14:25:49.721 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-11-27 14:25:55.507 ServerApp] Package panel.io.jupyter_server_extension took 5.7851s to import
+[I 2025-11-27 14:25:55.508 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-11-27 14:25:55.514 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-11-27 14:25:55.521 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-11-27 14:25:55.527 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-11-27 14:25:55.530 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-11-27 14:25:55.530 ServerApp] notebook | extension was successfully linked.
+[I 2025-11-27 14:25:56.881 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-11-27 14:25:56.881 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-11-27 14:25:56.975 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-11-27 14:25:56.977 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-11-27 14:25:56.979 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-11-27 14:25:57.004 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2025-11-27 14:25:57.004 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2025-11-27 14:25:57.005 LabApp] Extension Manager is 'pypi'.
+[I 2025-11-27 14:25:57.008 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-11-27 14:25:57.015 ServerApp] notebook | extension was successfully loaded.
+[I 2025-11-27 14:25:57.016 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-11-27 14:25:57.016 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2025-11-27 14:25:57.016 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2025-11-27 14:25:57.016 ServerApp] http://r1i0n30:8877/lab
+[I 2025-11-27 14:25:57.016 ServerApp]     http://127.0.0.1:8877/lab
+[I 2025-11-27 14:25:57.016 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-11-27 14:25:57.111 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-11-27 14:26:57.290 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-11-27 14:26:58.309 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[W 2025-11-27 14:26:58.355 ServerApp] Notebook med_analysis/20_dynamical_analysis/20_overview_structure.ipynb is not trusted
+[W 2025-11-27 14:26:58.431 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[W 2025-11-27 14:26:58.537 ServerApp] Notebook med_analysis/theory_tests/11_synthetic_no_noise_cyclogeostrophy.ipynb is not trusted
+[I 2025-11-27 14:26:59.192 ServerApp] Kernel started: 5d2ea2fb-7b06-4c76-a295-8d5e6816f9fb
+[I 2025-11-27 14:26:59.193 ServerApp] Kernel started: ca089e96-50ca-4179-b058-1d223b1980ec
+[I 2025-11-27 14:26:59.194 ServerApp] Kernel started: 6a0a196e-356e-437b-88d6-c2832b7a51f3
+[I 2025-11-27 14:26:59.218 ServerApp] Kernel started: 4a921d7a-406d-4f7e-ae33-978f98220ec2
+[I 2025-11-27 14:26:59.237 ServerApp] Kernel started: 621e0b34-23d3-4bee-b62b-bf25b3ad2e25
+[I 2025-11-27 14:26:59.282 ServerApp] Kernel started: cb326fea-2699-4415-bbe3-8f263569ce45
+readline: readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-11-27 14:27:00.347 ServerApp] Connecting to kernel 6a0a196e-356e-437b-88d6-c2832b7a51f3.
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-11-27 14:27:00.372 ServerApp] Connecting to kernel ca089e96-50ca-4179-b058-1d223b1980ec.
+[I 2025-11-27 14:27:00.374 ServerApp] Connecting to kernel 5d2ea2fb-7b06-4c76-a295-8d5e6816f9fb.
+[I 2025-11-27 14:27:00.394 ServerApp] Connecting to kernel 6a0a196e-356e-437b-88d6-c2832b7a51f3.
+[I 2025-11-27 14:27:00.400 ServerApp] Connecting to kernel 621e0b34-23d3-4bee-b62b-bf25b3ad2e25.
+[I 2025-11-27 14:27:00.413 ServerApp] Connecting to kernel 621e0b34-23d3-4bee-b62b-bf25b3ad2e25.
+[I 2025-11-27 14:27:00.428 ServerApp] Connecting to kernel 4a921d7a-406d-4f7e-ae33-978f98220ec2.
+[I 2025-11-27 14:27:00.449 ServerApp] Connecting to kernel cb326fea-2699-4415-bbe3-8f263569ce45.
+[I 2025-11-27 14:27:00.456 ServerApp] Connecting to kernel cb326fea-2699-4415-bbe3-8f263569ce45.
+[I 2025-11-27 14:27:00.479 ServerApp] Connecting to kernel cb326fea-2699-4415-bbe3-8f263569ce45.
+[W 2025-11-27 14:27:00.612 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad8d729d0>
+[W 2025-11-27 14:27:27.325 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[I 2025-11-27 14:27:27.512 ServerApp] Kernel started: 25b26724-7443-4dd2-a137-8886a8608617
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2025-11-27 14:27:28.601 ServerApp] Connecting to kernel 25b26724-7443-4dd2-a137-8886a8608617.
+[I 2025-11-27 14:29:27.897 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb
+[W 2025-11-27 14:29:27.898 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[W 2025-11-27 15:05:28.602 ServerApp] WebSocket ping timeout after 119994 ms.
+[W 2025-11-27 15:05:30.374 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-11-27 15:05:30.374 ServerApp] WebSocket ping timeout after 119995 ms.
+[W 2025-11-27 15:05:30.395 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-11-27 15:05:30.414 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2025-11-27 15:05:30.428 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2025-11-27 15:05:30.449 ServerApp] WebSocket ping timeout after 119996 ms.
+[I 2025-11-27 15:05:33.604 ServerApp] Starting buffering for 25b26724-7443-4dd2-a137-8886a8608617:08ecd45f-1a17-48df-8cb3-e85d273fb28c
+[I 2025-11-27 15:05:35.375 ServerApp] Starting buffering for ca089e96-50ca-4179-b058-1d223b1980ec:548301b3-224b-4b51-939f-b9a6b8c2a724
+[I 2025-11-27 15:05:35.375 ServerApp] Starting buffering for 5d2ea2fb-7b06-4c76-a295-8d5e6816f9fb:cf90a43f-a419-4819-ad14-0f58c02a4bb3
+[I 2025-11-27 15:05:35.396 ServerApp] Starting buffering for 6a0a196e-356e-437b-88d6-c2832b7a51f3:1db8a92f-4f70-4884-b06a-6af90cef54c2
+[I 2025-11-27 15:05:35.415 ServerApp] Starting buffering for 621e0b34-23d3-4bee-b62b-bf25b3ad2e25:1be9c025-bd36-446a-9900-6d0ebb71a9a8
+[I 2025-11-27 15:05:35.430 ServerApp] Starting buffering for 4a921d7a-406d-4f7e-ae33-978f98220ec2:a8869e5b-71bb-4e86-a819-62b298b3e24a
+[I 2025-11-27 15:05:35.450 ServerApp] Starting buffering for cb326fea-2699-4415-bbe3-8f263569ce45:d3b0fcfe-8b2e-4b69-9b20-d83192a69670
+[C 2025-11-27 15:10:24.589 ServerApp] received signal 15, stopping
+Terminated
+[I 2025-11-27 15:10:24.592 ServerApp] Shutting down 6 extensions
+[I 2025-11-27 15:10:24.593 ServerApp] Shutting down 7 kernels
+[I 2025-11-27 15:10:24.593 ServerApp] Kernel shutdown: 621e0b34-23d3-4bee-b62b-bf25b3ad2e25
+[I 2025-11-27 15:10:24.593 ServerApp] Kernel shutdown: cb326fea-2699-4415-bbe3-8f263569ce45
+[I 2025-11-27 15:10:24.594 ServerApp] Kernel shutdown: 5d2ea2fb-7b06-4c76-a295-8d5e6816f9fb
+[I 2025-11-27 15:10:24.594 ServerApp] Kernel shutdown: 4a921d7a-406d-4f7e-ae33-978f98220ec2
+[I 2025-11-27 15:10:24.595 ServerApp] Kernel shutdown: ca089e96-50ca-4179-b058-1d223b1980ec
+[I 2025-11-27 15:10:24.595 ServerApp] Kernel shutdown: 25b26724-7443-4dd2-a137-8886a8608617
+[I 2025-11-27 15:10:24.596 ServerApp] Kernel shutdown: 6a0a196e-356e-437b-88d6-c2832b7a51f3
