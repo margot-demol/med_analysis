@@ -1,0 +1,530 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Wed Feb 18 10:26:54 GMT 2026
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2026-02-18 10:26:59.939 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2026-02-18 10:27:00.119 ServerApp] Package jupyter_lsp took 0.1792s to import
+[W 2026-02-18 10:27:00.119 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-18 10:27:00.194 ServerApp] Package jupyter_server_terminals took 0.0742s to import
+[I 2026-02-18 10:27:00.194 ServerApp] Package notebook took 0.0000s to import
+[I 2026-02-18 10:27:00.200 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2026-02-18 10:27:00.200 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-18 10:27:07.658 ServerApp] Package panel.io.jupyter_server_extension took 7.4557s to import
+[I 2026-02-18 10:27:07.659 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-02-18 10:27:07.666 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-02-18 10:27:07.673 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-02-18 10:27:07.680 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2026-02-18 10:27:07.683 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2026-02-18 10:27:07.683 ServerApp] notebook | extension was successfully linked.
+[I 2026-02-18 10:27:10.826 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-02-18 10:27:10.826 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2026-02-18 10:27:10.972 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-02-18 10:27:10.975 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-02-18 10:27:10.977 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-02-18 10:27:11.047 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2026-02-18 10:27:11.047 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2026-02-18 10:27:11.050 LabApp] Extension Manager is 'pypi'.
+[I 2026-02-18 10:27:11.053 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-02-18 10:27:11.066 ServerApp] notebook | extension was successfully loaded.
+[I 2026-02-18 10:27:11.066 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2026-02-18 10:27:11.067 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2026-02-18 10:27:11.067 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2026-02-18 10:27:11.067 ServerApp] http://r1i5n20:8877/lab
+[I 2026-02-18 10:27:11.067 ServerApp]     http://127.0.0.1:8877/lab
+[I 2026-02-18 10:27:11.067 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-02-18 10:27:11.186 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-02-18 10:29:52.079 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2026-02-18 10:29:53.341 ServerApp] Notebook med_analysis/00_pre_analysis/06_arpege_hr.ipynb is not trusted
+[W 2026-02-18 10:29:53.359 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 10:29:53.394 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-18 10:29:53.780 ServerApp] Kernel started: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 10:29:53.782 ServerApp] Kernel started: 149ba8c4-9102-462c-9f8a-420b9b7240d5
+[I 2026-02-18 10:29:53.787 ServerApp] Kernel started: 26933b52-3406-44c5-8f0b-36bf7afccb70
+readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 10:29:55.875 ServerApp] Connecting to kernel 26933b52-3406-44c5-8f0b-36bf7afccb70.
+[I 2026-02-18 10:29:55.878 ServerApp] Connecting to kernel 14d3da88-51cc-4281-b7aa-6aea542179cb.
+[I 2026-02-18 10:29:55.899 ServerApp] Connecting to kernel 26933b52-3406-44c5-8f0b-36bf7afccb70.
+[I 2026-02-18 10:29:55.904 ServerApp] Connecting to kernel 149ba8c4-9102-462c-9f8a-420b9b7240d5.
+[I 2026-02-18 10:29:55.920 ServerApp] Connecting to kernel 26933b52-3406-44c5-8f0b-36bf7afccb70.
+[I 2026-02-18 10:31:53.548 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 10:31:53.550 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 10:43:56.537 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:45:56.563 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:46:25.245 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:47:35.277 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:47:55.693 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:47:59.396 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-18 10:49:56.574 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 10:49:56.576 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 10:51:56.617 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 10:51:56.692 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 10:51:56.695 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 10:51:56.804 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[W 2026-02-18 10:51:56.892 ServerApp] /home1/datahome/mdemol/med_analysis/01_preprocessing/.~03_nc_preprocessing_swot_KaRIn.ipynb doesn't exist
+[I 2026-02-18 10:51:56.996 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 10:51:57.180 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 10:51:57.397 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 10:53:56.894 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 10:53:56.896 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 10:56:25.879 ServerApp] WebSocket ping timeout after 119995 ms.
+[W 2026-02-18 10:56:25.899 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-18 10:56:25.905 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-18 10:56:30.665 ServerApp] 
+[I 2026-02-18 10:56:30.881 ServerApp] Starting buffering for 14d3da88-51cc-4281-b7aa-6aea542179cb:38bd4b2a-6fde-475b-9370-8067853642ac
+[I 2026-02-18 10:56:30.901 ServerApp] Starting buffering for 26933b52-3406-44c5-8f0b-36bf7afccb70:9a695fc1-e320-416c-a922-8accb9168496
+[I 2026-02-18 10:56:30.905 ServerApp] Starting buffering for 149ba8c4-9102-462c-9f8a-420b9b7240d5:2608dc66-e779-4a43-a838-f961c02f6cfb
+[I 2026-02-18 12:28:53.054 ServerApp] Connecting to kernel 14d3da88-51cc-4281-b7aa-6aea542179cb.
+[I 2026-02-18 12:28:53.055 ServerApp] Restoring connection for 14d3da88-51cc-4281-b7aa-6aea542179cb:38bd4b2a-6fde-475b-9370-8067853642ac
+[I 2026-02-18 12:28:53.065 ServerApp] Replaying 160 buffered messages
+[I 2026-02-18 12:28:57.017 ServerApp] Connecting to kernel 26933b52-3406-44c5-8f0b-36bf7afccb70.
+[I 2026-02-18 12:28:57.018 ServerApp] Restoring connection for 26933b52-3406-44c5-8f0b-36bf7afccb70:9a695fc1-e320-416c-a922-8accb9168496
+[I 2026-02-18 12:29:15.362 ServerApp] Connecting to kernel 149ba8c4-9102-462c-9f8a-420b9b7240d5.
+[I 2026-02-18 12:29:15.362 ServerApp] Restoring connection for 149ba8c4-9102-462c-9f8a-420b9b7240d5:2608dc66-e779-4a43-a838-f961c02f6cfb
+[W 2026-02-18 12:29:23.682 ServerApp] Notebook med_analysis/01_preprocessing/11_test_gaussian_filter_.ipynb is not trusted
+[I 2026-02-18 12:29:23.983 ServerApp] Kernel started: 565b83fc-1fa2-4da4-9473-79cbc555f3a4
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 12:29:25.423 ServerApp] Connecting to kernel 565b83fc-1fa2-4da4-9473-79cbc555f3a4.
+[I 2026-02-18 12:30:04.677 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:30:04.680 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:30:59.163 ServerApp] Saving file at /med_analysis/01_preprocessing/11_test_gaussian_filter_.ipynb
+[W 2026-02-18 12:30:59.164 ServerApp] Notebook med_analysis/01_preprocessing/11_test_gaussian_filter_.ipynb is not trusted
+[I 2026-02-18 12:31:00.281 ServerApp] Starting buffering for 565b83fc-1fa2-4da4-9473-79cbc555f3a4:c0e6bc83-b51d-4c98-9379-da004a5cf1f6
+[I 2026-02-18 12:32:04.796 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:32:04.798 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:34:05.681 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:34:05.683 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:36:05.804 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:36:05.807 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:38:05.919 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:38:05.921 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:39:26.176 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 12:39:26.354 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 12:39:26.555 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 12:39:26.739 ServerApp] Kernel interrupted: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-18 12:40:06.025 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:40:06.027 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:42:06.660 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:42:06.674 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:44:07.854 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:44:07.857 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:46:08.657 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:46:08.670 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:48:09.654 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:48:09.666 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:50:09.863 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:50:09.865 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:52:09.977 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:52:09.979 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:54:10.121 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:54:10.134 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:56:10.344 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:56:10.347 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 12:58:10.464 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 12:58:10.465 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:00:10.567 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:00:10.578 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:00:45.610 ServerApp] Saving file at /med_analysis/00_pre_analysis/06_arpege_hr.ipynb
+[W 2026-02-18 13:00:45.610 ServerApp] Notebook med_analysis/00_pre_analysis/06_arpege_hr.ipynb is not trusted
+[I 2026-02-18 13:02:10.754 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:02:10.766 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:02:45.645 ServerApp] Saving file at /med_analysis/00_pre_analysis/06_arpege_hr.ipynb
+[W 2026-02-18 13:02:45.645 ServerApp] Notebook med_analysis/00_pre_analysis/06_arpege_hr.ipynb is not trusted
+[W 2026-02-18 13:04:07.805 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:04:07.998 ServerApp] Kernel started: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:04:09.802 ServerApp] Connecting to kernel 16d7a7c6-336c-451f-84ff-0cb7f3233d7d.
+[I 2026-02-18 13:04:10.931 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:04:10.932 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 13:05:13.338 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2026-02-18 13:05:13.549 ServerApp] Kernel started: 3150dfd4-885c-4a95-a269-5515fdf1a448
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:05:15.738 ServerApp] Connecting to kernel 3150dfd4-885c-4a95-a269-5515fdf1a448.
+[I 2026-02-18 13:06:07.867 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:06:07.880 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:06:11.027 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:06:11.028 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 13:06:23.787 ServerApp] Notebook med_analysis/00_pre_analysis/wind/142_era5_parameter_optimisation.ipynb is not trusted
+[I 2026-02-18 13:06:23.949 ServerApp] Kernel started: 69248774-3338-47b7-90e7-8c3fe18e48fc
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:06:26.110 ServerApp] Connecting to kernel 69248774-3338-47b7-90e7-8c3fe18e48fc.
+[W 2026-02-18 13:07:03.809 ServerApp] Notebook med_analysis/00_pre_analysis/wind/143_agesc_model_test.ipynb is not trusted
+[I 2026-02-18 13:07:04.501 ServerApp] Kernel started: e4cd60f5-38f8-44c7-91bf-44a679a6c852
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:07:06.254 ServerApp] Connecting to kernel e4cd60f5-38f8-44c7-91bf-44a679a6c852.
+[I 2026-02-18 13:08:11.141 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:08:11.154 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:10:11.340 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:10:11.354 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:10:57.920 ServerApp] Copying med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb to /med_analysis/01_preprocessing
+[W 2026-02-18 13:10:57.946 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[W 2026-02-18 13:10:57.959 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[W 2026-02-18 13:10:57.960 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio-Copy1.ipynb is not trusted
+[I 2026-02-18 13:12:07.957 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:12:07.968 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:12:11.554 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:12:11.556 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:13:29.553 ServerApp] Starting buffering for 26933b52-3406-44c5-8f0b-36bf7afccb70:9a695fc1-e320-416c-a922-8accb9168496
+[I 2026-02-18 13:14:08.044 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:14:08.048 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:14:11.757 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:14:11.758 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:16:08.105 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:16:08.116 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:16:11.863 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:16:11.866 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:18:08.179 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:18:08.180 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:18:12.046 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:18:12.048 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:20:08.215 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:20:08.216 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:20:12.232 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:20:12.235 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:20:43.277 ServerApp] Starting buffering for e4cd60f5-38f8-44c7-91bf-44a679a6c852:cafd9ee4-53dc-4e48-a95f-06d773f4ea8d
+[I 2026-02-18 13:20:46.980 ServerApp] Starting buffering for 69248774-3338-47b7-90e7-8c3fe18e48fc:147390d6-fb2c-4b3f-9360-ce3a8e7b4898
+[W 2026-02-18 13:21:49.294 ServerApp] Notebook med_analysis/00_pre_analysis/06_arpege_hr.ipynb is not trusted
+[I 2026-02-18 13:21:49.422 ServerApp] Connecting to kernel 26933b52-3406-44c5-8f0b-36bf7afccb70.
+[I 2026-02-18 13:22:08.297 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:22:08.298 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:22:12.381 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:22:12.382 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:24:08.335 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:24:08.348 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:24:12.507 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:24:12.510 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:26:08.417 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:26:08.418 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:26:12.724 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:26:12.726 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:28:08.463 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 13:28:08.476 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb is not trusted
+[I 2026-02-18 13:28:12.939 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:28:12.941 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 13:30:01.362 ServerApp] Notebook med_analysis/00_pre_analysis/140_era5_vs_insituwind.ipynb is not trusted
+[I 2026-02-18 13:30:01.609 ServerApp] Kernel started: bbc5e071-bfae-411b-9953-9d33e1a9b2f6
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:30:03.689 ServerApp] Connecting to kernel bbc5e071-bfae-411b-9953-9d33e1a9b2f6.
+[I 2026-02-18 13:30:08.536 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:30:13.182 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:30:13.185 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:32:09.398 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:32:13.320 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:32:13.323 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:34:09.535 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:34:13.569 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:34:13.571 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:36:09.759 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:36:13.703 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:36:13.706 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:38:09.853 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:38:13.915 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:38:13.916 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:40:10.524 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:40:14.559 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:40:14.562 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:42:14.674 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:42:14.686 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:44:11.323 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:44:14.879 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:44:14.881 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:46:11.508 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:46:15.536 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:46:15.538 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:48:11.612 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:48:15.650 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:48:15.652 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:48:43.550 ServerApp] Starting buffering for 3150dfd4-885c-4a95-a269-5515fdf1a448:54afddde-1026-46f7-a6f7-d28452c2379f
+[I 2026-02-18 13:48:47.868 ServerApp] Starting buffering for bbc5e071-bfae-411b-9953-9d33e1a9b2f6:15d1bbbf-487d-4144-bf7d-cc0c1c459750
+[I 2026-02-18 13:50:11.714 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:50:16.008 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:50:16.010 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:52:12.499 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:52:16.546 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:52:16.549 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:54:12.554 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 13:54:16.755 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:54:16.756 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 13:56:17.545 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:56:17.558 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 13:57:27.084 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr.ipynb is not trusted
+[I 2026-02-18 13:57:27.302 ServerApp] Kernel started: afdb98ba-df33-488a-9a49-41ed97853fa1
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 13:57:29.337 ServerApp] Connecting to kernel afdb98ba-df33-488a-9a49-41ed97853fa1.
+[I 2026-02-18 13:58:17.912 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 13:58:17.926 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:00:13.501 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:00:18.144 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:00:18.147 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:00:56.694 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:00:56.859 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:00:57.041 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:00:57.429 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:00:57.642 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:02:14.481 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:02:18.512 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:02:18.515 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:04:19.529 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:04:19.534 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:06:20.530 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:06:20.542 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:08:21.525 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:08:21.530 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:10:22.520 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:10:22.534 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:12:16.475 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:12:22.777 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:12:22.779 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 14:12:22.866 ServerApp] /home1/datahome/mdemol/med_analysis/01_preprocessing/.~03_nc_preprocessing_swot_KaRIn.ipynb doesn't exist
+[I 2026-02-18 14:12:43.889 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:12:44.054 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:12:44.235 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:14:16.590 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[W 2026-02-18 14:14:18.961 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2026-02-18 14:14:19.118 ServerApp] Connecting to kernel 3150dfd4-885c-4a95-a269-5515fdf1a448.
+[I 2026-02-18 14:14:22.906 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:14:22.908 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:16:16.679 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:16:23.035 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:16:23.050 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:18:16.821 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:18:23.267 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:18:23.282 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:20:16.929 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:20:23.526 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:20:23.542 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:22:17.038 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:22:23.791 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:22:23.793 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:24:17.166 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:24:23.920 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:24:23.934 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:26:17.296 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:26:24.129 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:26:24.131 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:28:17.411 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:28:24.282 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:28:24.302 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:30:19.031 ServerApp] Saving file at /med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb
+[W 2026-02-18 14:30:19.032 ServerApp] Notebook med_analysis/02_coloc_files/04_csv_era5_coloc.ipynb is not trusted
+[I 2026-02-18 14:30:24.511 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:30:24.512 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:32:17.526 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:32:24.655 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:32:24.670 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:34:17.635 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:34:24.882 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:34:24.884 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:36:17.783 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:36:25.019 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:36:25.034 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:38:17.926 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:38:25.252 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:38:25.266 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:40:18.079 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:40:25.468 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:40:25.470 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:41:21.298 ServerApp] Kernel restarted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:41:21.306 ServerApp] Starting buffering for 16d7a7c6-336c-451f-84ff-0cb7f3233d7d:02e0e51a-beda-44ce-8825-1cb145fd1a24
+[I 2026-02-18 14:41:21.311 ServerApp] Connecting to kernel 16d7a7c6-336c-451f-84ff-0cb7f3233d7d.
+[I 2026-02-18 14:41:21.311 ServerApp] Restoring connection for 16d7a7c6-336c-451f-84ff-0cb7f3233d7d:02e0e51a-beda-44ce-8825-1cb145fd1a24
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 14:42:09.800 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:42:09.948 ServerApp] Kernel interrupted: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-18 14:42:18.215 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_agesc_rio.ipynb
+[I 2026-02-18 14:42:25.639 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:42:25.640 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:44:18.347 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:44:25.785 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:44:25.788 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:46:18.464 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:46:25.979 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:46:25.994 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:48:18.533 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:48:26.184 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:48:26.198 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:50:18.650 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:50:26.442 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:50:26.443 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:52:18.761 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:52:26.583 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:52:26.598 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:54:18.878 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 14:54:26.833 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:54:26.846 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:55:57.454 ServerApp] Creating new notebook in /med_analysis/10_swot_capabilities_diags
+[I 2026-02-18 14:55:59.870 ServerApp] Kernel started: ec4211ed-5809-4f83-9ba0-1b5d50a87aec
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 14:56:02.509 ServerApp] Connecting to kernel ec4211ed-5809-4f83-9ba0-1b5d50a87aec.
+[I 2026-02-18 14:56:27.144 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:56:27.158 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 14:57:57.613 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 14:58:27.396 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 14:58:27.410 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:00:19.032 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 15:00:27.675 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:00:27.690 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 15:00:56.127 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[I 2026-02-18 15:00:56.388 ServerApp] Kernel started: 9c5a0ea8-1ff0-445a-9339-04e85039d038
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 15:00:58.072 ServerApp] Connecting to kernel 9c5a0ea8-1ff0-445a-9339-04e85039d038.
+[I 2026-02-18 15:01:57.658 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:02:27.892 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:02:27.895 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:03:57.738 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:04:28.038 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:04:28.054 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:05:57.778 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:06:28.267 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:06:28.282 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:07:57.840 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:08:28.525 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:08:28.528 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:09:57.928 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:10:28.708 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:10:28.710 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 15:11:11.973 ServerApp] Notebook med_analysis/20_dynamical_analysis/13_filter_wind.ipynb is not trusted
+[I 2026-02-18 15:11:12.269 ServerApp] Kernel started: 83695f1d-03fc-42b4-905f-00ac53eb87a7
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 15:11:14.231 ServerApp] Connecting to kernel 83695f1d-03fc-42b4-905f-00ac53eb87a7.
+[I 2026-02-18 15:11:18.805 ServerApp] Starting buffering for 83695f1d-03fc-42b4-905f-00ac53eb87a7:ef816ca6-cfcc-4ff6-9838-08ef079316ac
+[I 2026-02-18 15:11:21.154 ServerApp] Starting buffering for 3150dfd4-885c-4a95-a269-5515fdf1a448:4441cbfc-b981-45a4-8cfd-3d86352e9905
+[I 2026-02-18 15:11:22.219 ServerApp] Starting buffering for afdb98ba-df33-488a-9a49-41ed97853fa1:f0befda9-e686-45e3-b468-b68a493ebf7a
+[I 2026-02-18 15:11:24.489 ServerApp] Starting buffering for 26933b52-3406-44c5-8f0b-36bf7afccb70:2a68eae1-d122-4b90-9f12-969e6f264020
+[I 2026-02-18 15:11:25.357 ServerApp] Starting buffering for 149ba8c4-9102-462c-9f8a-420b9b7240d5:2608dc66-e779-4a43-a838-f961c02f6cfb
+[W 2026-02-18 15:11:40.825 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[I 2026-02-18 15:11:41.056 ServerApp] Kernel started: 19bd9926-af9b-4570-a200-e2bdeee8e4a0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 15:11:42.651 ServerApp] Connecting to kernel 19bd9926-af9b-4570-a200-e2bdeee8e4a0.
+[I 2026-02-18 15:11:57.971 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:12:28.825 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:12:28.836 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 15:12:46.105 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/27_temporal_scales.ipynb is not trusted
+[I 2026-02-18 15:12:46.312 ServerApp] Kernel started: 0203b187-d960-456b-b112-b9ac97688791
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 15:12:48.590 ServerApp] Connecting to kernel 0203b187-d960-456b-b112-b9ac97688791.
+[W 2026-02-18 15:13:03.049 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2026-02-18 15:13:03.244 ServerApp] Kernel started: 39494110-04dd-4252-8f29-fbb4d8577fbb
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-18 15:13:04.660 ServerApp] Connecting to kernel 39494110-04dd-4252-8f29-fbb4d8577fbb.
+[I 2026-02-18 15:13:31.775 ServerApp] Starting buffering for 0203b187-d960-456b-b112-b9ac97688791:4fc8b20a-160e-48a7-9938-b3524cf6f3d2
+[I 2026-02-18 15:13:58.061 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:14:29.076 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:14:29.078 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:15:58.150 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:16:29.260 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:16:29.278 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:18:29.535 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:18:29.550 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:19:58.203 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:20:29.780 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:20:29.784 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:21:58.291 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:22:29.934 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:22:29.950 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:23:21.369 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-18 15:24:30.399 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:24:30.414 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:26:30.624 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:26:30.638 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:28:31.394 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:28:31.410 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:28:45.354 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 15:30:32.393 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:30:32.398 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:32:33.382 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:32:33.398 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:34:34.383 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:34:34.398 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:36:35.352 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:36:35.370 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:38:36.376 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:38:36.386 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:40:36.668 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:40:36.686 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:40:51.323 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-18 15:42:37.364 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:42:37.367 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:44:38.364 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:44:38.382 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:46:39.361 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:46:39.378 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:48:40.353 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:48:40.356 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:50:41.348 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:50:41.366 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:52:42.349 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:52:42.354 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:54:43.342 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:54:43.358 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:56:44.325 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:56:44.328 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 15:58:45.341 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 15:58:45.358 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:00:46.332 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:00:46.335 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:02:47.341 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:02:47.358 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:04:48.329 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:04:48.346 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:06:49.323 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:06:49.342 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:08:50.324 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:08:50.342 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:10:51.323 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:10:51.324 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-18 16:12:52.299 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-18 16:12:52.301 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-18 16:15:12.652 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2026-02-18 16:15:17.654 ServerApp] Starting buffering for 19bd9926-af9b-4570-a200-e2bdeee8e4a0:53d4913c-0297-459c-8ece-7da6304d0e29
+[W 2026-02-18 16:15:21.312 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-18 16:15:23.055 ServerApp] WebSocket ping timeout after 119999 ms.
+[I 2026-02-18 16:15:26.313 ServerApp] Starting buffering for 16d7a7c6-336c-451f-84ff-0cb7f3233d7d:02e0e51a-beda-44ce-8825-1cb145fd1a24
+[W 2026-02-18 16:15:27.076 ServerApp] 
+[I 2026-02-18 16:15:28.057 ServerApp] Starting buffering for 14d3da88-51cc-4281-b7aa-6aea542179cb:38bd4b2a-6fde-475b-9370-8067853642ac
+[W 2026-02-18 16:15:28.073 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2026-02-18 16:15:32.510 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2026-02-18 16:15:33.074 ServerApp] Starting buffering for 9c5a0ea8-1ff0-445a-9339-04e85039d038:335f01d6-988e-40da-bb27-ddd7ecc91cb9
+[W 2026-02-18 16:15:34.661 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2026-02-18 16:15:37.511 ServerApp] Starting buffering for ec4211ed-5809-4f83-9ba0-1b5d50a87aec:4d4acbee-7bca-4a01-877d-6608da52edbb
+[I 2026-02-18 16:15:39.662 ServerApp] Starting buffering for 39494110-04dd-4252-8f29-fbb4d8577fbb:48f367ed-68dd-4e33-956d-ce838824d50c
+[C 2026-02-19 09:55:33.913 ServerApp] received signal 15, stopping
+Terminated
+[I 2026-02-19 09:55:33.920 ServerApp] Shutting down 6 extensions
+[I 2026-02-19 09:55:33.921 ServerApp] Shutting down 16 kernels
+[I 2026-02-19 09:55:33.921 ServerApp] Kernel shutdown: ec4211ed-5809-4f83-9ba0-1b5d50a87aec
+[I 2026-02-19 09:55:33.922 ServerApp] Kernel shutdown: 149ba8c4-9102-462c-9f8a-420b9b7240d5
+[I 2026-02-19 09:55:33.923 ServerApp] Kernel shutdown: 3150dfd4-885c-4a95-a269-5515fdf1a448
+[I 2026-02-19 09:55:33.924 ServerApp] Kernel shutdown: 69248774-3338-47b7-90e7-8c3fe18e48fc
+[I 2026-02-19 09:55:33.925 ServerApp] Kernel shutdown: 565b83fc-1fa2-4da4-9473-79cbc555f3a4
+[I 2026-02-19 09:55:33.925 ServerApp] Kernel shutdown: afdb98ba-df33-488a-9a49-41ed97853fa1
+[I 2026-02-19 09:55:33.926 ServerApp] Discarding 2112 buffered messages for 14d3da88-51cc-4281-b7aa-6aea542179cb:38bd4b2a-6fde-475b-9370-8067853642ac
+[I 2026-02-19 09:55:33.927 ServerApp] Kernel shutdown: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-19 09:55:33.928 ServerApp] Kernel shutdown: 19bd9926-af9b-4570-a200-e2bdeee8e4a0
+[I 2026-02-19 09:55:33.929 ServerApp] Kernel shutdown: 0203b187-d960-456b-b112-b9ac97688791
+[I 2026-02-19 09:55:33.930 ServerApp] Kernel shutdown: bbc5e071-bfae-411b-9953-9d33e1a9b2f6
+[I 2026-02-19 09:55:33.930 ServerApp] Kernel shutdown: 26933b52-3406-44c5-8f0b-36bf7afccb70
+[I 2026-02-19 09:55:33.931 ServerApp] Kernel shutdown: 39494110-04dd-4252-8f29-fbb4d8577fbb
+[I 2026-02-19 09:55:33.932 ServerApp] Kernel shutdown: 83695f1d-03fc-42b4-905f-00ac53eb87a7
+[I 2026-02-19 09:55:33.933 ServerApp] Kernel shutdown: e4cd60f5-38f8-44c7-91bf-44a679a6c852
+[I 2026-02-19 09:55:33.933 ServerApp] Kernel shutdown: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d
+[I 2026-02-19 09:55:33.934 ServerApp] Kernel shutdown: 9c5a0ea8-1ff0-445a-9339-04e85039d038
+[C 2026-02-19 09:55:35.308 ServerApp] received signal 15, stopping
+[I 2026-02-19 09:55:35.309 ServerApp] Shutting down 6 extensions
+[I 2026-02-19 09:55:35.310 ServerApp] Shutting down 2 kernels
+[I 2026-02-19 09:55:35.310 ServerApp] Kernel shutdown: 14d3da88-51cc-4281-b7aa-6aea542179cb
+[I 2026-02-19 09:55:35.310 ServerApp] Kernel shutdown: 16d7a7c6-336c-451f-84ff-0cb7f3233d7d

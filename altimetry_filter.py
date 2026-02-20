@@ -143,7 +143,7 @@ def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
     Filter swot_image with a gaussian filter
     input :
         swot_image : 2D array, image swot
-        cutoff :  float, cutoff length (width at mid height of the gaussian filter)
+        cutoff :  float, cutoff length ( half power cutoff wavelength of the gaussian filter)
         mask : 2D array with 0 out of swot swath and 1 within
         dx : float, x direction time step
         dy : float, y direction time step
@@ -153,7 +153,7 @@ def apply_gaussian_filter(swot_image, cutoff, mask, dx, dy):
 
     # Gaussian a la mano
     lambda_cutoff = cutoff / dx
-    sigma_cutoff = lambda_cutoff * np.sqrt(np.log(2))
+    sigma_cutoff = lambda_cutoff * np.sqrt(np.log(2))/(2*np.pi)#MODIF
     Mg = int(2 * np.round(4 * lambda_cutoff) + 1)
     gaussian = wdw.gaussian(Mg, std=sigma_cutoff)
     fg = xr.DataArray(
@@ -623,13 +623,14 @@ def apply_gaussian_filter_nb(
     Filter swot_image with a gaussian filter with numba
     input :
         swot_image : 2D array, image swot
-        cutoff :  float, cutoff length (width at mid height of the gaussian filter) in m
+        cutoff :  float, cutoff length ( half power cutoff wavelength of the gaussian filter) in m
         mask : 2D array with 0 out of swot swath and 1 within
         dx : float, x direction grid step in m
     """
 
     # try being consistent with Margot's initial choice
-    sigma = cutoff * np.sqrt(np.log(2))
+    sigma = cutoff * np.sqrt(np.log(2))/(2*np.pi)
+    print(cutoff)
     truncate = 4.0 * cutoff / sigma
 
     # stack fields
@@ -671,14 +672,14 @@ def apply_gaussian_filter_aviso(
     Filter swot_image with a gaussian filter and aviso outside tracks
     input :
         swot_image : 2D array, image swot
-        cutoff :  float, cutoff length (width at mid height of the gaussian filter) in m
+        cutoff :  float, cutoff length ( half power cutoff wavelength of the gaussian filter) in m
         mask : 2D array with 0 out of swot swath and 1 within
         dx : float, x direction grid step in m
         aviso_image: xr.DataArray
     """
 
     # try being consistent with Margot's initial choice
-    sigma = cutoff * np.sqrt(np.log(2))
+    sigma = cutoff * np.sqrt(np.log(2))/(2*np.pi)#MODIF
     truncate = 4.0 * cutoff / sigma
 
     # compute relative weights

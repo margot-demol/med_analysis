@@ -1,0 +1,1177 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Thu Feb 19 09:39:51 GMT 2026
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2026-02-19 09:39:56.138 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2026-02-19 09:39:56.281 ServerApp] Package jupyter_lsp took 0.1415s to import
+[W 2026-02-19 09:39:56.281 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-19 09:39:56.343 ServerApp] Package jupyter_server_terminals took 0.0614s to import
+[I 2026-02-19 09:39:56.343 ServerApp] Package notebook took 0.0000s to import
+[I 2026-02-19 09:39:56.348 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2026-02-19 09:39:56.348 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-19 09:40:03.210 ServerApp] Package panel.io.jupyter_server_extension took 6.8607s to import
+[I 2026-02-19 09:40:03.211 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-02-19 09:40:03.219 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-02-19 09:40:03.227 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-02-19 09:40:03.235 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2026-02-19 09:40:03.238 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2026-02-19 09:40:03.238 ServerApp] notebook | extension was successfully linked.
+[I 2026-02-19 09:40:05.055 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-02-19 09:40:05.055 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2026-02-19 09:40:05.176 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-02-19 09:40:05.178 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-02-19 09:40:05.180 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-02-19 09:40:05.228 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2026-02-19 09:40:05.228 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2026-02-19 09:40:05.230 LabApp] Extension Manager is 'pypi'.
+[I 2026-02-19 09:40:05.233 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-02-19 09:40:05.243 ServerApp] notebook | extension was successfully loaded.
+[I 2026-02-19 09:40:05.243 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2026-02-19 09:40:05.244 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2026-02-19 09:40:05.244 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2026-02-19 09:40:05.244 ServerApp] http://r1i1n15:8877/lab
+[I 2026-02-19 09:40:05.244 ServerApp]     http://127.0.0.1:8877/lab
+[I 2026-02-19 09:40:05.244 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-02-19 09:40:05.356 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-02-19 09:41:07.350 ServerApp] 404 GET /api/kernels/9c5a0ea8-1ff0-445a-9339-04e85039d038?1771494066737 (10.148.1.145): Kernel does not exist: 9c5a0ea8-1ff0-445a-9339-04e85039d038
+[W 2026-02-19 09:41:07.350 ServerApp] wrote error: 'Kernel does not exist: 9c5a0ea8-1ff0-445a-9339-04e85039d038'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 9c5a0ea8-1ff0-445a-9339-04e85039d038)
+[W 2026-02-19 09:41:07.362 ServerApp] 404 GET /api/kernels/9c5a0ea8-1ff0-445a-9339-04e85039d038?1771494066737 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 12.74ms referer=http://localhost:8877/lab/tree/med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[W 2026-02-19 09:41:13.830 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2026-02-19 09:41:14.998 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-19 09:41:15.049 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[W 2026-02-19 09:41:15.080 ServerApp] Notebook med_analysis/20_dynamical_analysis/23_cyclonic_vs_anticyclonic_structure.ipynb is not trusted
+[W 2026-02-19 09:41:15.099 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2026-02-19 09:41:15.799 ServerApp] Kernel started: 4f66ab31-165f-45b6-807d-3578484a84d7
+[I 2026-02-19 09:41:15.801 ServerApp] Kernel started: b632e5fb-518f-4175-ad9a-8f2f993cb848
+[I 2026-02-19 09:41:15.805 ServerApp] Kernel started: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[I 2026-02-19 09:41:15.806 ServerApp] Kernel started: 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1
+[I 2026-02-19 09:41:15.812 ServerApp] Kernel started: 28405e4f-e11c-42cf-8e02-4545d954fb96
+[I 2026-02-19 09:41:15.857 ServerApp] Kernel started: 3c018cc3-5c5a-4d45-b785-164d4069025c
+readline: readline: readline: readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 09:41:17.503 ServerApp] Connecting to kernel 28405e4f-e11c-42cf-8e02-4545d954fb96.
+[I 2026-02-19 09:41:17.505 ServerApp] Connecting to kernel 4f66ab31-165f-45b6-807d-3578484a84d7.
+[I 2026-02-19 09:41:17.532 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 09:41:17.534 ServerApp] Connecting to kernel b632e5fb-518f-4175-ad9a-8f2f993cb848.
+[I 2026-02-19 09:41:17.555 ServerApp] Connecting to kernel 28405e4f-e11c-42cf-8e02-4545d954fb96.
+[I 2026-02-19 09:41:17.559 ServerApp] Connecting to kernel 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1.
+[I 2026-02-19 09:41:17.588 ServerApp] Connecting to kernel 3c018cc3-5c5a-4d45-b785-164d4069025c.
+[I 2026-02-19 09:41:17.590 ServerApp] Connecting to kernel 3c018cc3-5c5a-4d45-b785-164d4069025c.
+[I 2026-02-19 09:41:17.619 ServerApp] Connecting to kernel 3c018cc3-5c5a-4d45-b785-164d4069025c.
+[W 2026-02-19 09:41:26.172 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb is not trusted
+[I 2026-02-19 09:41:26.336 ServerApp] Kernel started: 618e96be-998d-47e8-aa8d-bcaab93b58c0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 09:41:27.648 ServerApp] Connecting to kernel 618e96be-998d-47e8-aa8d-bcaab93b58c0.
+[I 2026-02-19 09:41:44.170 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb
+[W 2026-02-19 09:41:44.171 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb is not trusted
+[I 2026-02-19 09:41:45.727 ServerApp] Starting buffering for 618e96be-998d-47e8-aa8d-bcaab93b58c0:d82bf5ff-d6dd-4ac7-be18-cccb9c70b38a
+[W 2026-02-19 09:42:03.284 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb is not trusted
+[I 2026-02-19 09:42:03.765 ServerApp] Connecting to kernel 618e96be-998d-47e8-aa8d-bcaab93b58c0.
+[I 2026-02-19 09:42:28.678 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_era5_rio_agesc.ipynb
+[I 2026-02-19 09:42:34.144 ServerApp] Saving file at /med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb
+[W 2026-02-19 09:42:34.144 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb is not trusted
+[I 2026-02-19 09:42:35.347 ServerApp] Starting buffering for b632e5fb-518f-4175-ad9a-8f2f993cb848:94173732-67a2-4495-bab7-cf75573476b6
+[I 2026-02-19 09:42:36.731 ServerApp] Starting buffering for 618e96be-998d-47e8-aa8d-bcaab93b58c0:d410795a-3591-4dfe-827b-e996ccea55dd
+[W 2026-02-19 09:42:38.184 ServerApp] Notebook med_analysis/01_preprocessing/05_csv_arpege_hr_rio.ipynb is not trusted
+[I 2026-02-19 09:42:38.551 ServerApp] Connecting to kernel 618e96be-998d-47e8-aa8d-bcaab93b58c0.
+[I 2026-02-19 09:43:09.727 ServerApp] Starting buffering for 618e96be-998d-47e8-aa8d-bcaab93b58c0:aca06a71-510c-43a2-8182-a11058915805
+[I 2026-02-19 09:43:10.943 ServerApp] Starting buffering for 3c018cc3-5c5a-4d45-b785-164d4069025c:b8663ca2-d15c-4648-bb60-8aab1b3fdd81
+[I 2026-02-19 09:43:33.311 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/31_era5_vs_arpege_hr.ipynb
+[I 2026-02-19 09:43:34.443 ServerApp] Starting buffering for 4f66ab31-165f-45b6-807d-3578484a84d7:73bdb87d-3373-4dab-b00d-53c3f8407f00
+[I 2026-02-19 09:43:35.840 ServerApp] Starting buffering for 28405e4f-e11c-42cf-8e02-4545d954fb96:cf8e86c5-9704-4571-bab2-e5e45f670f4c
+[I 2026-02-19 09:43:39.083 ServerApp] Starting buffering for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:96ed7c88-a535-40bf-a762-235a65ff4364
+[I 2026-02-19 09:45:15.303 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 09:45:15.306 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 09:47:15.450 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 09:47:15.452 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-19 09:49:26.211 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 09:49:26.376 ServerApp] Kernel started: 052218c5-d8cc-4db5-852d-29e50fc4c572
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 09:49:29.059 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 09:51:26.258 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 09:51:26.259 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 09:55:26.288 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 09:55:26.289 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 09:55:51.698 ServerApp] Kernel interrupted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:55:51.875 ServerApp] Kernel interrupted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:55:52.076 ServerApp] Kernel interrupted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:55:52.262 ServerApp] Kernel interrupted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:55:52.446 ServerApp] Kernel interrupted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:56:05.132 ServerApp] Kernel restarted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 09:56:05.139 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 09:56:05.143 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 09:56:05.144 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 09:57:26.321 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 09:57:26.322 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2026-02-19 09:59:26.353 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 09:59:26.354 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:40144
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 234, in read
+    n = await stream.read_into(chunk)
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2863, in get_data_from_worker
+    response = await send_recv(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Ephemeral Worker->Worker for gather local=tcp://127.0.0.1:49872 remote=tcp://127.0.0.1:40144>: Stream is closed
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:40144
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1565, in _connect
+    comm = await connect(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/core.py", line 342, in connect
+    comm = await wait_for(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils.py", line 1940, in wait_for
+    return await asyncio.wait_for(fut, timeout)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/asyncio/tasks.py", line 466, in wait_for
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1675, in connect
+    return connect_attempt.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2860, in get_data_from_worker
+    comm = await rpc.connect(worker)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1677, in connect
+    raise CommClosedError(reason)
+distributed.comm.core.CommClosedError: Address removed.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.shuffle._comms - ERROR - Worker tcp://127.0.0.1:36718 left during active SchedulerShuffleState<cf44e8b7f5513b834e87b969899af2b6[2]>
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 134, in _send
+    self.raise_if_closed()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 192, in raise_if_closed
+    raise self._exception
+RuntimeError: Worker tcp://127.0.0.1:36718 left during active SchedulerShuffleState<cf44e8b7f5513b834e87b969899af2b6[2]>
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:40144
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1565, in _connect
+    comm = await connect(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/core.py", line 342, in connect
+    comm = await wait_for(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils.py", line 1940, in wait_for
+    return await asyncio.wait_for(fut, timeout)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/asyncio/tasks.py", line 466, in wait_for
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1675, in connect
+    return connect_attempt.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2860, in get_data_from_worker
+    comm = await rpc.connect(worker)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1677, in connect
+    raise CommClosedError(reason)
+distributed.comm.core.CommClosedError: Address removed.
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: 'cf44e8b7f5513b834e87b969899af2b6'
+distributed.core - ERROR - Exception while handling op shuffle_receive
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: 'cf44e8b7f5513b834e87b969899af2b6'
+distributed.shuffle._comms - ERROR - 'cf44e8b7f5513b834e87b969899af2b6'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: 'cf44e8b7f5513b834e87b969899af2b6'
+distributed.shuffle._comms - ERROR - 'cf44e8b7f5513b834e87b969899af2b6'
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 135, in _send
+    return await self.rpc(address).shuffle_receive(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 968, in _handle_comm
+    result = await result
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 308, in shuffle_receive
+    shuffle_run = await self._get_shuffle_run(shuffle_id, run_id)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 364, in _get_shuffle_run
+    return await self.shuffle_runs.get_with_run_id(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 117, in get_with_run_id
+    shuffle_run = await self._refresh(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 226, in _refresh
+    result = await self._fetch(shuffle_id=shuffle_id, spec=spec, key=key)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_worker_plugin.py", line 190, in _fetch
+    result = await self._plugin.worker.scheduler.shuffle_get(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1396, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1180, in send_recv
+    raise exc.with_traceback(tb)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 966, in _handle_comm
+    result = handler(**msg)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_scheduler_plugin.py", line 121, in get
+    state = self.active_shuffles[id]
+KeyError: 'cf44e8b7f5513b834e87b969899af2b6'
+[I 2026-02-19 10:01:26.407 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:01:26.407 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.diskutils - ERROR - Failed to remove '/dev/shm/pbs.5040913.datarmor0/dask-scratch-space/worker-nyouf0yq/shuffle-cf44e8b7f5513b834e87b969899af2b6-4' (failed in <built-in function lstat>): [Errno 2] No such file or directory: 'shuffle-cf44e8b7f5513b834e87b969899af2b6-4'
+distributed.diskutils - ERROR - Failed to remove '/dev/shm/pbs.5040913.datarmor0/dask-scratch-space/worker-nyouf0yq/storage' (failed in <built-in function lstat>): [Errno 2] No such file or directory: 'storage'
+distributed.diskutils - ERROR - Failed to remove '/dev/shm/pbs.5040913.datarmor0/dask-scratch-space/worker-nyouf0yq' (failed in <built-in function rmdir>): [Errno 2] No such file or directory: '/dev/shm/pbs.5040913.datarmor0/dask-scratch-space/worker-nyouf0yq'
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:54076
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2860, in get_data_from_worker
+    comm = await rpc.connect(worker)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1675, in connect
+    return connect_attempt.result()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1565, in _connect
+    comm = await connect(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/core.py", line 377, in connect
+    handshake = await comm.read()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://127.0.0.1:39611 remote=tcp://127.0.0.1:54076>: ConnectionResetError: [Errno 104] Connection reset by peer
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.protocol.core - CRITICAL - Failed to deserialize
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 160, in loads
+    return msgpack.loads(
+  File "msgpack/_unpacker.pyx", line 194, in msgpack._cmsgpack.unpackb
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 152, in _decode_default
+    return pickle.loads(sub_header["pickled-obj"], buffers=sub_frames)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/pickle.py", line 94, in loads
+    return pickle.loads(x, buffers=buffers)
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 989, in _find_and_load_unlocked
+KeyError: 'dask.dataframe'
+distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute(('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 12))" coro=<Worker.execute() done, defined at /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker_state_machine.py:3610>> ended with CancelledError
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:54076
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1559, in _connect
+    async def _connect(self, addr: str, timeout: float | None = None) -> Comm:
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1675, in connect
+    return connect_attempt.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2860, in get_data_from_worker
+    comm = await rpc.connect(worker)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1677, in connect
+    raise CommClosedError(reason)
+distributed.comm.core.CommClosedError: Address removed.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 29)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+195453                3  ...          54
+195454                3  ...          54
+195455                3  ...          54
+195456                3  ...          54
+195457                3  ...          54
+...                 ...  ...         ...
+202183                3  ...          32
+202184                3  ...          32
+202185                3  ...          32
+202186                3  ...          32
+202187                3  ...          32
+
+[6735 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 29, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:45803
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/iostream.py", line 1116, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2863, in get_data_from_worker
+    response = await send_recv(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1155, in send_recv
+    response = await comm.read(deserializers=deserializers)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 240, in read
+    convert_stream_closed_error(self, e)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Ephemeral Worker->Worker for gather local=tcp://127.0.0.1:44455 remote=tcp://127.0.0.1:45803>: ConnectionResetError: [Errno 104] Connection reset by peer
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOMainLoop object at 0x2aaab004dfa0>>, <Task finished name='Task-5' coro=<Worker.handle_scheduler() done, defined at /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py:203> exception=KeyError('dask.dataframe')>)
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/ioloop.py", line 738, in _run_callback
+    ret = callback()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/ioloop.py", line 762, in _discard_future_result
+    future.result()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 206, in wrapper
+    return await method(self, *args, **kwargs)  # type: ignore
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1302, in handle_scheduler
+    await self.handle_stream(comm)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1023, in handle_stream
+    msgs = await comm.read()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 253, in read
+    msg = await from_frames(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/utils.py", line 98, in from_frames
+    res = _from_frames()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/utils.py", line 81, in _from_frames
+    return protocol.loads(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 160, in loads
+    return msgpack.loads(
+  File "msgpack/_unpacker.pyx", line 194, in msgpack._cmsgpack.unpackb
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 152, in _decode_default
+    return pickle.loads(sub_header["pickled-obj"], buffers=sub_frames)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/pickle.py", line 94, in loads
+    return pickle.loads(x, buffers=buffers)
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 989, in _find_and_load_unlocked
+KeyError: 'dask.dataframe'
+unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-5' coro=<Worker.handle_scheduler() done, defined at /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py:203> exception=KeyError('dask.dataframe')>
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/ioloop.py", line 738, in _run_callback
+    ret = callback()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/ioloop.py", line 762, in _discard_future_result
+    future.result()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 206, in wrapper
+    return await method(self, *args, **kwargs)  # type: ignore
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 1302, in handle_scheduler
+    await self.handle_stream(comm)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1023, in handle_stream
+    msgs = await comm.read()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/tcp.py", line 253, in read
+    msg = await from_frames(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/utils.py", line 98, in from_frames
+    res = _from_frames()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/utils.py", line 81, in _from_frames
+    return protocol.loads(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 160, in loads
+    return msgpack.loads(
+  File "msgpack/_unpacker.pyx", line 194, in msgpack._cmsgpack.unpackb
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/core.py", line 152, in _decode_default
+    return pickle.loads(sub_header["pickled-obj"], buffers=sub_frames)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/protocol/pickle.py", line 94, in loads
+    return pickle.loads(x, buffers=buffers)
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 989, in _find_and_load_unlocked
+KeyError: 'dask.dataframe'
+distributed.worker - ERROR - Worker stream died during communication: tcp://127.0.0.1:45803
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1565, in _connect
+    comm = await connect(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/comm/core.py", line 342, in connect
+    comm = await wait_for(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils.py", line 1940, in wait_for
+    return await asyncio.wait_for(fut, timeout)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/asyncio/tasks.py", line 466, in wait_for
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1675, in connect
+    return connect_attempt.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2059, in gather_dep
+    response = await get_data_from_worker(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/worker.py", line 2860, in get_data_from_worker
+    comm = await rpc.connect(worker)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/core.py", line 1677, in connect
+    raise CommClosedError(reason)
+distributed.comm.core.CommClosedError: Address removed.
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 21)
+Function:  shuffle_transfer
+args:      (            pass_number drifter_id  ...                     cycle_date  _partitions
+row_number                          ...                                            
+141594                3    4388589  ...  2023-05-11 17:27:47.691713920           47
+141595                3    4388589  ...  2023-05-11 17:27:47.691713920           47
+141596                3    4388589  ...  2023-05-11 17:27:47.691713920           47
+141597                3    4388589  ...  2023-05-11 17:27:47.691713920           47
+141598                3    4388589  ...  2023-05-11 17:27:47.691713920           47
+...                 ...        ...  ...                            ...          ...
+148321                3          4  ...  2023-05-12 17:18:25.409948224           42
+148322                3          4  ...  2023-05-12 17:18:25.409948224           42
+148323                3          4  ...  2023-05-12 17:18:25.409948224           42
+148324                3          4  ...  2023-05-12 17:18:25.409948224     
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 20)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+134862                3  ...          54
+134863                3  ...          54
+134864                3  ...          54
+134865                3  ...          54
+134866                3  ...          54
+...                 ...  ...         ...
+141589                3  ...          47
+141590                3  ...          47
+141591                3  ...          47
+141592                3  ...          47
+141593                3  ...          47
+
+[6732 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 20, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 27)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+181986                3  ...          44
+181987                3  ...          44
+181988                3  ...          44
+181989                3  ...          44
+181990                3  ...          44
+...                 ...  ...         ...
+188713                3  ...          11
+188714                3  ...          11
+188715                3  ...          11
+188716                3  ...          11
+188717                3  ...          11
+
+[6732 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 27, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 14)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+94470                 3  ...          49
+94471                 3  ...          49
+94472                 3  ...          49
+94473                 3  ...          49
+94474                 3  ...          49
+...                 ...  ...         ...
+101197                3  ...          46
+101198                3  ...          46
+101199                3  ...          46
+101200                3  ...          46
+101201                3  ...          46
+
+[6732 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 14, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 17)
+Function:  shuffle_transfer
+args:      (            pass_number drifter_id  ...                     cycle_date  _partitions
+row_number                          ...                                            
+114666                3    4450425  ...  2023-05-06 18:14:38.739240896           22
+114667                3    4450425  ...  2023-05-06 18:14:38.739240896           22
+114668                3    4450425  ...  2023-05-06 18:14:38.739240896           22
+114669                3    4450425  ...  2023-05-06 18:14:38.739240896           22
+114670                3    4450425  ...  2023-05-06 18:14:38.739240896           22
+...                 ...        ...  ...                            ...          ...
+121393                3        147  ...  2023-05-07 18:05:16.583440256           54
+121394                3        147  ...  2023-05-07 18:05:16.583440256           54
+121395                3        147  ...  2023-05-07 18:05:16.583440256           54
+121396                3        147  ...  2023-05-07 18:05:16.583440256     
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 24)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+161790                3  ...           9
+161791                3  ...           9
+161792                3  ...           9
+161793                3  ...           9
+161794                3  ...           9
+...                 ...  ...         ...
+168517                3  ...          42
+168518                3  ...          42
+168519                3  ...          42
+168520                3  ...          42
+168521                3  ...          42
+
+[6732 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 24, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.worker - WARNING - Compute Failed
+Key:       ('shuffle-transfer-cf44e8b7f5513b834e87b969899af2b6', 15)
+Function:  shuffle_transfer
+args:      (            pass_number  ... _partitions
+row_number               ...            
+101202                3  ...          46
+101203                3  ...          46
+101204                3  ...          46
+101205                3  ...          46
+101206                3  ...          46
+...                 ...  ...         ...
+107929                3  ...          25
+107930                3  ...          25
+107931                3  ...          25
+107932                3  ...          25
+107933                3  ...          25
+
+[6732 rows x 47 columns], 'cf44e8b7f5513b834e87b969899af2b6', 15, 56, '_partitions', Empty DataFrame
+Columns: [pass_number, drifter_id, datetime, x, y, cruise_id, lonc, latc, longitude, latitude, velocity_east, velocity_north, velocity, acceleration_east, acceleration_north, acceleration, X, gap_mask, gaps, sign_acceleration, HF_velocity_east, HF_velocity_north, HF_acceleration_east, HF_acceleration_north, LF_velocity_east, LF_velocity_north, LF_acceleration_ea
+kwargs:    {}
+Exception: "RuntimeError('P2P shuffling cf44e8b7f5513b834e87b969899af2b6 failed during transfer phase')"
+
+distributed.shuffle._comms - ERROR - Worker tcp://127.0.0.1:51650 left during active SchedulerShuffleState<cf44e8b7f5513b834e87b969899af2b6[8]>
+Traceback (most recent call last):
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_comms.py", line 71, in _process
+    await self.send(address, shards)
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 151, in send
+    return await retry(
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/utils_comm.py", line 424, in retry
+    return await coro()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 134, in _send
+    self.raise_if_closed()
+  File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/distributed/shuffle/_core.py", line 192, in raise_if_closed
+    raise self._exception
+RuntimeError: Worker tcp://127.0.0.1:51650 left during active SchedulerShuffleState<cf44e8b7f5513b834e87b969899af2b6[8]>
+[I 2026-02-19 10:02:36.996 ServerApp] Kernel restarted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 10:02:37.003 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 10:02:37.007 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 10:02:37.007 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+readline: /etc/inputrc: line 19: term: unknown variable name
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2026-02-19 10:03:26.453 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:03:26.453 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:03:32.939 ServerApp] Kernel restarted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 10:03:32.946 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 10:03:32.954 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 10:03:32.954 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+readline: /etc/inputrc: line 19: term: unknown variable name
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.scheduler.transition-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/dask/config.py:742: FutureWarning: Dask configuration key 'distributed.comm.recent-messages-log-length' has been deprecated; please use 'distributed.admin.low-level-log-length' instead
+  warnings.warn(
+[I 2026-02-19 10:05:26.484 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:05:26.485 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:07:27.215 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:07:27.216 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:09:28.210 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:09:28.211 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:11:29.208 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:11:29.208 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:13:30.210 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:13:30.211 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:15:30.247 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:15:30.248 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:17:31.195 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:17:31.196 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:19:31.231 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:19:31.232 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:21:31.475 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:21:31.476 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:23:32.189 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:23:32.190 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:25:33.182 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:25:33.183 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 10:27:34.191 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 10:27:34.192 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[W 2026-02-19 10:57:32.954 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2026-02-19 10:57:37.957 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[W 2026-02-19 10:57:47.533 ServerApp] WebSocket ping timeout after 119935 ms.
+[I 2026-02-19 10:57:52.535 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 12:26:49.822 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 12:26:49.822 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[W 2026-02-19 12:26:51.964 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[I 2026-02-19 12:26:52.121 ServerApp] Connecting to kernel 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1.
+[W 2026-02-19 12:26:56.929 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:26:57.159 ServerApp] Kernel started: ae971371-5ebf-4bf9-93fa-5abed62757be
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 12:26:59.845 ServerApp] Connecting to kernel ae971371-5ebf-4bf9-93fa-5abed62757be.
+[I 2026-02-19 12:27:03.380 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 12:27:03.380 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 12:28:57.057 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:28:57.058 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:30:57.262 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:30:57.263 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:32:57.646 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:32:57.647 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:34:58.648 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:34:58.649 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:36:59.651 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:36:59.652 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:47:03.624 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:47:03.625 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:49:03.767 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:49:03.768 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:51:03.882 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:51:03.883 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:53:03.994 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:53:03.995 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:55:04.092 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:55:04.093 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:57:04.274 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:57:04.276 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 12:59:04.403 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 12:59:04.404 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 13:01:04.518 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 13:01:04.519 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 13:09:05.582 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 13:09:05.583 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 13:09:07.792 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 13:09:07.793 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 13:09:37.599 ServerApp] Kernel restarted: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[I 2026-02-19 13:09:37.605 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 13:09:37.608 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 13:09:37.609 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 13:11:47.201 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-19 13:19:20.718 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-19 13:19:35.403 ServerApp] Kernel restarted: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[I 2026-02-19 13:19:35.409 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 13:19:35.415 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 13:19:35.415 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 13:20:19.609 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:20:19.611 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:22:19.831 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:22:19.833 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:24:20.016 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:24:20.119 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:24:20.912 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-19 13:24:34.916 ServerApp] Kernel restarted: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[I 2026-02-19 13:24:34.923 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 13:24:34.926 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 13:24:34.926 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 13:26:20.277 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:26:20.280 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:28:20.568 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:28:20.570 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:30:20.718 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:30:20.730 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:32:21.557 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:32:21.570 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-19 13:32:51.900 ServerApp] Notebook med_analysis/20_dynamical_analysis/01_closure_spectral_decomp_surface.ipynb is not trusted
+[I 2026-02-19 13:32:52.066 ServerApp] Connecting to kernel 3c018cc3-5c5a-4d45-b785-164d4069025c.
+[I 2026-02-19 13:34:22.547 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:34:22.550 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:36:23.550 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:36:23.562 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:38:24.545 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:38:24.554 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:40:25.536 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:40:25.550 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:42:26.540 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:42:26.554 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:44:27.531 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:44:27.546 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:46:28.530 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:46:28.532 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:48:29.533 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:48:29.546 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:50:30.529 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:50:30.542 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:52:31.514 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:52:31.518 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:54:32.521 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:54:32.526 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:56:32.758 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:56:32.770 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 13:57:17.479 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 13:57:17.480 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 13:58:32.969 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 13:58:32.982 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:00:33.508 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:00:33.522 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:02:34.504 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:02:34.518 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:04:35.505 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:04:35.518 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:06:36.704 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:06:36.706 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:08:37.489 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:08:37.502 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:10:38.482 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:10:38.490 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:12:39.491 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:12:39.506 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:14:40.477 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:14:40.488 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:16:41.486 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:16:41.498 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:18:42.483 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:18:42.494 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:20:43.472 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:20:43.475 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:22:44.473 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:22:44.482 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:24:45.472 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:24:45.486 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:26:46.470 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:26:46.472 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:28:47.466 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:28:47.468 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:30:48.463 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:30:48.478 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:32:49.460 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:32:49.474 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:34:50.446 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:34:50.458 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:36:51.451 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:36:51.466 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:38:52.440 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:38:52.443 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:40:53.431 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:40:53.438 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:42:54.456 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:42:54.470 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:44:55.438 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:44:55.454 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:46:56.442 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:46:56.458 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-19 14:48:57.427 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-19 14:48:57.429 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-19 14:57:29.846 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-19 14:57:33.380 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2026-02-19 14:57:34.848 ServerApp] Starting buffering for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[W 2026-02-19 14:57:34.927 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2026-02-19 14:57:38.382 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 14:57:39.927 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[W 2026-02-19 14:57:52.068 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-19 14:57:52.121 ServerApp] WebSocket ping timeout after 119997 ms.
+[I 2026-02-19 14:57:57.069 ServerApp] Starting buffering for 3c018cc3-5c5a-4d45-b785-164d4069025c:4e916143-d307-4e7c-876a-e84586e16eb2
+[I 2026-02-19 14:57:57.122 ServerApp] Starting buffering for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 15:29:24.487 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 15:29:24.488 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[I 2026-02-19 15:29:27.336 ServerApp] Connecting to kernel 3c018cc3-5c5a-4d45-b785-164d4069025c.
+[I 2026-02-19 15:29:27.336 ServerApp] Restoring connection for 3c018cc3-5c5a-4d45-b785-164d4069025c:4e916143-d307-4e7c-876a-e84586e16eb2
+[I 2026-02-19 15:29:31.671 ServerApp] Connecting to kernel ae971371-5ebf-4bf9-93fa-5abed62757be.
+[I 2026-02-19 15:29:31.672 ServerApp] Restoring connection for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[I 2026-02-19 15:29:34.331 ServerApp] Connecting to kernel 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1.
+[I 2026-02-19 15:29:34.331 ServerApp] Restoring connection for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 15:29:37.765 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 15:29:37.765 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 15:29:56.836 ServerApp] Starting buffering for 3c018cc3-5c5a-4d45-b785-164d4069025c:4e916143-d307-4e7c-876a-e84586e16eb2
+[I 2026-02-19 15:30:27.137 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:15fbc386-1184-477d-b276-ab99ea8959a0
+[W 2026-02-19 15:30:44.540 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 15:30:44.747 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 15:32:17.334 ServerApp] Kernel restarted: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 15:32:17.355 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+[I 2026-02-19 15:32:17.387 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 15:32:17.387 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+readline: /etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-19 15:32:44.701 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 15:32:44.702 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 15:34:45.580 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 15:34:45.581 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 15:46:50.573 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 15:46:50.574 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 15:48:51.535 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 15:48:51.535 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-19 15:50:52.519 ServerApp] Saving file at /med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-19 15:50:52.520 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[W 2026-02-19 16:26:34.332 ServerApp] WebSocket ping timeout after 119982 ms.
+[W 2026-02-19 16:26:37.767 ServerApp] WebSocket ping timeout after 119874 ms.
+[I 2026-02-19 16:26:39.334 ServerApp] Starting buffering for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 16:26:42.768 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[W 2026-02-19 16:26:47.388 ServerApp] WebSocket ping timeout after 119970 ms.
+[I 2026-02-19 16:26:52.389 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+[W 2026-02-19 16:27:01.674 ServerApp] WebSocket ping timeout after 119927 ms.
+[I 2026-02-19 16:27:06.675 ServerApp] Starting buffering for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[I 2026-02-19 21:34:05.106 ServerApp] Connecting to kernel 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1.
+[I 2026-02-19 21:34:05.106 ServerApp] Restoring connection for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 21:34:06.106 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 21:34:06.107 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 21:34:14.104 ServerApp] Connecting to kernel ae971371-5ebf-4bf9-93fa-5abed62757be.
+[I 2026-02-19 21:34:14.104 ServerApp] Restoring connection for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[I 2026-02-19 21:34:20.340 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 21:34:20.340 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+[W 2026-02-19 21:44:44.104 ServerApp] WebSocket ping timeout after 119893 ms.
+[I 2026-02-19 21:44:49.106 ServerApp] Starting buffering for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[W 2026-02-19 21:44:50.342 ServerApp] WebSocket ping timeout after 119868 ms.
+[I 2026-02-19 21:44:55.343 ServerApp] Starting buffering for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+[W 2026-02-19 21:45:05.106 ServerApp] WebSocket ping timeout after 119885 ms.
+[W 2026-02-19 21:45:06.107 ServerApp] WebSocket ping timeout after 119971 ms.
+[I 2026-02-19 21:45:10.107 ServerApp] Starting buffering for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 21:45:11.108 ServerApp] Starting buffering for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 22:36:52.135 ServerApp] Connecting to kernel ae971371-5ebf-4bf9-93fa-5abed62757be.
+[I 2026-02-19 22:36:52.136 ServerApp] Restoring connection for ae971371-5ebf-4bf9-93fa-5abed62757be:ba7de497-b380-42d1-a6bd-eaea9a4fbfda
+[I 2026-02-19 22:37:01.177 ServerApp] Connecting to kernel 052218c5-d8cc-4db5-852d-29e50fc4c572.
+[I 2026-02-19 22:37:01.178 ServerApp] Restoring connection for 052218c5-d8cc-4db5-852d-29e50fc4c572:03ebe14c-75ff-4dc8-9956-7e842d4a6661
+[I 2026-02-19 22:37:11.508 ServerApp] Connecting to kernel 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1.
+[I 2026-02-19 22:37:11.508 ServerApp] Restoring connection for 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1:24959bbd-c2ae-4884-897f-1e710e0a3978
+[I 2026-02-19 22:37:11.608 ServerApp] Connecting to kernel 109ce7a5-3c75-4f6d-9f79-b5400575c9d8.
+[I 2026-02-19 22:37:11.608 ServerApp] Restoring connection for 109ce7a5-3c75-4f6d-9f79-b5400575c9d8:ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0
+[I 2026-02-19 22:37:21.999 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-19 22:37:22.000 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-19 22:37:47.113 ServerApp] Kernel interrupted: ae971371-5ebf-4bf9-93fa-5abed62757be
+[I 2026-02-19 22:37:47.361 ServerApp] Kernel interrupted: ae971371-5ebf-4bf9-93fa-5abed62757be
+[I 2026-02-19 22:37:48.302 ServerApp] Kernel interrupted: ae971371-5ebf-4bf9-93fa-5abed62757be
+[I 2026-02-19 22:37:48.511 ServerApp] Kernel interrupted: ae971371-5ebf-4bf9-93fa-5abed62757be
+[I 2026-02-19 22:37:48.728 ServerApp] Kernel interrupted: ae971371-5ebf-4bf9-93fa-5abed62757be
+Terminated
+[C 2026-02-19 22:38:16.956 ServerApp] received signal 15, stopping
+[I 2026-02-19 22:38:16.962 ServerApp] Shutting down 6 extensions
+[I 2026-02-19 22:38:16.962 ServerApp] Shutting down 9 kernels
+[I 2026-02-19 22:38:16.963 ServerApp] Kernel shutdown: 3c018cc3-5c5a-4d45-b785-164d4069025c
+[I 2026-02-19 22:38:16.964 ServerApp] Kernel shutdown: ae971371-5ebf-4bf9-93fa-5abed62757be
+[I 2026-02-19 22:38:16.964 ServerApp] Kernel shutdown: b632e5fb-518f-4175-ad9a-8f2f993cb848
+[I 2026-02-19 22:38:16.965 ServerApp] Kernel shutdown: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[I 2026-02-19 22:38:16.965 ServerApp] Kernel shutdown: 618e96be-998d-47e8-aa8d-bcaab93b58c0
+[I 2026-02-19 22:38:16.966 ServerApp] Kernel shutdown: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[I 2026-02-19 22:38:16.966 ServerApp] Kernel shutdown: 28405e4f-e11c-42cf-8e02-4545d954fb96
+[I 2026-02-19 22:38:16.966 ServerApp] Kernel shutdown: 01116d7e-d321-4ec1-8ce2-ff3250cdb1c1
+[I 2026-02-19 22:38:16.967 ServerApp] Kernel shutdown: 4f66ab31-165f-45b6-807d-3578484a84d7

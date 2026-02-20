@@ -1,5 +1,6 @@
 .gitattributes
 CONDA.md
+LICENSE.md
 README.md
 gitignore.txt
 histenv.yml
