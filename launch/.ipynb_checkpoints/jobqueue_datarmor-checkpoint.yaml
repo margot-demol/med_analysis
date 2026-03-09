@@ -14,7 +14,7 @@ jobqueue:
     local-directory: $TMPDIR   # Location of fast local storage like /scratch or $TMPDIR
 
     # PBS resource manager options
-    queue: mpi_1
+    queue: mpi_8
     project: null
     walltime: '02:00:00'
     extra: []

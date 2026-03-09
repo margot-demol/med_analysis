@@ -252,7 +252,7 @@ def filter_diff_one(
             if filter_diff_method == "gaussian_2times1D":
                 assert list(filter_diff_kwargs.keys()) == [
                     "cutoff"
-                ], "The gaussian method needs one argument cutoff (gaussian x at H/2)"
+                ], "The gaussian method needs one argument cutoff (gaussian x at half-power)"
                 output = (
                     apply_gaussian_filter(
                         swot_image, **filter_diff_kwargs, mask=mask, dx=dx, dy=dy
@@ -287,7 +287,7 @@ def filter_diff_one(
             elif filter_diff_method == "gaussian_aviso":
                 assert list(filter_diff_kwargs.keys()) == [
                     "cutoff"
-                ], "The gaussian method needs one argument cutoff (gaussian x at H/2)"
+                ], "The gaussian method needs one argument cutoff (gaussian x at half-power)"
 
                 # AVISO
                 L4_key = "L4_withnadirswot"
@@ -340,30 +340,28 @@ def filter_diff_one(
                 D.append(output)
 
             # gaussian method with 2D filter (version 'a la mano' with numba by aurelien)
-            # elif filter_diff_method == 'gaussian_aviso' :
-            #    assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at H/2)'
+            elif filter_diff_method == 'gaussian_nb' :
+                assert list(filter_diff_kwargs.keys()) == ['cutoff'], 'The gaussian method needs one argument cutoff (gaussian x at half-power)'
+                output = apply_gaussian_filter_nb(swot_image,**filter_diff_kwargs,mask=mask,dx=dx,).rename("filtered_" + eta).to_dataset()
+            
+            # xarray diff
+                output["dx_" + eta] = (
+                    output["filtered_" + eta].differentiate("num_pixels") / dx
+                )
+                output["dy_" + eta] = (
+                    output["filtered_" + eta].differentiate("num_lines") / dy
+                )
+                output["dxx_" + eta] = (
+                    output["dx_" + eta].differentiate("num_pixels") / dx
+                )
+                output["dyy_" + eta] = (
+                    output["dy_" + eta].differentiate("num_lines") / dy
+                )
+                output["dxy_" + eta] = (
+                    output["dx_" + eta].differentiate("num_lines") / dy
+                )
+                D.append(output)
 
-            #    #AVISO
-            #    aviso = xr.open_dataset(os.path.join(zarr_dir, 'before_coloc', 'L4_sealevel', L4_key+'.nc'))
-            #    # select only area where swath is ... adjust for swath 16
-            #    aviso = aviso.sel(longitude=slice(ds.longitude.min()-1,ds.longitude.max()+1), latitude=slice(ds.latitude.min()-1, ds.latitude.max()+1))
-            #    aviso = aviso.interp(time = ds.time.mean().compute().values)
-            #    aviso = aviso['adt']
-            # return swot_image, mask, dx, aviso
-
-            #    output = apply_gaussian_filter_nb(swot_image, **filter_diff_kwargs, mask = mask, dx = dx).rename('filtered_'+eta).to_dataset()
-
-            #   #stencil diff
-            #    #for var in ['dx', 'dy', 'dxx', 'dyy', 'dxy'] :
-            #    #   output[var + '_'+eta] = apply_stencil_diff(output['filtered_'+eta], var, dx=dx, dy=dy)
-
-            #    # xarray diff
-            #    output['dx_'+eta] = output['filtered_'+eta].differentiate('num_pixels')/dx
-            #    output['dy_'+eta] = output['filtered_'+eta].differentiate('num_lines')/dy
-            #    output['dxx_'+eta] = output['dx_'+eta].differentiate('num_pixels')/dx
-            #    output['dyy_'+eta] = output['dy_'+eta].differentiate('num_lines')/dy
-            #    output['dxy_'+eta] = output['dx_'+eta].differentiate('num_lines')/dy
-            #    D.append(output)
 
             # Fitting kernel method
             elif filter_diff_method == "fitting_kernel":
@@ -630,7 +628,6 @@ def apply_gaussian_filter_nb(
 
     # try being consistent with Margot's initial choice
     sigma = cutoff * np.sqrt(np.log(2))/(2*np.pi)
-    print(cutoff)
     truncate = 4.0 * cutoff / sigma
 
     # stack fields

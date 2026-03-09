@@ -1,0 +1,562 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Fri Feb 20 08:56:20 GMT 2026
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2026-02-20 08:56:26.142 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2026-02-20 08:56:26.323 ServerApp] Package jupyter_lsp took 0.1802s to import
+[W 2026-02-20 08:56:26.323 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-20 08:56:26.393 ServerApp] Package jupyter_server_terminals took 0.0702s to import
+[I 2026-02-20 08:56:26.394 ServerApp] Package notebook took 0.0000s to import
+[I 2026-02-20 08:56:26.399 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2026-02-20 08:56:26.399 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-02-20 08:56:34.879 ServerApp] Package panel.io.jupyter_server_extension took 8.4776s to import
+[I 2026-02-20 08:56:34.879 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-02-20 08:56:34.887 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-02-20 08:56:34.895 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-02-20 08:56:34.902 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2026-02-20 08:56:34.905 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2026-02-20 08:56:34.905 ServerApp] notebook | extension was successfully linked.
+[I 2026-02-20 08:56:36.840 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-02-20 08:56:36.841 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2026-02-20 08:56:36.994 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-02-20 08:56:36.997 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-02-20 08:56:36.998 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-02-20 08:56:37.062 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2026-02-20 08:56:37.062 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2026-02-20 08:56:37.064 LabApp] Extension Manager is 'pypi'.
+[I 2026-02-20 08:56:37.068 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-02-20 08:56:37.082 ServerApp] notebook | extension was successfully loaded.
+[I 2026-02-20 08:56:37.082 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2026-02-20 08:56:37.083 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2026-02-20 08:56:37.083 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2026-02-20 08:56:37.083 ServerApp] http://r1i3n32:8877/lab
+[I 2026-02-20 08:56:37.083 ServerApp]     http://127.0.0.1:8877/lab
+[I 2026-02-20 08:56:37.083 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-02-20 08:56:37.231 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-02-20 09:19:40.543 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579180502 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:40.544 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:19:40.569 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579180502 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 27.22ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:41.540 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:41.604 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 64.65ms referer=None
+[W 2026-02-20 09:19:41.610 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579181573 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:41.610 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:19:41.611 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579181573 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.91ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:43.540 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:43.541 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.39ms referer=None
+[W 2026-02-20 09:19:43.546 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579183509 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:43.546 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:19:43.547 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579183509 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.24ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:45.540 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579185502 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:45.540 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:19:45.541 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579185502 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.87ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:46.541 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579186502 (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:46.541 ServerApp] wrote error: 'Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be)
+[W 2026-02-20 09:19:46.542 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579186502 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.91ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:46.542 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:46.544 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 2.33ms referer=None
+[W 2026-02-20 09:19:46.548 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579186513 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:46.548 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:19:46.549 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579186513 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.89ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:47.542 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:47.542 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.95ms referer=None
+[W 2026-02-20 09:19:47.547 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579187510 (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:47.547 ServerApp] wrote error: 'Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be)
+[W 2026-02-20 09:19:47.549 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579187510 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.96ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:49.541 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:49.542 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.95ms referer=None
+[W 2026-02-20 09:19:49.547 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579189510 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:19:49.547 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:19:49.547 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579189510 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.87ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:49.555 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:49.556 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.95ms referer=None
+[W 2026-02-20 09:19:49.560 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579189524 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:49.560 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:19:49.560 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579189524 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:49.569 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:49.569 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.94ms referer=None
+[W 2026-02-20 09:19:49.573 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579189537 (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:49.574 ServerApp] wrote error: 'Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be)
+[W 2026-02-20 09:19:49.574 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579189537 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.36ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:55.555 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:55.556 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 2.17ms referer=None
+[W 2026-02-20 09:19:55.562 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579195525 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:55.562 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:19:55.562 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579195525 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.10ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:56.562 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:56.563 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.96ms referer=None
+[W 2026-02-20 09:19:56.568 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579196531 (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:19:56.568 ServerApp] wrote error: 'Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be)
+[W 2026-02-20 09:19:56.569 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579196531 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:19:58.585 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:58.587 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.51ms referer=None
+[W 2026-02-20 09:19:58.592 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579198555 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:19:58.592 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:19:58.592 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579198555 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.94ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:20:01.684 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:20:01.685 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8/channels?session_id=ffb5c3c1-4169-4df5-a3f6-f9f1e90124b0 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.00ms referer=None
+[W 2026-02-20 09:20:01.690 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579201653 (10.148.1.145): Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8
+[W 2026-02-20 09:20:01.690 ServerApp] wrote error: 'Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 109ce7a5-3c75-4f6d-9f79-b5400575c9d8)
+[W 2026-02-20 09:20:01.691 ServerApp] 404 GET /api/kernels/109ce7a5-3c75-4f6d-9f79-b5400575c9d8?1771579201653 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 1.89ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:20:04.634 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:20:04.634 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.95ms referer=None
+[W 2026-02-20 09:20:04.639 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579204602 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:20:04.640 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:20:04.640 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579204602 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:20:09.766 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:20:09.768 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572/channels?session_id=03ebe14c-75ff-4dc8-9956-7e842d4a6661 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 2.27ms referer=None
+[W 2026-02-20 09:20:09.773 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579209736 (10.148.1.145): Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572
+[W 2026-02-20 09:20:09.773 ServerApp] wrote error: 'Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 052218c5-d8cc-4db5-852d-29e50fc4c572)
+[W 2026-02-20 09:20:09.773 ServerApp] 404 GET /api/kernels/052218c5-d8cc-4db5-852d-29e50fc4c572?1771579209736 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:20:11.370 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:20:11.371 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be/channels?session_id=ba7de497-b380-42d1-a6bd-eaea9a4fbfda (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.95ms referer=None
+[W 2026-02-20 09:20:11.376 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579211339 (10.148.1.145): Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be
+[W 2026-02-20 09:20:11.376 ServerApp] wrote error: 'Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be'
+    Traceback (most recent call last):
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 500, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 531, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ae971371-5ebf-4bf9-93fa-5abed62757be)
+[W 2026-02-20 09:20:11.377 ServerApp] 404 GET /api/kernels/ae971371-5ebf-4bf9-93fa-5abed62757be?1771579211339 (40daf09bdb0c45beae78836474a9a406@10.148.1.145) 0.86ms referer=http://localhost:8877/lab/tree/med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb
+[W 2026-02-20 09:20:24.962 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2026-02-20 09:20:26.429 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-20 09:20:26.453 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/20_closure_alti_comp.ipynb is not trusted
+[W 2026-02-20 09:20:26.521 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[W 2026-02-20 09:20:26.532 ServerApp] Notebook med_analysis/02_coloc_files/02_csv_altimetry_coloc.ipynb is not trusted
+[I 2026-02-20 09:20:27.053 ServerApp] Kernel started: 080b6f27-9a99-4e4d-839d-4ebea04cf631
+[I 2026-02-20 09:20:27.055 ServerApp] Kernel started: 62568ff9-1f13-412e-a842-149b32d223a9
+[I 2026-02-20 09:20:27.055 ServerApp] Kernel started: bd32f7aa-1ce9-463a-97b8-742234e8a3f9
+[I 2026-02-20 09:20:27.058 ServerApp] Kernel started: 888c0e96-7c6d-4345-923d-fbba1998f042
+readline: readline: readline: readline: /etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+/etc/inputrc: line 19: term: unknown variable name
+[I 2026-02-20 09:20:30.078 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[I 2026-02-20 09:20:30.080 ServerApp] Connecting to kernel 080b6f27-9a99-4e4d-839d-4ebea04cf631.
+[I 2026-02-20 09:20:30.104 ServerApp] Connecting to kernel 62568ff9-1f13-412e-a842-149b32d223a9.
+[I 2026-02-20 09:20:30.106 ServerApp] Connecting to kernel bd32f7aa-1ce9-463a-97b8-742234e8a3f9.
+[I 2026-02-20 09:20:30.125 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[I 2026-02-20 09:20:30.127 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[W 2026-02-20 09:20:30.139 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaabf7cd820>
+[W 2026-02-20 09:20:30.187 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x2aaad8594ca0>
+[I 2026-02-20 09:21:17.579 ServerApp] Kernel interrupted: 62568ff9-1f13-412e-a842-149b32d223a9
+[I 2026-02-20 09:21:17.780 ServerApp] Kernel interrupted: 62568ff9-1f13-412e-a842-149b32d223a9
+[I 2026-02-20 09:21:18.061 ServerApp] Kernel interrupted: 62568ff9-1f13-412e-a842-149b32d223a9
+[I 2026-02-20 09:22:28.345 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-20 09:22:28.346 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-20 09:24:28.458 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-20 09:24:28.459 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-20 09:26:28.560 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-20 09:26:28.561 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-20 09:28:28.659 ServerApp] Saving file at /med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb
+[W 2026-02-20 09:28:28.661 ServerApp] Notebook med_analysis/10_swot_capabilities_diags/26_spatial_scales.ipynb is not trusted
+[I 2026-02-20 09:30:26.669 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:30:26.671 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:32:26.813 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:32:26.815 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:34:26.927 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:34:26.941 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:36:27.138 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:36:27.140 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:38:27.239 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:38:27.253 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:40:27.445 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:40:27.449 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:42:27.634 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:42:27.641 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:43:24.707 ServerApp] Starting buffering for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 09:43:24.708 ServerApp] Starting buffering for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[I 2026-02-20 09:43:24.709 ServerApp] Starting buffering for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 09:43:24.709 ServerApp] Starting buffering for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 09:43:24.711 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[I 2026-02-20 09:43:24.712 ServerApp] Restoring connection for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 09:43:24.733 ServerApp] Connecting to kernel bd32f7aa-1ce9-463a-97b8-742234e8a3f9.
+[I 2026-02-20 09:43:24.733 ServerApp] Restoring connection for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 09:43:24.759 ServerApp] Connecting to kernel 080b6f27-9a99-4e4d-839d-4ebea04cf631.
+[I 2026-02-20 09:43:24.759 ServerApp] Restoring connection for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 09:43:24.786 ServerApp] Connecting to kernel 62568ff9-1f13-412e-a842-149b32d223a9.
+[I 2026-02-20 09:43:24.786 ServerApp] Restoring connection for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[W 2026-02-20 09:44:54.712 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2026-02-20 09:44:54.734 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2026-02-20 09:44:54.759 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2026-02-20 09:44:54.787 ServerApp] WebSocket ping timeout after 90001 ms.
+[W 2026-02-20 09:44:55.583 ServerApp] 
+[I 2026-02-20 09:44:59.715 ServerApp] Starting buffering for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 09:44:59.735 ServerApp] Starting buffering for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 09:44:59.760 ServerApp] Starting buffering for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 09:44:59.788 ServerApp] Starting buffering for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[I 2026-02-20 09:55:02.241 ServerApp] Connecting to kernel bd32f7aa-1ce9-463a-97b8-742234e8a3f9.
+[I 2026-02-20 09:55:02.241 ServerApp] Restoring connection for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 09:55:02.242 ServerApp] Replaying 101 buffered messages
+[I 2026-02-20 09:55:02.287 ServerApp] Connecting to kernel 080b6f27-9a99-4e4d-839d-4ebea04cf631.
+[I 2026-02-20 09:55:02.287 ServerApp] Restoring connection for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 09:55:02.302 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[I 2026-02-20 09:55:02.302 ServerApp] Restoring connection for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 09:55:02.340 ServerApp] Connecting to kernel 62568ff9-1f13-412e-a842-149b32d223a9.
+[I 2026-02-20 09:55:02.340 ServerApp] Restoring connection for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[I 2026-02-20 09:55:15.398 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:55:15.400 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:57:16.165 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:57:16.167 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 09:59:17.153 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 09:59:17.327 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:01:18.150 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:01:18.152 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:03:19.145 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:03:19.148 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:05:20.143 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:05:20.145 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:07:21.127 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:07:21.141 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:09:22.139 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:09:22.142 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:11:23.138 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:11:23.146 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:13:24.127 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:13:24.130 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:15:25.131 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:15:25.133 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:17:26.123 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:17:26.125 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:19:27.116 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:19:27.118 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:21:28.106 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:21:28.117 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:23:29.110 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:23:29.121 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:25:30.110 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:25:30.117 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:27:31.098 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:27:31.109 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:29:32.100 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:29:32.102 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:31:33.094 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:31:33.096 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:33:34.087 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:33:34.090 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:35:35.088 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:35:35.101 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:37:36.080 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:37:36.084 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:39:37.086 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:39:37.097 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:41:38.079 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:41:38.086 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:43:39.073 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:43:39.089 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:45:40.068 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:45:40.081 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:47:41.060 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:47:41.073 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:49:42.063 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:49:42.077 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 10:51:43.057 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 10:51:43.069 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-20 10:54:32.243 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-20 10:54:32.288 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-20 10:54:32.303 ServerApp] WebSocket ping timeout after 119998 ms.
+[W 2026-02-20 10:54:32.340 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2026-02-20 10:54:34.325 ServerApp] 
+[I 2026-02-20 10:54:37.245 ServerApp] Starting buffering for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 10:54:37.289 ServerApp] Starting buffering for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 10:54:37.303 ServerApp] Starting buffering for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 10:54:37.341 ServerApp] Starting buffering for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[I 2026-02-20 12:17:26.608 ServerApp] Connecting to kernel 888c0e96-7c6d-4345-923d-fbba1998f042.
+[I 2026-02-20 12:17:26.619 ServerApp] Restoring connection for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 12:17:28.674 ServerApp] Connecting to kernel 080b6f27-9a99-4e4d-839d-4ebea04cf631.
+[I 2026-02-20 12:17:28.674 ServerApp] Restoring connection for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[I 2026-02-20 12:17:34.646 ServerApp] Connecting to kernel bd32f7aa-1ce9-463a-97b8-742234e8a3f9.
+[I 2026-02-20 12:17:34.655 ServerApp] Restoring connection for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 12:17:34.655 ServerApp] Replaying 688 buffered messages
+[I 2026-02-20 12:17:35.978 ServerApp] Connecting to kernel 62568ff9-1f13-412e-a842-149b32d223a9.
+[I 2026-02-20 12:17:35.979 ServerApp] Restoring connection for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+[I 2026-02-20 12:18:26.404 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:18:26.421 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:20:27.378 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:20:27.382 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:22:28.401 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:22:28.417 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:24:29.381 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:24:29.397 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:26:30.378 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:26:30.393 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:28:31.399 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:28:31.413 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:30:32.373 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:30:32.375 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:32:33.384 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:32:33.386 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:34:34.383 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:34:34.398 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:36:35.348 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:36:35.350 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:38:36.360 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:38:36.373 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:40:37.376 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:40:37.393 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:42:38.360 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:42:38.363 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:44:39.349 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:44:39.351 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:46:40.364 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:46:40.367 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:48:41.344 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:48:41.361 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:50:42.338 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:50:42.353 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:52:43.341 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:52:43.358 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:54:44.329 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:54:44.331 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:56:45.325 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:56:45.341 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 12:58:46.320 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 12:58:46.337 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:00:47.309 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:00:47.325 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:02:48.331 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:02:48.334 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:04:49.331 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:04:49.345 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:06:50.303 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:06:50.306 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:08:51.306 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:08:51.317 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:10:52.305 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:10:52.317 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:12:53.292 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:12:53.295 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:14:54.290 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:14:54.293 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:16:55.299 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:16:55.301 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:18:56.305 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:18:56.317 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:20:57.272 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:20:57.275 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:22:58.282 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:22:58.297 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:24:59.273 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:24:59.289 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:27:00.273 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:27:00.275 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:29:01.253 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:29:01.255 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:31:02.291 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:31:02.305 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:33:03.266 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:33:03.281 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:35:04.271 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:35:04.282 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:37:05.269 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:37:05.274 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:39:06.254 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:39:06.269 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:41:07.270 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:41:07.273 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:43:08.245 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:43:08.257 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:44:44.814 ServerApp] Saving file at /med_analysis/altimetry_filter.py
+[I 2026-02-20 13:45:08.436 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:45:08.453 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:47:08.720 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:47:08.723 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[I 2026-02-20 13:49:08.904 ServerApp] Saving file at /med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb
+[W 2026-02-20 13:49:08.906 ServerApp] Notebook med_analysis/01_preprocessing/03_nc_preprocessing_swot_KaRIn.ipynb is not trusted
+[W 2026-02-20 13:51:56.611 ServerApp] WebSocket ping timeout after 119999 ms.
+[W 2026-02-20 13:51:58.675 ServerApp] WebSocket ping timeout after 119998 ms.
+[I 2026-02-20 13:52:01.612 ServerApp] Starting buffering for 888c0e96-7c6d-4345-923d-fbba1998f042:a3197860-fbb2-4568-ae2d-a30b9e13173f
+[I 2026-02-20 13:52:03.677 ServerApp] Starting buffering for 080b6f27-9a99-4e4d-839d-4ebea04cf631:e8a248c1-1b4d-41ff-8d8b-37729418ecd9
+[W 2026-02-20 13:52:04.648 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2026-02-20 13:52:04.867 ServerApp] 
+[W 2026-02-20 13:52:05.979 ServerApp] WebSocket ping timeout after 119997 ms.
+[W 2026-02-20 13:52:08.566 ServerApp] 
+[I 2026-02-20 13:52:09.649 ServerApp] Starting buffering for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-20 13:52:10.981 ServerApp] Starting buffering for 62568ff9-1f13-412e-a842-149b32d223a9:6400db15-b319-4fd0-ab1a-0e2f5ebfbd94
+=>> PBS: job killed: walltime 86403 exceeded limit 86400
+Terminated
+[C 2026-02-21 08:56:19.128 ServerApp] received signal 15, stopping
+[I 2026-02-21 08:56:19.136 ServerApp] Shutting down 6 extensions
+[I 2026-02-21 08:56:19.137 ServerApp] Shutting down 4 kernels
+[I 2026-02-21 08:56:19.137 ServerApp] Kernel shutdown: 62568ff9-1f13-412e-a842-149b32d223a9
+[I 2026-02-21 08:56:19.138 ServerApp] Kernel shutdown: 888c0e96-7c6d-4345-923d-fbba1998f042
+[I 2026-02-21 08:56:19.138 ServerApp] Kernel shutdown: 080b6f27-9a99-4e4d-839d-4ebea04cf631
+[I 2026-02-21 08:56:19.138 ServerApp] Discarding 930 buffered messages for bd32f7aa-1ce9-463a-97b8-742234e8a3f9:cafd19d8-9bcd-4512-96e2-18bac25bd469
+[I 2026-02-21 08:56:19.139 ServerApp] Kernel shutdown: bd32f7aa-1ce9-463a-97b8-742234e8a3f9

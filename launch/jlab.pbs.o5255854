@@ -1,0 +1,51 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: mdenv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Fri Mar  6 16:16:44 GMT 2026
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:29: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  elif dashinfo is not "0":
+/home1/datahome/mdemol/med_analysis/launch/jlab.py:32: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if dashinfo is not "0":
+[I 2026-03-06 16:16:47.761 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2026-03-06 16:16:47.878 ServerApp] Package jupyter_lsp took 0.1167s to import
+[W 2026-03-06 16:16:47.878 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-03-06 16:16:47.923 ServerApp] Package jupyter_server_terminals took 0.0439s to import
+[I 2026-03-06 16:16:47.923 ServerApp] Package notebook took 0.0000s to import
+[I 2026-03-06 16:16:47.927 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2026-03-06 16:16:47.927 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2026-03-06 16:16:52.038 ServerApp] Package panel.io.jupyter_server_extension took 4.1090s to import
+[I 2026-03-06 16:16:52.038 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-03-06 16:16:52.045 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-03-06 16:16:52.051 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-03-06 16:16:52.056 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2026-03-06 16:16:52.060 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2026-03-06 16:16:52.060 ServerApp] notebook | extension was successfully linked.
+[I 2026-03-06 16:16:53.306 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-03-06 16:16:53.306 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2026-03-06 16:16:53.399 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-03-06 16:16:53.401 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-03-06 16:16:53.403 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-03-06 16:16:53.428 LabApp] JupyterLab extension loaded from /home1/datahome/mdemol/.miniconda3/envs/histenv/lib/python3.9/site-packages/jupyterlab
+[I 2026-03-06 16:16:53.428 LabApp] JupyterLab application directory is /home1/datahome/mdemol/.miniconda3/envs/histenv/share/jupyter/lab
+[I 2026-03-06 16:16:53.429 LabApp] Extension Manager is 'pypi'.
+[I 2026-03-06 16:16:53.432 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-03-06 16:16:53.438 ServerApp] notebook | extension was successfully loaded.
+[I 2026-03-06 16:16:53.439 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2026-03-06 16:16:53.439 ServerApp] Serving notebooks from local directory: /home1/datahome/mdemol
+[I 2026-03-06 16:16:53.439 ServerApp] Jupyter Server 2.9.1 is running at:
+[I 2026-03-06 16:16:53.440 ServerApp] http://r1i2n23:8877/lab
+[I 2026-03-06 16:16:53.440 ServerApp]     http://127.0.0.1:8877/lab
+[I 2026-03-06 16:16:53.440 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-03-06 16:16:53.498 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[C 2026-03-06 16:17:36.099 ServerApp] received signal 15, stopping
+Terminated
+[I 2026-03-06 16:17:36.101 ServerApp] Shutting down 6 extensions
