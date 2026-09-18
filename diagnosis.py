@@ -38,7 +38,7 @@ import matplotlib.transforms as mtransforms
 
 
 def put_fig_letter(fig, ax, letter):
-    trans = mtransforms.ScaledTranslation(10 / 72, -5 / 72, fig.dpi_scale_trans)
+    trans = mtransforms.ScaledTranslation(5/ 72, -5 / 72, fig.dpi_scale_trans)
     ax.text(
         0.0,
         1.0,
@@ -59,13 +59,75 @@ def mean_df(df):
 from scipy.stats import bootstrap
 
 
-def compute_bootstrap_error(dff):
-    # print(len(dff))
-    if len(dff) < 3:
+def compute_bootstrap_error(da, n_eff):
+    x = da.values
+
+    x = x[np.isfinite(x)]
+
+    if len(x) < 3:
         return np.nan
-    else:
-        data = (dff,)  # samples must be in a sequence
-        return bootstrap(data, statistic=mean_df).standard_error
+
+    res = bootstrap(
+        (x,),
+        statistic=np.mean,
+        method="percentile", #BCA too long
+        n_resamples=1000,
+        vectorized=True,
+    )
+    estimate = np.mean(x)
+
+    n = len(x)
+    
+    factor = np.sqrt(n / n_eff)
+    
+    se = res.standard_error * factor
+    
+    low, high = res.confidence_interval.low, res.confidence_interval.high
+    
+    low = estimate + (low - estimate) * factor
+    high = estimate + (high - estimate) * factor
+
+    return high, low, se
+
+
+def compute_bootstrap_error_percentage(dff, n_eff):
+    x = dff["v"].values
+    b = dff["denom"].values
+
+    # Garder uniquement les observations valides dans les deux variables
+    mask = np.isfinite(x) & np.isfinite(b)
+
+    x = x[mask]
+    b = b[mask]
+
+    if len(x) < 3:
+        return np.nan
+
+    def percentage_mean(x, y, axis=-1):
+        return np.mean(x, axis=axis) / np.mean(y, axis=axis)*100
+
+    res = bootstrap(
+        (x, b),
+        statistic=percentage_mean,
+        paired=True,
+        n_resamples=1000,
+        method="percentile", #BCA too long
+        vectorized=True,
+    )
+    estimate = np.mean(x) / np.mean(b)*100
+
+    n = len(x)
+    
+    factor = np.sqrt(n / n_eff)
+    
+    se = res.standard_error * factor
+    
+    low, high = res.confidence_interval.low, res.confidence_interval.high
+    
+    low = estimate + (low - estimate) * factor
+    high = estimate + (high - estimate) * factor
+
+    return high, low, se
 
 
 """ 
@@ -647,11 +709,11 @@ closure_vars = (
     + ["B*_" + v for v in ["acc", "cor", "ggd", "wd"]]
     + ["E*_" + v for v in ["acc", "cor", "ggd", "wd"]]
     + ["X*_acc_cor", "X*_acc_ggd", "X*_acc_wd", "X*_cor_ggd", "X*_cor_wd", "X*_ggd_wd"]
-    + ["D*_cyclo", "D*_anticyclo"]
 )
 
 
-def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=None):
+
+def compute_mean_square_old(ds, dirname=("e", "n"), compute_error="no", vars_errors=None):
     """Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
@@ -695,15 +757,6 @@ def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=
     for v in [v for v in ds if "prod" in v]:
         dss[v.replace("prod", "X")] = -2 * ds[v]
 
-    # Cyclo/anticyclo contribution
-    for direction in [d0, d1]:
-        dss["D" + direction + "_cyclo"] = (
-            -2 * (ds["acc" + direction] + ds["cor" + direction]) * ds["ggd" + direction]
-        )
-        dss["D" + direction + "_anticyclo"] = (
-            -2 * (ds["acc" + direction] + ds["ggd" + direction]) * ds["cor" + direction]
-        )
-
     # Sum of both direction
     for v in closure_vars_:
         dss[v.replace("*", "")] = (
@@ -734,10 +787,10 @@ def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=
     if compute_error == "bootstrap":
         if vars_errors == None:
             vars_errors = (
-                [v.replace("*", dirname[0]) for v in closure_vars]
-                + [v.replace("*", dirname[1]) for v in closure_vars]
-                + [v.replace("*", "") for v in closure_vars]
-            )
+                [v.replace("*", "") for v in closure_vars]
+                #+[v.replace("*", dirname[0]) for v in closure_vars]
+                #+ [v.replace("*", dirname[1]) for v in closure_vars]
+                )
 
         D = []
         for id_ in dss.id_comb:
@@ -774,8 +827,133 @@ def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=
     dsm = assign_attrs(dsm, list(dirname) + [""])
     return dsm
 
+def compute_mean_square(ds, dirname=("e", "n"), compute_error="no", vars_errors=None, Bpercentages=False, geopercentages=False):
+    """Compute closure stats
+    ds : dataset containing terms values for all row_numbers
+    dirname : directions of the reconstruction
+    """
+    d0, d1 = dirname[0], dirname[1]
 
-def compute_variance(ds_, dirname=("e", "n"), compute_error="no", vars_errors=None):
+    closure_vars_ = closure_vars
+
+    var = ["acc", "cor", "ggd", "wd", "sum"]
+    VAR = ["ACC", "COR", "GGD", "WD", "S"]
+
+    # if 'meancor'+dirname[0] in ds :
+    #    print('ok')
+    #    var += ['meancor', 'meanggd']
+    #    VAR += ['meancor'.upper(), 'meanggd'.upper()]
+    #    closure_vars_ = closure_vars +['MEANCOR*', 'MEANGGD*']
+
+    dss = (
+        (ds[[v + d1 for v in var] + [v + d0 for v in var]] ** 2)
+        .rename({var[i] + d1: VAR[i] + d1 for i in range(len(var))})
+        .rename({var[i] + d0: VAR[i] + d0 for i in range(len(var))})
+    )
+    dss["sigma" + d0] = (
+        dss["ACC" + d0] + dss["COR" + d0] + dss["GGD" + d0] + dss["WD" + d0]
+    )
+    dss["sigma" + d1] = (
+        dss["ACC" + d1] + dss["COR" + d1] + dss["GGD" + d1] + dss["WD" + d1]
+    )
+
+    nb_coloc = len(ds.row_number)
+
+    # Balanced and error
+    for direction in [d0, d1]:
+        for v in ["acc", "cor", "ggd", "wd"]:
+            dss["B" + direction + "_" + v] = -(
+                (ds[v + direction] * ds["exc" + direction + "_" + v])
+            )
+            dss["E" + direction + "_" + v] = ds[v + direction] * ds["sum" + direction]
+
+    # pairs contributions
+    for v in [v for v in ds if "prod" in v]:
+        dss[v.replace("prod", "X")] = -2 * ds[v]
+
+    # Sum of both direction
+    for v in closure_vars_:
+        dss[v.replace("*", "")] = (
+            dss[v.replace("*", dirname[0])] + dss[v.replace("*", dirname[1])]
+        )
+    # Balanced contribution for all
+    if Bpercentages:
+        dss['B'] = (dss['B_'+var[0]] + dss['B_'+var[1]] + dss['B_'+var[2]]+dss['B_'+var[3]]).sel(id_comb='all')
+    
+    # Mean
+    dsm = dss.mean("row_number")
+
+    #percentage 
+    for v in [v for v in dss if "X_" in v]:
+        if Bpercentages:
+            dsm[v+'__B'] = dsm[v]/dsm['B']*100
+        if geopercentages:
+            dsm[v+'__geo'] = dsm[v]/dsm['X_cor_ggd']*100
+
+    # STATISTICAL ERRORS
+    effective_degree = len(
+            ds.isel(id_comb=0)
+            .to_dataframe()
+            .groupby(["drifter_id", "cycle_number", "pass_number"], observed=False)
+            .count()
+        )
+    print(effective_degree)
+
+    # central limit
+    if compute_error == "centrallimit":
+        # effective freedom degree
+        # dsme = (2*dss.std('row_number')/np.sqrt(nb_coloc)).rename({v:'er__'+v for v in list(dss.keys())})
+        dsme = (2 * dss.std("row_number") / np.sqrt(effective_degree))
+        dsm = xr.concat([dsm, dsme], dim=pd.Index(['estimation', 'stde'], name='value'))
+
+    # bootstrap
+    if compute_error == "bootstrap":
+        if vars_errors == None:
+            vars_errors = (
+                [v.replace("*", "") for v in closure_vars]
+
+                #+[v.replace("*", dirname[0]) for v in closure_vars]
+                #+ [v.replace("*", dirname[1]) for v in closure_vars]
+                )
+            #print(vars_errors)
+
+        D = []
+        for id_ in dss.id_comb:
+            dsml = xr.Dataset()
+            dsml["id_comb"] = id_
+            dsml = dsml.set_coords("id_comb").expand_dims("id_comb")
+            dsmh=dsml.copy()
+            dsmstd = dsml.copy()
+            for v in vars_errors:
+                high, low, std = compute_bootstrap_error(dss.sel(id_comb=id_)[v], effective_degree)
+                dsml[v] = ("id_comb",[low])
+                dsmh[v] = ("id_comb",[high])
+                dsmstd[v] = ("id_comb",[std])
+                
+            if Bpercentages :
+                for v in [v for v in dss if "X_" in v]:
+                    high, low, std = compute_bootstrap_error_percentage(dss.sel(id_comb=id_)[[v, 'B']].rename({v:'v','B':'denom'}), effective_degree)
+                    dsml[v+'__B'] = ("id_comb",[low])
+                    dsmh[v+'__B'] = ("id_comb",[high])
+                    dsmstd[v+'__B'] = ("id_comb",[std])
+            if geopercentages :
+                for v in [v for v in dss if ("X_" in v) & ("cor_ggd" not in v)]:
+                    high, low, std = compute_bootstrap_error_percentage(dss.sel(id_comb=id_)[[v, 'X_cor_ggd']].rename({v:'v','X_cor_ggd':'denom'}), effective_degree)
+                    dsml[v+'__geo'] = ("id_comb",[low])
+                    dsmh[v+'__geo'] = ("id_comb",[high])
+                    dsmstd[v+'__geo'] = ("id_comb",[std])
+            D.append(xr.concat([dsml, dsmh, dsmstd], dim=pd.Index(['low', 'high', 'stde'], name='value')))
+            print(id_.values)
+        dsme = xr.concat(D, dim="id_comb")
+        dsm['value'] = 'estimation'
+        dsm = xr.concat([dsm.set_coords("value").expand_dims(dim="value"), dsme], dim='value')
+
+    # ATTRS
+    dsm.attrs["error_method"] = compute_error
+    dsm = assign_attrs(dsm, list(dirname) + [""])
+    return dsm
+
+def compute_variance(ds_, dirname=("e", "n"), compute_error="no", vars_errors=None, Bpercentages=False, geopercentages=False):
     """Compute closure stats
     ds : dataset containing terms values for all row_numbers
     dirname : directions of the reconstruction
@@ -810,8 +988,8 @@ def compute_variance(ds_, dirname=("e", "n"), compute_error="no", vars_errors=No
             ds["prod" + dir_ + "_" + "_".join(c)] = ds[c[0] + dir_] * ds[c[1] + dir_]
 
     # MS = var as mean are null
-    dss = compute_mean_square(ds, dirname, compute_error, vars_errors)
-    return dss
+    dsm = compute_mean_square(ds, dirname, compute_error, vars_errors, Bpercentages, geopercentages)
+    return dsm
 
 
 def assign_attrs(ds, dirname=("e", "n", "")):
@@ -894,12 +1072,6 @@ def assign_attrs(ds, dirname=("e", "n", "")):
             {"long_name": Dir + r" Pressure gradient - wind contribution"}
         )
 
-        ds["D" + dir_ + "_cyclo"] = ds["D" + dir_ + "_cyclo"].assign_attrs(
-            {"long_name": Dir + r" cyclonic contribution"}
-        )
-        ds["D" + dir_ + "_anticyclo"] = ds["D" + dir_ + "_anticyclo"].assign_attrs(
-            {"long_name": Dir + r" anticyclonic contribution"}
-        )
     return ds
 
 
@@ -953,14 +1125,6 @@ def compute_mean_square_groupby(
     for v in [v for v in df if "prod" in v]:
         dff[v.replace("prod", "X")] = -2 * df[v] / U2
 
-    # Cyclo/anticyclo contribution
-    for direction in [dirname[0], dirname[1]]:
-        dff["D" + direction + "_cyclo"] = (
-            -2 * (df["acc" + direction] + df["cor" + direction]) * df["ggd" + direction]
-        ) / U2
-        dff["D" + direction + "_anticyclo"] = (
-            -2 * (df["acc" + direction] + df["ggd" + direction]) * df["cor" + direction]
-        ) / U2
 
     # Sum of both direction
     for v in closure_vars:
